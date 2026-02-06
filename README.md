@@ -1,8 +1,8 @@
-# 강종별 IQR 분석 (Steel Grade IQR Analysis) v2 - 종합 보고서
+# 강종별 다각적 이상치 분석 (Steel Grade Multi-Method Anomaly Analysis) v2 - 종합 보고서
 
-> **문서 버전**: 2.0
-> **작성일**: 2026-02-03
-> **목적**: 강종별 IQR 분석에 적용된 필터, A/B 라인 분류, 분석 방법론, 태그 상세 설명 및 추가 수집 필요 태그 종합 정리
+> **문서 버전**: 3.0
+> **작성일**: 2026-02-06
+> **목적**: 강종별/규격별 IQR 분석 및 다각적 이상치 탐지(CUSUM-EWMA, Rolling Z-Score, Mahalanobis, STL) 방법론, 필터 시스템, 태그 상세 설명 종합 정리
 
 ---
 
@@ -12,11 +12,18 @@
 2. [필터 시스템 상세](#2-필터-시스템-상세)
 3. [A/B 라인(L1/L2) 분류](#3-ab-라인l1l2-분류)
 4. [IQR 분석 방법론](#4-iqr-분석-방법론)
-5. [태그 카테고리별 상세 설명](#5-태그-카테고리별-상세-설명)
-6. [위험도 분류 기준](#6-위험도-분류-기준)
-7. [추가 수집 필요 태그](#7-추가-수집-필요-태그)
-8. [분석 실행 가이드](#8-분석-실행-가이드)
-9. [부록](#9-부록)
+5. [규격별 IQR 분석](#5-규격별-iqr-분석)
+6. [Adjusted IQR (왜도 보정 IQR)](#6-adjusted-iqr-왜도-보정-iqr)
+7. [CUSUM-EWMA 공정 관리도](#7-cusum-ewma-공정-관리도)
+8. [Rolling Z-Score 동적 이상치 분석](#8-rolling-z-score-동적-이상치-분석)
+9. [Mahalanobis 다변량 이상치 분석](#9-mahalanobis-다변량-이상치-분석)
+10. [STL 계절-추세 분해 분석](#10-stl-계절-추세-분해-분석)
+11. [분석 방법 비교](#11-분석-방법-비교)
+12. [태그 카테고리별 상세 설명](#12-태그-카테고리별-상세-설명)
+13. [위험도 분류 기준](#13-위험도-분류-기준)
+14. [추가 수집 필요 태그](#14-추가-수집-필요-태그)
+15. [분석 실행 가이드](#15-분석-실행-가이드)
+16. [부록](#16-부록)
 
 ---
 
@@ -25,17 +32,23 @@
 ### 1.1 시스템 아키텍처
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    IBA 데이터 분석 시스템                        │
-├─────────────────────────────────────────────────────────────────┤
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐             │
-│  │ ClickHouse  │→ │  필터링     │→ │  IQR 분석   │→ 보고서    │
-│  │   (원본)    │  │  엔진       │  │  엔진       │             │
-│  └─────────────┘  └─────────────┘  └─────────────┘             │
-│         ↓               ↓               ↓                       │
-│  v_iba_by_steel   tag_filter_     steel_grade_                  │
-│  _grade 뷰        config.yaml     iqr_analysis_v2.py           │
-└─────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────┐
+│                     IBA 다각적 이상치 분석 시스템                       │
+├──────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│  ┌─────────────┐   ┌─────────────┐   ┌─────────────────────────┐    │
+│  │ ClickHouse  │ → │  필터링     │ → │  분석 엔진 (6종)        │    │
+│  │   (원본)    │   │  엔진       │   │                         │    │
+│  └─────────────┘   └─────────────┘   │  ① Standard IQR        │    │
+│        ↓                 ↓           │  ② Adjusted IQR        │    │
+│  v_iba_by_steel    tag_filter_       │  ③ CUSUM-EWMA          │    │
+│  _grade 뷰         config.yaml      │  ④ Rolling Z-Score     │    │
+│                                      │  ⑤ Mahalanobis         │    │
+│                                      │  ⑥ STL Residual        │    │
+│                                      └─────────────────────────┘    │
+│                                                ↓                     │
+│                                      차트(PNG) + 보고서(MD) + JSON  │
+└──────────────────────────────────────────────────────────────────────┘
 ```
 
 ### 1.2 강종별 데이터 현황
@@ -59,19 +72,76 @@
 
 ```
 analysis_output/steel_grade_iqr_analysis_v2/
-├── B5/
-│   ├── 01_Furnace_Top_Temperature/
-│   │   ├── *_analysis.png (종합 6패널)
-│   │   ├── *_01_timeseries.png
-│   │   ├── *_04_daily_avg_trend.png
-│   │   ├── *_05_monthly_outlier_rate.png
-│   │   └── *_07_daily_outlier_count.png
-│   ├── 02_Furnace_Bottom_Temperature/
-│   └── ... (기타 카테고리)
-├── N5/
-├── D5/
-└── D4/
+│
+├── ATTENTION_TAGS_REPORT.md                  # 전 강종 주의 태그 종합 보고서
+├── README.md                                 # 본 문서
+│
+├── {강종}/                                   # B5, D4, D5, N5
+│   ├── 01_Furnace_Top_Temperature/           # 카테고리별 IQR 차트
+│   │   ├── {tag}_analysis.png                #   종합 6패널
+│   │   ├── {tag}_01_timeseries.png           #   개별 차트 (01~07)
+│   │   └── monthly/{yyyy-mm}/*.png           #   월별 차트
+│   ├── 02~09_*/                              # 나머지 카테고리 (동일 구조)
+│   ├── {규격}/                               # D10, D13, D16, D20 등
+│   │   ├── 01~09_*/                          #   규격별 카테고리 차트
+│   │   ├── iqr_analysis_{강종}_{규격}_results.json
+│   │   └── IQR_ANALYSIS_REPORT_{강종}_{규격}_KO.md
+│   ├── iqr_analysis_{강종}_results.json      # 강종 통합 IQR 결과
+│   ├── adjusted_iqr_results_{강종}.json      # Adjusted IQR 결과
+│   ├── IQR_ANALYSIS_REPORT_{강종}_KO.md
+│   ├── ADJUSTED_IQR_ANALYSIS_REPORT_{강종}_KO.md
+│   └── ADJUSTED_IQR_PLAN.md
+│
+├── cusum_ewma/
+│   ├── {강종}/
+│   │   ├── {카테고리}/{tag}_cusum.png        # CUSUM 누적합 차트
+│   │   ├── {카테고리}/{tag}_ewma.png         # EWMA 지수가중 차트
+│   │   ├── {카테고리}/{tag}_combined.png     # 통합 차트
+│   │   ├── cusum_ewma_{강종}_results.json
+│   │   └── CUSUM_EWMA_REPORT_{강종}_KO.md
+│   └── summary/drift_detection_summary.csv
+│
+├── rolling_zscore/
+│   ├── {강종}/
+│   │   ├── {카테고리}/{tag}_rolling_zscore.png
+│   │   ├── rolling_zscore_{강종}_results.json
+│   │   └── ROLLING_ZSCORE_REPORT_{강종}_KO.md
+│
+├── mahalanobis/
+│   ├── {강종}/
+│   │   ├── {카테고리}_correlation_heatmap.png  # 상관계수 히트맵
+│   │   ├── {카테고리}_distance.png             # 거리 분포
+│   │   ├── {카테고리}_pca_scatter.png          # PCA 산점도
+│   │   ├── mahalanobis_{강종}_results.json
+│   │   └── MAHALANOBIS_REPORT_{강종}_KO.md
+│
+└── stl_residual/
+    ├── {강종}/
+    │   ├── {카테고리}/{tag}_stl_decomposition.png  # Trend/Seasonal/Residual 분해
+    │   ├── {카테고리}/{tag}_residual_outliers.png   # 잔차 이상치
+    │   ├── stl_analysis_{강종}_results.json
+    │   └── STL_ANALYSIS_REPORT_{강종}_KO.md
 ```
+
+### 1.5 강종별 분석 가용성
+
+| 분석 유형 | B5 | D4 | D5 | N5 | 규격별 분석 |
+|-----------|:--:|:--:|:--:|:--:|:-----------:|
+| Standard IQR | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Adjusted IQR | ✅ | ✅ | ✅ | ✅ | - |
+| CUSUM-EWMA | ✅ | ✅ | ✅ | ✅ | - |
+| Rolling Z-Score | ✅ | ✅ | ✅ | ✅ | - |
+| Mahalanobis | ✅ | ✅ | ✅ | ✅ | - |
+| STL Residual | ✅ | ✅ | ✅ | ✅ | - |
+
+### 1.6 규격별 분석 현황
+
+| 강종 | 사이즈 규격 |
+|------|------------|
+| **B5** | D13, D16 |
+| **D4** | D10, D13 |
+| **D5** | D10, D13 |
+| **N5** | D10, D12, D16, D20 |
 
 ---
 
@@ -332,9 +402,279 @@ IQR = Q3 - Q1
 
 ---
 
-## 5. 태그 카테고리별 상세 설명
+## 5. 규격별 IQR 분석
 
-### 5.1 전체 카테고리 개요
+강종 내 사이즈 규격(D10, D13, D16, D20 등)별로 데이터를 분리하여 IQR 분석을 수행합니다. 동일 강종이라도 사이즈에 따라 공정 조건이 달라지므로, 규격별 분리 분석이 더 정밀한 이상치 탐지를 가능하게 합니다.
+
+### 5.1 분석 원리
+
+- 강종 통합 분석에서는 여러 사이즈의 데이터가 혼합되어 IQR 범위가 과대/과소 추정될 수 있음
+- 규격별로 분리하면 각 사이즈 고유의 정상 범위를 정확히 파악 가능
+- 분석 방법론은 Standard IQR과 동일 (Q1 ± 1.5 × IQR)
+
+### 5.2 출력 구조
+
+각 규격 폴더에 강종 통합 분석과 동일한 구조가 생성됩니다:
+- 9개 카테고리 폴더 (01~09)
+- 각 카테고리 내 7종 개별 차트 + 종합 6패널 차트
+- 월별 차트 (`monthly/{yyyy-mm}/`)
+- JSON 결과: `iqr_analysis_{강종}_{규격}_results.json`
+- MD 보고서: `IQR_ANALYSIS_REPORT_{강종}_{규격}_KO.md`
+
+### 5.3 실행 방법
+
+```bash
+# 특정 강종의 특정 규격만 분석
+./venv/bin/python scripts/steel_grade_iqr_analysis_v2.py --grade B5 --size D13
+
+# 특정 강종의 전체 규격 분석
+./venv/bin/python scripts/steel_grade_iqr_analysis_v2.py --grade B5 --all-sizes
+```
+
+---
+
+## 6. Adjusted IQR (왜도 보정 IQR)
+
+Standard IQR의 **과다 탐지(Over-detection)** 문제를 해결하기 위해, 데이터 분포의 왜도(Skewness)를 반영하여 상한/하한 경계를 비대칭적으로 조정합니다.
+
+### 6.1 분석 원리
+
+Standard IQR은 대칭 분포를 가정하지만, 실제 공정 데이터는 편향된 분포를 가질 수 있습니다.
+
+**Bowley Skewness Correction**:
+```
+Bowley Skewness = (Q3 + Q1 - 2×Median) / (Q3 - Q1)
+
+양의 왜도 (upper 방향): 상한 경계 확대, 하한 경계 축소
+음의 왜도 (lower 방향): 하한 경계 확대, 상한 경계 축소
+```
+
+| 파라미터 | 설명 |
+|----------|------|
+| `c_value` | 왜도 보정 강도 (기본: 강종별 권장값, 일반적으로 0.8) |
+| `lower_multiplier` | Skewness 기반 하한 경계 배수 |
+| `upper_multiplier` | Skewness 기반 상한 경계 배수 |
+
+### 6.2 출력 파일
+
+- **결과 JSON**: `{강종}/adjusted_iqr_results_{강종}.json`
+- **분석 보고서**: `{강종}/ADJUSTED_IQR_ANALYSIS_REPORT_{강종}_KO.md`
+- **분석 설계**: `{강종}/ADJUSTED_IQR_PLAN.md`
+
+### 6.3 실행 방법
+
+```bash
+# 단일 강종
+./venv/bin/python scripts/steel_grade_adjusted_iqr_analysis.py --grade B5
+
+# 왜도 보정 강도 지정
+./venv/bin/python scripts/steel_grade_adjusted_iqr_analysis.py --grade B5 --c-value 0.8
+```
+
+---
+
+## 7. CUSUM-EWMA 공정 관리도
+
+점진적 **드리프트(drift)** 와 급격한 **시프트(shift)** 를 동시에 탐지하는 통계적 공정 관리(SPC) 방법입니다.
+
+### 7.1 분석 원리
+
+| 방법 | 목적 | 파라미터 | 탐지 대상 |
+|------|------|----------|----------|
+| **CUSUM** (누적합 관리도) | 중장기 점진적 편차 탐지 | k=0.5σ, h=5.0σ | 서서히 변하는 드리프트 |
+| **EWMA** (지수가중이동평균) | 단기 급격한 변화 탐지 | λ=0.2, L=3.0 | 급변하는 시프트 |
+
+**CUSUM 공식**:
+```
+S⁺(t) = max(0, S⁺(t-1) + (x(t) - μ₀ - k))   # 상향 누적합
+S⁻(t) = max(0, S⁻(t-1) - (x(t) - μ₀ + k))   # 하향 누적합
+드리프트 판정: S⁺(t) > h 또는 S⁻(t) > h
+```
+
+**EWMA 공식**:
+```
+Z(t) = λ·x(t) + (1-λ)·Z(t-1)
+관리 한계 = μ₀ ± L·σ·√(λ/(2-λ))
+시프트 판정: Z(t)가 관리 한계 이탈
+```
+
+### 7.2 차트 유형
+
+| 차트 | 파일 패턴 | 설명 |
+|------|-----------|------|
+| CUSUM | `{tag}_cusum.png` | 누적합 그래프 + 드리프트 이벤트 표시 |
+| EWMA | `{tag}_ewma.png` | 지수가중 그래프 + 시프트 이벤트 표시 |
+| Combined | `{tag}_combined.png` | CUSUM + EWMA 통합 비교 차트 |
+
+### 7.3 실행 방법
+
+```bash
+./venv/bin/python scripts/steel_grade_cusum_ewma_analysis.py --grade B5
+```
+
+---
+
+## 8. Rolling Z-Score 동적 이상치 분석
+
+시간 윈도우 기반으로 **지역적(local) 기준선**을 추적하며 이상치를 탐지합니다. 평균/분산이 시간에 따라 변하는 비정상(non-stationary) 시계열에 적합합니다.
+
+### 8.1 분석 원리
+
+```
+Z_rolling(t) = (x(t) - μ_window(t)) / σ_window(t)
+```
+
+| 파라미터 | 기본값 | 설명 |
+|----------|--------|------|
+| Window | 24시간 | 이동 평균/표준편차 계산 윈도우 |
+| Z Threshold | ±3.0σ | 일반 이상치 판정 임계값 |
+| Severe Threshold | ±4.0σ | 심각 이상치 판정 임계값 |
+
+Standard IQR이 **전체 기간의 고정 기준**으로 판정하는 반면, Rolling Z-Score는 **직전 24시간의 동적 기준**으로 판정하여 점진적 변화에도 적응합니다.
+
+### 8.2 주요 지표
+
+| 지표 | 설명 |
+|------|------|
+| `outlier_ratio` | 이상치율 (|Z| > 3σ) |
+| `severe_outlier_ratio` | 심각 이상치율 (|Z| > 4σ) |
+| `baseline_stability` | 기준선 안정성 (0~1, 높을수록 안정) |
+| `max_z` | 최대 Z-스코어 |
+
+### 8.3 차트 유형
+
+- `{tag}_rolling_zscore.png`: 시계열 + 롤링 Z-스코어 + 3σ/4σ 경계선
+
+### 8.4 실행 방법
+
+```bash
+# 기본 윈도우 (24시간)
+./venv/bin/python scripts/steel_grade_rolling_zscore_analysis.py --grade B5
+
+# 윈도우 크기 지정
+./venv/bin/python scripts/steel_grade_rolling_zscore_analysis.py --grade B5 --window 48
+```
+
+---
+
+## 9. Mahalanobis 다변량 이상치 분석
+
+**변수 간 상관관계**를 고려하여 **복합 이상치(Multivariate Anomaly)** 를 탐지합니다. 개별 태그로는 정상이지만 태그 조합으로 보면 이상인 경우를 잡아냅니다.
+
+### 9.1 분석 원리
+
+```
+D_M(x) = √((x - μ)ᵀ · Σ⁻¹ · (x - μ))
+```
+
+| 파라미터 | 값 | 설명 |
+|----------|-----|------|
+| α (유의수준) | 0.001 | χ² 분포 기반 임계값 |
+| Percentile | 99.5% | 대체 백분위수 임계값 |
+
+**분석 단위**: 개별 태그가 아닌 **카테고리 단위** (동일 카테고리 내 태그들의 상관관계 분석)
+
+### 9.2 차트 유형
+
+| 차트 | 파일 패턴 | 설명 |
+|------|-----------|------|
+| 상관 히트맵 | `{카테고리}_correlation_heatmap.png` | 태그 간 상관계수 시각화 |
+| 거리 분포 | `{카테고리}_distance.png` | Mahalanobis 거리 분포 + 이상치 |
+| PCA 산점도 | `{카테고리}_pca_scatter.png` | 주성분 2D 공간에서의 이상치 시각화 |
+
+### 9.3 실행 방법
+
+```bash
+./venv/bin/python scripts/steel_grade_mahalanobis_analysis.py --grade B5
+```
+
+---
+
+## 10. STL 계절-추세 분해 분석
+
+시계열을 **Trend(추세) + Seasonal(계절성) + Residual(잔차)** 로 분해한 뒤, 잔차의 이상치를 탐지합니다. 주기적 패턴이 있는 데이터에서 패턴 외의 이상을 걸러냅니다.
+
+### 10.1 분석 원리
+
+```
+X(t) = Trend(t) + Seasonal(t) + Residual(t)
+
+잔차 이상치 = |Residual(t)| > Threshold
+```
+
+| 파라미터 | 기본값 | 설명 |
+|----------|--------|------|
+| seasonal | 25 (시간) | 계절 주기 (일 단위 반복 패턴 가정) |
+| robust | True | 강건 추정 (이상치에 덜 민감한 LOESS) |
+
+### 10.2 주요 지표
+
+| 지표 | 설명 |
+|------|------|
+| `residual_outlier_rate` | 잔차 이상치율 |
+| `seasonality_strength` | 계절성 강도 (0~1) |
+| `trend_strength` | 추세 강도 (0~1) |
+| `seasonality_classification` | 계절성 판정 (strong/moderate/weak/none) |
+
+### 10.3 차트 유형
+
+| 차트 | 파일 패턴 | 설명 |
+|------|-----------|------|
+| STL 분해 | `{tag}_stl_decomposition.png` | Trend/Seasonal/Residual 3단 분해 |
+| 잔차 이상치 | `{tag}_residual_outliers.png` | 잔차 시계열 + 이상치 표시 |
+
+### 10.4 실행 방법
+
+```bash
+# 기본 계절 주기 (25시간)
+./venv/bin/python scripts/steel_grade_stl_analysis.py --grade B5
+
+# 계절 주기 지정
+./venv/bin/python scripts/steel_grade_stl_analysis.py --grade B5 --seasonal 49
+```
+
+---
+
+## 11. 분석 방법 비교
+
+### 11.1 방법별 특성 비교
+
+| 방법 | 탐지 대상 | 분석 단위 | 기준선 | 민감도 |
+|------|-----------|----------|--------|--------|
+| **Standard IQR** | 정적 이상치 | 태그별 | 전체 기간 고정 | 보통 |
+| **Adjusted IQR** | 정적 이상치 (왜도 보정) | 태그별 | 전체 기간 고정 (비대칭) | 보통 |
+| **CUSUM-EWMA** | 드리프트 + 시프트 | 태그별 | 초기 기준선 | 높음 |
+| **Rolling Z-Score** | 동적 이상치 | 태그별 | 24시간 이동 윈도우 | 보수적 |
+| **Mahalanobis** | 다변량 복합 이상치 | 카테고리별 | 공분산 행렬 | 보통 |
+| **STL Residual** | 계절성 제거 후 이상치 | 태그별 | Trend+Seasonal 분해 | 민감 |
+
+### 11.2 방법별 평균 이상치율 (B5 기준)
+
+```
+Standard IQR:    ██████████░░░░░░░░░░  ~10%     (고정 기준)
+Adjusted IQR:    ████████░░░░░░░░░░░░  ~8%      (왜도 보정 효과)
+Rolling Z-Score: ██░░░░░░░░░░░░░░░░░░  ~1.2%    (매우 보수적)
+Mahalanobis:     ████░░░░░░░░░░░░░░░░  ~2.4%    (상관관계 고려)
+STL Residual:    ████████████████████  ~20%+    (매우 민감)
+CUSUM-EWMA:      ████████████████████  100% drift (공정 불안정 탐지)
+```
+
+### 11.3 권장 활용 시나리오
+
+| 시나리오 | 권장 방법 | 이유 |
+|----------|-----------|------|
+| 일상 모니터링 | Standard IQR | 직관적이고 해석 용이 |
+| 편향 분포 태그 | Adjusted IQR | 과다 탐지 방지 |
+| 공정 안정성 평가 | CUSUM-EWMA | 점진적/급격한 변화 구분 |
+| 실시간 이상 감지 | Rolling Z-Score | 동적 기준선 추적 |
+| 설비 간 상관 분석 | Mahalanobis | 복합 이상 탐지 |
+| 주기 패턴 분석 | STL Residual | 계절성 제거 후 분석 |
+
+---
+
+## 12. 태그 카테고리별 상세 설명
+
+### 12.1 전체 카테고리 개요
 
 | # | 카테고리 | 태그 수 | 설명 | 설비 위치 |
 |---|----------|:-------:|------|----------|
@@ -349,7 +689,7 @@ IQR = Q3 - Q1
 | 09 | Cooling_Water | 2 | 냉각수 | 중류 (냉각대) |
 | 10 | PR_Detailed | 6 | 핀치롤 상세 (L1/L2) | 하류 (권취 전) |
 
-### 5.2 카테고리별 태그 상세
+### 12.2 카테고리별 태그 상세
 
 #### 01_Furnace_Top_Temperature (4개)
 
@@ -452,9 +792,9 @@ IQR = Q3 - Q1
 
 ---
 
-## 6. 위험도 분류 기준
+## 13. 위험도 분류 기준
 
-### 6.1 이상치율 기반 위험도
+### 13.1 이상치율 기반 위험도
 
 | 등급 | 이상치율 | 의미 | 권장 조치 |
 |:----:|:--------:|------|-----------|
@@ -464,7 +804,7 @@ IQR = Q3 - Q1
 | 🔵 **CAUTION** | ≥5% | 경미한 이상 | 정기 점검 시 확인 |
 | 🟢 **NORMAL** | <5% | 정상 범위 | 일반 관리 |
 
-### 6.2 위험도 시각화
+### 13.2 위험도 시각화
 
 ```
 이상치율 0%      5%       10%      15%      25%      50%
@@ -477,9 +817,9 @@ IQR = Q3 - Q1
 
 ---
 
-## 7. 추가 수집 필요 태그
+## 14. 추가 수집 필요 태그
 
-### 7.1 현재 태그 구조의 취약점
+### 14.1 현재 태그 구조의 취약점
 
 현재 217개 IBA 태그 중 **권취 품질 개선**에 필수적인 다음 영역의 데이터가 **전무**:
 
@@ -490,9 +830,9 @@ IQR = Q3 - Q1
 | VCC (권취기) | **0개** | 0% | ❌ 심각 |
 | 코일 품질 실적 | **0개** | 0% | ❌ 심각 |
 
-### 7.2 추가 수집 필요 태그 목록
+### 14.2 추가 수집 필요 태그 목록
 
-#### 7.2.1 레잉헤드 (Laying Head) - **최우선**
+#### 14.2.1 레잉헤드 (Laying Head) - **최우선**
 
 | 우선순위 | 태그명 (권장) | 측정 유형 | 품질 영향도 |
 |:--------:|---------------|-----------|-------------|
@@ -501,7 +841,7 @@ IQR = Q3 - Q1
 | ⭐⭐⭐ | `LAYING_HEAD_EXIT_TEMPERATURE` | 온도 °C | 냉각 시작점 |
 | ⭐⭐ | `LAYING_HEAD_MOTOR_TORQUE` | 토크 % | 이상 감지 |
 
-#### 7.2.2 스텔모어/냉각대 (Stelmor) - **최우선**
+#### 14.2.2 스텔모어/냉각대 (Stelmor) - **최우선**
 
 | 우선순위 | 태그명 (권장) | 측정 유형 | 품질 영향도 |
 |:--------:|---------------|-----------|-------------|
@@ -510,7 +850,7 @@ IQR = Q3 - Q1
 | ⭐⭐⭐ | `STELMOR_ROLLER_SPEED_ZONE_1~10` | 속도 m/min | 루프 간격 |
 | ⭐⭐⭐ | `STELMOR_ZONE_TEMPERATURE_1~10` | 온도 °C | 냉각 프로파일 |
 
-#### 7.2.3 VCC (Vertical Coil Collector) - **최우선**
+#### 14.2.3 VCC (Vertical Coil Collector) - **최우선**
 
 | 우선순위 | 태그명 (권장) | 측정 유형 | 품질 영향도 |
 |:--------:|---------------|-----------|-------------|
@@ -519,7 +859,7 @@ IQR = Q3 - Q1
 | ⭐⭐⭐ | `VCC1/2_DISTRIBUTOR_POSITION` | 위치 ° | 코일 충전 |
 | ⭐⭐ | `VCC_CONTAINMENT_ROLL_POSITION` | 위치 mm | 코일 외경 |
 
-#### 7.2.4 코일 품질 실적 - **필수**
+#### 14.2.4 코일 품질 실적 - **필수**
 
 | 우선순위 | 태그명 (권장) | 측정 유형 | 품질 영향도 |
 |:--------:|---------------|-----------|-------------|
@@ -529,7 +869,7 @@ IQR = Q3 - Q1
 | ⭐⭐⭐ | `COIL_HEIGHT` | 높이 mm | 형상 품질 |
 | ⭐⭐⭐ | `COIL_LENGTH` | 길이 m | 생산 실적 |
 
-### 7.3 태그 수집 우선순위 Phase
+### 14.3 태그 수집 우선순위 Phase
 
 | Phase | 영역 | 추가 태그 수 | 예상 효과 |
 |:-----:|------|:------------:|-----------|
@@ -537,7 +877,7 @@ IQR = Q3 - Q1
 | **2** | 수냉대, 장력제어, 온도측정 | ~20개 | 정밀 분석 역량 강화 |
 | **3** | 결속/이송, 품질검사, 에너지 | ~15개 | 스마트 팩토리 고도화 |
 
-### 7.4 추가 태그 수집 시 예상 분석 가능 항목
+### 14.4 추가 태그 수집 시 예상 분석 가능 항목
 
 | 분석 항목 | 현재 | 추가 후 |
 |-----------|:----:|:-------:|
@@ -549,40 +889,77 @@ IQR = Q3 - Q1
 
 ---
 
-## 8. 분석 실행 가이드
+## 15. 분석 실행 가이드
 
-### 8.1 기본 실행
+### 15.1 스크립트 일람
+
+| # | 스크립트 | 분석 유형 | 주요 옵션 |
+|---|---------|----------|-----------|
+| 1 | `steel_grade_iqr_analysis_v2.py` | Standard IQR + 규격별 | `--grade`, `--size`, `--all-sizes`, `--filter-preset` |
+| 2 | `steel_grade_adjusted_iqr_analysis.py` | Adjusted IQR | `--grade`, `--c-value` |
+| 3 | `steel_grade_cusum_ewma_analysis.py` | CUSUM-EWMA | `--grade` |
+| 4 | `steel_grade_rolling_zscore_analysis.py` | Rolling Z-Score | `--grade`, `--window` |
+| 5 | `steel_grade_mahalanobis_analysis.py` | Mahalanobis | `--grade` |
+| 6 | `steel_grade_stl_analysis.py` | STL Residual | `--grade`, `--seasonal` |
+
+모든 스크립트는 `--test` 옵션으로 첫 번째 태그/카테고리만 빠르게 테스트 가능합니다.
+
+### 15.2 전체 분석 일괄 실행
 
 ```bash
-# 단일 강종 분석
-./venv/bin/python scripts/steel_grade_iqr_analysis_v2.py --grade B5
+# 전체 강종에 대해 모든 분석 실행
+for grade in B5 D4 D5 N5; do
+    echo "=== ${grade} 강종 분석 시작 ==="
 
-# 전체 강종 순차 분석
-for grade in N5 D5 D4 B5; do
-    ./venv/bin/python scripts/steel_grade_iqr_analysis_v2.py --grade $grade
+    # ① Standard IQR (강종 통합 + 규격별)
+    ./venv/bin/python scripts/steel_grade_iqr_analysis_v2.py --grade $grade --all-sizes
+
+    # ② Adjusted IQR
+    ./venv/bin/python scripts/steel_grade_adjusted_iqr_analysis.py --grade $grade
+
+    # ③ CUSUM-EWMA
+    ./venv/bin/python scripts/steel_grade_cusum_ewma_analysis.py --grade $grade
+
+    # ④ Rolling Z-Score
+    ./venv/bin/python scripts/steel_grade_rolling_zscore_analysis.py --grade $grade
+
+    # ⑤ Mahalanobis
+    ./venv/bin/python scripts/steel_grade_mahalanobis_analysis.py --grade $grade
+
+    # ⑥ STL Residual
+    ./venv/bin/python scripts/steel_grade_stl_analysis.py --grade $grade
+
+    echo "=== ${grade} 완료 ==="
 done
 ```
 
-### 8.2 필터 프리셋 사용
+### 15.3 단일 강종 분석
 
 ```bash
-# 권장: 태그별 최적화 필터 사용
-./venv/bin/python scripts/steel_grade_iqr_analysis_v2.py \
-    --grade B5 \
-    --filter-preset P4_PER_TAG
+# Standard IQR
+./venv/bin/python scripts/steel_grade_iqr_analysis_v2.py --grade B5
+
+# 규격별 IQR (특정 규격)
+./venv/bin/python scripts/steel_grade_iqr_analysis_v2.py --grade B5 --size D13
+
+# 필터 프리셋 사용
+./venv/bin/python scripts/steel_grade_iqr_analysis_v2.py --grade B5 --filter-preset P4_PER_TAG
 ```
 
-### 8.3 출력 확인
+### 15.4 출력 확인
 
-- **종합 차트**: `*_analysis.png` - 6패널 종합 분석
-- **개별 차트**: `*_01~07.png` - 상세 분석별 차트
-- **보고서**: 각 태그별 분석 결과
+| 출력 유형 | 파일 패턴 | 설명 |
+|-----------|-----------|------|
+| 종합 차트 | `*_analysis.png` | 6패널 종합 분석 |
+| 개별 차트 | `*_01~07.png` | 상세 분석별 차트 |
+| JSON 결과 | `*_results.json` | 분석 수치 데이터 |
+| MD 보고서 | `*_REPORT_*_KO.md` | 한국어 분석 보고서 |
 
 ---
 
-## 9. 부록
+## 16. 부록
 
-### 9.1 제외 태그 목록 (데이터 품질 이슈)
+### 16.1 제외 태그 목록 (데이터 품질 이슈)
 
 | 태그명 | 제외 사유 |
 |--------|-----------|
@@ -596,7 +973,7 @@ done
 | DR01BFZI2_PRESENCE_AT_DISCHARGING_POSITION_ROLLS_8_9_SEC_1 | ALL_ZEROS - 항상 0값 |
 | Y165 | CONSTANT - 상수값 |
 
-### 9.2 용어집
+### 16.2 용어집
 
 | 용어 | 정의 |
 |------|------|
@@ -609,8 +986,15 @@ done
 | 균열대 | 온도를 균일하게 하는 구역 (Soaking Zone) |
 | 레잉헤드 | 선재를 나선형 루프로 성형하는 설비 |
 | 스텔모어 | 선재 공냉 냉각 컨베이어 시스템 |
+| CUSUM | Cumulative Sum - 누적합 관리도 |
+| EWMA | Exponentially Weighted Moving Average - 지수가중이동평균 |
+| STL | Seasonal-Trend decomposition using LOESS |
+| Mahalanobis | 공분산을 고려한 다변량 거리 측도 |
+| 왜도 | Skewness - 분포의 비대칭 정도 |
+| 드리프트 | 공정 평균이 점진적으로 이동하는 현상 |
+| 시프트 | 공정 평균이 급격히 변화하는 현상 |
 
-### 9.3 관련 문서
+### 16.3 관련 문서
 
 | 문서 | 위치 | 설명 |
 |------|------|------|
@@ -619,18 +1003,25 @@ done
 | 태그 상세 목록 | `docs/IBA_태그_상세_목록.md` | 전체 태그 목록 및 추가 수집 필요 태그 |
 | 분석 설정 종합 | `docs/IBA_분석설정_종합문서.md` | 종합 설정 문서 |
 
-### 9.4 설정 파일 위치
+### 16.4 설정 파일 위치
 
 | 파일 | 경로 | 용도 |
 |------|------|------|
 | tag_filter_config.yaml | `config/` | 필터 설정 |
-| steel_grade_iqr_analysis_v2.py | `scripts/` | 분석 스크립트 |
+| steel_grade_iqr_analysis_v2.py | `scripts/` | Standard IQR 분석 |
+| steel_grade_adjusted_iqr_analysis.py | `scripts/` | Adjusted IQR 분석 |
+| steel_grade_cusum_ewma_analysis.py | `scripts/` | CUSUM-EWMA 분석 |
+| steel_grade_rolling_zscore_analysis.py | `scripts/` | Rolling Z-Score 분석 |
+| steel_grade_mahalanobis_analysis.py | `scripts/` | Mahalanobis 분석 |
+| steel_grade_stl_analysis.py | `scripts/` | STL Residual 분석 |
+| convert_abs_to_rel_paths.py | `scripts/` | JSON 내 절대경로→상대경로 변환 |
 
 ---
 
 **문서 이력**
 | 버전 | 날짜 | 변경 내용 |
 |------|------|-----------|
+| 3.0 | 2026-02-06 | 다각적 분석 방법론 6종 추가, 규격별 분석/출력 구조 반영, 실행 가이드 확장 |
 | 2.0 | 2026-02-03 | 종합 보고서 작성 - 4개 참조 문서 통합 |
 
 ---
