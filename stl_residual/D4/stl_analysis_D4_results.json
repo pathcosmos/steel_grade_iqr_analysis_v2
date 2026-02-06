@@ -26,8 +26,8 @@
       "outlier_ratio": 38.69731800766284
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_residual_outliers.png"
+      "decomposition": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_stl_decomposition.png",
+      "residual_analysis": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_residual_outliers.png"
     }
   },
   {
@@ -57,8 +57,8 @@
       "outlier_ratio": 37.787356321839084
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_residual_outliers.png"
+      "decomposition": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_stl_decomposition.png",
+      "residual_analysis": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_residual_outliers.png"
     }
   },
   {
@@ -88,8 +88,8 @@
       "outlier_ratio": 40.75670498084291
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_residual_outliers.png"
+      "decomposition": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_stl_decomposition.png",
+      "residual_analysis": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_residual_outliers.png"
     }
   },
   {
@@ -119,8 +119,8 @@
       "outlier_ratio": 37.59578544061303
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_residual_outliers.png"
+      "decomposition": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_stl_decomposition.png",
+      "residual_analysis": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_residual_outliers.png"
     }
   },
   {
@@ -150,8 +150,8 @@
       "outlier_ratio": 35.201149425287355
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_residual_outliers.png"
+      "decomposition": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_stl_decomposition.png",
+      "residual_analysis": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_residual_outliers.png"
     }
   },
   {
@@ -181,8 +181,8 @@
       "outlier_ratio": 39.03256704980843
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_residual_outliers.png"
+      "decomposition": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_stl_decomposition.png",
+      "residual_analysis": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_residual_outliers.png"
     }
   },
   {
@@ -212,8 +212,8 @@
       "outlier_ratio": 41.475095785440615
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_residual_outliers.png"
+      "decomposition": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_stl_decomposition.png",
+      "residual_analysis": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_residual_outliers.png"
     }
   },
   {
@@ -243,8 +243,8 @@
       "outlier_ratio": 37.73946360153257
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_residual_outliers.png"
+      "decomposition": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_stl_decomposition.png",
+      "residual_analysis": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_residual_outliers.png"
     }
   },
   {
@@ -274,8 +274,8 @@
       "outlier_ratio": 39.36781609195402
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_residual_outliers.png"
+      "decomposition": "03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_stl_decomposition.png",
+      "residual_analysis": "03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_residual_outliers.png"
     }
   },
   {
@@ -305,8 +305,8 @@
       "outlier_ratio": 39.319923371647505
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/FURNACE_PRESSURE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/FURNACE_PRESSURE_residual_outliers.png"
+      "decomposition": "04_Furnace_Auxiliary/FURNACE_PRESSURE_stl_decomposition.png",
+      "residual_analysis": "04_Furnace_Auxiliary/FURNACE_PRESSURE_residual_outliers.png"
     }
   },
   {
@@ -336,8 +336,8 @@
       "outlier_ratio": 30.65134099616858
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_residual_outliers.png"
+      "decomposition": "04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_stl_decomposition.png",
+      "residual_analysis": "04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_residual_outliers.png"
     }
   },
   {
@@ -367,8 +367,8 @@
       "outlier_ratio": 37.83524904214559
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_residual_outliers.png"
+      "decomposition": "04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_stl_decomposition.png",
+      "residual_analysis": "04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_residual_outliers.png"
     }
   },
   {
@@ -398,8 +398,8 @@
       "outlier_ratio": 43.342911877394634
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/MAIN_GAS_FLOW_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/MAIN_GAS_FLOW_residual_outliers.png"
+      "decomposition": "04_Furnace_Auxiliary/MAIN_GAS_FLOW_stl_decomposition.png",
+      "residual_analysis": "04_Furnace_Auxiliary/MAIN_GAS_FLOW_residual_outliers.png"
     }
   },
   {
@@ -429,8 +429,8 @@
       "outlier_ratio": 45.11494252873563
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_residual_outliers.png"
+      "decomposition": "04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_stl_decomposition.png",
+      "residual_analysis": "04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_residual_outliers.png"
     }
   },
   {
@@ -460,8 +460,8 @@
       "outlier_ratio": 37.691570881226056
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_residual_outliers.png"
+      "decomposition": "04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_stl_decomposition.png",
+      "residual_analysis": "04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_residual_outliers.png"
     }
   },
   {
@@ -491,8 +491,8 @@
       "outlier_ratio": 40.7088122605364
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_residual_outliers.png"
+      "decomposition": "04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_stl_decomposition.png",
+      "residual_analysis": "04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_residual_outliers.png"
     }
   },
   {
@@ -522,8 +522,8 @@
       "outlier_ratio": 44.10919540229885
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_residual_outliers.png"
+      "decomposition": "04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_stl_decomposition.png",
+      "residual_analysis": "04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_residual_outliers.png"
     }
   },
   {
@@ -553,8 +553,8 @@
       "outlier_ratio": 42.8639846743295
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_residual_outliers.png"
+      "decomposition": "04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_stl_decomposition.png",
+      "residual_analysis": "04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_residual_outliers.png"
     }
   },
   {
@@ -595,8 +595,8 @@
       "outlier_ratio": 33.71647509578544
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_1_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_1_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_1_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_1_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -637,8 +637,8 @@
       "outlier_ratio": 38.93678160919541
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_2_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_2_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_2_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_2_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -679,8 +679,8 @@
       "outlier_ratio": 37.59578544061303
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_3_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_3_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_3_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_3_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -721,8 +721,8 @@
       "outlier_ratio": 37.547892720306514
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_4_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_4_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_4_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_4_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -763,8 +763,8 @@
       "outlier_ratio": 40.13409961685824
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_5_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_5_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_5_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_5_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -805,8 +805,8 @@
       "outlier_ratio": 46.024904214559385
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_6_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_6_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_6_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_6_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -847,8 +847,8 @@
       "outlier_ratio": 33.189655172413794
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_7_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_7_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_7_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_7_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -889,8 +889,8 @@
       "outlier_ratio": 38.984674329501914
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_8_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_8_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_8_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_8_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -931,8 +931,8 @@
       "outlier_ratio": 45.49808429118774
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_9_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_9_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_9_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_9_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -973,8 +973,8 @@
       "outlier_ratio": 40.61302681992337
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_10_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_10_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_10_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_10_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -1015,8 +1015,8 @@
       "outlier_ratio": 39.128352490421456
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_11_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_11_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_11_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_11_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -1057,8 +1057,8 @@
       "outlier_ratio": 39.60727969348659
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_12_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_12_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_12_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_12_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -1099,8 +1099,8 @@
       "outlier_ratio": 40.94827586206897
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_13_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_13_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_13_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_13_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -1141,8 +1141,8 @@
       "outlier_ratio": 37.691570881226056
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_14_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/STAND_14_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/STAND_14_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/STAND_14_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -1183,8 +1183,8 @@
       "outlier_ratio": 40.660919540229884
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -1225,8 +1225,8 @@
       "outlier_ratio": 38.07471264367816
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -1267,8 +1267,8 @@
       "outlier_ratio": 42.241379310344826
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_1_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_1_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_1_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_1_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1309,8 +1309,8 @@
       "outlier_ratio": 41.4272030651341
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_2_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_2_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_2_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_2_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1351,8 +1351,8 @@
       "outlier_ratio": 36.11111111111111
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_3_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_3_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_3_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_3_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1393,8 +1393,8 @@
       "outlier_ratio": 42.38505747126437
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_4_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_4_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_4_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_4_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1435,8 +1435,8 @@
       "outlier_ratio": 40.75670498084291
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_5_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_5_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_5_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_5_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1477,8 +1477,8 @@
       "outlier_ratio": 43.05555555555556
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_6_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_6_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_6_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_6_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1519,8 +1519,8 @@
       "outlier_ratio": 39.03256704980843
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_7_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_7_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_7_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_7_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1561,8 +1561,8 @@
       "outlier_ratio": 40.42145593869732
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_8_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_8_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_8_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_8_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1603,8 +1603,8 @@
       "outlier_ratio": 43.53448275862069
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_9_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_9_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_9_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_9_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1645,8 +1645,8 @@
       "outlier_ratio": 37.16475095785441
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_10_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_10_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_10_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_10_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1687,8 +1687,8 @@
       "outlier_ratio": 39.17624521072797
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_11_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_11_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_11_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_11_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1729,8 +1729,8 @@
       "outlier_ratio": 35.775862068965516
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_12_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_12_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_12_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_12_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1771,8 +1771,8 @@
       "outlier_ratio": 38.84099616858238
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_13_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_13_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_13_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_13_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1813,8 +1813,8 @@
       "outlier_ratio": 38.74521072796935
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_14_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/STAND_14_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/STAND_14_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/STAND_14_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1855,8 +1855,8 @@
       "outlier_ratio": 31.36973180076628
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -1897,8 +1897,8 @@
       "outlier_ratio": 38.02681992337165
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_1_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_1_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_1_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_1_LOAD_residual_outliers.png"
     }
   },
   {
@@ -1939,8 +1939,8 @@
       "outlier_ratio": 41.28352490421456
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_2_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_2_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_2_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_2_LOAD_residual_outliers.png"
     }
   },
   {
@@ -1981,8 +1981,8 @@
       "outlier_ratio": 41.85823754789272
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_3_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_3_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_3_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_3_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2023,8 +2023,8 @@
       "outlier_ratio": 41.66666666666667
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_4_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_4_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_4_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_4_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2065,8 +2065,8 @@
       "outlier_ratio": 38.60153256704981
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_5_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_5_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_5_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_5_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2107,8 +2107,8 @@
       "outlier_ratio": 41.235632183908045
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_6_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_6_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_6_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_6_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2149,8 +2149,8 @@
       "outlier_ratio": 42.04980842911878
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_7_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_7_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_7_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_7_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2191,8 +2191,8 @@
       "outlier_ratio": 43.15134099616858
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_8_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_8_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_8_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_8_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2233,8 +2233,8 @@
       "outlier_ratio": 36.542145593869726
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_9_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_9_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_9_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_9_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2275,8 +2275,8 @@
       "outlier_ratio": 35.105363984674334
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_10_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_10_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_10_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_10_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2317,8 +2317,8 @@
       "outlier_ratio": 40.99616858237548
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_11_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_11_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_11_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_11_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2359,8 +2359,8 @@
       "outlier_ratio": 36.015325670498086
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_12_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_12_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_12_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_12_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2401,8 +2401,8 @@
       "outlier_ratio": 36.015325670498086
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_13_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_13_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_13_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_13_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2443,8 +2443,8 @@
       "outlier_ratio": 38.93678160919541
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_14_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/STAND_14_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/STAND_14_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/STAND_14_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2485,8 +2485,8 @@
       "outlier_ratio": 37.787356321839084
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/FINISHING_BLOCK_LOAD_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/07_Stand_Load/FINISHING_BLOCK_LOAD_residual_outliers.png"
+      "decomposition": "07_Stand_Load/FINISHING_BLOCK_LOAD_stl_decomposition.png",
+      "residual_analysis": "07_Stand_Load/FINISHING_BLOCK_LOAD_residual_outliers.png"
     }
   },
   {
@@ -2529,8 +2529,8 @@
       "outlier_ratio": 40.7088122605364
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -2573,8 +2573,8 @@
       "outlier_ratio": 34.24329501915709
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -2617,8 +2617,8 @@
       "outlier_ratio": 37.547892720306514
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_residual_outliers.png"
+      "decomposition": "08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_stl_decomposition.png",
+      "residual_analysis": "08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_residual_outliers.png"
     }
   },
   {
@@ -2661,8 +2661,8 @@
       "outlier_ratio": 35.39272030651341
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -2705,8 +2705,8 @@
       "outlier_ratio": 36.82950191570881
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -2749,8 +2749,8 @@
       "outlier_ratio": 34.81800766283525
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_residual_outliers.png"
+      "decomposition": "08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_stl_decomposition.png",
+      "residual_analysis": "08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -2793,8 +2793,8 @@
       "outlier_ratio": 45.88122605363984
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_residual_outliers.png"
+      "decomposition": "08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_stl_decomposition.png",
+      "residual_analysis": "08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -2837,8 +2837,8 @@
       "outlier_ratio": 33.5727969348659
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_residual_outliers.png"
+      "decomposition": "08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_stl_decomposition.png",
+      "residual_analysis": "08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -2881,8 +2881,8 @@
       "outlier_ratio": 25.814176245210728
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_residual_outliers.png"
+      "decomposition": "08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_stl_decomposition.png",
+      "residual_analysis": "08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -2925,8 +2925,8 @@
       "outlier_ratio": 31.46551724137931
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR6L1_ACT_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR6L1_ACT_TORQUE_residual_outliers.png"
+      "decomposition": "09_PR_Detailed/PR6L1_ACT_TORQUE_stl_decomposition.png",
+      "residual_analysis": "09_PR_Detailed/PR6L1_ACT_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -2969,8 +2969,8 @@
       "outlier_ratio": 33.5727969348659
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR6L2_ACT_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR6L2_ACT_TORQUE_residual_outliers.png"
+      "decomposition": "09_PR_Detailed/PR6L2_ACT_TORQUE_stl_decomposition.png",
+      "residual_analysis": "09_PR_Detailed/PR6L2_ACT_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -3013,8 +3013,8 @@
       "outlier_ratio": 42.5287356321839
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR7L1_ACT_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR7L1_ACT_TORQUE_residual_outliers.png"
+      "decomposition": "09_PR_Detailed/PR7L1_ACT_TORQUE_stl_decomposition.png",
+      "residual_analysis": "09_PR_Detailed/PR7L1_ACT_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -3057,8 +3057,8 @@
       "outlier_ratio": 33.86015325670498
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR7L2_ACT_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR7L2_ACT_TORQUE_residual_outliers.png"
+      "decomposition": "09_PR_Detailed/PR7L2_ACT_TORQUE_stl_decomposition.png",
+      "residual_analysis": "09_PR_Detailed/PR7L2_ACT_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -3101,8 +3101,8 @@
       "outlier_ratio": 44.10919540229885
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR8L1_ACT_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR8L1_ACT_TORQUE_residual_outliers.png"
+      "decomposition": "09_PR_Detailed/PR8L1_ACT_TORQUE_stl_decomposition.png",
+      "residual_analysis": "09_PR_Detailed/PR8L1_ACT_TORQUE_residual_outliers.png"
     }
   },
   {
@@ -3145,8 +3145,8 @@
       "outlier_ratio": 39.46360153256705
     },
     "charts": {
-      "decomposition": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR9L1_ACT_TORQUE_stl_decomposition.png",
-      "residual_analysis": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/stl_residual/D4/09_PR_Detailed/PR9L1_ACT_TORQUE_residual_outliers.png"
+      "decomposition": "09_PR_Detailed/PR9L1_ACT_TORQUE_stl_decomposition.png",
+      "residual_analysis": "09_PR_Detailed/PR9L1_ACT_TORQUE_residual_outliers.png"
     }
   }
 ]

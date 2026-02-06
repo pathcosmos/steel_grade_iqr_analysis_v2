@@ -117,13 +117,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png"
+          "timeseries": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png",
+          "histogram": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png",
+          "boxplot": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png",
+          "daily_avg_trend": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png",
+          "hourly_pattern": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png",
+          "daily_outlier_count": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png",
+          "summary": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -249,13 +249,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png"
+          "timeseries": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png",
+          "histogram": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png",
+          "boxplot": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png",
+          "daily_avg_trend": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png",
+          "hourly_pattern": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png",
+          "daily_outlier_count": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png",
+          "summary": "01_Furnace_Top_Temperature/monthly/2025-04/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -381,13 +381,13 @@
           "max_date": "2025-04-17"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png"
+          "timeseries": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png",
+          "histogram": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png",
+          "boxplot": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png",
+          "daily_avg_trend": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png",
+          "hourly_pattern": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png",
+          "daily_outlier_count": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png",
+          "summary": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -513,13 +513,13 @@
           "max_date": "2025-04-12"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png"
+          "timeseries": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png",
+          "histogram": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png",
+          "boxplot": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png",
+          "daily_avg_trend": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png",
+          "hourly_pattern": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png",
+          "daily_outlier_count": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png",
+          "summary": "01_Furnace_Top_Temperature/monthly/2025-04/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -629,13 +629,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png"
+          "timeseries": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png",
+          "histogram": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png",
+          "boxplot": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png",
+          "daily_avg_trend": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png",
+          "hourly_pattern": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png",
+          "daily_outlier_count": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png",
+          "summary": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -727,13 +727,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png"
+          "timeseries": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png",
+          "histogram": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png",
+          "boxplot": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png",
+          "daily_avg_trend": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png",
+          "hourly_pattern": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png",
+          "daily_outlier_count": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png",
+          "summary": "02_Furnace_Bottom_Temperature/monthly/2025-04/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -825,13 +825,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png"
+          "timeseries": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png",
+          "histogram": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png",
+          "boxplot": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png",
+          "daily_avg_trend": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png",
+          "hourly_pattern": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png",
+          "daily_outlier_count": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png",
+          "summary": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -923,13 +923,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png"
+          "timeseries": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png",
+          "histogram": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png",
+          "boxplot": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png",
+          "daily_avg_trend": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png",
+          "hourly_pattern": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png",
+          "daily_outlier_count": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png",
+          "summary": "02_Furnace_Bottom_Temperature/monthly/2025-04/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -1055,13 +1055,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_00_summary.png"
+          "timeseries": "03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_01_timeseries.png",
+          "histogram": "03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_02_histogram.png",
+          "boxplot": "03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_03_boxplot.png",
+          "daily_avg_trend": "03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_04_daily_avg_trend.png",
+          "hourly_pattern": "03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_05_hourly_pattern.png",
+          "daily_outlier_count": "03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_06_daily_outlier_count.png",
+          "summary": "03_Furnace_Discharge_Temperature/monthly/2025-04/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -1153,13 +1153,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_00_summary.png"
+          "timeseries": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_01_timeseries.png",
+          "histogram": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_02_histogram.png",
+          "boxplot": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_03_boxplot.png",
+          "daily_avg_trend": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_04_daily_avg_trend.png",
+          "hourly_pattern": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_05_hourly_pattern.png",
+          "daily_outlier_count": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_06_daily_outlier_count.png",
+          "summary": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_PRESSURE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -1251,13 +1251,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_00_summary.png"
+          "timeseries": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_01_timeseries.png",
+          "histogram": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_02_histogram.png",
+          "boxplot": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_03_boxplot.png",
+          "daily_avg_trend": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_04_daily_avg_trend.png",
+          "hourly_pattern": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_05_hourly_pattern.png",
+          "daily_outlier_count": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_06_daily_outlier_count.png",
+          "summary": "04_Furnace_Auxiliary/monthly/2025-04/FURNACE_O2_ANALYZER_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -1367,13 +1367,13 @@
           "max_date": "2025-04-12"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_00_summary.png"
+          "timeseries": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_01_timeseries.png",
+          "histogram": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_02_histogram.png",
+          "boxplot": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_03_boxplot.png",
+          "daily_avg_trend": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_04_daily_avg_trend.png",
+          "hourly_pattern": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_05_hourly_pattern.png",
+          "daily_outlier_count": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_06_daily_outlier_count.png",
+          "summary": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_PRESSURE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -1465,13 +1465,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_00_summary.png"
+          "timeseries": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_01_timeseries.png",
+          "histogram": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_02_histogram.png",
+          "boxplot": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_03_boxplot.png",
+          "daily_avg_trend": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_04_daily_avg_trend.png",
+          "hourly_pattern": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_05_hourly_pattern.png",
+          "daily_outlier_count": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_06_daily_outlier_count.png",
+          "summary": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_FLOW_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -1573,13 +1573,13 @@
           "max_date": "2025-04-16"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_00_summary.png"
+          "timeseries": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_01_timeseries.png",
+          "histogram": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_02_histogram.png",
+          "boxplot": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_03_boxplot.png",
+          "daily_avg_trend": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_04_daily_avg_trend.png",
+          "hourly_pattern": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_05_hourly_pattern.png",
+          "daily_outlier_count": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_06_daily_outlier_count.png",
+          "summary": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_GAS_TEMPERATURE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -1705,13 +1705,13 @@
           "max_date": "2025-04-17"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_00_summary.png"
+          "timeseries": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_01_timeseries.png",
+          "histogram": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_02_histogram.png",
+          "boxplot": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_03_boxplot.png",
+          "daily_avg_trend": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_04_daily_avg_trend.png",
+          "hourly_pattern": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_05_hourly_pattern.png",
+          "daily_outlier_count": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_06_daily_outlier_count.png",
+          "summary": "04_Furnace_Auxiliary/monthly/2025-04/MAIN_COMBUSTION_AIR_PRESSURE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -1813,13 +1813,13 @@
           "max_date": "2025-04-12"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_00_summary.png"
+          "timeseries": "04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_01_timeseries.png",
+          "histogram": "04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_02_histogram.png",
+          "boxplot": "04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_03_boxplot.png",
+          "daily_avg_trend": "04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_04_daily_avg_trend.png",
+          "hourly_pattern": "04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_05_hourly_pattern.png",
+          "daily_outlier_count": "04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_06_daily_outlier_count.png",
+          "summary": "04_Furnace_Auxiliary/monthly/2025-04/COMBUSTION_AIR_TEMPERATURE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -1941,13 +1941,13 @@
           "max_date": "2025-04-12"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_00_summary.png"
+          "timeseries": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png",
+          "histogram": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_02_histogram.png",
+          "boxplot": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png",
+          "daily_avg_trend": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png",
+          "hourly_pattern": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_05_hourly_pattern.png",
+          "daily_outlier_count": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_06_daily_outlier_count.png",
+          "summary": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_COOLING_WATER_FLOW_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -2049,13 +2049,13 @@
           "max_date": "2025-04-17"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_00_summary.png"
+          "timeseries": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png",
+          "histogram": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png",
+          "boxplot": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png",
+          "daily_avg_trend": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png",
+          "hourly_pattern": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_05_hourly_pattern.png",
+          "daily_outlier_count": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_06_daily_outlier_count.png",
+          "summary": "04_Furnace_Auxiliary/monthly/2025-04/INDIRECT_WATER_MAIN_TEMPERATURE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14391
@@ -2151,13 +2151,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_1_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -2253,13 +2253,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_2_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -2355,13 +2355,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_3_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -2457,13 +2457,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_4_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -2559,13 +2559,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_5_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -2661,13 +2661,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_6_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -2763,13 +2763,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_7_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -2865,13 +2865,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_8_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -2967,13 +2967,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_9_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -3069,13 +3069,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_10_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -3171,13 +3171,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_11_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -3273,13 +3273,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_12_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -3375,13 +3375,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_13_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -3477,13 +3477,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/STAND_14_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -3579,13 +3579,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -3681,13 +3681,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "05_Stand_Torque/monthly/2025-04/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -3817,13 +3817,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_1_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -3953,13 +3953,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_2_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -4089,13 +4089,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_3_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -4225,13 +4225,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_4_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -4361,13 +4361,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_5_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -4497,13 +4497,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_6_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -4633,13 +4633,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_7_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -4769,13 +4769,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_8_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -4905,13 +4905,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_9_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -5041,13 +5041,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_10_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -5177,13 +5177,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_11_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -5313,13 +5313,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_12_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -5449,13 +5449,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_13_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -5585,13 +5585,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/STAND_14_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -5721,13 +5721,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "06_Stand_Speed/monthly/2025-04/FINISHING_BLOCK_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -5823,13 +5823,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_1_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_1_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_1_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_1_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_1_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_1_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_1_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_1_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_1_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_1_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_1_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_1_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_1_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_1_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -5925,13 +5925,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_2_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_2_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_2_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_2_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_2_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_2_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_2_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_2_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_2_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_2_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_2_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_2_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_2_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_2_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -6027,13 +6027,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_3_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_3_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_3_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_3_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_3_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_3_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_3_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_3_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_3_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_3_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_3_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_3_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_3_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_3_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -6129,13 +6129,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_4_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_4_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_4_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_4_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_4_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_4_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_4_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_4_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_4_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_4_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_4_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_4_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_4_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_4_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -6231,13 +6231,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_5_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_5_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_5_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_5_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_5_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_5_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_5_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_5_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_5_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_5_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_5_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_5_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_5_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_5_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -6333,13 +6333,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_6_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_6_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_6_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_6_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_6_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_6_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_6_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_6_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_6_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_6_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_6_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_6_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_6_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_6_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -6435,13 +6435,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_7_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_7_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_7_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_7_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_7_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_7_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_7_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_7_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_7_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_7_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_7_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_7_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_7_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_7_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -6537,13 +6537,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_8_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_8_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_8_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_8_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_8_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_8_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_8_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_8_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_8_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_8_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_8_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_8_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_8_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_8_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -6639,13 +6639,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_9_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_9_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_9_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_9_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_9_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_9_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_9_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_9_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_9_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_9_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_9_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_9_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_9_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_9_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -6741,13 +6741,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_10_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_10_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_10_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_10_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_10_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_10_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_10_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_10_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_10_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_10_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_10_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_10_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_10_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_10_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -6843,13 +6843,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_11_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_11_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_11_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_11_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_11_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_11_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_11_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_11_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_11_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_11_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_11_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_11_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_11_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_11_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -6945,13 +6945,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_12_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_12_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_12_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_12_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_12_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_12_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_12_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_12_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_12_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_12_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_12_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_12_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_12_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_12_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -7047,13 +7047,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_13_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_13_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_13_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_13_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_13_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_13_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_13_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_13_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_13_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_13_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_13_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_13_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_13_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_13_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -7149,13 +7149,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_14_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_14_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_14_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_14_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_14_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_14_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/STAND_14_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/STAND_14_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/STAND_14_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/STAND_14_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/STAND_14_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/STAND_14_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/STAND_14_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/STAND_14_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -7251,13 +7251,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_00_summary.png"
+          "timeseries": "07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_01_timeseries.png",
+          "histogram": "07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_02_histogram.png",
+          "boxplot": "07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_03_boxplot.png",
+          "daily_avg_trend": "07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_04_daily_avg_trend.png",
+          "hourly_pattern": "07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_05_hourly_pattern.png",
+          "daily_outlier_count": "07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_06_daily_outlier_count.png",
+          "summary": "07_Stand_Load/monthly/2025-04/FINISHING_BLOCK_LOAD_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 14238
@@ -7381,13 +7381,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -7485,13 +7485,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -7589,13 +7589,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_00_summary.png"
+          "timeseries": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -7727,13 +7727,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -7865,13 +7865,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -8003,13 +8003,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_00_summary.png"
+          "timeseries": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -8137,13 +8137,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_00_summary.png"
+          "timeseries": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_01_timeseries.png",
+          "histogram": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_02_histogram.png",
+          "boxplot": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_06_daily_outlier_count.png",
+          "summary": "08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -8275,13 +8275,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_00_summary.png"
+          "timeseries": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_01_timeseries.png",
+          "histogram": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_02_histogram.png",
+          "boxplot": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_06_daily_outlier_count.png",
+          "summary": "08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -8413,13 +8413,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_00_summary.png"
+          "timeseries": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_01_timeseries.png",
+          "histogram": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_02_histogram.png",
+          "boxplot": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_06_daily_outlier_count.png",
+          "summary": "08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -8551,13 +8551,13 @@
           "max_date": "2025-04-09"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_00_summary.png"
+          "timeseries": "09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_01_timeseries.png",
+          "histogram": "09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_02_histogram.png",
+          "boxplot": "09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -8665,13 +8665,13 @@
           "max_date": "2025-04-16"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_00_summary.png"
+          "timeseries": "09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_01_timeseries.png",
+          "histogram": "09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_02_histogram.png",
+          "boxplot": "09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -8799,13 +8799,13 @@
           "max_date": "2025-04-16"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_00_summary.png"
+          "timeseries": "09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_01_timeseries.png",
+          "histogram": "09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_02_histogram.png",
+          "boxplot": "09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -8933,13 +8933,13 @@
           "max_date": "2025-04-16"
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_00_summary.png"
+          "timeseries": "09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_01_timeseries.png",
+          "histogram": "09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_02_histogram.png",
+          "boxplot": "09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -9037,13 +9037,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_00_summary.png"
+          "timeseries": "09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_01_timeseries.png",
+          "histogram": "09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_02_histogram.png",
+          "boxplot": "09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557
@@ -9141,13 +9141,13 @@
           "max_date": null
         },
         "chart_paths": {
-          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_01_timeseries.png",
-          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_02_histogram.png",
-          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_03_boxplot.png",
-          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_04_daily_avg_trend.png",
-          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_05_hourly_pattern.png",
-          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_06_daily_outlier_count.png",
-          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/B5/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_00_summary.png"
+          "timeseries": "09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_01_timeseries.png",
+          "histogram": "09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_02_histogram.png",
+          "boxplot": "09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_00_summary.png"
         },
         "month_dir": "monthly/2025-04",
         "record_count": 12557

@@ -34,9 +34,9 @@
       "total_explained_variance": 0.9383371268278854
     },
     "charts": {
-      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/01_Furnace_Top_Temperature_correlation_heatmap.png",
-      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/01_Furnace_Top_Temperature_distance.png",
-      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/01_Furnace_Top_Temperature_pca_scatter.png"
+      "correlation_heatmap": "01_Furnace_Top_Temperature_correlation_heatmap.png",
+      "distance": "01_Furnace_Top_Temperature_distance.png",
+      "pca_scatter": "01_Furnace_Top_Temperature_pca_scatter.png"
     }
   },
   {
@@ -74,9 +74,9 @@
       "total_explained_variance": 0.9947800757496691
     },
     "charts": {
-      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/02_Furnace_Bottom_Temperature_correlation_heatmap.png",
-      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/02_Furnace_Bottom_Temperature_distance.png",
-      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/02_Furnace_Bottom_Temperature_pca_scatter.png"
+      "correlation_heatmap": "02_Furnace_Bottom_Temperature_correlation_heatmap.png",
+      "distance": "02_Furnace_Bottom_Temperature_distance.png",
+      "pca_scatter": "02_Furnace_Bottom_Temperature_pca_scatter.png"
     }
   },
   {
@@ -114,9 +114,9 @@
       "total_explained_variance": 0.8975194394723023
     },
     "charts": {
-      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/04_Furnace_Auxiliary_correlation_heatmap.png",
-      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/04_Furnace_Auxiliary_distance.png",
-      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/04_Furnace_Auxiliary_pca_scatter.png"
+      "correlation_heatmap": "04_Furnace_Auxiliary_correlation_heatmap.png",
+      "distance": "04_Furnace_Auxiliary_distance.png",
+      "pca_scatter": "04_Furnace_Auxiliary_pca_scatter.png"
     }
   },
   {
@@ -168,9 +168,9 @@
       "total_explained_variance": 0.9939154341591369
     },
     "charts": {
-      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/05_Stand_Torque_correlation_heatmap.png",
-      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/05_Stand_Torque_distance.png",
-      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/05_Stand_Torque_pca_scatter.png"
+      "correlation_heatmap": "05_Stand_Torque_correlation_heatmap.png",
+      "distance": "05_Stand_Torque_distance.png",
+      "pca_scatter": "05_Stand_Torque_pca_scatter.png"
     }
   },
   {
@@ -222,9 +222,9 @@
       "total_explained_variance": 0.997130568254629
     },
     "charts": {
-      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/05_Stand_Torque_B_correlation_heatmap.png",
-      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/05_Stand_Torque_B_distance.png",
-      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/05_Stand_Torque_B_pca_scatter.png"
+      "correlation_heatmap": "05_Stand_Torque_B_correlation_heatmap.png",
+      "distance": "05_Stand_Torque_B_distance.png",
+      "pca_scatter": "05_Stand_Torque_B_pca_scatter.png"
     }
   },
   {
@@ -276,9 +276,9 @@
       "total_explained_variance": 0.9993648908870186
     },
     "charts": {
-      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/06_Stand_Speed_correlation_heatmap.png",
-      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/06_Stand_Speed_distance.png",
-      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/06_Stand_Speed_pca_scatter.png"
+      "correlation_heatmap": "06_Stand_Speed_correlation_heatmap.png",
+      "distance": "06_Stand_Speed_distance.png",
+      "pca_scatter": "06_Stand_Speed_pca_scatter.png"
     }
   },
   {
@@ -330,9 +330,9 @@
       "total_explained_variance": 0.998832631518085
     },
     "charts": {
-      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/06_Stand_Speed_B_correlation_heatmap.png",
-      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/06_Stand_Speed_B_distance.png",
-      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/06_Stand_Speed_B_pca_scatter.png"
+      "correlation_heatmap": "06_Stand_Speed_B_correlation_heatmap.png",
+      "distance": "06_Stand_Speed_B_distance.png",
+      "pca_scatter": "06_Stand_Speed_B_pca_scatter.png"
     }
   },
   {
@@ -384,9 +384,9 @@
       "total_explained_variance": 0.9962279331901867
     },
     "charts": {
-      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/07_Stand_Load_correlation_heatmap.png",
-      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/07_Stand_Load_distance.png",
-      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/07_Stand_Load_pca_scatter.png"
+      "correlation_heatmap": "07_Stand_Load_correlation_heatmap.png",
+      "distance": "07_Stand_Load_distance.png",
+      "pca_scatter": "07_Stand_Load_pca_scatter.png"
     }
   },
   {
@@ -439,9 +439,9 @@
       "total_explained_variance": 0.9755734448629412
     },
     "charts": {
-      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/08_Pinchroll_correlation_heatmap.png",
-      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/08_Pinchroll_distance.png",
-      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/mahalanobis/B5/08_Pinchroll_pca_scatter.png"
+      "correlation_heatmap": "08_Pinchroll_correlation_heatmap.png",
+      "distance": "08_Pinchroll_distance.png",
+      "pca_scatter": "08_Pinchroll_pca_scatter.png"
     }
   }
 ]

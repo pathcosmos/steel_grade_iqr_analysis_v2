@@ -19,7 +19,7 @@
       "max_z": 8.052304802249783
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_rolling_zscore.png"
+      "rolling_zscore": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_rolling_zscore.png"
     }
   },
   {
@@ -42,7 +42,7 @@
       "max_z": 7.189490616956842
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_rolling_zscore.png"
+      "rolling_zscore": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_rolling_zscore.png"
     }
   },
   {
@@ -65,7 +65,7 @@
       "max_z": 8.421643639831785
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_rolling_zscore.png"
+      "rolling_zscore": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_rolling_zscore.png"
     }
   },
   {
@@ -88,7 +88,7 @@
       "max_z": 8.498318582494603
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_rolling_zscore.png"
+      "rolling_zscore": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_rolling_zscore.png"
     }
   },
   {
@@ -111,7 +111,7 @@
       "max_z": 5.197802560879876
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_rolling_zscore.png"
+      "rolling_zscore": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_rolling_zscore.png"
     }
   },
   {
@@ -134,7 +134,7 @@
       "max_z": 5.42030036753734
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_rolling_zscore.png"
+      "rolling_zscore": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_rolling_zscore.png"
     }
   },
   {
@@ -157,7 +157,7 @@
       "max_z": 5.794257949249464
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_rolling_zscore.png"
+      "rolling_zscore": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_rolling_zscore.png"
     }
   },
   {
@@ -180,7 +180,7 @@
       "max_z": 5.279486471705906
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_rolling_zscore.png"
+      "rolling_zscore": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_rolling_zscore.png"
     }
   },
   {
@@ -203,7 +203,7 @@
       "max_z": 19.010614548057568
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_rolling_zscore.png"
+      "rolling_zscore": "03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_rolling_zscore.png"
     }
   },
   {
@@ -226,7 +226,7 @@
       "max_z": 11.400832560974525
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/04_Furnace_Auxiliary/FURNACE_PRESSURE_rolling_zscore.png"
+      "rolling_zscore": "04_Furnace_Auxiliary/FURNACE_PRESSURE_rolling_zscore.png"
     }
   },
   {
@@ -249,7 +249,7 @@
       "max_z": 24.251557833292605
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_rolling_zscore.png"
+      "rolling_zscore": "04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_rolling_zscore.png"
     }
   },
   {
@@ -272,7 +272,7 @@
       "max_z": 6.680362652100276
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_rolling_zscore.png"
+      "rolling_zscore": "04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_rolling_zscore.png"
     }
   },
   {
@@ -295,7 +295,7 @@
       "max_z": 8.793340393834155
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/04_Furnace_Auxiliary/MAIN_GAS_FLOW_rolling_zscore.png"
+      "rolling_zscore": "04_Furnace_Auxiliary/MAIN_GAS_FLOW_rolling_zscore.png"
     }
   },
   {
@@ -318,7 +318,7 @@
       "max_z": 4.557590126827821
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_rolling_zscore.png"
+      "rolling_zscore": "04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_rolling_zscore.png"
     }
   },
   {
@@ -341,7 +341,7 @@
       "max_z": 18.375631400713317
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_rolling_zscore.png"
+      "rolling_zscore": "04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_rolling_zscore.png"
     }
   },
   {
@@ -364,7 +364,7 @@
       "max_z": 7.864132243303514
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_rolling_zscore.png"
+      "rolling_zscore": "04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_rolling_zscore.png"
     }
   },
   {
@@ -387,7 +387,7 @@
       "max_z": 9.763440494607948
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_rolling_zscore.png"
+      "rolling_zscore": "04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_rolling_zscore.png"
     }
   },
   {
@@ -410,7 +410,7 @@
       "max_z": 8.355311890102797
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_rolling_zscore.png"
+      "rolling_zscore": "04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_rolling_zscore.png"
     }
   },
   {
@@ -444,7 +444,7 @@
       "max_z": 18.2837708788974
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_1_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_1_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -478,7 +478,7 @@
       "max_z": 18.05414952233181
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_2_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_2_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -512,7 +512,7 @@
       "max_z": 18.471864055775644
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_3_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_3_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -546,7 +546,7 @@
       "max_z": 18.27074419915781
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_4_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_4_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -580,7 +580,7 @@
       "max_z": 18.326193848809062
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_5_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_5_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -614,7 +614,7 @@
       "max_z": 17.57516452995682
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_6_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_6_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -648,7 +648,7 @@
       "max_z": 17.41216295266799
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_7_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_7_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -682,7 +682,7 @@
       "max_z": 17.17566205429552
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_8_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_8_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -716,7 +716,7 @@
       "max_z": 18.200269915801066
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_9_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_9_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -750,7 +750,7 @@
       "max_z": 17.17566205429552
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_10_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_10_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -784,7 +784,7 @@
       "max_z": 17.41546548619064
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_11_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_11_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -818,7 +818,7 @@
       "max_z": 17.175662054295522
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_12_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_12_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -852,7 +852,7 @@
       "max_z": 17.17566205429552
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_13_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_13_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -886,7 +886,7 @@
       "max_z": 17.17566205429552
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/STAND_14_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/STAND_14_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -920,7 +920,7 @@
       "max_z": 16.91163718337826
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -954,7 +954,7 @@
       "max_z": 16.91163718337826
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -988,7 +988,7 @@
       "max_z": 18.714080448189225
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_1_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_1_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1022,7 +1022,7 @@
       "max_z": 18.85185439773149
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_2_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_2_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1056,7 +1056,7 @@
       "max_z": 18.79408568940835
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_3_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_3_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1090,7 +1090,7 @@
       "max_z": 18.84709677636123
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_4_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_4_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1124,7 +1124,7 @@
       "max_z": 18.848964263130533
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_5_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_5_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1158,7 +1158,7 @@
       "max_z": 18.76434741046724
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_6_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_6_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1192,7 +1192,7 @@
       "max_z": 18.787348863254238
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_7_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_7_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1226,7 +1226,7 @@
       "max_z": 18.79940377238505
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_8_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_8_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1260,7 +1260,7 @@
       "max_z": 18.80226898281622
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_9_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_9_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1294,7 +1294,7 @@
       "max_z": 18.849983728381385
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_10_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_10_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1328,7 +1328,7 @@
       "max_z": 18.877989260582556
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_11_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_11_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1362,7 +1362,7 @@
       "max_z": 18.888678611102183
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_12_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_12_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1396,7 +1396,7 @@
       "max_z": 18.885169051211783
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_13_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_13_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1430,7 +1430,7 @@
       "max_z": 18.9213345265589
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/STAND_14_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/STAND_14_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1464,7 +1464,7 @@
       "max_z": 18.87363188617199
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -1498,7 +1498,7 @@
       "max_z": 17.175662054295522
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_1_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_1_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1532,7 +1532,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_2_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_2_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1566,7 +1566,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_3_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_3_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1600,7 +1600,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_4_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_4_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1634,7 +1634,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_5_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_5_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1668,7 +1668,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_6_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_6_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1702,7 +1702,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_7_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_7_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1736,7 +1736,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_8_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_8_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1770,7 +1770,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_9_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_9_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1804,7 +1804,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_10_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_10_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1838,7 +1838,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_11_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_11_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1872,7 +1872,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_12_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_12_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1906,7 +1906,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_13_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_13_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1940,7 +1940,7 @@
       "max_z": 17.20474805699572
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/STAND_14_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/STAND_14_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -1974,7 +1974,7 @@
       "max_z": 17.227427896140725
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/07_Stand_Load/FINISHING_BLOCK_LOAD_rolling_zscore.png"
+      "rolling_zscore": "07_Stand_Load/FINISHING_BLOCK_LOAD_rolling_zscore.png"
     }
   },
   {
@@ -2010,7 +2010,7 @@
       "max_z": 23.96025240820767
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -2046,7 +2046,7 @@
       "max_z": 45.489919128323976
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -2082,7 +2082,7 @@
       "max_z": 27.463289894497528
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_rolling_zscore.png"
+      "rolling_zscore": "08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_rolling_zscore.png"
     }
   },
   {
@@ -2118,7 +2118,7 @@
       "max_z": 8.244232393841216
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -2154,7 +2154,7 @@
       "max_z": 18.023077350322584
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -2190,7 +2190,7 @@
       "max_z": 10.35874185442762
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -2226,7 +2226,7 @@
       "max_z": 34.3365817567802
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -2262,7 +2262,7 @@
       "max_z": 25.79319196518588
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -2298,7 +2298,7 @@
       "max_z": 10.325706532603515
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -2334,7 +2334,7 @@
       "max_z": 26.776881648552436
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/09_PR_Detailed/PR6L1_ACT_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "09_PR_Detailed/PR6L1_ACT_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -2370,7 +2370,7 @@
       "max_z": 26.776881648552436
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/09_PR_Detailed/PR6L2_ACT_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "09_PR_Detailed/PR6L2_ACT_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -2406,7 +2406,7 @@
       "max_z": 26.776881648552436
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/09_PR_Detailed/PR7L1_ACT_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "09_PR_Detailed/PR7L1_ACT_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -2442,7 +2442,7 @@
       "max_z": 26.776881648552436
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/09_PR_Detailed/PR7L2_ACT_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "09_PR_Detailed/PR7L2_ACT_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -2478,7 +2478,7 @@
       "max_z": 26.776881648552436
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/09_PR_Detailed/PR8L1_ACT_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "09_PR_Detailed/PR8L1_ACT_TORQUE_rolling_zscore.png"
     }
   },
   {
@@ -2514,7 +2514,7 @@
       "max_z": 26.776881648552436
     },
     "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/D4/09_PR_Detailed/PR9L1_ACT_TORQUE_rolling_zscore.png"
+      "rolling_zscore": "09_PR_Detailed/PR9L1_ACT_TORQUE_rolling_zscore.png"
     }
   }
 ]

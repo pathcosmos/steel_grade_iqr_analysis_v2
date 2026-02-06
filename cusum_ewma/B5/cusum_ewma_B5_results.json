@@ -842,9 +842,9 @@
       "LCL_steady": 1051.6168680312958
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_combined.png"
+      "cusum": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_cusum.png",
+      "ewma": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_ewma.png",
+      "combined": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_combined.png"
     }
   },
   {
@@ -1609,9 +1609,9 @@
       "LCL_steady": 1049.4703877988736
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_combined.png"
+      "cusum": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_cusum.png",
+      "ewma": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_ewma.png",
+      "combined": "01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_combined.png"
     }
   },
   {
@@ -2769,9 +2769,9 @@
       "LCL_steady": 1124.3102591524116
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_combined.png"
+      "cusum": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_cusum.png",
+      "ewma": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_ewma.png",
+      "combined": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_combined.png"
     }
   },
   {
@@ -3833,9 +3833,9 @@
       "LCL_steady": 1138.1214308337017
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_combined.png"
+      "cusum": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_cusum.png",
+      "ewma": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_ewma.png",
+      "combined": "01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_combined.png"
     }
   },
   {
@@ -4204,9 +4204,9 @@
       "LCL_steady": 906.0511014784943
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_combined.png"
+      "cusum": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_cusum.png",
+      "ewma": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_ewma.png",
+      "combined": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_combined.png"
     }
   },
   {
@@ -4542,9 +4542,9 @@
       "LCL_steady": 937.6134194223584
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_combined.png"
+      "cusum": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_cusum.png",
+      "ewma": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_ewma.png",
+      "combined": "02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_combined.png"
     }
   },
   {
@@ -5165,9 +5165,9 @@
       "LCL_steady": 1067.1179303351528
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_combined.png"
+      "cusum": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_cusum.png",
+      "ewma": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_ewma.png",
+      "combined": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_combined.png"
     }
   },
   {
@@ -6075,9 +6075,9 @@
       "LCL_steady": 1088.036372662717
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_combined.png"
+      "cusum": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_cusum.png",
+      "ewma": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_ewma.png",
+      "combined": "02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_combined.png"
     }
   },
   {
@@ -8836,9 +8836,9 @@
       "LCL_steady": 676.7953208662632
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_combined.png"
+      "cusum": "03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_cusum.png",
+      "ewma": "03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_ewma.png",
+      "combined": "03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_combined.png"
     }
   },
   {
@@ -10906,9 +10906,9 @@
       "LCL_steady": 0.4667302840496033
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/FURNACE_PRESSURE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/FURNACE_PRESSURE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/FURNACE_PRESSURE_combined.png"
+      "cusum": "04_Furnace_Auxiliary/FURNACE_PRESSURE_cusum.png",
+      "ewma": "04_Furnace_Auxiliary/FURNACE_PRESSURE_ewma.png",
+      "combined": "04_Furnace_Auxiliary/FURNACE_PRESSURE_combined.png"
     }
   },
   {
@@ -11843,9 +11843,9 @@
       "LCL_steady": 3.074140465748801
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_combined.png"
+      "cusum": "04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_cusum.png",
+      "ewma": "04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_ewma.png",
+      "combined": "04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_combined.png"
     }
   },
   {
@@ -12874,9 +12874,9 @@
       "LCL_steady": 1537.816379602611
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_combined.png"
+      "cusum": "04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_cusum.png",
+      "ewma": "04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_ewma.png",
+      "combined": "04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_combined.png"
     }
   },
   {
@@ -13782,9 +13782,9 @@
       "LCL_steady": 1126.4193277600039
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_GAS_FLOW_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_GAS_FLOW_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_GAS_FLOW_combined.png"
+      "cusum": "04_Furnace_Auxiliary/MAIN_GAS_FLOW_cusum.png",
+      "ewma": "04_Furnace_Auxiliary/MAIN_GAS_FLOW_ewma.png",
+      "combined": "04_Furnace_Auxiliary/MAIN_GAS_FLOW_combined.png"
     }
   },
   {
@@ -13910,9 +13910,9 @@
       "LCL_steady": 11.74831339739585
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_combined.png"
+      "cusum": "04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_cusum.png",
+      "ewma": "04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_ewma.png",
+      "combined": "04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_combined.png"
     }
   },
   {
@@ -14115,9 +14115,9 @@
       "LCL_steady": 1145.8548346053926
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_combined.png"
+      "cusum": "04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_cusum.png",
+      "ewma": "04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_ewma.png",
+      "combined": "04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_combined.png"
     }
   },
   {
@@ -14313,9 +14313,9 @@
       "LCL_steady": 27.051868904842213
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_combined.png"
+      "cusum": "04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_cusum.png",
+      "ewma": "04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_ewma.png",
+      "combined": "04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_combined.png"
     }
   },
   {
@@ -15595,9 +15595,9 @@
       "LCL_steady": 156.9448341716208
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_combined.png"
+      "cusum": "04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_cusum.png",
+      "ewma": "04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_ewma.png",
+      "combined": "04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_combined.png"
     }
   },
   {
@@ -15966,9 +15966,9 @@
       "LCL_steady": 28.595232357756068
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_combined.png"
+      "cusum": "04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_cusum.png",
+      "ewma": "04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_ewma.png",
+      "combined": "04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_combined.png"
     }
   },
   {
@@ -17257,9 +17257,9 @@
       "LCL_steady": 16.449410592716905
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_1_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_1_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_1_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_1_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_1_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_1_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -18582,9 +18582,9 @@
       "LCL_steady": 18.12956914430108
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_2_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_2_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_2_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_2_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_2_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_2_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -19810,9 +19810,9 @@
       "LCL_steady": 17.339331729495957
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_3_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_3_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_3_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_3_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_3_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_3_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -21046,9 +21046,9 @@
       "LCL_steady": 17.11510608789007
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_4_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_4_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_4_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_4_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_4_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_4_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -22180,9 +22180,9 @@
       "LCL_steady": 16.789203862860713
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_5_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_5_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_5_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_5_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_5_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_5_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -23402,9 +23402,9 @@
       "LCL_steady": 15.033536680607508
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_6_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_6_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_6_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_6_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_6_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_6_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -24444,9 +24444,9 @@
       "LCL_steady": 14.85078326359534
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_7_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_7_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_7_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_7_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_7_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_7_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -25812,9 +25812,9 @@
       "LCL_steady": 14.288400296544072
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_8_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_8_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_8_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_8_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_8_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_8_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -27351,9 +27351,9 @@
       "LCL_steady": 18.84185150269581
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_9_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_9_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_9_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_9_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_9_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_9_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -28775,9 +28775,9 @@
       "LCL_steady": 20.343813619067618
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_10_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_10_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_10_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_10_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_10_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_10_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -30168,9 +30168,9 @@
       "LCL_steady": 13.801622508676427
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_11_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_11_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_11_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_11_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_11_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_11_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -31375,9 +31375,9 @@
       "LCL_steady": 17.773983177292536
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_12_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_12_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_12_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_12_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_12_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_12_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -32696,9 +32696,9 @@
       "LCL_steady": 17.021726865476477
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_13_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_13_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_13_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_13_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_13_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_13_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -34022,9 +34022,9 @@
       "LCL_steady": 12.736762850364594
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_14_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_14_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/STAND_14_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/STAND_14_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/STAND_14_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/STAND_14_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -36008,9 +36008,9 @@
       "LCL_steady": 10.573766368946337
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -37994,9 +37994,9 @@
       "LCL_steady": 10.563739823124816
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_combined.png"
+      "cusum": "05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_cusum.png",
+      "ewma": "05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_ewma.png",
+      "combined": "05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -38401,9 +38401,9 @@
       "LCL_steady": 405.85855076034665
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_1_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_1_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_1_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_1_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_1_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_1_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -38808,9 +38808,9 @@
       "LCL_steady": 436.54251779705584
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_2_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_2_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_2_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_2_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_2_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_2_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -39215,9 +39215,9 @@
       "LCL_steady": 548.4454370749443
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_3_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_3_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_3_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_3_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_3_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_3_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -39586,9 +39586,9 @@
       "LCL_steady": 499.0974658263894
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_4_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_4_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_4_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_4_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_4_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_4_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -40005,9 +40005,9 @@
       "LCL_steady": 750.389965696857
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_5_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_5_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_5_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_5_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_5_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_5_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -40430,9 +40430,9 @@
       "LCL_steady": 741.0698500979048
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_6_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_6_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_6_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_6_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_6_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_6_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -40837,9 +40837,9 @@
       "LCL_steady": 781.7243803756289
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_7_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_7_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_7_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_7_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_7_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_7_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -41244,9 +41244,9 @@
       "LCL_steady": 670.972433783993
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_8_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_8_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_8_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_8_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_8_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_8_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -41659,9 +41659,9 @@
       "LCL_steady": 601.8069444983042
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_9_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_9_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_9_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_9_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_9_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_9_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -42074,9 +42074,9 @@
       "LCL_steady": 617.1259992089088
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_10_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_10_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_10_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_10_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_10_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_10_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -42489,9 +42489,9 @@
       "LCL_steady": 686.095668643688
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_11_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_11_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_11_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_11_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_11_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_11_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -42904,9 +42904,9 @@
       "LCL_steady": 647.8681232002407
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_12_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_12_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_12_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_12_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_12_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_12_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -43319,9 +43319,9 @@
       "LCL_steady": 635.7398128349187
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_13_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_13_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_13_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_13_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_13_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_13_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -43734,9 +43734,9 @@
       "LCL_steady": 678.3871252417571
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_14_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_14_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/STAND_14_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/STAND_14_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/STAND_14_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/STAND_14_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -44169,9 +44169,9 @@
       "LCL_steady": 580.9021890291242
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_combined.png"
+      "cusum": "06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_cusum.png",
+      "ewma": "06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_ewma.png",
+      "combined": "06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -45836,9 +45836,9 @@
       "LCL_steady": 0.3299009434155404
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_1_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_1_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_1_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_1_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_1_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_1_LOAD_combined.png"
     }
   },
   {
@@ -47497,9 +47497,9 @@
       "LCL_steady": 0.329067761155025
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_2_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_2_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_2_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_2_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_2_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_2_LOAD_combined.png"
     }
   },
   {
@@ -49176,9 +49176,9 @@
       "LCL_steady": 0.32888213917153236
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_3_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_3_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_3_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_3_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_3_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_3_LOAD_combined.png"
     }
   },
   {
@@ -50853,9 +50853,9 @@
       "LCL_steady": 0.328928581021292
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_4_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_4_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_4_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_4_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_4_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_4_LOAD_combined.png"
     }
   },
   {
@@ -52523,9 +52523,9 @@
       "LCL_steady": 0.3286387434598774
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_5_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_5_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_5_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_5_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_5_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_5_LOAD_combined.png"
     }
   },
   {
@@ -54152,9 +54152,9 @@
       "LCL_steady": 0.32885649552787755
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_6_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_6_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_6_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_6_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_6_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_6_LOAD_combined.png"
     }
   },
   {
@@ -55811,9 +55811,9 @@
       "LCL_steady": 0.3288501834350689
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_7_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_7_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_7_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_7_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_7_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_7_LOAD_combined.png"
     }
   },
   {
@@ -57488,9 +57488,9 @@
       "LCL_steady": 0.3289886470556354
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_8_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_8_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_8_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_8_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_8_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_8_LOAD_combined.png"
     }
   },
   {
@@ -59161,9 +59161,9 @@
       "LCL_steady": 0.32657447735769013
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_9_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_9_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_9_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_9_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_9_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_9_LOAD_combined.png"
     }
   },
   {
@@ -60834,9 +60834,9 @@
       "LCL_steady": 0.32672414386083865
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_10_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_10_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_10_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_10_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_10_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_10_LOAD_combined.png"
     }
   },
   {
@@ -62489,9 +62489,9 @@
       "LCL_steady": 0.32635135016156175
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_11_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_11_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_11_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_11_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_11_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_11_LOAD_combined.png"
     }
   },
   {
@@ -64144,9 +64144,9 @@
       "LCL_steady": 0.32656248134055516
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_12_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_12_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_12_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_12_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_12_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_12_LOAD_combined.png"
     }
   },
   {
@@ -65799,9 +65799,9 @@
       "LCL_steady": 0.32656248134055516
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_13_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_13_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_13_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_13_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_13_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_13_LOAD_combined.png"
     }
   },
   {
@@ -67460,9 +67460,9 @@
       "LCL_steady": 0.3263304724694807
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_14_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_14_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/STAND_14_LOAD_combined.png"
+      "cusum": "07_Stand_Load/STAND_14_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/STAND_14_LOAD_ewma.png",
+      "combined": "07_Stand_Load/STAND_14_LOAD_combined.png"
     }
   },
   {
@@ -69171,9 +69171,9 @@
       "LCL_steady": 0.3257155884598451
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/FINISHING_BLOCK_LOAD_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/FINISHING_BLOCK_LOAD_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/07_Stand_Load/FINISHING_BLOCK_LOAD_combined.png"
+      "cusum": "07_Stand_Load/FINISHING_BLOCK_LOAD_cusum.png",
+      "ewma": "07_Stand_Load/FINISHING_BLOCK_LOAD_ewma.png",
+      "combined": "07_Stand_Load/FINISHING_BLOCK_LOAD_combined.png"
     }
   },
   {
@@ -70924,9 +70924,9 @@
       "LCL_steady": -325.8659687258907
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_combined.png"
+      "cusum": "08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_cusum.png",
+      "ewma": "08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_ewma.png",
+      "combined": "08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -73020,9 +73020,9 @@
       "LCL_steady": 779.1562050279347
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_combined.png"
+      "cusum": "08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_cusum.png",
+      "ewma": "08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_ewma.png",
+      "combined": "08_Pinchroll/PINCHROLL_3_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -75550,9 +75550,9 @@
       "LCL_steady": 777.6922559733573
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_combined.png"
+      "cusum": "08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_cusum.png",
+      "ewma": "08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_ewma.png",
+      "combined": "08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_combined.png"
     }
   },
   {
@@ -77191,9 +77191,9 @@
       "LCL_steady": 10.62800713290834
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_combined.png"
+      "cusum": "08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_cusum.png",
+      "ewma": "08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_ewma.png",
+      "combined": "08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -78870,9 +78870,9 @@
       "LCL_steady": 16.772193869899198
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_combined.png"
+      "cusum": "08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_cusum.png",
+      "ewma": "08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_ewma.png",
+      "combined": "08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -80642,9 +80642,9 @@
       "LCL_steady": 17.160584868232668
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_combined.png"
+      "cusum": "08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_cusum.png",
+      "ewma": "08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_ewma.png",
+      "combined": "08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_combined.png"
     }
   },
   {
@@ -80832,9 +80832,9 @@
       "LCL_steady": 18.262883479011993
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_combined.png"
+      "cusum": "08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_cusum.png",
+      "ewma": "08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_ewma.png",
+      "combined": "08_Pinchroll/PINCHROLL_2_REFERENCE_TORQUE_combined.png"
     }
   },
   {
@@ -82898,9 +82898,9 @@
       "LCL_steady": 21.89625254897156
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_combined.png"
+      "cusum": "08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_cusum.png",
+      "ewma": "08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_ewma.png",
+      "combined": "08_Pinchroll/PINCHROLL_3_REFERENCE_TORQUE_combined.png"
     }
   },
   {
@@ -85344,9 +85344,9 @@
       "LCL_steady": 21.8983652683817
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_combined.png"
+      "cusum": "08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_cusum.png",
+      "ewma": "08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_ewma.png",
+      "combined": "08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_combined.png"
     }
   },
   {
@@ -88298,9 +88298,9 @@
       "LCL_steady": 3.015504413530591
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR6L1_ACT_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR6L1_ACT_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR6L1_ACT_TORQUE_combined.png"
+      "cusum": "09_PR_Detailed/PR6L1_ACT_TORQUE_cusum.png",
+      "ewma": "09_PR_Detailed/PR6L1_ACT_TORQUE_ewma.png",
+      "combined": "09_PR_Detailed/PR6L1_ACT_TORQUE_combined.png"
     }
   },
   {
@@ -90844,9 +90844,9 @@
       "LCL_steady": 3.742650873318671
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR6L2_ACT_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR6L2_ACT_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR6L2_ACT_TORQUE_combined.png"
+      "cusum": "09_PR_Detailed/PR6L2_ACT_TORQUE_cusum.png",
+      "ewma": "09_PR_Detailed/PR6L2_ACT_TORQUE_ewma.png",
+      "combined": "09_PR_Detailed/PR6L2_ACT_TORQUE_combined.png"
     }
   },
   {
@@ -94215,9 +94215,9 @@
       "LCL_steady": 0.007747155283846396
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR7L1_ACT_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR7L1_ACT_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR7L1_ACT_TORQUE_combined.png"
+      "cusum": "09_PR_Detailed/PR7L1_ACT_TORQUE_cusum.png",
+      "ewma": "09_PR_Detailed/PR7L1_ACT_TORQUE_ewma.png",
+      "combined": "09_PR_Detailed/PR7L1_ACT_TORQUE_combined.png"
     }
   },
   {
@@ -97673,9 +97673,9 @@
       "LCL_steady": 0.9429492429378321
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR7L2_ACT_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR7L2_ACT_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR7L2_ACT_TORQUE_combined.png"
+      "cusum": "09_PR_Detailed/PR7L2_ACT_TORQUE_cusum.png",
+      "ewma": "09_PR_Detailed/PR7L2_ACT_TORQUE_ewma.png",
+      "combined": "09_PR_Detailed/PR7L2_ACT_TORQUE_combined.png"
     }
   },
   {
@@ -100457,9 +100457,9 @@
       "LCL_steady": -0.6541834209727622
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR8L1_ACT_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR8L1_ACT_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR8L1_ACT_TORQUE_combined.png"
+      "cusum": "09_PR_Detailed/PR8L1_ACT_TORQUE_cusum.png",
+      "ewma": "09_PR_Detailed/PR8L1_ACT_TORQUE_ewma.png",
+      "combined": "09_PR_Detailed/PR8L1_ACT_TORQUE_combined.png"
     }
   },
   {
@@ -102431,9 +102431,9 @@
       "LCL_steady": -24.483115805848733
     },
     "charts": {
-      "cusum": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR9L1_ACT_TORQUE_cusum.png",
-      "ewma": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR9L1_ACT_TORQUE_ewma.png",
-      "combined": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/cusum_ewma/B5/09_PR_Detailed/PR9L1_ACT_TORQUE_combined.png"
+      "cusum": "09_PR_Detailed/PR9L1_ACT_TORQUE_cusum.png",
+      "ewma": "09_PR_Detailed/PR9L1_ACT_TORQUE_ewma.png",
+      "combined": "09_PR_Detailed/PR9L1_ACT_TORQUE_combined.png"
     }
   }
 ]
