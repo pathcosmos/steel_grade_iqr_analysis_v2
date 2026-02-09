@@ -2,7 +2,7 @@
 
 **분석 기간**: 2025-03-01 ~ 2025-08-31
 **강종**: D4
-**생성일시**: 2026-02-03 20:39:34
+**생성일시**: 2026-02-09 21:07:16
 
 ---
 
@@ -325,24 +325,24 @@
 
 | 태그 | CUSUM Drift | EWMA Shift | 상태 |
 |------|-------------|------------|------|
-| PR6L1_ACT_TORQUE | 5 | 124 | 🔴 |
-| PR6L2_ACT_TORQUE | 3 | 13 | 🔴 |
-| PR7L1_ACT_TORQUE | 2 | 189 | 🔴 |
-| PR7L2_ACT_TORQUE | 2 | 213 | 🔴 |
-| PR8L1_ACT_TORQUE | 39 | 373 | 🔴 |
-| PR9L1_ACT_TORQUE | 27 | 367 | 🔴 |
+| PR6L1_ACT_TORQUE | 4 | 51 | 🔴 |
+| PR6L2_ACT_TORQUE | 1 | 7 | 🔴 |
+| PR7L1_ACT_TORQUE | 2 | 284 | 🔴 |
+| PR7L2_ACT_TORQUE | 2 | 19 | 🔴 |
+| PR8L1_ACT_TORQUE | 44 | 152 | 🔴 |
+| PR9L1_ACT_TORQUE | 15 | 250 | 🔴 |
 
 #### 주요 태그 차트
 
-**PR8L1_ACT_TORQUE** (Drift: 39, Shift: 373)
+**PR8L1_ACT_TORQUE** (Drift: 44, Shift: 152)
 
 ![PR8L1_ACT_TORQUE](09_PR_Detailed/PR8L1_ACT_TORQUE_combined.png)
 
-**PR9L1_ACT_TORQUE** (Drift: 27, Shift: 367)
+**PR9L1_ACT_TORQUE** (Drift: 15, Shift: 250)
 
 ![PR9L1_ACT_TORQUE](09_PR_Detailed/PR9L1_ACT_TORQUE_combined.png)
 
-**PR6L1_ACT_TORQUE** (Drift: 5, Shift: 124)
+**PR6L1_ACT_TORQUE** (Drift: 4, Shift: 51)
 
 ![PR6L1_ACT_TORQUE](09_PR_Detailed/PR6L1_ACT_TORQUE_combined.png)
 
@@ -384,7 +384,7 @@
 | 분석 스크립트 | steel_grade_cusum_ewma_analysis.py |
 | 분석 기간 | 2025-03-01 ~ 2025-08-31 |
 | 강종 | D4 |
-| 생성일시 | 2026-02-03 20:39:34 |
+| 생성일시 | 2026-02-09 21:07:16 |
 | 총 분석 태그 | 79개 |
 
 ---

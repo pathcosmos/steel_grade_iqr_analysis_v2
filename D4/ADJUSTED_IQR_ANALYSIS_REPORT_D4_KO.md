@@ -4,7 +4,7 @@
 **강종**: D4
 **분석 방법**: Adjusted IQR (Bowley 왜도 보정)
 **c 값**: 1.0
-**생성일시**: 2026-02-09 11:28:02
+**생성일시**: 2026-02-09 21:33:39
 
 ---
 
@@ -31,25 +31,25 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | **분석 대상 강종** | D4 |
 | **c 값 (왜도 보정 강도)** | 1.0 |
 | **총 분석 태그 수** | 78개 |
-| **PR_Detailed L1 태그** | 4개 |
-| **PR_Detailed L2 태그** | 2개 |
+| **PR_Detailed L1 태그** | 0개 |
+| **PR_Detailed L2 태그** | 0개 |
 
 ### 이상치율 개선 효과
 
 | 지표 | Standard IQR | Adjusted IQR | 개선 |
 |------|-------------|--------------|------|
-| **총 이상치 수** | 78,944 | 73,166 | 5,778 감소 |
-| **평균 개선율** | - | - | **3.3%** |
+| **총 이상치 수** | 75,464 | 68,848 | 6,616 감소 |
+| **평균 개선율** | - | - | **4.6%** |
 
 ### 위험도 분포 비교
 
 | 등급 | Standard IQR | Adjusted IQR | 변화 |
 |------|-------------|--------------|------|
 | **⚫ 심각 (25% 이상)** | 1개 | 0개 | +1 |
-| **🔴 위험 (15~25%)** | 17개 | 18개 | -1 |
-| **🟠 경고 (10~15%)** | 2개 | 1개 | +1 |
-| **🟡 주의 (5~10%)** | 6개 | 7개 | -1 |
-| **🟢 양호 (0~5%)** | 52개 | 52개 | +0 |
+| **🔴 위험 (15~25%)** | 18개 | 19개 | -1 |
+| **🟠 경고 (10~15%)** | 3개 | 1개 | +2 |
+| **🟡 주의 (5~10%)** | 3개 | 3개 | +0 |
+| **🟢 양호 (0~5%)** | 53개 | 55개 | +2 |
 
 ---
 
@@ -374,12 +374,12 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 | 태그명 | L1/L2 | run | spc | roll | coil | 제거율 | Adj 이상치율 | Std 이상치율 | 개선율 | 위험등급 |
 |--------|:-----:|:---:|:---:|:----:|:----:|-------:|------------:|------------:|-------:|---------|
-| PR7L1_ACT_TORQUE | L1 | ✓ | ✓ | ✓ | ✗ | 1.9% | 7.19% | 6.32% | -13.8% | 🟡 CAUTION |
-| PR7L2_ACT_TORQUE | L2 | ✓ | ✓ | ✓ | ✗ | 1.9% | 6.76% | 5.58% | -21.2% | 🟡 CAUTION |
-| PR6L1_ACT_TORQUE | L1 | ✓ | ✓ | ✓ | ✗ | 1.9% | 5.82% | 5.27% | -10.5% | 🟡 CAUTION |
-| PR9L1_ACT_TORQUE | L1 | ✓ | ✓ | ✓ | ✗ | 1.9% | 5.65% | 6.28% | 10.1% | 🟡 CAUTION |
-| PR8L1_ACT_TORQUE | L1 | ✓ | ✓ | ✓ | ✗ | 1.9% | 5.09% | 4.77% | -6.8% | 🟡 CAUTION |
-| PR6L2_ACT_TORQUE | L2 | ✓ | ✓ | ✓ | ✗ | 1.9% | 0.51% | 0.49% | -5.2% | 🟢 NORMAL |
+| PR7L1_ACT_TORQUE | A | ✓ | ✓ | ✓ | ✓ | 23.9% | **18.03%** | **15.25%** | -18.2% | 🔴 DANGER |
+| PR6L1_ACT_TORQUE | A | ✓ | ✓ | ✓ | ✓ | 23.9% | 8.51% | 7.71% | -10.4% | 🟡 CAUTION |
+| PR7L2_ACT_TORQUE | B | ✓ | ✓ | ✓ | ✓ | 16.5% | 3.29% | 2.67% | -23.2% | 🟢 NORMAL |
+| PR6L2_ACT_TORQUE | B | ✓ | ✓ | ✓ | ✓ | 16.5% | 0.05% | 0.00% | 0.0% | 🟢 NORMAL |
+| PR8L1_ACT_TORQUE | A | ✓ | ✓ | ✓ | ✓ | 23.9% | 0.00% | 0.00% | 0.0% | 🟢 NORMAL |
+| PR9L1_ACT_TORQUE | A | ✓ | ✓ | ✓ | ✓ | 23.9% | 0.00% | **11.82%** | 100.0% | 🟢 NORMAL |
 
 **필터 적용 이유**:
 
@@ -394,19 +394,19 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 | 태그명 | Bowley 왜도 | 승수 (L/U) | Adj 하한 | Adj 상한 | Std 하한 | Std 상한 |
 |--------|-------------|------------|----------|----------|----------|----------|
-| [L1] PR7L1_ACT_TORQUE | -0.7760 | 2.173/0.460 | -15.95 | 8.27 | -7.34 | 12.24 |
-| [L2] PR7L2_ACT_TORQUE | -0.8977 | 2.454/0.408 | -22.46 | 9.83 | -9.15 | 15.25 |
-| [L1] PR6L1_ACT_TORQUE | -0.6020 | 1.826/0.548 | -11.63 | 7.74 | -6.37 | 10.62 |
-| [L1] PR9L1_ACT_TORQUE | -0.3516 | 1.421/0.704 | -21.33 | 10.48 | -16.53 | 13.86 |
-| [L1] PR8L1_ACT_TORQUE | -0.2393 | 1.270/0.787 | -13.46 | 15.41 | -10.60 | 17.66 |
-| [L2] PR6L2_ACT_TORQUE | -0.4823 | 1.620/0.617 | -13.81 | 10.95 | -8.53 | 14.21 |
+| [A] PR7L1_ACT_TORQUE | -0.8254 | 2.283/0.438 | -18.97 | 9.18 | -8.31 | 13.85 |
+| [A] PR6L1_ACT_TORQUE | -0.7452 | 2.107/0.475 | -12.27 | 6.65 | -5.83 | 9.71 |
+| [B] PR7L2_ACT_TORQUE | -0.9575 | 2.605/0.384 | -23.94 | 9.65 | -9.19 | 15.31 |
+| [B] PR6L2_ACT_TORQUE | -0.9347 | 2.547/0.393 | -22.06 | 9.18 | -8.66 | 14.44 |
+| [A] PR8L1_ACT_TORQUE | 0.2095 | 0.811/1.233 | -14.73 | 34.50 | -18.16 | 30.27 |
+| [A] PR9L1_ACT_TORQUE | -0.6049 | 1.831/0.546 | -44.48 | 12.74 | -28.86 | 21.28 |
 
 ---
 
 ## 태그별 상세 분석 (위험도 순)
 
 
-### 🔴 위험 (15~25%) - 18개 태그
+### 🔴 위험 (15~25%) - 19개 태그
 
 #### FURNACE_O2_ANALYZER 🔴
 
@@ -527,31 +527,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_O2_ANALYZER_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_O2_ANALYZER_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_O2_ANALYZER_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_O2_ANALYZER_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_O2_ANALYZER_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_O2_ANALYZER_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_O2_ANALYZER_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_O2_ANALYZER_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_O2_ANALYZER_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_O2_ANALYZER_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_O2_ANALYZER_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_O2_ANALYZER_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_O2_ANALYZER_00_summary.png)
+![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_O2_ANALYZER_00_summary.png)
 
 **2025-06**
 
@@ -576,31 +576,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_O2_ANALYZER_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_O2_ANALYZER_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_O2_ANALYZER_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_O2_ANALYZER_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_O2_ANALYZER_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_O2_ANALYZER_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_O2_ANALYZER_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_O2_ANALYZER_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_O2_ANALYZER_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_O2_ANALYZER_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_O2_ANALYZER_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_O2_ANALYZER_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_O2_ANALYZER_00_summary.png)
+![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_O2_ANALYZER_00_summary.png)
 
 **2025-07**
 
@@ -625,31 +625,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_O2_ANALYZER_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_O2_ANALYZER_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_O2_ANALYZER_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_O2_ANALYZER_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_O2_ANALYZER_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_O2_ANALYZER_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_O2_ANALYZER_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_O2_ANALYZER_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_O2_ANALYZER_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_O2_ANALYZER_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_O2_ANALYZER_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_O2_ANALYZER_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_O2_ANALYZER_00_summary.png)
+![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_O2_ANALYZER_00_summary.png)
 
 **2025-08**
 
@@ -669,31 +669,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_O2_ANALYZER_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_O2_ANALYZER_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_O2_ANALYZER_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_O2_ANALYZER_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_O2_ANALYZER_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_O2_ANALYZER_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_O2_ANALYZER_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_O2_ANALYZER_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_O2_ANALYZER_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_O2_ANALYZER_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_O2_ANALYZER_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_O2_ANALYZER_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_O2_ANALYZER_00_summary.png)
+![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_O2_ANALYZER_00_summary.png)
 
 ---
 
@@ -816,31 +816,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_8_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_8_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_8_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_8_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_8_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_8_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_8_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_8_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_8_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_8_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_8_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_8_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_8_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_8_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -865,31 +865,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_8_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_8_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_8_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_8_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_8_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_8_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_8_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_8_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_8_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_8_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_8_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_8_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_8_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_8_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -909,31 +909,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_8_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_8_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_8_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_8_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_8_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_8_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_8_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_8_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_8_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_8_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_8_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_8_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_8_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_8_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -958,31 +958,267 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_8_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_8_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_8_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_8_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_8_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_8_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_8_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_8_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_8_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_8_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_8_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_8_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_8_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_8_ACTUAL_SPEED_00_summary.png)
+
+---
+
+#### [A] PR7L1_ACT_TORQUE 🔴
+
+**위험도**: [DANGER] | **이상치율**: 18.03% | **개선율**: -18.2%
+**Bowley 왜도**: -0.8254 | **승수 (L/U)**: 2.283/0.438
+
+**카테고리**: 09 PR Detailed
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
+
+**데이터**: 원본 7,196 → 필터 후 5,474 (23.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 987 | 835 |
+| 이상치율 | 18.03% | 15.25% |
+| 하한 경계 | -18.9669 | -8.3084 |
+| 상한 경계 | 9.1783 | 13.8473 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 5,474 |
+| 평균 | 6.4263 |
+| 표준편차 | 7.5499 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 5.0554 |
+| Q3 (75%) | 5.5389 |
+| IQR | 5.5389 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-06 | 1,247 | 4.68 | 17.96% | 15.24% |
+| 2025-07 | 954 | 11.79 | 44.44% | 37.63% |
+| 2025-08 | 3,273 | 5.53 | 10.36% | 8.74% |
+
+**주요 이상치 발생 날짜** (상위 5일):
+
+| 순위 | 날짜 | 이상치 수 |
+|:----:|------|----------:|
+| 1 | 2025-07-04 | 424 |
+| 2 | 2025-08-08 | 339 |
+| 3 | 2025-06-06 | 224 |
+
+- 이상치 발생 일수: 3일
+- 최대 일별 이상치: 424건 (2025-07-04)
+- 평균 일별 이상치: 329.0건
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![PR7L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 1,247 |
+| 평균 | 4.6792 |
+| 중앙값 | 0.0000 |
+| IQR | 3.4042 |
+| Bowley 왜도 | 1.0000 |
+| Adj 이상치 수 | 172 |
+| Adj 이상치율 | 13.79% |
+| Std 이상치율 | 18.20% |
+| 개선율 | 24.2% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-06-06: 172건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L1_ACT_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 954 |
+| 평균 | 11.7881 |
+| 중앙값 | 5.2468 |
+| IQR | 20.2297 |
+| Bowley 왜도 | 0.8765 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L1_ACT_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 3,273 |
+| 평균 | 5.5291 |
+| 중앙값 | 5.0734 |
+| IQR | 1.3305 |
+| Bowley 왜도 | -0.8521 |
+| Adj 이상치 수 | 378 |
+| Adj 이상치율 | 11.55% |
+| Std 이상치율 | 34.40% |
+| 개선율 | 66.4% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-08-08: 376건
+- 2. 2025-08-11: 2건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-08/adjusted/PR7L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-08/adjusted/PR7L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-08/adjusted/PR7L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/adjusted/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-08/adjusted/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/adjusted/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/adjusted/PR7L1_ACT_TORQUE_00_summary.png)
 
 ---
 
@@ -1105,31 +1341,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -1154,31 +1390,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -1203,31 +1439,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -1252,31 +1488,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -1399,31 +1635,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -1448,31 +1684,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -1497,31 +1733,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -1546,31 +1782,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_TORQUE_00_summary.png)
 
 ---
 
@@ -1693,31 +1929,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_11_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_11_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_11_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_11_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_11_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_11_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_11_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_11_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_11_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_11_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_11_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_11_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_11_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_11_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -1742,31 +1978,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_11_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_11_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_11_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_11_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_11_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_11_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_11_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_11_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_11_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_11_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_11_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_11_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_11_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_11_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -1786,31 +2022,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_11_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_11_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_11_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_11_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_11_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_11_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_11_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_11_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_11_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_11_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_11_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_11_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_11_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_11_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -1835,31 +2071,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_11_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_11_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_11_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_11_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_11_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_11_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_11_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_11_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_11_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_11_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_11_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_11_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_11_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_11_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -1982,31 +2218,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_14_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_14_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_14_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_14_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_14_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_14_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_14_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_14_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_14_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_14_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_14_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_14_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_14_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_14_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -2031,31 +2267,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_14_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_14_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_14_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_14_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_14_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_14_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_14_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_14_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_14_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_14_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_14_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_14_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_14_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_14_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -2075,31 +2311,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_14_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_14_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_14_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_14_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_14_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_14_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_14_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_14_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_14_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_14_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_14_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_14_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_14_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_14_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -2124,31 +2360,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_14_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_14_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_14_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_14_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_14_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_14_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_14_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_14_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_14_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_14_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_14_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_14_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_14_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_14_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -2271,31 +2507,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_10_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_10_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_10_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_10_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_10_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_10_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_10_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_10_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_10_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_10_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_10_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_10_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_10_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_10_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -2320,31 +2556,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_10_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_10_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_10_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_10_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_10_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_10_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_10_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_10_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_10_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_10_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_10_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_10_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_10_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_10_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -2364,31 +2600,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_10_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_10_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_10_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_10_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_10_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_10_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_10_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_10_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_10_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_10_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_10_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_10_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_10_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_10_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -2413,31 +2649,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_10_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_10_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_10_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_10_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_10_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_10_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_10_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_10_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_10_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_10_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_10_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_10_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_10_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_10_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -2560,31 +2796,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/FINISHING_BLOCK_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/FINISHING_BLOCK_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/FINISHING_BLOCK_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/FINISHING_BLOCK_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/FINISHING_BLOCK_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/FINISHING_BLOCK_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/FINISHING_BLOCK_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -2609,31 +2845,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/FINISHING_BLOCK_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/FINISHING_BLOCK_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/FINISHING_BLOCK_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/FINISHING_BLOCK_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/FINISHING_BLOCK_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/FINISHING_BLOCK_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/FINISHING_BLOCK_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -2658,31 +2894,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/FINISHING_BLOCK_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/FINISHING_BLOCK_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/FINISHING_BLOCK_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/FINISHING_BLOCK_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/FINISHING_BLOCK_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/FINISHING_BLOCK_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/FINISHING_BLOCK_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -2707,31 +2943,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/FINISHING_BLOCK_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/FINISHING_BLOCK_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/FINISHING_BLOCK_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/FINISHING_BLOCK_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/FINISHING_BLOCK_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/FINISHING_BLOCK_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/FINISHING_BLOCK_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/FINISHING_BLOCK_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -2854,31 +3090,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_12_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_12_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_12_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_12_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_12_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_12_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_12_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_12_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_12_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_12_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_12_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_12_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_12_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_12_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -2903,31 +3139,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_12_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_12_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_12_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_12_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_12_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_12_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_12_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_12_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_12_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_12_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_12_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_12_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_12_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_12_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -2947,31 +3183,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_12_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_12_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_12_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_12_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_12_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_12_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_12_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_12_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_12_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_12_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_12_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_12_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_12_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_12_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -2996,31 +3232,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_12_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_12_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_12_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_12_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_12_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_12_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_12_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_12_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_12_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_12_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_12_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_12_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_12_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_12_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -3143,31 +3379,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_9_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_9_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_9_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_9_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_9_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_9_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_9_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_9_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_9_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_9_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_9_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_9_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_9_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_9_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -3192,31 +3428,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_9_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_9_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_9_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_9_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_9_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_9_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_9_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_9_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_9_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_9_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_9_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_9_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_9_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_9_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -3236,31 +3472,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_9_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_9_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_9_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_9_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_9_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_9_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_9_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_9_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_9_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_9_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_9_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_9_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_9_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_9_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -3285,320 +3521,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_9_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_9_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_9_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_9_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_9_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_9_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_9_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_9_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_9_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_9_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_9_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_9_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_9_ACTUAL_SPEED_00_summary.png)
-
----
-
-#### STAND_4_ACTUAL_SPEED 🔴
-
-**위험도**: [DANGER] | **이상치율**: 15.49% | **개선율**: -0.4%
-**Bowley 왜도**: 0.3098 | **승수 (L/U)**: 0.734/1.363
-
-**카테고리**: 06 Stand Speed
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 속도 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 속도 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 3,061 | 3,050 |
-| 이상치율 | 15.49% | 15.43% |
-| 하한 경계 | 644.9222 | 611.7035 |
-| 상한 경계 | 989.5055 | 944.2237 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 664.1643 |
-| 표준편차 | 282.2945 |
-| Q1 (25%) | 736.3986 |
-| 중앙값 | 765.0871 |
-| Q3 (75%) | 819.5286 |
-| IQR | 83.1300 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 702.00 | 12.02% | 12.00% |
-| 2025-06 | 5,678 | 695.77 | 11.31% | 11.29% |
-| 2025-07 | 2,773 | 579.80 | 26.29% | 26.25% |
-| 2025-08 | 4,201 | 613.10 | 19.88% | 19.71% |
-
-**주요 이상치 발생 날짜** (상위 5일):
-
-| 순위 | 날짜 | 이상치 수 |
-|:----:|------|----------:|
-| 1 | 2025-08-08 | 528 |
-| 2 | 2025-05-17 | 490 |
-| 3 | 2025-07-04 | 415 |
-| 4 | 2025-06-12 | 401 |
-| 5 | 2025-05-18 | 365 |
-
-- 이상치 발생 일수: 8일
-- 최대 일별 이상치: 528건 (2025-08-08)
-- 평균 일별 이상치: 382.6건
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_4_ACTUAL_SPEED 종합 분석 차트](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 701.9960 |
-| 중앙값 | 771.5384 |
-| IQR | 64.3312 |
-| Bowley 왜도 | 0.7460 |
-| Adj 이상치 수 | 856 |
-| Adj 이상치율 | 12.04% |
-| Std 이상치율 | 12.04% |
-| 개선율 | 0.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-17: 491건
-- 2. 2025-05-18: 365건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_4_ACTUAL_SPEED_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_4_ACTUAL_SPEED_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_4_ACTUAL_SPEED_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_4_ACTUAL_SPEED_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_4_ACTUAL_SPEED_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_4_ACTUAL_SPEED_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 695.7699 |
-| 중앙값 | 750.0693 |
-| IQR | 84.1129 |
-| Bowley 왜도 | 0.6650 |
-| Adj 이상치 수 | 644 |
-| Adj 이상치율 | 11.34% |
-| Std 이상치율 | 11.29% |
-| 개선율 | -0.5% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-12: 403건
-- 2. 2025-06-06: 241건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_4_ACTUAL_SPEED_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_4_ACTUAL_SPEED_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_4_ACTUAL_SPEED_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_4_ACTUAL_SPEED_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_4_ACTUAL_SPEED_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_4_ACTUAL_SPEED_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 579.7980 |
-| 중앙값 | 750.5014 |
-| IQR | 807.5416 |
-| Bowley 왜도 | -0.8587 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_4_ACTUAL_SPEED_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_4_ACTUAL_SPEED_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_4_ACTUAL_SPEED_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_4_ACTUAL_SPEED_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_4_ACTUAL_SPEED_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_4_ACTUAL_SPEED_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 613.0981 |
-| 중앙값 | 746.2508 |
-| IQR | 49.7644 |
-| Bowley 왜도 | -0.2500 |
-| Adj 이상치 수 | 1,192 |
-| Adj 이상치율 | 28.37% |
-| Std 이상치율 | 20.11% |
-| 개선율 | -41.1% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-08: 887건
-- 2. 2025-08-11: 305건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_4_ACTUAL_SPEED_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_4_ACTUAL_SPEED_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_4_ACTUAL_SPEED_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_4_ACTUAL_SPEED_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_4_ACTUAL_SPEED_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_4_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_9_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -3721,31 +3668,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_6_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_6_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_6_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_6_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_6_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_6_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_6_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_6_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_6_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_6_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_6_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_6_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_6_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_6_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -3770,31 +3717,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_6_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_6_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_6_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_6_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_6_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_6_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_6_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_6_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_6_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_6_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_6_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_6_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_6_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_6_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -3814,31 +3761,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_6_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_6_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_6_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_6_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_6_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_6_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_6_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_6_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_6_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_6_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_6_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_6_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_6_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_6_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -3863,31 +3810,320 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_6_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_6_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_6_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_6_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_6_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_6_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_6_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_6_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_6_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_6_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_6_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_6_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_6_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_6_ACTUAL_SPEED_00_summary.png)
+
+---
+
+#### STAND_4_ACTUAL_SPEED 🔴
+
+**위험도**: [DANGER] | **이상치율**: 15.49% | **개선율**: -0.4%
+**Bowley 왜도**: 0.3098 | **승수 (L/U)**: 0.734/1.363
+
+**카테고리**: 06 Stand Speed
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 속도 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 속도 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 3,061 | 3,050 |
+| 이상치율 | 15.49% | 15.43% |
+| 하한 경계 | 644.9222 | 611.7035 |
+| 상한 경계 | 989.5055 | 944.2237 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 664.1643 |
+| 표준편차 | 282.2945 |
+| Q1 (25%) | 736.3986 |
+| 중앙값 | 765.0871 |
+| Q3 (75%) | 819.5286 |
+| IQR | 83.1300 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 702.00 | 12.02% | 12.00% |
+| 2025-06 | 5,678 | 695.77 | 11.31% | 11.29% |
+| 2025-07 | 2,773 | 579.80 | 26.29% | 26.25% |
+| 2025-08 | 4,201 | 613.10 | 19.88% | 19.71% |
+
+**주요 이상치 발생 날짜** (상위 5일):
+
+| 순위 | 날짜 | 이상치 수 |
+|:----:|------|----------:|
+| 1 | 2025-08-08 | 528 |
+| 2 | 2025-05-17 | 490 |
+| 3 | 2025-07-04 | 415 |
+| 4 | 2025-06-12 | 401 |
+| 5 | 2025-05-18 | 365 |
+
+- 이상치 발생 일수: 8일
+- 최대 일별 이상치: 528건 (2025-08-08)
+- 평균 일별 이상치: 382.6건
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_4_ACTUAL_SPEED 종합 분석 차트](./06_Stand_Speed/adjusted/STAND_4_ACTUAL_SPEED_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 701.9960 |
+| 중앙값 | 771.5384 |
+| IQR | 64.3312 |
+| Bowley 왜도 | 0.7460 |
+| Adj 이상치 수 | 856 |
+| Adj 이상치율 | 12.04% |
+| Std 이상치율 | 12.04% |
+| 개선율 | 0.0% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-05-17: 491건
+- 2. 2025-05-18: 365건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_4_ACTUAL_SPEED_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_4_ACTUAL_SPEED_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_4_ACTUAL_SPEED_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_4_ACTUAL_SPEED_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_4_ACTUAL_SPEED_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_4_ACTUAL_SPEED_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 695.7699 |
+| 중앙값 | 750.0693 |
+| IQR | 84.1129 |
+| Bowley 왜도 | 0.6650 |
+| Adj 이상치 수 | 644 |
+| Adj 이상치율 | 11.34% |
+| Std 이상치율 | 11.29% |
+| 개선율 | -0.5% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-06-12: 403건
+- 2. 2025-06-06: 241건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_4_ACTUAL_SPEED_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_4_ACTUAL_SPEED_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_4_ACTUAL_SPEED_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_4_ACTUAL_SPEED_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_4_ACTUAL_SPEED_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_4_ACTUAL_SPEED_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 579.7980 |
+| 중앙값 | 750.5014 |
+| IQR | 807.5416 |
+| Bowley 왜도 | -0.8587 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_4_ACTUAL_SPEED_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_4_ACTUAL_SPEED_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_4_ACTUAL_SPEED_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_4_ACTUAL_SPEED_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_4_ACTUAL_SPEED_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_4_ACTUAL_SPEED_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 613.0981 |
+| 중앙값 | 746.2508 |
+| IQR | 49.7644 |
+| Bowley 왜도 | -0.2500 |
+| Adj 이상치 수 | 1,192 |
+| Adj 이상치율 | 28.37% |
+| Std 이상치율 | 20.11% |
+| 개선율 | -41.1% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-08-08: 887건
+- 2. 2025-08-11: 305건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_4_ACTUAL_SPEED_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_4_ACTUAL_SPEED_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_4_ACTUAL_SPEED_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_4_ACTUAL_SPEED_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_4_ACTUAL_SPEED_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_4_ACTUAL_SPEED_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_4_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -4010,31 +4246,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_13_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_13_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_13_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_13_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_13_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_13_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_13_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_13_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_13_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_13_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_13_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_13_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_13_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_13_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -4059,31 +4295,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_13_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_13_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_13_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_13_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_13_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_13_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_13_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_13_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_13_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_13_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_13_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_13_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_13_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_13_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -4103,31 +4339,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_13_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_13_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_13_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_13_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_13_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_13_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_13_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_13_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_13_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_13_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_13_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_13_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_13_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_13_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -4152,31 +4388,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_13_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_13_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_13_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_13_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_13_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_13_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_13_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_13_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_13_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_13_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_13_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_13_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_13_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_13_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -4299,31 +4535,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_2_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_2_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_2_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_2_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_2_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_2_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_2_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_2_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_2_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_2_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_2_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_2_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_2_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_2_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -4348,31 +4584,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_2_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_2_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_2_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_2_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_2_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_2_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_2_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_2_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_2_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_2_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_2_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_2_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_2_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_2_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -4392,31 +4628,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_2_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_2_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_2_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_2_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_2_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_2_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_2_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_2_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_2_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_2_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_2_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_2_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_2_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_2_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -4441,31 +4677,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_2_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_2_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_2_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_2_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_2_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_2_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_2_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_2_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_2_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_2_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_2_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_2_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_2_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_2_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -4588,31 +4824,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_7_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_7_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_7_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_7_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_7_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_7_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_7_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_7_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_7_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_7_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_7_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_7_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_7_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_7_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -4637,31 +4873,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_7_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_7_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_7_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_7_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_7_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_7_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_7_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_7_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_7_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_7_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_7_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_7_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_7_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_7_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -4681,31 +4917,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_7_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_7_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_7_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_7_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_7_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_7_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_7_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_7_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_7_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_7_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_7_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_7_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_7_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_7_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -4730,31 +4966,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_7_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_7_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_7_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_7_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_7_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_7_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_7_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_7_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_7_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_7_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_7_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_7_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_7_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_7_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -4877,31 +5113,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_5_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_5_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_5_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_5_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_5_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_5_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_5_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_5_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_5_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_5_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_5_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_5_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_5_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_5_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -4926,31 +5162,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_5_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_5_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_5_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_5_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_5_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_5_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_5_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_5_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_5_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_5_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_5_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_5_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_5_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_5_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -4970,31 +5206,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_5_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_5_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_5_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_5_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_5_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_5_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_5_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_5_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_5_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_5_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_5_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_5_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_5_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_5_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -5019,31 +5255,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_5_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_5_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_5_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_5_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_5_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_5_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_5_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_5_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_5_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_5_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_5_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_5_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_5_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_5_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -5166,31 +5402,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_1_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_1_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_1_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_1_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_1_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_1_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_1_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_1_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_1_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_1_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_1_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_1_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_1_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_1_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -5215,31 +5451,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_1_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_1_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_1_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_1_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_1_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_1_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_1_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_1_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_1_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_1_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_1_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_1_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_1_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_1_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -5259,31 +5495,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_1_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_1_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_1_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_1_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_1_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_1_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_1_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_1_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_1_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_1_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_1_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_1_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_1_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_1_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -5308,31 +5544,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_1_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_1_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_1_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_1_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_1_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_1_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_1_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_1_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_1_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_1_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_1_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_1_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_1_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_1_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -5455,31 +5691,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-05/STAND_3_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_3_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-05/STAND_3_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_3_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-05/STAND_3_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_3_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/STAND_3_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_3_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-05/STAND_3_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_3_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/STAND_3_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_3_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/STAND_3_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./06_Stand_Speed/monthly/2025-05/adjusted/STAND_3_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -5504,31 +5740,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-06/STAND_3_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_3_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-06/STAND_3_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_3_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-06/STAND_3_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_3_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/STAND_3_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_3_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-06/STAND_3_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_3_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/STAND_3_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_3_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/STAND_3_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./06_Stand_Speed/monthly/2025-06/adjusted/STAND_3_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -5548,31 +5784,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-07/STAND_3_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_3_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-07/STAND_3_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_3_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-07/STAND_3_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_3_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/STAND_3_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_3_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-07/STAND_3_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_3_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/STAND_3_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_3_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/STAND_3_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./06_Stand_Speed/monthly/2025-07/adjusted/STAND_3_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -5597,31 +5833,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./06_Stand_Speed/monthly/2025-08/STAND_3_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_3_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./06_Stand_Speed/monthly/2025-08/STAND_3_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_3_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./06_Stand_Speed/monthly/2025-08/STAND_3_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_3_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/STAND_3_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_3_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./06_Stand_Speed/monthly/2025-08/STAND_3_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_3_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/STAND_3_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_3_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/STAND_3_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./06_Stand_Speed/monthly/2025-08/adjusted/STAND_3_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -5747,31 +5983,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_REFERENCE_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_REFERENCE_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_REFERENCE_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_REFERENCE_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_REFERENCE_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_REFERENCE_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_REFERENCE_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_REFERENCE_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_REFERENCE_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_REFERENCE_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_REFERENCE_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_REFERENCE_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_REFERENCE_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_REFERENCE_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -5796,31 +6032,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_REFERENCE_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_REFERENCE_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_REFERENCE_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_REFERENCE_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_REFERENCE_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_REFERENCE_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_REFERENCE_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_REFERENCE_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_REFERENCE_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_REFERENCE_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_REFERENCE_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_REFERENCE_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_REFERENCE_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_REFERENCE_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -5845,31 +6081,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_REFERENCE_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_REFERENCE_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_REFERENCE_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_REFERENCE_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_REFERENCE_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_REFERENCE_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_REFERENCE_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_REFERENCE_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_REFERENCE_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_REFERENCE_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_REFERENCE_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_REFERENCE_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_REFERENCE_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_REFERENCE_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -5894,36 +6130,36 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_REFERENCE_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_REFERENCE_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_REFERENCE_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_REFERENCE_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_REFERENCE_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_REFERENCE_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_REFERENCE_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_REFERENCE_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_REFERENCE_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_REFERENCE_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_REFERENCE_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_REFERENCE_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_REFERENCE_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_REFERENCE_TORQUE_00_summary.png)
 
 ---
 
 
-### 🟡 주의 (5~10%) - 7개 태그
+### 🟡 주의 (5~10%) - 3개 태그
 
 #### MAIN_COMBUSTION_AIR_PRESSURE 🟡
 
@@ -6044,31 +6280,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_COMBUSTION_AIR_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_COMBUSTION_AIR_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_COMBUSTION_AIR_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_COMBUSTION_AIR_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_COMBUSTION_AIR_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_COMBUSTION_AIR_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_COMBUSTION_AIR_PRESSURE_00_summary.png)
+![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_00_summary.png)
 
 **2025-06**
 
@@ -6093,31 +6329,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_COMBUSTION_AIR_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_COMBUSTION_AIR_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_COMBUSTION_AIR_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_COMBUSTION_AIR_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_COMBUSTION_AIR_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_COMBUSTION_AIR_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_COMBUSTION_AIR_PRESSURE_00_summary.png)
+![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_00_summary.png)
 
 **2025-07**
 
@@ -6142,31 +6378,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_COMBUSTION_AIR_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_COMBUSTION_AIR_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_COMBUSTION_AIR_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_COMBUSTION_AIR_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_COMBUSTION_AIR_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_COMBUSTION_AIR_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_COMBUSTION_AIR_PRESSURE_00_summary.png)
+![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_00_summary.png)
 
 **2025-08**
 
@@ -6191,31 +6427,271 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_COMBUSTION_AIR_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_COMBUSTION_AIR_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_COMBUSTION_AIR_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_COMBUSTION_AIR_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_COMBUSTION_AIR_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_COMBUSTION_AIR_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_COMBUSTION_AIR_PRESSURE_00_summary.png)
+![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_COMBUSTION_AIR_PRESSURE_00_summary.png)
+
+---
+
+#### [A] PR6L1_ACT_TORQUE 🟡
+
+**위험도**: [CAUTION] | **이상치율**: 8.51% | **개선율**: -10.4%
+**Bowley 왜도**: -0.7452 | **승수 (L/U)**: 2.107/0.475
+
+**카테고리**: 09 PR Detailed
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
+
+**데이터**: 원본 7,196 → 필터 후 5,474 (23.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 466 | 422 |
+| 이상치율 | 8.51% | 7.71% |
+| 하한 경계 | -12.2735 | -5.8256 |
+| 상한 경계 | 6.6488 | 9.7093 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 5,474 |
+| 평균 | 4.0793 |
+| 표준편차 | 5.4074 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 3.3889 |
+| Q3 (75%) | 3.8837 |
+| IQR | 3.8837 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-06 | 1,247 | 2.53 | 6.58% | 6.01% |
+| 2025-07 | 954 | 3.50 | 0.00% | 0.00% |
+| 2025-08 | 3,273 | 4.84 | 11.73% | 10.60% |
+
+**주요 이상치 발생 날짜** (상위 5일):
+
+| 순위 | 날짜 | 이상치 수 |
+|:----:|------|----------:|
+| 1 | 2025-08-08 | 326 |
+| 2 | 2025-06-06 | 82 |
+| 3 | 2025-08-11 | 58 |
+
+- 이상치 발생 일수: 3일
+- 최대 일별 이상치: 326건 (2025-08-08)
+- 평균 일별 이상치: 155.3건
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![PR6L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 1,247 |
+| 평균 | 2.5336 |
+| 중앙값 | 0.0000 |
+| IQR | 3.3027 |
+| Bowley 왜도 | 1.0000 |
+| Adj 이상치 수 | 59 |
+| Adj 이상치율 | 4.73% |
+| Std 이상치율 | 6.26% |
+| 개선율 | 24.4% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-06-06: 59건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L1_ACT_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 954 |
+| 평균 | 3.5010 |
+| 중앙값 | 3.3658 |
+| IQR | 0.2176 |
+| Bowley 왜도 | 0.3160 |
+| Adj 이상치 수 | 192 |
+| Adj 이상치율 | 20.13% |
+| Std 이상치율 | 21.17% |
+| 개선율 | 5.0% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-07-04: 192건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L1_ACT_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 3,273 |
+| 평균 | 4.8368 |
+| 중앙값 | 3.8062 |
+| IQR | 0.9591 |
+| Bowley 왜도 | -0.5692 |
+| Adj 이상치 수 | 1,158 |
+| Adj 이상치율 | 35.38% |
+| Std 이상치율 | 35.04% |
+| 개선율 | -1.0% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-08-11: 817건
+- 2. 2025-08-08: 341건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-08/adjusted/PR6L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-08/adjusted/PR6L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-08/adjusted/PR6L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/adjusted/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-08/adjusted/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/adjusted/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/adjusted/PR6L1_ACT_TORQUE_00_summary.png)
 
 ---
 
@@ -6338,31 +6814,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./03_Furnace_Discharge_Temperature/monthly/2025-05/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./03_Furnace_Discharge_Temperature/monthly/2025-05/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./03_Furnace_Discharge_Temperature/monthly/2025-05/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_02_histogram.png)
+![히스토그램](./03_Furnace_Discharge_Temperature/monthly/2025-05/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./03_Furnace_Discharge_Temperature/monthly/2025-05/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_03_boxplot.png)
+![박스플롯](./03_Furnace_Discharge_Temperature/monthly/2025-05/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./03_Furnace_Discharge_Temperature/monthly/2025-05/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./03_Furnace_Discharge_Temperature/monthly/2025-05/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./03_Furnace_Discharge_Temperature/monthly/2025-05/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./03_Furnace_Discharge_Temperature/monthly/2025-05/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./03_Furnace_Discharge_Temperature/monthly/2025-05/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./03_Furnace_Discharge_Temperature/monthly/2025-05/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./03_Furnace_Discharge_Temperature/monthly/2025-05/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_00_summary.png)
+![2025-05 종합 분석 차트](./03_Furnace_Discharge_Temperature/monthly/2025-05/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_00_summary.png)
 
 **2025-06**
 
@@ -6387,31 +6863,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./03_Furnace_Discharge_Temperature/monthly/2025-06/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./03_Furnace_Discharge_Temperature/monthly/2025-06/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./03_Furnace_Discharge_Temperature/monthly/2025-06/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_02_histogram.png)
+![히스토그램](./03_Furnace_Discharge_Temperature/monthly/2025-06/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./03_Furnace_Discharge_Temperature/monthly/2025-06/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_03_boxplot.png)
+![박스플롯](./03_Furnace_Discharge_Temperature/monthly/2025-06/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./03_Furnace_Discharge_Temperature/monthly/2025-06/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./03_Furnace_Discharge_Temperature/monthly/2025-06/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./03_Furnace_Discharge_Temperature/monthly/2025-06/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./03_Furnace_Discharge_Temperature/monthly/2025-06/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./03_Furnace_Discharge_Temperature/monthly/2025-06/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./03_Furnace_Discharge_Temperature/monthly/2025-06/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./03_Furnace_Discharge_Temperature/monthly/2025-06/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_00_summary.png)
+![2025-06 종합 분석 차트](./03_Furnace_Discharge_Temperature/monthly/2025-06/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_00_summary.png)
 
 **2025-07**
 
@@ -6436,31 +6912,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./03_Furnace_Discharge_Temperature/monthly/2025-07/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./03_Furnace_Discharge_Temperature/monthly/2025-07/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./03_Furnace_Discharge_Temperature/monthly/2025-07/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_02_histogram.png)
+![히스토그램](./03_Furnace_Discharge_Temperature/monthly/2025-07/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./03_Furnace_Discharge_Temperature/monthly/2025-07/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_03_boxplot.png)
+![박스플롯](./03_Furnace_Discharge_Temperature/monthly/2025-07/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./03_Furnace_Discharge_Temperature/monthly/2025-07/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./03_Furnace_Discharge_Temperature/monthly/2025-07/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./03_Furnace_Discharge_Temperature/monthly/2025-07/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./03_Furnace_Discharge_Temperature/monthly/2025-07/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./03_Furnace_Discharge_Temperature/monthly/2025-07/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./03_Furnace_Discharge_Temperature/monthly/2025-07/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./03_Furnace_Discharge_Temperature/monthly/2025-07/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_00_summary.png)
+![2025-07 종합 분석 차트](./03_Furnace_Discharge_Temperature/monthly/2025-07/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_00_summary.png)
 
 **2025-08**
 
@@ -6485,1475 +6961,36 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./03_Furnace_Discharge_Temperature/monthly/2025-08/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./03_Furnace_Discharge_Temperature/monthly/2025-08/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./03_Furnace_Discharge_Temperature/monthly/2025-08/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_02_histogram.png)
+![히스토그램](./03_Furnace_Discharge_Temperature/monthly/2025-08/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./03_Furnace_Discharge_Temperature/monthly/2025-08/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_03_boxplot.png)
+![박스플롯](./03_Furnace_Discharge_Temperature/monthly/2025-08/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./03_Furnace_Discharge_Temperature/monthly/2025-08/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./03_Furnace_Discharge_Temperature/monthly/2025-08/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./03_Furnace_Discharge_Temperature/monthly/2025-08/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./03_Furnace_Discharge_Temperature/monthly/2025-08/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./03_Furnace_Discharge_Temperature/monthly/2025-08/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./03_Furnace_Discharge_Temperature/monthly/2025-08/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./03_Furnace_Discharge_Temperature/monthly/2025-08/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_00_summary.png)
-
----
-
-#### [L1] PR7L1_ACT_TORQUE 🟡
-
-**위험도**: [CAUTION] | **이상치율**: 7.19% | **개선율**: -13.8%
-**Bowley 왜도**: -0.7760 | **승수 (L/U)**: 2.173/0.460
-
-**카테고리**: 09 PR Detailed
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 1,421 | 1,249 |
-| 이상치율 | 7.19% | 6.32% |
-| 하한 경계 | -15.9524 | -7.3420 |
-| 상한 경계 | 8.2738 | 12.2367 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 3.9502 |
-| 표준편차 | 5.4160 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 4.3465 |
-| Q3 (75%) | 4.8947 |
-| IQR | 4.8947 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 2.30 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 4.20 | 8.31% | 7.50% |
-| 2025-07 | 2,773 | 6.71 | 20.81% | 18.21% |
-| 2025-08 | 4,201 | 4.58 | 8.86% | 7.57% |
-
-**주요 이상치 발생 날짜** (상위 5일):
-
-| 순위 | 날짜 | 이상치 수 |
-|:----:|------|----------:|
-| 1 | 2025-06-06 | 472 |
-| 2 | 2025-07-04 | 449 |
-| 3 | 2025-08-08 | 372 |
-| 4 | 2025-07-05 | 128 |
-
-- 이상치 발생 일수: 4일
-- 최대 일별 이상치: 472건 (2025-06-06)
-- 평균 일별 이상치: 355.2건
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![PR7L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR7L1_ACT_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 2.3025 |
-| 중앙값 | 4.3369 |
-| IQR | 4.5345 |
-| Bowley 왜도 | -0.9129 |
-| Adj 이상치 수 | 1 |
-| Adj 이상치율 | 0.01% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-17: 1건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 4.2039 |
-| 중앙값 | 4.3221 |
-| IQR | 4.4950 |
-| Bowley 왜도 | -0.9230 |
-| Adj 이상치 수 | 492 |
-| Adj 이상치율 | 8.67% |
-| Std 이상치율 | 7.85% |
-| 개선율 | -10.3% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-06: 492건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 6.7072 |
-| 중앙값 | 4.6025 |
-| IQR | 5.4111 |
-| Bowley 왜도 | -0.7011 |
-| Adj 이상치 수 | 552 |
-| Adj 이상치율 | 19.91% |
-| Std 이상치율 | 17.35% |
-| 개선율 | -14.8% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-07-04: 427건
-- 2. 2025-07-05: 125건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 4.5762 |
-| 중앙값 | 5.0547 |
-| IQR | 5.1289 |
-| Bowley 왜도 | -0.9711 |
-| Adj 이상치 수 | 375 |
-| Adj 이상치율 | 8.93% |
-| Std 이상치율 | 7.40% |
-| 개선율 | -20.6% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-08: 373건
-- 2. 2025-08-11: 2건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_00_summary.png)
-
----
-
-#### [L2] PR7L2_ACT_TORQUE 🟡
-
-**위험도**: [CAUTION] | **이상치율**: 6.76% | **개선율**: -21.2%
-**Bowley 왜도**: -0.8977 | **승수 (L/U)**: 2.454/0.408
-
-**카테고리**: 09 PR Detailed
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 1,336 | 1,102 |
-| 이상치율 | 6.76% | 5.58% |
-| 하한 경계 | -22.4585 | -9.1523 |
-| 상한 경계 | 9.8313 | 15.2538 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 4.5811 |
-| 표준편차 | 5.4978 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 5.7893 |
-| Q3 (75%) | 6.1015 |
-| IQR | 6.1015 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 3.10 | 0.04% | 0.00% |
-| 2025-06 | 5,678 | 4.98 | 8.01% | 6.62% |
-| 2025-07 | 2,773 | 7.00 | 19.58% | 16.26% |
-| 2025-08 | 4,201 | 4.95 | 7.97% | 6.55% |
-
-**주요 이상치 발생 날짜** (상위 5일):
-
-| 순위 | 날짜 | 이상치 수 |
-|:----:|------|----------:|
-| 1 | 2025-06-06 | 450 |
-| 2 | 2025-07-04 | 414 |
-| 3 | 2025-08-08 | 333 |
-| 4 | 2025-07-05 | 129 |
-| 5 | 2025-06-12 | 5 |
-
-- 이상치 발생 일수: 8일
-- 최대 일별 이상치: 450건 (2025-06-06)
-- 평균 일별 이상치: 167.0건
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![PR7L2_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 3.1007 |
-| 중앙값 | 5.9613 |
-| IQR | 6.1157 |
-| Bowley 왜도 | -0.9495 |
-| Adj 이상치 수 | 4 |
-| Adj 이상치율 | 0.06% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-17: 2건
-- 2. 2025-05-18: 2건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 4.9798 |
-| 중앙값 | 5.8703 |
-| IQR | 6.0967 |
-| Bowley 왜도 | -0.9258 |
-| Adj 이상치 수 | 457 |
-| Adj 이상치율 | 8.05% |
-| Std 이상치율 | 6.62% |
-| 개선율 | -21.5% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-06: 452건
-- 2. 2025-06-12: 5건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 6.9972 |
-| 중앙값 | 4.9331 |
-| IQR | 6.2761 |
-| Bowley 왜도 | -0.5720 |
-| Adj 이상치 수 | 515 |
-| Adj 이상치율 | 18.57% |
-| Std 이상치율 | 16.08% |
-| 개선율 | -15.5% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-07-04: 395건
-- 2. 2025-07-05: 120건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 4.9532 |
-| 중앙값 | 5.8158 |
-| IQR | 6.0354 |
-| Bowley 왜도 | -0.9272 |
-| Adj 이상치 수 | 337 |
-| Adj 이상치율 | 8.02% |
-| Std 이상치율 | 6.64% |
-| 개선율 | -20.8% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-08: 335건
-- 2. 2025-08-11: 2건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_00_summary.png)
-
----
-
-#### [L1] PR6L1_ACT_TORQUE 🟡
-
-**위험도**: [CAUTION] | **이상치율**: 5.82% | **개선율**: -10.5%
-**Bowley 왜도**: -0.6020 | **승수 (L/U)**: 1.826/0.548
-
-**카테고리**: 09 PR Detailed
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 1,151 | 1,042 |
-| 이상치율 | 5.82% | 5.27% |
-| 하한 경계 | -11.6343 | -6.3724 |
-| 상한 경계 | 7.7386 | 10.6207 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 3.2823 |
-| 표준편차 | 4.4891 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 3.4028 |
-| Q3 (75%) | 4.2483 |
-| IQR | 4.2483 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 2.20 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 4.42 | 13.47% | 12.15% |
-| 2025-07 | 2,773 | 2.66 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 3.98 | 9.19% | 8.38% |
-
-**주요 이상치 발생 날짜** (상위 5일):
-
-| 순위 | 날짜 | 이상치 수 |
-|:----:|------|----------:|
-| 1 | 2025-06-12 | 597 |
-| 2 | 2025-08-08 | 332 |
-| 3 | 2025-06-06 | 168 |
-| 4 | 2025-08-11 | 54 |
-
-- 이상치 발생 일수: 4일
-- 최대 일별 이상치: 597건 (2025-06-12)
-- 평균 일별 이상치: 287.8건
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![PR6L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR6L1_ACT_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 2.1999 |
-| 중앙값 | 4.1535 |
-| IQR | 4.2994 |
-| Bowley 왜도 | -0.9321 |
-| Adj 이상치 수 | 1 |
-| Adj 이상치율 | 0.01% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-17: 1건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 4.4248 |
-| 중앙값 | 3.8056 |
-| IQR | 4.2506 |
-| Bowley 왜도 | -0.7906 |
-| Adj 이상치 수 | 787 |
-| Adj 이상치율 | 13.86% |
-| Std 이상치율 | 12.12% |
-| 개선율 | -14.4% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-12: 617건
-- 2. 2025-06-06: 170건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 2.6646 |
-| 중앙값 | 3.3438 |
-| IQR | 3.9156 |
-| Bowley 왜도 | -0.7079 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 3.9783 |
-| 중앙값 | 3.7662 |
-| IQR | 3.9064 |
-| Bowley 왜도 | -0.9283 |
-| Adj 이상치 수 | 405 |
-| Adj 이상치율 | 9.64% |
-| Std 이상치율 | 8.55% |
-| 개선율 | -12.8% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-08: 343건
-- 2. 2025-08-11: 62건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_00_summary.png)
-
----
-
-#### [L1] PR9L1_ACT_TORQUE 🟡
-
-**위험도**: [CAUTION] | **이상치율**: 5.65% | **개선율**: 10.1%
-**Bowley 왜도**: -0.3516 | **승수 (L/U)**: 1.421/0.704
-
-**카테고리**: 09 PR Detailed
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 1,117 | 1,242 |
-| 이상치율 | 5.65% | 6.28% |
-| 하한 경계 | -21.3288 | -16.5276 |
-| 상한 경계 | 10.4787 | 13.8566 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | -3.0798 |
-| 표준편차 | 8.7028 |
-| Q1 (25%) | -5.1335 |
-| 중앙값 | 0.0000 |
-| Q3 (75%) | 2.4625 |
-| IQR | 7.5960 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | -1.41 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | -3.42 | 6.76% | 7.47% |
-| 2025-07 | 2,773 | -6.04 | 16.12% | 17.92% |
-| 2025-08 | 4,201 | -3.49 | 6.81% | 7.64% |
-
-**주요 이상치 발생 날짜** (상위 5일):
-
-| 순위 | 날짜 | 이상치 수 |
-|:----:|------|----------:|
-| 1 | 2025-06-06 | 384 |
-| 2 | 2025-07-04 | 345 |
-| 3 | 2025-08-08 | 286 |
-| 4 | 2025-07-05 | 102 |
-
-- 이상치 발생 일수: 4일
-- 최대 일별 이상치: 384건 (2025-06-06)
-- 평균 일별 이상치: 279.2건
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![PR9L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | -1.4081 |
-| 중앙값 | 0.0000 |
-| IQR | 0.5083 |
-| Bowley 왜도 | -0.8156 |
-| Adj 이상치 수 | 3,447 |
-| Adj 이상치율 | 48.47% |
-| Std 이상치율 | 48.85% |
-| 개선율 | 0.8% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-17: 2,334건
-- 2. 2025-05-18: 1,113건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | -3.4228 |
-| 중앙값 | 0.0000 |
-| IQR | 8.5528 |
-| Bowley 왜도 | -0.4348 |
-| Adj 이상치 수 | 340 |
-| Adj 이상치율 | 5.99% |
-| Std 이상치율 | 7.04% |
-| 개선율 | 15.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-06: 340건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | -6.0444 |
-| 중앙값 | 0.0000 |
-| IQR | 12.6559 |
-| Bowley 왜도 | -0.5900 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 13.42% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | -3.4890 |
-| 중앙값 | 0.0000 |
-| IQR | 9.0759 |
-| Bowley 왜도 | -0.4569 |
-| Adj 이상치 수 | 245 |
-| Adj 이상치율 | 5.83% |
-| Std 이상치율 | 7.02% |
-| 개선율 | 16.9% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-08: 245건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_00_summary.png)
-
----
-
-#### [L1] PR8L1_ACT_TORQUE 🟡
-
-**위험도**: [CAUTION] | **이상치율**: 5.09% | **개선율**: -6.8%
-**Bowley 왜도**: -0.2393 | **승수 (L/U)**: 1.270/0.787
-
-**카테고리**: 09 PR Detailed
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 1,006 | 942 |
-| 이상치율 | 5.09% | 4.77% |
-| 하한 경계 | -13.4618 | -10.5966 |
-| 상한 경계 | 15.4056 | 17.6610 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 5.3644 |
-| 표준편차 | 6.5472 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 4.3775 |
-| Q3 (75%) | 7.0644 |
-| IQR | 7.0644 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 4.14 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 5.62 | 5.99% | 5.60% |
-| 2025-07 | 2,773 | 7.15 | 14.71% | 13.85% |
-| 2025-08 | 4,201 | 5.91 | 6.14% | 5.71% |
-
-**주요 이상치 발생 날짜** (상위 5일):
-
-| 순위 | 날짜 | 이상치 수 |
-|:----:|------|----------:|
-| 1 | 2025-06-06 | 340 |
-| 2 | 2025-07-04 | 319 |
-| 3 | 2025-08-08 | 258 |
-| 4 | 2025-07-05 | 89 |
-
-- 이상치 발생 일수: 4일
-- 최대 일별 이상치: 340건 (2025-06-06)
-- 평균 일별 이상치: 251.5건
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![PR8L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 4.1360 |
-| 중앙값 | 1.5258 |
-| IQR | 4.9021 |
-| Bowley 왜도 | 0.3775 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 15.06% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 5.6232 |
-| 중앙값 | 4.5823 |
-| IQR | 7.6221 |
-| Bowley 왜도 | -0.2024 |
-| Adj 이상치 수 | 328 |
-| Adj 이상치율 | 5.78% |
-| Std 이상치율 | 5.42% |
-| 개선율 | -6.5% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-06: 328건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 7.1503 |
-| 중앙값 | 4.2562 |
-| IQR | 10.6298 |
-| Bowley 왜도 | 0.1992 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 5.9150 |
-| 중앙값 | 4.8364 |
-| IQR | 8.4073 |
-| Bowley 왜도 | -0.1505 |
-| Adj 이상치 수 | 229 |
-| Adj 이상치율 | 5.45% |
-| Std 이상치율 | 5.12% |
-| 개선율 | -6.5% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-08: 229건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./03_Furnace_Discharge_Temperature/monthly/2025-08/adjusted/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_00_summary.png)
 
 ---
 
 
-### 🟢 양호 (0~5%) - 52개 태그
+### 🟢 양호 (0~5%) - 55개 태그
 
 #### MAIN_GAS_PRESSURE 🟢
 
@@ -8074,31 +7111,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_PRESSURE_00_summary.png)
+![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_PRESSURE_00_summary.png)
 
 **2025-06**
 
@@ -8123,31 +7160,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_PRESSURE_00_summary.png)
+![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_PRESSURE_00_summary.png)
 
 **2025-07**
 
@@ -8172,31 +7209,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_PRESSURE_00_summary.png)
+![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_PRESSURE_00_summary.png)
 
 **2025-08**
 
@@ -8221,31 +7258,272 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_PRESSURE_00_summary.png)
+![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_PRESSURE_00_summary.png)
+
+---
+
+#### [B] PR7L2_ACT_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 3.29% | **개선율**: -23.2%
+**Bowley 왜도**: -0.9575 | **승수 (L/U)**: 2.605/0.384
+
+**카테고리**: 09 PR Detailed
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
+
+**데이터**: 원본 12,948 → 필터 후 10,809 (16.5% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 356 | 289 |
+| 이상치율 | 3.29% | 2.67% |
+| 하한 경계 | -23.9375 | -9.1888 |
+| 상한 경계 | 9.6531 | 15.3147 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 10,809 |
+| 평균 | 4.5161 |
+| 표준편차 | 4.2980 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 5.9956 |
+| Q3 (75%) | 6.1259 |
+| IQR | 6.1259 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 6,158 | 3.40 | 0.02% | 0.00% |
+| 2025-06 | 3,597 | 5.73 | 6.31% | 5.17% |
+| 2025-07 | 1,054 | 6.90 | 12.14% | 9.77% |
+
+**주요 이상치 발생 날짜** (상위 5일):
+
+| 순위 | 날짜 | 이상치 수 |
+|:----:|------|----------:|
+| 1 | 2025-06-06 | 224 |
+| 2 | 2025-07-05 | 128 |
+| 3 | 2025-06-12 | 3 |
+| 4 | 2025-05-17 | 1 |
+
+- 이상치 발생 일수: 4일
+- 최대 일별 이상치: 224건 (2025-06-06)
+- 평균 일별 이상치: 89.0건
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![PR7L2_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR7L2_ACT_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 6,158 |
+| 평균 | 3.4011 |
+| 중앙값 | 6.0109 |
+| IQR | 6.1240 |
+| Bowley 왜도 | -0.9631 |
+| Adj 이상치 수 | 1 |
+| Adj 이상치율 | 0.02% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-05-17: 1건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-05/adjusted/PR7L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-05/adjusted/PR7L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-05/adjusted/PR7L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/adjusted/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-05/adjusted/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/adjusted/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/adjusted/PR7L2_ACT_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 3,597 |
+| 평균 | 5.7260 |
+| 중앙값 | 6.0124 |
+| IQR | 1.7253 |
+| Bowley 왜도 | -0.8229 |
+| Adj 이상치 수 | 244 |
+| Adj 이상치율 | 6.78% |
+| Std 이상치율 | 26.99% |
+| 개선율 | 74.9% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-06-06: 241건
+- 2. 2025-06-12: 3건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/adjusted/PR7L2_ACT_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 1,054 |
+| 평균 | 6.9014 |
+| 중앙값 | 5.8103 |
+| IQR | 0.3265 |
+| Bowley 왜도 | 0.0792 |
+| Adj 이상치 수 | 398 |
+| Adj 이상치율 | 37.76% |
+| Std 이상치율 | 38.33% |
+| 개선율 | 1.5% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-07-05: 398건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR7L2_ACT_TORQUE_00_summary.png)
 
 ---
 
@@ -8360,31 +7638,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
+![2025-05 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
 
 **2025-06**
 
@@ -8404,31 +7682,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
+![2025-06 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
 
 **2025-07**
 
@@ -8452,31 +7730,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
+![2025-07 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
 
 **2025-08**
 
@@ -8500,31 +7778,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
+![2025-08 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
 
 ---
 
@@ -8639,31 +7917,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
+![2025-05 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
 
 **2025-06**
 
@@ -8683,31 +7961,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
+![2025-06 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
 
 **2025-07**
 
@@ -8731,31 +8009,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
+![2025-07 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
 
 **2025-08**
 
@@ -8779,31 +8057,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
+![2025-08 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
 
 ---
 
@@ -8926,31 +8204,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/FURNACE_PRESSURE_00_summary.png)
+![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/FURNACE_PRESSURE_00_summary.png)
 
 **2025-06**
 
@@ -8975,31 +8253,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/FURNACE_PRESSURE_00_summary.png)
+![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/FURNACE_PRESSURE_00_summary.png)
 
 **2025-07**
 
@@ -9024,31 +8302,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/FURNACE_PRESSURE_00_summary.png)
+![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/FURNACE_PRESSURE_00_summary.png)
 
 **2025-08**
 
@@ -9073,31 +8351,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_PRESSURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_PRESSURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_PRESSURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_PRESSURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_PRESSURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_PRESSURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_PRESSURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_PRESSURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_PRESSURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_PRESSURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_PRESSURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_PRESSURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/FURNACE_PRESSURE_00_summary.png)
+![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/FURNACE_PRESSURE_00_summary.png)
 
 ---
 
@@ -9212,31 +8490,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
+![2025-05 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-06**
 
@@ -9256,31 +8534,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
+![2025-06 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-07**
 
@@ -9304,31 +8582,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
+![2025-07 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-08**
 
@@ -9352,31 +8630,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
+![2025-08 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
 
 ---
 
@@ -9491,31 +8769,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-05/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
+![2025-05 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-06**
 
@@ -9535,31 +8813,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-06/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
+![2025-06 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-07**
 
@@ -9583,31 +8861,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-07/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
+![2025-07 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-08**
 
@@ -9631,31 +8909,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-08/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
+![2025-08 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
 
 ---
 
@@ -9771,31 +9049,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
+![2025-05 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
 
 **2025-06**
 
@@ -9815,31 +9093,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
+![2025-06 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
 
 **2025-07**
 
@@ -9864,31 +9142,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
+![2025-07 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
 
 **2025-08**
 
@@ -9912,31 +9190,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
+![2025-08 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_00_summary.png)
 
 ---
 
@@ -10056,31 +9334,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/COMBUSTION_AIR_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/COMBUSTION_AIR_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/COMBUSTION_AIR_TEMPERATURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/COMBUSTION_AIR_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/COMBUSTION_AIR_TEMPERATURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/COMBUSTION_AIR_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/COMBUSTION_AIR_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/COMBUSTION_AIR_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/COMBUSTION_AIR_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/COMBUSTION_AIR_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/COMBUSTION_AIR_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/COMBUSTION_AIR_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/COMBUSTION_AIR_TEMPERATURE_00_summary.png)
+![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/COMBUSTION_AIR_TEMPERATURE_00_summary.png)
 
 **2025-06**
 
@@ -10100,31 +9378,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/COMBUSTION_AIR_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/COMBUSTION_AIR_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/COMBUSTION_AIR_TEMPERATURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/COMBUSTION_AIR_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/COMBUSTION_AIR_TEMPERATURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/COMBUSTION_AIR_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/COMBUSTION_AIR_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/COMBUSTION_AIR_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/COMBUSTION_AIR_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/COMBUSTION_AIR_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/COMBUSTION_AIR_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/COMBUSTION_AIR_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/COMBUSTION_AIR_TEMPERATURE_00_summary.png)
+![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/COMBUSTION_AIR_TEMPERATURE_00_summary.png)
 
 **2025-07**
 
@@ -10149,31 +9427,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/COMBUSTION_AIR_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/COMBUSTION_AIR_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/COMBUSTION_AIR_TEMPERATURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/COMBUSTION_AIR_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/COMBUSTION_AIR_TEMPERATURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/COMBUSTION_AIR_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/COMBUSTION_AIR_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/COMBUSTION_AIR_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/COMBUSTION_AIR_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/COMBUSTION_AIR_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/COMBUSTION_AIR_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/COMBUSTION_AIR_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/COMBUSTION_AIR_TEMPERATURE_00_summary.png)
+![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/COMBUSTION_AIR_TEMPERATURE_00_summary.png)
 
 **2025-08**
 
@@ -10198,31 +9476,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/COMBUSTION_AIR_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/COMBUSTION_AIR_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/COMBUSTION_AIR_TEMPERATURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/COMBUSTION_AIR_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/COMBUSTION_AIR_TEMPERATURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/COMBUSTION_AIR_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/COMBUSTION_AIR_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/COMBUSTION_AIR_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/COMBUSTION_AIR_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/COMBUSTION_AIR_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/COMBUSTION_AIR_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/COMBUSTION_AIR_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/COMBUSTION_AIR_TEMPERATURE_00_summary.png)
+![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/COMBUSTION_AIR_TEMPERATURE_00_summary.png)
 
 ---
 
@@ -10338,31 +9616,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
+![2025-05 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-05/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
 
 **2025-06**
 
@@ -10382,31 +9660,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
+![2025-06 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-06/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
 
 **2025-07**
 
@@ -10431,31 +9709,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
+![2025-07 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-07/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
 
 **2025-08**
 
@@ -10480,316 +9758,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
+![시계열 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
+![히스토그램](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
+![박스플롯](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
+![일별 평균 추이](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
+![시간별 패턴](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
+![일별 이상치 수](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
-
----
-
-#### [L2] PR6L2_ACT_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.51% | **개선율**: -5.2%
-**Bowley 왜도**: -0.4823 | **승수 (L/U)**: 1.620/0.617
-
-**카테고리**: 09 PR Detailed
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 101 | 96 |
-| 이상치율 | 0.51% | 0.49% |
-| 하한 경계 | -13.8133 | -8.5278 |
-| 상한 경계 | 10.9498 | 14.2129 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 3.2784 |
-| 표준편차 | 2.9503 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 4.2136 |
-| Q3 (75%) | 5.6852 |
-| IQR | 5.6852 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 2.94 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 3.41 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 3.36 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 3.62 | 2.40% | 2.29% |
-
-**주요 이상치 발생 날짜** (상위 5일):
-
-| 순위 | 날짜 | 이상치 수 |
-|:----:|------|----------:|
-| 1 | 2025-08-11 | 54 |
-| 2 | 2025-08-08 | 47 |
-
-- 이상치 발생 일수: 2일
-- 최대 일별 이상치: 54건 (2025-08-11)
-- 평균 일별 이상치: 50.5건
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![PR6L2_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 2.9371 |
-| 중앙값 | 5.6222 |
-| IQR | 5.7887 |
-| Bowley 왜도 | -0.9425 |
-| Adj 이상치 수 | 6 |
-| Adj 이상치율 | 0.08% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-17: 4건
-- 2. 2025-05-18: 2건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 3.4126 |
-| 중앙값 | 4.4052 |
-| IQR | 5.6658 |
-| Bowley 왜도 | -0.5550 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 3.3597 |
-| 중앙값 | 4.0761 |
-| IQR | 5.2317 |
-| Bowley 왜도 | -0.5582 |
-| Adj 이상치 수 | 1 |
-| Adj 이상치율 | 0.04% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-07-05: 1건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 3.6211 |
-| 중앙값 | 4.0966 |
-| IQR | 5.3362 |
-| Bowley 왜도 | -0.5354 |
-| Adj 이상치 수 | 104 |
-| Adj 이상치율 | 2.48% |
-| Std 이상치율 | 2.33% |
-| 개선율 | -6.1% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-11: 56건
-- 2. 2025-08-08: 48건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./02_Furnace_Bottom_Temperature/monthly/2025-08/adjusted/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_00_summary.png)
 
 ---
 
@@ -10910,31 +9903,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
+![2025-05 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-06**
 
@@ -10959,31 +9952,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
+![2025-06 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-07**
 
@@ -11008,31 +10001,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
+![2025-07 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-08**
 
@@ -11057,31 +10050,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
+![2025-08 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_00_summary.png)
 
 ---
 
@@ -11202,31 +10195,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-05/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
+![2025-05 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-05/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-06**
 
@@ -11251,31 +10244,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-06/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
+![2025-06 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-06/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-07**
 
@@ -11300,31 +10293,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-07/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
+![2025-07 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-07/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
 
 **2025-08**
 
@@ -11349,31 +10342,270 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
+![시계열 차트](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
+![히스토그램](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
+![박스플롯](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
+![일별 평균 추이](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
+![시간별 패턴](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
+![일별 이상치 수](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-08/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
+![2025-08 종합 분석 차트](./01_Furnace_Top_Temperature/monthly/2025-08/adjusted/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_00_summary.png)
+
+---
+
+#### [B] PR6L2_ACT_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.05% | **개선율**: 0.0%
+**Bowley 왜도**: -0.9347 | **승수 (L/U)**: 2.547/0.393
+
+**카테고리**: 09 PR Detailed
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
+
+**데이터**: 원본 12,948 → 필터 후 10,809 (16.5% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 5 | 0 |
+| 이상치율 | 0.05% | 0.00% |
+| 하한 경계 | -22.0575 | -8.6618 |
+| 상한 경계 | 9.1760 | 14.4364 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 10,809 |
+| 평균 | 3.7323 |
+| 표준편차 | 2.6903 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 5.5861 |
+| Q3 (75%) | 5.7746 |
+| IQR | 5.7746 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 6,158 | 3.22 | 0.02% | 0.00% |
+| 2025-06 | 3,597 | 4.38 | 0.08% | 0.00% |
+| 2025-07 | 1,054 | 4.48 | 0.09% | 0.00% |
+
+**주요 이상치 발생 날짜** (상위 5일):
+
+| 순위 | 날짜 | 이상치 수 |
+|:----:|------|----------:|
+| 1 | 2025-06-12 | 3 |
+| 2 | 2025-05-17 | 1 |
+| 3 | 2025-07-05 | 1 |
+
+- 이상치 발생 일수: 3일
+- 최대 일별 이상치: 3건 (2025-06-12)
+- 평균 일별 이상치: 1.7건
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![PR6L2_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR6L2_ACT_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 6,158 |
+| 평균 | 3.2228 |
+| 중앙값 | 5.6747 |
+| IQR | 5.7988 |
+| Bowley 왜도 | -0.9572 |
+| Adj 이상치 수 | 1 |
+| Adj 이상치율 | 0.02% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-05-17: 1건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-05/adjusted/PR6L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-05/adjusted/PR6L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-05/adjusted/PR6L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/adjusted/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-05/adjusted/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/adjusted/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/adjusted/PR6L2_ACT_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 3,597 |
+| 평균 | 4.3849 |
+| 중앙값 | 5.6053 |
+| IQR | 1.4962 |
+| Bowley 왜도 | -0.8681 |
+| Adj 이상치 수 | 3 |
+| Adj 이상치율 | 0.08% |
+| Std 이상치율 | 20.60% |
+| 개선율 | 99.6% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-06-12: 3건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/adjusted/PR6L2_ACT_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 1,054 |
+| 평균 | 4.4826 |
+| 중앙값 | 5.2778 |
+| IQR | 1.2726 |
+| Bowley 왜도 | -0.8738 |
+| Adj 이상치 수 | 1 |
+| Adj 이상치율 | 0.09% |
+| Std 이상치율 | 11.57% |
+| 개선율 | 99.2% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-07-05: 1건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR6L2_ACT_TORQUE_00_summary.png)
 
 ---
 
@@ -11487,31 +10719,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_FLOW_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_FLOW_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_FLOW_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_FLOW_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_FLOW_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_FLOW_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_FLOW_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_FLOW_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_FLOW_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_FLOW_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_FLOW_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_FLOW_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_FLOW_00_summary.png)
+![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_FLOW_00_summary.png)
 
 **2025-06**
 
@@ -11531,31 +10763,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_FLOW_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_FLOW_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_FLOW_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_FLOW_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_FLOW_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_FLOW_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_FLOW_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_FLOW_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_FLOW_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_FLOW_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_FLOW_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_FLOW_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_FLOW_00_summary.png)
+![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_FLOW_00_summary.png)
 
 **2025-07**
 
@@ -11575,31 +10807,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_FLOW_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_FLOW_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_FLOW_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_FLOW_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_FLOW_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_FLOW_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_FLOW_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_FLOW_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_FLOW_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_FLOW_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_FLOW_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_FLOW_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_FLOW_00_summary.png)
+![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_FLOW_00_summary.png)
 
 **2025-08**
 
@@ -11619,31 +10851,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_FLOW_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_FLOW_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_FLOW_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_FLOW_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_FLOW_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_FLOW_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_FLOW_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_FLOW_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_FLOW_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_FLOW_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_FLOW_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_FLOW_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_FLOW_00_summary.png)
+![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_FLOW_00_summary.png)
 
 ---
 
@@ -11761,31 +10993,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_2_ACTUAL_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_2_ACTUAL_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -11805,31 +11037,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_2_ACTUAL_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_2_ACTUAL_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -11849,31 +11081,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_2_ACTUAL_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_2_ACTUAL_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -11893,31 +11125,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_2_ACTUAL_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_2_ACTUAL_TORQUE_00_summary.png)
 
 ---
 
@@ -12025,31 +11257,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_TEMPERATURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_TEMPERATURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/MAIN_GAS_TEMPERATURE_00_summary.png)
+![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/MAIN_GAS_TEMPERATURE_00_summary.png)
 
 **2025-06**
 
@@ -12069,31 +11301,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_TEMPERATURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_TEMPERATURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/MAIN_GAS_TEMPERATURE_00_summary.png)
+![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/MAIN_GAS_TEMPERATURE_00_summary.png)
 
 **2025-07**
 
@@ -12113,31 +11345,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_TEMPERATURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_TEMPERATURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/MAIN_GAS_TEMPERATURE_00_summary.png)
+![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/MAIN_GAS_TEMPERATURE_00_summary.png)
 
 **2025-08**
 
@@ -12161,291 +11393,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_TEMPERATURE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_TEMPERATURE_02_histogram.png)
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_TEMPERATURE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_TEMPERATURE_03_boxplot.png)
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_TEMPERATURE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_TEMPERATURE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_TEMPERATURE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_TEMPERATURE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_TEMPERATURE_00_summary.png)
-
----
-
-#### STAND_10_ACTUAL_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.7863 | **승수 (L/U)**: 2.195/0.456
-
-**카테고리**: 05 Stand Torque
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -194.3312 | -87.1974 |
-| 상한 경계 | 103.0231 | 151.8258 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 41.8380 |
-| 표준편차 | 26.5130 |
-| Q1 (25%) | 2.4363 |
-| 중앙값 | 55.8070 |
-| Q3 (75%) | 62.1921 |
-| IQR | 59.7558 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 43.56 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 43.55 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 36.37 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 40.21 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_10_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 43.5600 |
-| 중앙값 | 54.2012 |
-| IQR | 21.8790 |
-| Bowley 왜도 | -0.4239 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 21.91% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_10_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_10_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_10_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_10_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_10_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_10_ACTUAL_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 43.5548 |
-| 중앙값 | 57.6234 |
-| IQR | 60.7889 |
-| Bowley 왜도 | -0.8128 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_10_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_10_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_10_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_10_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_10_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_10_ACTUAL_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 36.3668 |
-| 중앙값 | 60.5397 |
-| IQR | 63.8428 |
-| Bowley 왜도 | -0.8965 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_10_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_10_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_10_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_10_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_10_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_10_ACTUAL_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 40.2144 |
-| 중앙값 | 57.8705 |
-| IQR | 59.5813 |
-| Bowley 왜도 | -0.8662 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_10_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_10_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_10_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_10_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_10_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_10_ACTUAL_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/MAIN_GAS_TEMPERATURE_00_summary.png)
 
 ---
 
@@ -12549,31 +11521,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_12_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_12_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_12_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_12_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_12_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_12_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_12_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_12_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_12_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_12_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_12_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_12_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_12_ACTUAL_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_12_ACTUAL_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -12593,31 +11565,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_12_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_12_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_12_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_12_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_12_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_12_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_12_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_12_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_12_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_12_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_12_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_12_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_12_ACTUAL_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_12_ACTUAL_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -12637,31 +11609,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_12_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_12_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_12_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_12_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_12_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_12_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_12_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_12_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_12_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_12_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_12_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_12_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_12_ACTUAL_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_12_ACTUAL_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -12681,38 +11653,38 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_12_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_12_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_12_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_12_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_12_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_12_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_12_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_12_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_12_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_12_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_12_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_12_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_12_ACTUAL_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_12_ACTUAL_TORQUE_00_summary.png)
 
 ---
 
-#### STAND_11_ACTUAL_TORQUE 🟢
+#### STAND_10_ACTUAL_TORQUE 🟢
 
 **위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.7094 | **승수 (L/U)**: 2.033/0.492
+**Bowley 왜도**: -0.7863 | **승수 (L/U)**: 2.195/0.456
 
 **카테고리**: 05 Stand Torque
 
@@ -12729,62 +11701,62 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 |-----------|--------------|--------------|
 | 이상치 수 | 0 | 0 |
 | 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -153.1267 | -74.6464 |
-| 상한 경계 | 89.3897 | 127.9976 |
+| 하한 경계 | -194.3312 | -87.1974 |
+| 상한 경계 | 103.0231 | 151.8258 |
 
 | 기본 통계 | 값 |
 |-----------|-------|
 | 분석 레코드 | 19,763 |
-| 평균 | 34.3684 |
-| 표준편차 | 22.1848 |
-| Q1 (25%) | 1.3451 |
-| 중앙값 | 44.6448 |
-| Q3 (75%) | 52.0061 |
-| IQR | 50.6610 |
+| 평균 | 41.8380 |
+| 표준편차 | 26.5130 |
+| Q1 (25%) | 2.4363 |
+| 중앙값 | 55.8070 |
+| Q3 (75%) | 62.1921 |
+| IQR | 59.7558 |
 
 **월별 이상치 추이**:
 
 | 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
 |-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 36.48 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 34.45 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 26.59 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 35.82 | 0.00% | 0.00% |
+| 2025-05 | 7,111 | 43.56 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 43.55 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 36.37 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 40.21 | 0.00% | 0.00% |
 
 
 ##### 차트 분석
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 월별 이상치율 (Monthly Outlier Rate)**
 
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
 
 **6. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_06_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_06_hourly_pattern.png)
 
 **7. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_07_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_07_daily_outlier_count.png)
 
 **종합 분석 차트**
 
-![STAND_11_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_analysis.png)
+![STAND_10_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_10_ACTUAL_TORQUE_analysis.png)
 
 
 ---
@@ -12798,854 +11770,42 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 7,111 |
-| 평균 | 36.4821 |
-| 중앙값 | 44.1840 |
-| IQR | 19.0498 |
-| Bowley 왜도 | -0.1597 |
-| Adj 이상치 수 | 18 |
-| Adj 이상치율 | 0.25% |
-| Std 이상치율 | 21.83% |
-| 개선율 | 98.8% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-18: 10건
-- 2. 2025-05-17: 8건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_11_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_11_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_11_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_11_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_11_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_11_ACTUAL_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 34.4484 |
-| 중앙값 | 45.6894 |
-| IQR | 49.1028 |
-| Bowley 왜도 | -0.8021 |
+| 평균 | 43.5600 |
+| 중앙값 | 54.2012 |
+| IQR | 21.8790 |
+| Bowley 왜도 | -0.4239 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_11_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_11_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_11_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_11_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_11_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_11_ACTUAL_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 26.5866 |
-| 중앙값 | 41.3680 |
-| IQR | 45.1324 |
-| Bowley 왜도 | -0.8332 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_11_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_11_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_11_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_11_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_11_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_11_ACTUAL_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 35.8191 |
-| 중앙값 | 50.1551 |
-| IQR | 55.0921 |
-| Bowley 왜도 | -0.7780 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_11_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_11_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_11_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_11_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_11_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_11_ACTUAL_TORQUE_00_summary.png)
-
----
-
-#### INDIRECT_COOLING_WATER_FLOW 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: 0.8254 | **승수 (L/U)**: 0.438/2.283
-
-**카테고리**: 04 Furnace Auxiliary
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✗ | 가열로 독립 시스템 |
-| coiling_transient | ✗ | 가열로 독립 시스템 |
-
-**데이터**: 원본 20,144 → 필터 후 20,144 (0.0% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | 149.3967 | 141.4295 |
-| 상한 경계 | 197.4252 | 179.2382 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 20,144 |
-| 평균 | 159.5778 |
-| 표준편차 | 4.8624 |
-| Q1 (25%) | 155.6078 |
-| 중앙값 | 156.4331 |
-| Q3 (75%) | 165.0600 |
-| IQR | 9.4522 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,190 | 155.35 | 0.00% | 0.00% |
-| 2025-06 | 5,758 | 166.42 | 0.00% | 0.00% |
-| 2025-07 | 2,880 | 161.65 | 0.00% | 0.00% |
-| 2025-08 | 4,316 | 156.12 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![INDIRECT_COOLING_WATER_FLOW 종합 분석 차트](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,190 |
-| 평균 | 155.3463 |
-| 중앙값 | 155.4160 |
-| IQR | 1.0189 |
-| Bowley 왜도 | -0.1279 |
-| Adj 이상치 수 | 4 |
-| Adj 이상치율 | 0.06% |
-| Std 이상치율 | 0.06% |
-| 개선율 | 0.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-17: 4건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_COOLING_WATER_FLOW_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_COOLING_WATER_FLOW_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_COOLING_WATER_FLOW_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_COOLING_WATER_FLOW_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,758 |
-| 평균 | 166.4200 |
-| 중앙값 | 166.2618 |
-| IQR | 1.9702 |
-| Bowley 왜도 | 0.1392 |
-| Adj 이상치 수 | 6 |
-| Adj 이상치율 | 0.10% |
-| Std 이상치율 | 0.03% |
-| 개선율 | -200.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-12: 6건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_COOLING_WATER_FLOW_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_COOLING_WATER_FLOW_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_COOLING_WATER_FLOW_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_COOLING_WATER_FLOW_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,880 |
-| 평균 | 161.6460 |
-| 중앙값 | 161.5820 |
-| IQR | 0.8084 |
-| Bowley 왜도 | 0.1002 |
-| Adj 이상치 수 | 19 |
-| Adj 이상치율 | 0.66% |
-| Std 이상치율 | 1.08% |
-| 개선율 | 38.7% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-07-04: 14건
-- 2. 2025-07-05: 5건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_COOLING_WATER_FLOW_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_COOLING_WATER_FLOW_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_COOLING_WATER_FLOW_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_COOLING_WATER_FLOW_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,316 |
-| 평균 | 156.1188 |
-| 중앙값 | 156.1524 |
-| IQR | 0.6975 |
-| Bowley 왜도 | -0.0620 |
-| Adj 이상치 수 | 22 |
-| Adj 이상치율 | 0.51% |
-| Std 이상치율 | 0.60% |
-| 개선율 | 15.4% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-08: 20건
-- 2. 2025-08-11: 2건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_COOLING_WATER_FLOW_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_COOLING_WATER_FLOW_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_COOLING_WATER_FLOW_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_COOLING_WATER_FLOW_00_summary.png)
-
----
-
-#### INDIRECT_WATER_MAIN_TEMPERATURE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: 0.4151 | **승수 (L/U)**: 0.660/1.514
-
-**카테고리**: 04 Furnace Auxiliary
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✗ | 가열로 독립 시스템 |
-| coiling_transient | ✗ | 가열로 독립 시스템 |
-
-**데이터**: 원본 20,144 → 필터 후 20,144 (0.0% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | 26.1391 | 24.0500 |
-| 상한 경계 | 43.6139 | 40.4500 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 20,144 |
-| 평균 | 31.9078 |
-| 표준편차 | 2.3866 |
-| Q1 (25%) | 30.2000 |
-| 중앙값 | 31.3991 |
-| Q3 (75%) | 34.3000 |
-| IQR | 4.1000 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,190 | 30.03 | 0.00% | 0.00% |
-| 2025-06 | 5,758 | 31.16 | 0.00% | 0.00% |
-| 2025-07 | 2,880 | 34.63 | 0.00% | 0.00% |
-| 2025-08 | 4,316 | 34.22 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![INDIRECT_WATER_MAIN_TEMPERATURE 종합 분석 차트](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,190 |
-| 평균 | 30.0275 |
-| 중앙값 | 29.7872 |
-| IQR | 2.2852 |
-| Bowley 왜도 | 0.3985 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_WATER_MAIN_TEMPERATURE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_WATER_MAIN_TEMPERATURE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/INDIRECT_WATER_MAIN_TEMPERATURE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,758 |
-| 평균 | 31.1605 |
-| 중앙값 | 31.1000 |
-| IQR | 1.0923 |
-| Bowley 왜도 | 0.0986 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_WATER_MAIN_TEMPERATURE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_WATER_MAIN_TEMPERATURE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/INDIRECT_WATER_MAIN_TEMPERATURE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,880 |
-| 평균 | 34.6258 |
-| 중앙값 | 35.5000 |
-| IQR | 2.0000 |
-| Bowley 왜도 | -0.6000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 11.77% |
+| Std 이상치율 | 21.91% |
 | 개선율 | 100.0% |
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_10_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_10_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_10_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_WATER_MAIN_TEMPERATURE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_10_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_WATER_MAIN_TEMPERATURE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_10_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/INDIRECT_WATER_MAIN_TEMPERATURE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,316 |
-| 평균 | 34.2237 |
-| 중앙값 | 35.0000 |
-| IQR | 1.3958 |
-| Bowley 왜도 | -0.2896 |
-| Adj 이상치 수 | 532 |
-| Adj 이상치율 | 12.33% |
-| Std 이상치율 | 14.41% |
-| 개선율 | 14.5% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-08: 532건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_WATER_MAIN_TEMPERATURE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_WATER_MAIN_TEMPERATURE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/INDIRECT_WATER_MAIN_TEMPERATURE_00_summary.png)
-
----
-
-#### FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.3829 | **승수 (L/U)**: 1.467/0.682
-
-**카테고리**: 05 Stand Torque
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -111.5533 | -74.7524 |
-| 상한 경계 | 110.4892 | 135.5824 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 35.1146 |
-| 표준편차 | 22.6842 |
-| Q1 (25%) | 4.1232 |
-| 중앙값 | 40.4829 |
-| Q3 (75%) | 56.7069 |
-| IQR | 52.5837 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 36.45 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 35.46 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 28.41 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 36.82 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 36.4454 |
-| 중앙값 | 39.2082 |
-| IQR | 24.4815 |
-| Bowley 왜도 | 0.3567 |
-| Adj 이상치 수 | 1,552 |
-| Adj 이상치율 | 21.83% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-17: 849건
-- 2. 2025-05-18: 703건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_10_ACTUAL_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -13654,10 +11814,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 5,678 |
-| 평균 | 35.4599 |
-| 중앙값 | 40.5302 |
-| IQR | 52.8796 |
-| Bowley 왜도 | -0.3641 |
+| 평균 | 43.5548 |
+| 중앙값 | 57.6234 |
+| IQR | 60.7889 |
+| Bowley 왜도 | -0.8128 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -13665,31 +11825,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_10_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_10_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_10_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_10_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_10_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_10_ACTUAL_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -13698,10 +11858,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 2,773 |
-| 평균 | 28.4112 |
-| 중앙값 | 41.6810 |
-| IQR | 40.1781 |
-| Bowley 왜도 | -0.8992 |
+| 평균 | 36.3668 |
+| 중앙값 | 60.5397 |
+| IQR | 63.8428 |
+| Bowley 왜도 | -0.8965 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -13709,31 +11869,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_10_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_10_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_10_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_10_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_10_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_10_ACTUAL_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -13742,10 +11902,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 4,201 |
-| 평균 | 36.8202 |
-| 중앙값 | 49.2912 |
-| IQR | 54.0046 |
-| Bowley 왜도 | -0.6804 |
+| 평균 | 40.2144 |
+| 중앙값 | 57.8705 |
+| IQR | 59.5813 |
+| Bowley 왜도 | -0.8662 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -13753,38 +11913,38 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_10_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_10_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_10_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_10_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_10_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_10_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_10_ACTUAL_TORQUE_00_summary.png)
 
 ---
 
-#### FINISHING_BLOCK_MASTER_ACTUAL_TORQUE 🟢
+#### STAND_9_ACTUAL_TORQUE 🟢
 
 **위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.3826 | **승수 (L/U)**: 1.466/0.682
+**Bowley 왜도**: -0.8119 | **승수 (L/U)**: 2.252/0.444
 
 **카테고리**: 05 Stand Torque
 
@@ -13801,62 +11961,62 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 |-----------|--------------|--------------|
 | 이상치 수 | 0 | 0 |
 | 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -111.5486 | -74.7749 |
-| 상한 경계 | 110.5678 | 135.6519 |
+| 하한 경계 | -195.4038 | -86.2410 |
+| 상한 경계 | 97.7634 | 146.2331 |
 
 | 기본 통계 | 값 |
 |-----------|-------|
 | 분석 레코드 | 19,763 |
-| 평균 | 35.1370 |
-| 표준편차 | 22.6971 |
-| Q1 (25%) | 4.1351 |
-| 중앙값 | 40.5009 |
-| Q3 (75%) | 56.7418 |
-| IQR | 52.6067 |
+| 평균 | 40.2076 |
+| 표준편차 | 25.9683 |
+| Q1 (25%) | 0.9368 |
+| 중앙값 | 53.5893 |
+| Q3 (75%) | 59.0553 |
+| IQR | 58.1185 |
 
 **월별 이상치 추이**:
 
 | 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
 |-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 36.47 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 35.48 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 28.43 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 36.84 | 0.00% | 0.00% |
+| 2025-05 | 7,111 | 42.39 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 42.69 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 36.57 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 35.55 | 0.00% | 0.00% |
 
 
 ##### 차트 분석
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 월별 이상치율 (Monthly Outlier Rate)**
 
-![월별 이상치율](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
 
 **6. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_06_hourly_pattern.png)
 
 **7. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_07_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_07_daily_outlier_count.png)
 
 **종합 분석 차트**
 
-![FINISHING_BLOCK_MASTER_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_analysis.png)
+![STAND_9_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_analysis.png)
 
 
 ---
@@ -13870,307 +12030,42 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 7,111 |
-| 평균 | 36.4694 |
-| 중앙값 | 39.2206 |
-| IQR | 24.4621 |
-| Bowley 왜도 | 0.3612 |
-| Adj 이상치 수 | 1,555 |
-| Adj 이상치율 | 21.87% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-17: 849건
-- 2. 2025-05-18: 706건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 35.4832 |
-| 중앙값 | 40.5532 |
-| IQR | 52.8693 |
-| Bowley 왜도 | -0.3636 |
+| 평균 | 42.3938 |
+| 중앙값 | 54.1401 |
+| IQR | 19.8121 |
+| Bowley 왜도 | -0.6017 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 28.4317 |
-| 중앙값 | 41.7042 |
-| IQR | 40.1867 |
-| Bowley 왜도 | -0.8992 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 36.8399 |
-| 중앙값 | 49.3062 |
-| IQR | 54.0047 |
-| Bowley 왜도 | -0.6803 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_00_summary.png)
-
----
-
-#### STAND_14_ACTUAL_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.8624 | **승수 (L/U)**: 2.369/0.422
-
-**카테고리**: 05 Stand Torque
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -113.6022 | -45.9281 |
-| 상한 경계 | 57.3341 | 85.9016 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 25.4255 |
-| 표준편차 | 15.4851 |
-| Q1 (25%) | 3.5080 |
-| 중앙값 | 34.1986 |
-| Q3 (75%) | 36.4655 |
-| IQR | 32.9574 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 26.70 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 25.61 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 21.95 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 25.32 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_14_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 26.6960 |
-| 중앙값 | 33.9876 |
-| IQR | 12.2228 |
-| Bowley 왜도 | -0.8006 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 21.67% |
+| Std 이상치율 | 22.15% |
 | 개선율 | 100.0% |
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_14_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_9_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_14_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_9_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_14_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_9_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_14_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_9_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_14_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_9_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_14_ACTUAL_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_9_ACTUAL_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -14179,10 +12074,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 5,678 |
-| 평균 | 25.6136 |
-| 중앙값 | 34.0971 |
-| IQR | 32.1814 |
-| Bowley 왜도 | -0.8865 |
+| 평균 | 42.6919 |
+| 중앙값 | 55.8328 |
+| IQR | 62.2148 |
+| Bowley 왜도 | -0.7596 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -14190,31 +12085,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_14_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_9_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_14_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_9_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_14_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_9_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_14_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_9_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_14_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_9_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_14_ACTUAL_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_9_ACTUAL_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -14223,10 +12118,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 2,773 |
-| 평균 | 21.9494 |
-| 중앙값 | 35.2862 |
-| IQR | 38.2186 |
-| Bowley 왜도 | -0.8465 |
+| 평균 | 36.5662 |
+| 중앙값 | 60.3194 |
+| IQR | 64.6434 |
+| Bowley 왜도 | -0.8662 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -14234,31 +12129,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_14_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_9_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_14_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_9_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_14_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_9_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_14_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_9_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_14_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_9_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_14_ACTUAL_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_9_ACTUAL_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -14267,10 +12162,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 4,201 |
-| 평균 | 25.3153 |
-| 중앙값 | 36.4039 |
-| IQR | 34.4233 |
-| Bowley 왜도 | -0.9276 |
+| 평균 | 35.5527 |
+| 중앙값 | 51.4315 |
+| IQR | 53.9621 |
+| Bowley 왜도 | -0.8762 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -14278,2111 +12173,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_14_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_9_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_14_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_9_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_14_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_9_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_14_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_9_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_14_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_9_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_14_ACTUAL_TORQUE_00_summary.png)
-
----
-
-#### STAND_13_ACTUAL_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.8263 | **승수 (L/U)**: 2.285/0.438
-
-**카테고리**: 05 Stand Torque
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -171.1465 | -73.4800 |
-| 상한 경계 | 86.4896 | 129.2363 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 36.8598 |
-| 표준편차 | 23.3698 |
-| Q1 (25%) | 2.5386 |
-| 중앙값 | 48.8154 |
-| Q3 (75%) | 53.2177 |
-| IQR | 50.6791 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 37.71 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 36.40 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 33.93 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 37.98 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_13_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 37.7088 |
-| 중앙값 | 48.2362 |
-| IQR | 18.7840 |
-| Bowley 왜도 | -0.8015 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 21.54% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_13_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_13_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_13_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_13_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_13_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_13_ACTUAL_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 36.3951 |
-| 중앙값 | 48.7165 |
-| IQR | 49.3332 |
-| Bowley 왜도 | -0.8683 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_13_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_13_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_13_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_13_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_13_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_13_ACTUAL_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 33.9318 |
-| 중앙값 | 52.1773 |
-| IQR | 61.4577 |
-| Bowley 왜도 | -0.6980 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_13_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_13_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_13_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_13_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_13_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_13_ACTUAL_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 37.9834 |
-| 중앙값 | 54.8209 |
-| IQR | 54.7132 |
-| Bowley 왜도 | -0.9149 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_13_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_13_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_13_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_13_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_13_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_13_ACTUAL_TORQUE_00_summary.png)
-
----
-
-#### STAND_1_ACTUAL_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.7158 | **승수 (L/U)**: 2.046/0.489
-
-**카테고리**: 05 Stand Torque
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -170.2218 | -82.7650 |
-| 상한 경계 | 97.4730 | 140.2206 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 37.7406 |
-| 표준편차 | 24.5828 |
-| Q1 (25%) | 0.8546 |
-| 중앙값 | 48.6804 |
-| Q3 (75%) | 56.6010 |
-| IQR | 55.7464 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 37.35 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 39.25 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 33.06 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 39.45 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_1_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 37.3516 |
-| 중앙값 | 46.1438 |
-| IQR | 18.7052 |
-| Bowley 왜도 | -0.4028 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 21.78% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_1_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_1_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_1_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_1_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_1_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_1_ACTUAL_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 39.2468 |
-| 중앙값 | 50.1441 |
-| IQR | 56.5490 |
-| Bowley 왜도 | -0.7415 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_1_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_1_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_1_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_1_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_1_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_1_ACTUAL_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 33.0618 |
-| 중앙값 | 51.5787 |
-| IQR | 58.3653 |
-| Bowley 왜도 | -0.7674 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_1_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_1_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_1_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_1_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_1_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_1_ACTUAL_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 39.4515 |
-| 중앙값 | 54.3318 |
-| IQR | 61.0594 |
-| Bowley 왜도 | -0.7537 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_1_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_1_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_1_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_1_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_1_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_1_ACTUAL_TORQUE_00_summary.png)
-
----
-
-#### STAND_2_ACTUAL_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.7996 | **승수 (L/U)**: 2.225/0.449
-
-**카테고리**: 05 Stand Torque
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -198.1900 | -88.4300 |
-| 상한 경계 | 101.2146 | 150.5503 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 41.3246 |
-| 표준편차 | 26.6314 |
-| Q1 (25%) | 1.1876 |
-| 중앙값 | 54.9477 |
-| Q3 (75%) | 60.9327 |
-| IQR | 59.7451 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 43.15 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 41.82 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 33.19 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 42.94 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_2_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 43.1455 |
-| 중앙값 | 54.7901 |
-| IQR | 23.4573 |
-| Bowley 왜도 | -0.6485 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 11.63% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_2_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_2_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_2_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_2_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_2_ACTUAL_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 41.8234 |
-| 중앙값 | 54.2863 |
-| IQR | 59.4604 |
-| Bowley 왜도 | -0.7734 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_2_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_2_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_2_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_2_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_2_ACTUAL_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 33.1873 |
-| 중앙값 | 52.0979 |
-| IQR | 58.8004 |
-| Bowley 왜도 | -0.7720 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_2_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_2_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_2_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_2_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_2_ACTUAL_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 42.9394 |
-| 중앙값 | 60.0680 |
-| IQR | 66.0724 |
-| Bowley 왜도 | -0.7851 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_2_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_2_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_2_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_2_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_2_ACTUAL_TORQUE_00_summary.png)
-
----
-
-#### STAND_3_ACTUAL_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.7754 | **승수 (L/U)**: 2.171/0.461
-
-**카테고리**: 05 Stand Torque
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -176.5326 | -80.7989 |
-| 상한 경계 | 93.0366 | 137.1236 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 37.6073 |
-| 표준편차 | 24.3010 |
-| Q1 (25%) | 0.9221 |
-| 중앙값 | 49.2846 |
-| Q3 (75%) | 55.4027 |
-| IQR | 54.4806 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 38.82 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 37.16 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 31.87 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 39.96 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_3_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 38.8155 |
-| 중앙값 | 48.7178 |
-| IQR | 20.9065 |
-| Bowley 왜도 | -0.5977 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 11.73% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_3_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_3_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_3_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_3_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_3_ACTUAL_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 37.1558 |
-| 중앙값 | 47.5539 |
-| IQR | 52.8002 |
-| Bowley 왜도 | -0.7472 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_3_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_3_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_3_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_3_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_3_ACTUAL_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 31.8729 |
-| 중앙값 | 50.3322 |
-| IQR | 56.2563 |
-| Bowley 왜도 | -0.7894 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_3_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_3_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_3_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_3_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_3_ACTUAL_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 39.9578 |
-| 중앙값 | 55.3871 |
-| IQR | 61.8407 |
-| Bowley 왜도 | -0.7628 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_3_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_3_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_3_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_3_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_3_ACTUAL_TORQUE_00_summary.png)
-
----
-
-#### STAND_4_ACTUAL_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.6589 | **승수 (L/U)**: 1.933/0.517
-
-**카테고리**: 05 Stand Torque
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -153.6996 | -78.9217 |
-| 상한 경계 | 96.2050 | 134.8979 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 36.2970 |
-| 표준편차 | 23.5997 |
-| Q1 (25%) | 1.2607 |
-| 중앙값 | 45.5979 |
-| Q3 (75%) | 54.7156 |
-| IQR | 53.4549 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 37.34 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 35.79 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 30.46 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 39.07 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_4_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 37.3352 |
-| 중앙값 | 44.7936 |
-| IQR | 20.7061 |
-| Bowley 왜도 | -0.2754 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 11.71% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_4_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_4_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_4_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_4_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_4_ACTUAL_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 35.7907 |
-| 중앙값 | 42.9199 |
-| IQR | 52.8567 |
-| Bowley 왜도 | -0.5661 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_4_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_4_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_4_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_4_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_4_ACTUAL_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 30.4647 |
-| 중앙값 | 47.6422 |
-| IQR | 53.8287 |
-| Bowley 왜도 | -0.7701 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_4_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_4_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_4_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_4_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_4_ACTUAL_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 39.0738 |
-| 중앙값 | 53.5141 |
-| IQR | 60.2157 |
-| Bowley 왜도 | -0.7372 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_4_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_4_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_4_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_4_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_4_ACTUAL_TORQUE_00_summary.png)
-
----
-
-#### STAND_5_ACTUAL_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.7838 | **승수 (L/U)**: 2.190/0.457
-
-**카테고리**: 05 Stand Torque
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -161.0797 | -73.0709 |
-| 상한 경계 | 84.0014 | 124.1931 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 33.8678 |
-| 표준편차 | 21.7370 |
-| Q1 (25%) | 0.9031 |
-| 중앙값 | 44.8874 |
-| Q3 (75%) | 50.2191 |
-| IQR | 49.3160 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 34.67 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 34.26 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 29.97 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 34.54 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_5_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 34.6743 |
-| 중앙값 | 43.4761 |
-| IQR | 19.1899 |
-| Bowley 왜도 | -0.5801 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.23% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_5_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_5_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_5_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_5_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_5_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_5_ACTUAL_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 34.2632 |
-| 중앙값 | 45.4417 |
-| IQR | 48.0521 |
-| Bowley 왜도 | -0.8294 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_5_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_5_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_5_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_5_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_5_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_5_ACTUAL_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 29.9652 |
-| 중앙값 | 48.1608 |
-| IQR | 52.8333 |
-| Bowley 왜도 | -0.8231 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_5_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_5_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_5_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_5_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_5_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_5_ACTUAL_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 34.5444 |
-| 중앙값 | 49.0769 |
-| IQR | 52.8806 |
-| Bowley 왜도 | -0.8252 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_5_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_5_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_5_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_5_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_5_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_5_ACTUAL_TORQUE_00_summary.png)
-
----
-
-#### STAND_6_ACTUAL_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.7639 | **승수 (L/U)**: 2.147/0.466
-
-**카테고리**: 05 Stand Torque
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -143.3583 | -65.9532 |
-| 상한 경계 | 77.9911 | 114.0483 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 31.4173 |
-| 표준편차 | 19.9183 |
-| Q1 (25%) | 1.5473 |
-| 중앙값 | 41.2365 |
-| Q3 (75%) | 46.5477 |
-| IQR | 45.0004 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 32.55 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 32.72 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 26.92 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 30.71 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_6_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 32.5493 |
-| 중앙값 | 40.2445 |
-| IQR | 16.4987 |
-| Bowley 왜도 | -0.4948 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 21.25% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_6_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_6_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_6_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_6_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_6_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_6_ACTUAL_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 32.7174 |
-| 중앙값 | 42.6303 |
-| IQR | 45.3810 |
-| Bowley 왜도 | -0.7896 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_6_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_6_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_6_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_6_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_6_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_6_ACTUAL_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 26.9185 |
-| 중앙값 | 42.6711 |
-| IQR | 47.2446 |
-| Bowley 왜도 | -0.8064 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_6_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_6_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_6_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_6_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_6_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_6_ACTUAL_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 30.7137 |
-| 중앙값 | 42.7213 |
-| IQR | 46.3738 |
-| Bowley 왜도 | -0.7804 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_6_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_6_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_6_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_6_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_6_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_6_ACTUAL_TORQUE_00_summary.png)
-
----
-
-#### STAND_7_ACTUAL_TORQUE 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.8091 | **승수 (L/U)**: 2.246/0.445
-
-**카테고리**: 05 Stand Torque
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -134.1229 | -58.6287 |
-| 상한 경계 | 69.3337 | 102.9469 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 29.2994 |
-| 표준편차 | 18.5644 |
-| Q1 (25%) | 1.9622 |
-| 중앙값 | 38.5012 |
-| Q3 (75%) | 42.3561 |
-| IQR | 40.3939 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 30.28 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 28.72 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 23.92 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 31.97 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_7_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 30.2843 |
-| 중앙값 | 37.9168 |
-| IQR | 14.6520 |
-| Bowley 왜도 | -0.5686 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 21.42% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_7_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_7_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_7_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_7_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_7_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_7_ACTUAL_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 28.7169 |
-| 중앙값 | 37.4356 |
-| IQR | 39.1326 |
-| Bowley 왜도 | -0.7848 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_7_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_7_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_7_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_7_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_7_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_7_ACTUAL_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 23.9212 |
-| 중앙값 | 38.6555 |
-| IQR | 41.8055 |
-| Bowley 왜도 | -0.8493 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_7_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_7_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_7_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_7_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_7_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_7_ACTUAL_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 31.9694 |
-| 중앙값 | 45.0118 |
-| IQR | 47.6311 |
-| Bowley 왜도 | -0.8118 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_7_ACTUAL_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_7_ACTUAL_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_7_ACTUAL_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_7_ACTUAL_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_7_ACTUAL_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_7_ACTUAL_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_9_ACTUAL_TORQUE_00_summary.png)
 
 ---
 
@@ -16491,31 +12306,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_8_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_8_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_8_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_8_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_8_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_8_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_8_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_8_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_8_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_8_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_8_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_8_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_8_ACTUAL_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_8_ACTUAL_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -16535,31 +12350,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_8_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_8_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_8_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_8_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_8_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_8_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_8_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_8_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_8_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_8_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_8_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_8_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_8_ACTUAL_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_8_ACTUAL_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -16579,31 +12394,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_8_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_8_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_8_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_8_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_8_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_8_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_8_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_8_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_8_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_8_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_8_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_8_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_8_ACTUAL_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_8_ACTUAL_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -16623,38 +12438,38 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_8_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_8_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_8_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_8_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_8_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_8_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_8_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_8_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_8_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_8_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_8_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_8_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_8_ACTUAL_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_8_ACTUAL_TORQUE_00_summary.png)
 
 ---
 
-#### STAND_9_ACTUAL_TORQUE 🟢
+#### STAND_11_ACTUAL_TORQUE 🟢
 
 **위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -0.8119 | **승수 (L/U)**: 2.252/0.444
+**Bowley 왜도**: -0.7094 | **승수 (L/U)**: 2.033/0.492
 
 **카테고리**: 05 Stand Torque
 
@@ -16671,62 +12486,62 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 |-----------|--------------|--------------|
 | 이상치 수 | 0 | 0 |
 | 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -195.4038 | -86.2410 |
-| 상한 경계 | 97.7634 | 146.2331 |
+| 하한 경계 | -153.1267 | -74.6464 |
+| 상한 경계 | 89.3897 | 127.9976 |
 
 | 기본 통계 | 값 |
 |-----------|-------|
 | 분석 레코드 | 19,763 |
-| 평균 | 40.2076 |
-| 표준편차 | 25.9683 |
-| Q1 (25%) | 0.9368 |
-| 중앙값 | 53.5893 |
-| Q3 (75%) | 59.0553 |
-| IQR | 58.1185 |
+| 평균 | 34.3684 |
+| 표준편차 | 22.1848 |
+| Q1 (25%) | 1.3451 |
+| 중앙값 | 44.6448 |
+| Q3 (75%) | 52.0061 |
+| IQR | 50.6610 |
 
 **월별 이상치 추이**:
 
 | 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
 |-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 42.39 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 42.69 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 36.57 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 35.55 | 0.00% | 0.00% |
+| 2025-05 | 7,111 | 36.48 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 34.45 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 26.59 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 35.82 | 0.00% | 0.00% |
 
 
 ##### 차트 분석
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 월별 이상치율 (Monthly Outlier Rate)**
 
-![월별 이상치율](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
 
 **6. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_06_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_06_hourly_pattern.png)
 
 **7. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_07_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_07_daily_outlier_count.png)
 
 **종합 분석 차트**
 
-![STAND_9_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_9_ACTUAL_TORQUE_analysis.png)
+![STAND_11_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_11_ACTUAL_TORQUE_analysis.png)
 
 
 ---
@@ -16740,42 +12555,47 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 7,111 |
-| 평균 | 42.3938 |
-| 중앙값 | 54.1401 |
-| IQR | 19.8121 |
-| Bowley 왜도 | -0.6017 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 22.15% |
-| 개선율 | 100.0% |
+| 평균 | 36.4821 |
+| 중앙값 | 44.1840 |
+| IQR | 19.0498 |
+| Bowley 왜도 | -0.1597 |
+| Adj 이상치 수 | 18 |
+| Adj 이상치율 | 0.25% |
+| Std 이상치율 | 21.83% |
+| 개선율 | 98.8% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-05-18: 10건
+- 2. 2025-05-17: 8건
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-05/STAND_9_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_11_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-05/STAND_9_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_11_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-05/STAND_9_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_11_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-05/STAND_9_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_11_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/STAND_9_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_11_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/STAND_9_ACTUAL_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_11_ACTUAL_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -16784,10 +12604,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 5,678 |
-| 평균 | 42.6919 |
-| 중앙값 | 55.8328 |
-| IQR | 62.2148 |
-| Bowley 왜도 | -0.7596 |
+| 평균 | 34.4484 |
+| 중앙값 | 45.6894 |
+| IQR | 49.1028 |
+| Bowley 왜도 | -0.8021 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -16795,31 +12615,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-06/STAND_9_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_11_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-06/STAND_9_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_11_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-06/STAND_9_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_11_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-06/STAND_9_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_11_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/STAND_9_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_11_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/STAND_9_ACTUAL_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_11_ACTUAL_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -16828,10 +12648,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 2,773 |
-| 평균 | 36.5662 |
-| 중앙값 | 60.3194 |
-| IQR | 64.6434 |
-| Bowley 왜도 | -0.8662 |
+| 평균 | 26.5866 |
+| 중앙값 | 41.3680 |
+| IQR | 45.1324 |
+| Bowley 왜도 | -0.8332 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -16839,31 +12659,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-07/STAND_9_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_11_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-07/STAND_9_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_11_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-07/STAND_9_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_11_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-07/STAND_9_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_11_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/STAND_9_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_11_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/STAND_9_ACTUAL_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_11_ACTUAL_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -16872,10 +12692,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 4,201 |
-| 평균 | 35.5527 |
-| 중앙값 | 51.4315 |
-| IQR | 53.9621 |
-| Bowley 왜도 | -0.8762 |
+| 평균 | 35.8191 |
+| 중앙값 | 50.1551 |
+| IQR | 55.0921 |
+| Bowley 왜도 | -0.7780 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -16883,46 +12703,588 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./05_Stand_Torque/monthly/2025-08/STAND_9_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_11_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./05_Stand_Torque/monthly/2025-08/STAND_9_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_11_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./05_Stand_Torque/monthly/2025-08/STAND_9_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_11_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/STAND_9_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_11_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./05_Stand_Torque/monthly/2025-08/STAND_9_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_11_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/STAND_9_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_11_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/STAND_9_ACTUAL_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_11_ACTUAL_TORQUE_00_summary.png)
 
 ---
 
-#### STAND_3_LOAD 🟢
+#### INDIRECT_COOLING_WATER_FLOW 🟢
 
 **위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+**Bowley 왜도**: 0.8254 | **승수 (L/U)**: 0.438/2.283
 
-**카테고리**: 07 Stand Load
+**카테고리**: 04 Furnace Auxiliary
 
 | 필터 | 적용 | 이유 |
 |------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| run_only | ✓ | 가동 상태에서만 측정이 유효함 |
 | special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| roll_change | ✗ | 가열로 독립 시스템 |
+| coiling_transient | ✗ | 가열로 독립 시스템 |
+
+**데이터**: 원본 20,144 → 필터 후 20,144 (0.0% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | 149.3967 | 141.4295 |
+| 상한 경계 | 197.4252 | 179.2382 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 20,144 |
+| 평균 | 159.5778 |
+| 표준편차 | 4.8624 |
+| Q1 (25%) | 155.6078 |
+| 중앙값 | 156.4331 |
+| Q3 (75%) | 165.0600 |
+| IQR | 9.4522 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,190 | 155.35 | 0.00% | 0.00% |
+| 2025-06 | 5,758 | 166.42 | 0.00% | 0.00% |
+| 2025-07 | 2,880 | 161.65 | 0.00% | 0.00% |
+| 2025-08 | 4,316 | 156.12 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![INDIRECT_COOLING_WATER_FLOW 종합 분석 차트](./04_Furnace_Auxiliary/adjusted/INDIRECT_COOLING_WATER_FLOW_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,190 |
+| 평균 | 155.3463 |
+| 중앙값 | 155.4160 |
+| IQR | 1.0189 |
+| Bowley 왜도 | -0.1279 |
+| Adj 이상치 수 | 4 |
+| Adj 이상치율 | 0.06% |
+| Std 이상치율 | 0.06% |
+| 개선율 | 0.0% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-05-17: 4건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_COOLING_WATER_FLOW_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_COOLING_WATER_FLOW_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_COOLING_WATER_FLOW_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_COOLING_WATER_FLOW_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,758 |
+| 평균 | 166.4200 |
+| 중앙값 | 166.2618 |
+| IQR | 1.9702 |
+| Bowley 왜도 | 0.1392 |
+| Adj 이상치 수 | 6 |
+| Adj 이상치율 | 0.10% |
+| Std 이상치율 | 0.03% |
+| 개선율 | -200.0% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-06-12: 6건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_COOLING_WATER_FLOW_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_COOLING_WATER_FLOW_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_COOLING_WATER_FLOW_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_COOLING_WATER_FLOW_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,880 |
+| 평균 | 161.6460 |
+| 중앙값 | 161.5820 |
+| IQR | 0.8084 |
+| Bowley 왜도 | 0.1002 |
+| Adj 이상치 수 | 19 |
+| Adj 이상치율 | 0.66% |
+| Std 이상치율 | 1.08% |
+| 개선율 | 38.7% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-07-04: 14건
+- 2. 2025-07-05: 5건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_COOLING_WATER_FLOW_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_COOLING_WATER_FLOW_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_COOLING_WATER_FLOW_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_COOLING_WATER_FLOW_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,316 |
+| 평균 | 156.1188 |
+| 중앙값 | 156.1524 |
+| IQR | 0.6975 |
+| Bowley 왜도 | -0.0620 |
+| Adj 이상치 수 | 22 |
+| Adj 이상치율 | 0.51% |
+| Std 이상치율 | 0.60% |
+| 개선율 | 15.4% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-08-08: 20건
+- 2. 2025-08-11: 2건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_COOLING_WATER_FLOW_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_COOLING_WATER_FLOW_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_COOLING_WATER_FLOW_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_COOLING_WATER_FLOW_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_COOLING_WATER_FLOW_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_COOLING_WATER_FLOW_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_COOLING_WATER_FLOW_00_summary.png)
+
+---
+
+#### INDIRECT_WATER_MAIN_TEMPERATURE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: 0.4151 | **승수 (L/U)**: 0.660/1.514
+
+**카테고리**: 04 Furnace Auxiliary
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✗ | 가열로 독립 시스템 |
+| coiling_transient | ✗ | 가열로 독립 시스템 |
+
+**데이터**: 원본 20,144 → 필터 후 20,144 (0.0% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | 26.1391 | 24.0500 |
+| 상한 경계 | 43.6139 | 40.4500 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 20,144 |
+| 평균 | 31.9078 |
+| 표준편차 | 2.3866 |
+| Q1 (25%) | 30.2000 |
+| 중앙값 | 31.3991 |
+| Q3 (75%) | 34.3000 |
+| IQR | 4.1000 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,190 | 30.03 | 0.00% | 0.00% |
+| 2025-06 | 5,758 | 31.16 | 0.00% | 0.00% |
+| 2025-07 | 2,880 | 34.63 | 0.00% | 0.00% |
+| 2025-08 | 4,316 | 34.22 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![INDIRECT_WATER_MAIN_TEMPERATURE 종합 분석 차트](./04_Furnace_Auxiliary/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,190 |
+| 평균 | 30.0275 |
+| 중앙값 | 29.7872 |
+| IQR | 2.2852 |
+| Bowley 왜도 | 0.3985 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-05/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,758 |
+| 평균 | 31.1605 |
+| 중앙값 | 31.1000 |
+| IQR | 1.0923 |
+| Bowley 왜도 | 0.0986 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-06/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,880 |
+| 평균 | 34.6258 |
+| 중앙값 | 35.5000 |
+| IQR | 2.0000 |
+| Bowley 왜도 | -0.6000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 11.77% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-07/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,316 |
+| 평균 | 34.2237 |
+| 중앙값 | 35.0000 |
+| IQR | 1.3958 |
+| Bowley 왜도 | -0.2896 |
+| Adj 이상치 수 | 532 |
+| Adj 이상치율 | 12.33% |
+| Std 이상치율 | 14.41% |
+| 개선율 | 14.5% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-08-08: 532건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/adjusted/INDIRECT_WATER_MAIN_TEMPERATURE_00_summary.png)
+
+---
+
+#### FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -0.3829 | **승수 (L/U)**: 1.467/0.682
+
+**카테고리**: 05 Stand Torque
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
 | coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
 
 **데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
@@ -16931,62 +13293,62 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 |-----------|--------------|--------------|
 | 이상치 수 | 0 | 0 |
 | 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -3.9928 | -1.4583 |
-| 상한 경계 | 1.5426 | 2.4750 |
+| 하한 경계 | -111.5533 | -74.7524 |
+| 상한 경계 | 110.4892 | 135.5824 |
 
 | 기본 통계 | 값 |
 |-----------|-------|
 | 분석 레코드 | 19,763 |
-| 평균 | 0.6974 |
-| 표준편차 | 0.4299 |
-| Q1 (25%) | 0.0167 |
-| 중앙값 | 1.0000 |
-| Q3 (75%) | 1.0000 |
-| IQR | 0.9833 |
+| 평균 | 35.1146 |
+| 표준편차 | 22.6842 |
+| Q1 (25%) | 4.1232 |
+| 중앙값 | 40.4829 |
+| Q3 (75%) | 56.7069 |
+| IQR | 52.5837 |
 
 **월별 이상치 추이**:
 
 | 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
 |-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 0.67 | 0.00% | 0.00% |
+| 2025-05 | 7,111 | 36.45 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 35.46 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 28.41 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 36.82 | 0.00% | 0.00% |
 
 
 ##### 차트 분석
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/adjusted/STAND_3_LOAD_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/adjusted/STAND_3_LOAD_02_histogram.png)
+![히스토그램](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/adjusted/STAND_3_LOAD_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_3_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 월별 이상치율 (Monthly Outlier Rate)**
 
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_3_LOAD_05_monthly_outlier_rate.png)
+![월별 이상치율](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
 
 **6. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_3_LOAD_06_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_hourly_pattern.png)
 
 **7. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_3_LOAD_07_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_07_daily_outlier_count.png)
 
 **종합 분석 차트**
 
-![STAND_3_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_3_LOAD_analysis.png)
+![FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_analysis.png)
 
 
 ---
@@ -17000,42 +13362,47 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 7,111 |
-| 평균 | 0.7441 |
-| 중앙값 | 1.0000 |
-| IQR | 0.3041 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 21.12% |
-| 개선율 | 100.0% |
+| 평균 | 36.4454 |
+| 중앙값 | 39.2082 |
+| IQR | 24.4815 |
+| Bowley 왜도 | 0.3567 |
+| Adj 이상치 수 | 1,552 |
+| Adj 이상치율 | 21.83% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-05-17: 849건
+- 2. 2025-05-18: 703건
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_3_LOAD_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_3_LOAD_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_3_LOAD_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_3_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_3_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_3_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_3_LOAD_00_summary.png)
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -17044,10 +13411,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 5,678 |
-| 평균 | 0.7145 |
-| 중앙값 | 1.0000 |
-| IQR | 0.6997 |
-| Bowley 왜도 | -1.0000 |
+| 평균 | 35.4599 |
+| 중앙값 | 40.5302 |
+| IQR | 52.8796 |
+| Bowley 왜도 | -0.3641 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -17055,31 +13422,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_3_LOAD_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_3_LOAD_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_3_LOAD_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_3_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_3_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_3_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_3_LOAD_00_summary.png)
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -17088,10 +13455,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 2,773 |
-| 평균 | 0.5897 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
+| 평균 | 28.4112 |
+| 중앙값 | 41.6810 |
+| IQR | 40.1781 |
+| Bowley 왜도 | -0.8992 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -17099,31 +13466,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_3_LOAD_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_3_LOAD_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_3_LOAD_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_3_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_3_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_3_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_3_LOAD_00_summary.png)
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -17132,10 +13499,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 4,201 |
-| 평균 | 0.6664 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
+| 평균 | 36.8202 |
+| 중앙값 | 49.2912 |
+| IQR | 54.0046 |
+| Bowley 왜도 | -0.6804 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -17143,46 +13510,46 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_3_LOAD_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_3_LOAD_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_3_LOAD_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_3_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_3_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_3_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_3_LOAD_00_summary.png)
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_00_summary.png)
 
 ---
 
-#### STAND_2_LOAD 🟢
+#### FINISHING_BLOCK_MASTER_ACTUAL_TORQUE 🟢
 
 **위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+**Bowley 왜도**: -0.3826 | **승수 (L/U)**: 1.466/0.682
 
-**카테고리**: 07 Stand Load
+**카테고리**: 05 Stand Torque
 
 | 필터 | 적용 | 이유 |
 |------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
 | special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
 | coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
 
 **데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
@@ -17191,62 +13558,62 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 |-----------|--------------|--------------|
 | 이상치 수 | 0 | 0 |
 | 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -4.0774 | -1.5000 |
-| 상한 경계 | 1.5518 | 2.5000 |
+| 하한 경계 | -111.5486 | -74.7749 |
+| 상한 경계 | 110.5678 | 135.6519 |
 
 | 기본 통계 | 값 |
 |-----------|-------|
 | 분석 레코드 | 19,763 |
-| 평균 | 0.6979 |
-| 표준편차 | 0.4305 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 1.0000 |
-| Q3 (75%) | 1.0000 |
-| IQR | 1.0000 |
+| 평균 | 35.1370 |
+| 표준편차 | 22.6971 |
+| Q1 (25%) | 4.1351 |
+| 중앙값 | 40.5009 |
+| Q3 (75%) | 56.7418 |
+| IQR | 52.6067 |
 
 **월별 이상치 추이**:
 
 | 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
 |-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 0.67 | 0.00% | 0.00% |
+| 2025-05 | 7,111 | 36.47 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 35.48 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 28.43 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 36.84 | 0.00% | 0.00% |
 
 
 ##### 차트 분석
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/adjusted/STAND_2_LOAD_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/adjusted/STAND_2_LOAD_02_histogram.png)
+![히스토그램](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/adjusted/STAND_2_LOAD_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_2_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 월별 이상치율 (Monthly Outlier Rate)**
 
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_2_LOAD_05_monthly_outlier_rate.png)
+![월별 이상치율](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
 
 **6. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_2_LOAD_06_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_hourly_pattern.png)
 
 **7. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_2_LOAD_07_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_07_daily_outlier_count.png)
 
 **종합 분석 차트**
 
-![STAND_2_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_2_LOAD_analysis.png)
+![FINISHING_BLOCK_MASTER_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_analysis.png)
 
 
 ---
@@ -17260,42 +13627,47 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 7,111 |
-| 평균 | 0.7448 |
-| 중앙값 | 1.0000 |
-| IQR | 0.2785 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 22.02% |
-| 개선율 | 100.0% |
+| 평균 | 36.4694 |
+| 중앙값 | 39.2206 |
+| IQR | 24.4621 |
+| Bowley 왜도 | 0.3612 |
+| Adj 이상치 수 | 1,555 |
+| Adj 이상치율 | 21.87% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-05-17: 849건
+- 2. 2025-05-18: 706건
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_2_LOAD_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_2_LOAD_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_2_LOAD_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_2_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_2_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_2_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_2_LOAD_00_summary.png)
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -17304,10 +13676,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 5,678 |
-| 평균 | 0.7150 |
-| 중앙값 | 1.0000 |
-| IQR | 0.7062 |
-| Bowley 왜도 | -1.0000 |
+| 평균 | 35.4832 |
+| 중앙값 | 40.5532 |
+| IQR | 52.8693 |
+| Bowley 왜도 | -0.3636 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -17315,31 +13687,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_2_LOAD_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_2_LOAD_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_2_LOAD_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_2_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_2_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_2_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_2_LOAD_00_summary.png)
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -17348,10 +13720,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 2,773 |
-| 평균 | 0.5899 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
+| 평균 | 28.4317 |
+| 중앙값 | 41.7042 |
+| IQR | 40.1867 |
+| Bowley 왜도 | -0.8992 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -17359,31 +13731,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_2_LOAD_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_2_LOAD_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_2_LOAD_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_2_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_2_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_2_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_2_LOAD_00_summary.png)
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -17392,10 +13764,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 4,201 |
-| 평균 | 0.6666 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
+| 평균 | 36.8399 |
+| 중앙값 | 49.3062 |
+| IQR | 54.0047 |
+| Bowley 왜도 | -0.6803 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
 | Std 이상치율 | 0.00% |
@@ -17403,31 +13775,2371 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_2_LOAD_01_timeseries.png)
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_2_LOAD_02_histogram.png)
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_2_LOAD_03_boxplot.png)
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_2_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_2_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_2_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_2_LOAD_00_summary.png)
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_00_summary.png)
+
+---
+
+#### STAND_14_ACTUAL_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -0.8624 | **승수 (L/U)**: 2.369/0.422
+
+**카테고리**: 05 Stand Torque
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -113.6022 | -45.9281 |
+| 상한 경계 | 57.3341 | 85.9016 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 25.4255 |
+| 표준편차 | 15.4851 |
+| Q1 (25%) | 3.5080 |
+| 중앙값 | 34.1986 |
+| Q3 (75%) | 36.4655 |
+| IQR | 32.9574 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 26.70 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 25.61 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 21.95 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 25.32 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_14_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_14_ACTUAL_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 26.6960 |
+| 중앙값 | 33.9876 |
+| IQR | 12.2228 |
+| Bowley 왜도 | -0.8006 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 21.67% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_14_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_14_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_14_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_14_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_14_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_14_ACTUAL_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 25.6136 |
+| 중앙값 | 34.0971 |
+| IQR | 32.1814 |
+| Bowley 왜도 | -0.8865 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_14_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_14_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_14_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_14_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_14_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_14_ACTUAL_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 21.9494 |
+| 중앙값 | 35.2862 |
+| IQR | 38.2186 |
+| Bowley 왜도 | -0.8465 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_14_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_14_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_14_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_14_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_14_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_14_ACTUAL_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 25.3153 |
+| 중앙값 | 36.4039 |
+| IQR | 34.4233 |
+| Bowley 왜도 | -0.9276 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_14_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_14_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_14_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_14_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_14_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_14_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_14_ACTUAL_TORQUE_00_summary.png)
+
+---
+
+#### STAND_13_ACTUAL_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -0.8263 | **승수 (L/U)**: 2.285/0.438
+
+**카테고리**: 05 Stand Torque
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -171.1465 | -73.4800 |
+| 상한 경계 | 86.4896 | 129.2363 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 36.8598 |
+| 표준편차 | 23.3698 |
+| Q1 (25%) | 2.5386 |
+| 중앙값 | 48.8154 |
+| Q3 (75%) | 53.2177 |
+| IQR | 50.6791 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 37.71 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 36.40 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 33.93 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 37.98 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_13_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_13_ACTUAL_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 37.7088 |
+| 중앙값 | 48.2362 |
+| IQR | 18.7840 |
+| Bowley 왜도 | -0.8015 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 21.54% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_13_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_13_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_13_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_13_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_13_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_13_ACTUAL_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 36.3951 |
+| 중앙값 | 48.7165 |
+| IQR | 49.3332 |
+| Bowley 왜도 | -0.8683 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_13_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_13_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_13_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_13_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_13_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_13_ACTUAL_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 33.9318 |
+| 중앙값 | 52.1773 |
+| IQR | 61.4577 |
+| Bowley 왜도 | -0.6980 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_13_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_13_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_13_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_13_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_13_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_13_ACTUAL_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 37.9834 |
+| 중앙값 | 54.8209 |
+| IQR | 54.7132 |
+| Bowley 왜도 | -0.9149 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_13_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_13_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_13_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_13_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_13_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_13_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_13_ACTUAL_TORQUE_00_summary.png)
+
+---
+
+#### STAND_1_ACTUAL_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -0.7158 | **승수 (L/U)**: 2.046/0.489
+
+**카테고리**: 05 Stand Torque
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -170.2218 | -82.7650 |
+| 상한 경계 | 97.4730 | 140.2206 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 37.7406 |
+| 표준편차 | 24.5828 |
+| Q1 (25%) | 0.8546 |
+| 중앙값 | 48.6804 |
+| Q3 (75%) | 56.6010 |
+| IQR | 55.7464 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 37.35 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 39.25 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 33.06 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 39.45 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_1_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_1_ACTUAL_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 37.3516 |
+| 중앙값 | 46.1438 |
+| IQR | 18.7052 |
+| Bowley 왜도 | -0.4028 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 21.78% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_1_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_1_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_1_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_1_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_1_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_1_ACTUAL_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 39.2468 |
+| 중앙값 | 50.1441 |
+| IQR | 56.5490 |
+| Bowley 왜도 | -0.7415 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_1_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_1_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_1_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_1_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_1_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_1_ACTUAL_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 33.0618 |
+| 중앙값 | 51.5787 |
+| IQR | 58.3653 |
+| Bowley 왜도 | -0.7674 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_1_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_1_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_1_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_1_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_1_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_1_ACTUAL_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 39.4515 |
+| 중앙값 | 54.3318 |
+| IQR | 61.0594 |
+| Bowley 왜도 | -0.7537 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_1_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_1_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_1_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_1_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_1_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_1_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_1_ACTUAL_TORQUE_00_summary.png)
+
+---
+
+#### STAND_2_ACTUAL_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -0.7996 | **승수 (L/U)**: 2.225/0.449
+
+**카테고리**: 05 Stand Torque
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -198.1900 | -88.4300 |
+| 상한 경계 | 101.2146 | 150.5503 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 41.3246 |
+| 표준편차 | 26.6314 |
+| Q1 (25%) | 1.1876 |
+| 중앙값 | 54.9477 |
+| Q3 (75%) | 60.9327 |
+| IQR | 59.7451 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 43.15 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 41.82 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 33.19 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 42.94 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_2_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_2_ACTUAL_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 43.1455 |
+| 중앙값 | 54.7901 |
+| IQR | 23.4573 |
+| Bowley 왜도 | -0.6485 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 11.63% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_2_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_2_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_2_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_2_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_2_ACTUAL_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 41.8234 |
+| 중앙값 | 54.2863 |
+| IQR | 59.4604 |
+| Bowley 왜도 | -0.7734 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_2_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_2_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_2_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_2_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_2_ACTUAL_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 33.1873 |
+| 중앙값 | 52.0979 |
+| IQR | 58.8004 |
+| Bowley 왜도 | -0.7720 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_2_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_2_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_2_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_2_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_2_ACTUAL_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 42.9394 |
+| 중앙값 | 60.0680 |
+| IQR | 66.0724 |
+| Bowley 왜도 | -0.7851 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_2_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_2_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_2_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_2_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_2_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_2_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_2_ACTUAL_TORQUE_00_summary.png)
+
+---
+
+#### STAND_3_ACTUAL_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -0.7754 | **승수 (L/U)**: 2.171/0.461
+
+**카테고리**: 05 Stand Torque
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -176.5326 | -80.7989 |
+| 상한 경계 | 93.0366 | 137.1236 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 37.6073 |
+| 표준편차 | 24.3010 |
+| Q1 (25%) | 0.9221 |
+| 중앙값 | 49.2846 |
+| Q3 (75%) | 55.4027 |
+| IQR | 54.4806 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 38.82 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 37.16 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 31.87 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 39.96 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_3_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_3_ACTUAL_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 38.8155 |
+| 중앙값 | 48.7178 |
+| IQR | 20.9065 |
+| Bowley 왜도 | -0.5977 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 11.73% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_3_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_3_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_3_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_3_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_3_ACTUAL_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 37.1558 |
+| 중앙값 | 47.5539 |
+| IQR | 52.8002 |
+| Bowley 왜도 | -0.7472 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_3_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_3_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_3_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_3_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_3_ACTUAL_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 31.8729 |
+| 중앙값 | 50.3322 |
+| IQR | 56.2563 |
+| Bowley 왜도 | -0.7894 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_3_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_3_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_3_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_3_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_3_ACTUAL_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 39.9578 |
+| 중앙값 | 55.3871 |
+| IQR | 61.8407 |
+| Bowley 왜도 | -0.7628 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_3_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_3_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_3_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_3_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_3_ACTUAL_TORQUE_00_summary.png)
+
+---
+
+#### STAND_4_ACTUAL_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -0.6589 | **승수 (L/U)**: 1.933/0.517
+
+**카테고리**: 05 Stand Torque
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -153.6996 | -78.9217 |
+| 상한 경계 | 96.2050 | 134.8979 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 36.2970 |
+| 표준편차 | 23.5997 |
+| Q1 (25%) | 1.2607 |
+| 중앙값 | 45.5979 |
+| Q3 (75%) | 54.7156 |
+| IQR | 53.4549 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 37.34 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 35.79 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 30.46 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 39.07 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_4_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_4_ACTUAL_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 37.3352 |
+| 중앙값 | 44.7936 |
+| IQR | 20.7061 |
+| Bowley 왜도 | -0.2754 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 11.71% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_4_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_4_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_4_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_4_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_4_ACTUAL_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 35.7907 |
+| 중앙값 | 42.9199 |
+| IQR | 52.8567 |
+| Bowley 왜도 | -0.5661 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_4_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_4_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_4_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_4_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_4_ACTUAL_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 30.4647 |
+| 중앙값 | 47.6422 |
+| IQR | 53.8287 |
+| Bowley 왜도 | -0.7701 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_4_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_4_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_4_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_4_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_4_ACTUAL_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 39.0738 |
+| 중앙값 | 53.5141 |
+| IQR | 60.2157 |
+| Bowley 왜도 | -0.7372 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_4_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_4_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_4_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_4_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_4_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_4_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_4_ACTUAL_TORQUE_00_summary.png)
+
+---
+
+#### STAND_5_ACTUAL_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -0.7838 | **승수 (L/U)**: 2.190/0.457
+
+**카테고리**: 05 Stand Torque
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -161.0797 | -73.0709 |
+| 상한 경계 | 84.0014 | 124.1931 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 33.8678 |
+| 표준편차 | 21.7370 |
+| Q1 (25%) | 0.9031 |
+| 중앙값 | 44.8874 |
+| Q3 (75%) | 50.2191 |
+| IQR | 49.3160 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 34.67 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 34.26 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 29.97 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 34.54 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_5_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_5_ACTUAL_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 34.6743 |
+| 중앙값 | 43.4761 |
+| IQR | 19.1899 |
+| Bowley 왜도 | -0.5801 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.23% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_5_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_5_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_5_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_5_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_5_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_5_ACTUAL_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 34.2632 |
+| 중앙값 | 45.4417 |
+| IQR | 48.0521 |
+| Bowley 왜도 | -0.8294 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_5_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_5_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_5_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_5_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_5_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_5_ACTUAL_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 29.9652 |
+| 중앙값 | 48.1608 |
+| IQR | 52.8333 |
+| Bowley 왜도 | -0.8231 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_5_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_5_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_5_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_5_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_5_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_5_ACTUAL_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 34.5444 |
+| 중앙값 | 49.0769 |
+| IQR | 52.8806 |
+| Bowley 왜도 | -0.8252 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_5_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_5_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_5_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_5_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_5_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_5_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_5_ACTUAL_TORQUE_00_summary.png)
+
+---
+
+#### STAND_6_ACTUAL_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -0.7639 | **승수 (L/U)**: 2.147/0.466
+
+**카테고리**: 05 Stand Torque
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -143.3583 | -65.9532 |
+| 상한 경계 | 77.9911 | 114.0483 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 31.4173 |
+| 표준편차 | 19.9183 |
+| Q1 (25%) | 1.5473 |
+| 중앙값 | 41.2365 |
+| Q3 (75%) | 46.5477 |
+| IQR | 45.0004 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 32.55 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 32.72 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 26.92 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 30.71 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_6_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_6_ACTUAL_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 32.5493 |
+| 중앙값 | 40.2445 |
+| IQR | 16.4987 |
+| Bowley 왜도 | -0.4948 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 21.25% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_6_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_6_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_6_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_6_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_6_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_6_ACTUAL_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 32.7174 |
+| 중앙값 | 42.6303 |
+| IQR | 45.3810 |
+| Bowley 왜도 | -0.7896 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_6_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_6_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_6_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_6_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_6_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_6_ACTUAL_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 26.9185 |
+| 중앙값 | 42.6711 |
+| IQR | 47.2446 |
+| Bowley 왜도 | -0.8064 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_6_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_6_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_6_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_6_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_6_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_6_ACTUAL_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 30.7137 |
+| 중앙값 | 42.7213 |
+| IQR | 46.3738 |
+| Bowley 왜도 | -0.7804 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_6_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_6_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_6_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_6_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_6_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_6_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_6_ACTUAL_TORQUE_00_summary.png)
+
+---
+
+#### STAND_7_ACTUAL_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -0.8091 | **승수 (L/U)**: 2.246/0.445
+
+**카테고리**: 05 Stand Torque
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -134.1229 | -58.6287 |
+| 상한 경계 | 69.3337 | 102.9469 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 29.2994 |
+| 표준편차 | 18.5644 |
+| Q1 (25%) | 1.9622 |
+| 중앙값 | 38.5012 |
+| Q3 (75%) | 42.3561 |
+| IQR | 40.3939 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 30.28 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 28.72 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 23.92 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 31.97 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_7_ACTUAL_TORQUE 종합 분석 차트](./05_Stand_Torque/adjusted/STAND_7_ACTUAL_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 30.2843 |
+| 중앙값 | 37.9168 |
+| IQR | 14.6520 |
+| Bowley 왜도 | -0.5686 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 21.42% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_7_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_7_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_7_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_7_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_7_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./05_Stand_Torque/monthly/2025-05/adjusted/STAND_7_ACTUAL_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 28.7169 |
+| 중앙값 | 37.4356 |
+| IQR | 39.1326 |
+| Bowley 왜도 | -0.7848 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_7_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_7_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_7_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_7_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_7_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./05_Stand_Torque/monthly/2025-06/adjusted/STAND_7_ACTUAL_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 23.9212 |
+| 중앙값 | 38.6555 |
+| IQR | 41.8055 |
+| Bowley 왜도 | -0.8493 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_7_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_7_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_7_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_7_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_7_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./05_Stand_Torque/monthly/2025-07/adjusted/STAND_7_ACTUAL_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 31.9694 |
+| 중앙값 | 45.0118 |
+| IQR | 47.6311 |
+| Bowley 왜도 | -0.8118 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_7_ACTUAL_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_7_ACTUAL_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_7_ACTUAL_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_7_ACTUAL_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_7_ACTUAL_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_7_ACTUAL_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./05_Stand_Torque/monthly/2025-08/adjusted/STAND_7_ACTUAL_TORQUE_00_summary.png)
 
 ---
 
@@ -17531,31 +16243,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_1_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_1_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_1_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_1_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_1_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_1_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_1_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_1_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_1_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_1_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_1_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_1_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_1_LOAD_00_summary.png)
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_1_LOAD_00_summary.png)
 
 **2025-06**
 
@@ -17575,31 +16287,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_1_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_1_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_1_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_1_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_1_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_1_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_1_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_1_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_1_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_1_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_1_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_1_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_1_LOAD_00_summary.png)
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_1_LOAD_00_summary.png)
 
 **2025-07**
 
@@ -17619,31 +16331,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_1_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_1_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_1_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_1_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_1_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_1_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_1_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_1_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_1_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_1_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_1_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_1_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_1_LOAD_00_summary.png)
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_1_LOAD_00_summary.png)
 
 **2025-08**
 
@@ -17663,35 +16375,35 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_1_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_1_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_1_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_1_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_1_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_1_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_1_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_1_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_1_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_1_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_1_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_1_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_1_LOAD_00_summary.png)
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_1_LOAD_00_summary.png)
 
 ---
 
-#### STAND_13_LOAD 🟢
+#### STAND_2_LOAD 🟢
 
 **위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
 **Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
@@ -17717,1308 +16429,8 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 기본 통계 | 값 |
 |-----------|-------|
 | 분석 레코드 | 19,763 |
-| 평균 | 0.6950 |
-| 표준편차 | 0.4311 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 1.0000 |
-| Q3 (75%) | 1.0000 |
-| IQR | 1.0000 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/adjusted/STAND_13_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/adjusted/STAND_13_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/adjusted/STAND_13_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_13_LOAD_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_13_LOAD_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_13_LOAD_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_13_LOAD_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_13_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_13_LOAD_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 0.7410 |
-| 중앙값 | 1.0000 |
-| IQR | 0.2428 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 22.56% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_13_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_13_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_13_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_13_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_13_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_13_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_13_LOAD_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 0.7125 |
-| 중앙값 | 1.0000 |
-| IQR | 0.7263 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_13_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_13_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_13_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_13_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_13_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_13_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_13_LOAD_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 0.5873 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_13_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_13_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_13_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_13_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_13_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_13_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_13_LOAD_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 0.6647 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_13_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_13_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_13_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_13_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_13_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_13_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_13_LOAD_00_summary.png)
-
----
-
-#### STAND_12_LOAD 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
-
-**카테고리**: 07 Stand Load
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -4.0774 | -1.5000 |
-| 상한 경계 | 1.5518 | 2.5000 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 0.6950 |
-| 표준편차 | 0.4311 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 1.0000 |
-| Q3 (75%) | 1.0000 |
-| IQR | 1.0000 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/adjusted/STAND_12_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/adjusted/STAND_12_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/adjusted/STAND_12_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_12_LOAD_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_12_LOAD_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_12_LOAD_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_12_LOAD_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_12_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_12_LOAD_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 0.7410 |
-| 중앙값 | 1.0000 |
-| IQR | 0.2428 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 22.56% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_12_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_12_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_12_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_12_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_12_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_12_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_12_LOAD_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 0.7125 |
-| 중앙값 | 1.0000 |
-| IQR | 0.7263 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_12_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_12_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_12_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_12_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_12_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_12_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_12_LOAD_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 0.5873 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_12_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_12_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_12_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_12_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_12_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_12_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_12_LOAD_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 0.6647 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_12_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_12_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_12_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_12_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_12_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_12_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_12_LOAD_00_summary.png)
-
----
-
-#### STAND_11_LOAD 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
-
-**카테고리**: 07 Stand Load
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -4.0774 | -1.5000 |
-| 상한 경계 | 1.5518 | 2.5000 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 0.6949 |
-| 표준편차 | 0.4310 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 1.0000 |
-| Q3 (75%) | 1.0000 |
-| IQR | 1.0000 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/adjusted/STAND_11_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/adjusted/STAND_11_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/adjusted/STAND_11_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_11_LOAD_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_11_LOAD_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_11_LOAD_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_11_LOAD_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_11_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_11_LOAD_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 0.7408 |
-| 중앙값 | 1.0000 |
-| IQR | 0.2410 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 22.64% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_11_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_11_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_11_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_11_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_11_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_11_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_11_LOAD_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 0.7123 |
-| 중앙값 | 1.0000 |
-| IQR | 0.7263 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_11_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_11_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_11_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_11_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_11_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_11_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_11_LOAD_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 0.5873 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_11_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_11_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_11_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_11_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_11_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_11_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_11_LOAD_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 0.6646 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_11_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_11_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_11_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_11_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_11_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_11_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_11_LOAD_00_summary.png)
-
----
-
-#### STAND_10_LOAD 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
-
-**카테고리**: 07 Stand Load
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -4.0774 | -1.5000 |
-| 상한 경계 | 1.5518 | 2.5000 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 0.6952 |
-| 표준편차 | 0.4310 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 1.0000 |
-| Q3 (75%) | 1.0000 |
-| IQR | 1.0000 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/adjusted/STAND_10_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/adjusted/STAND_10_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/adjusted/STAND_10_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_10_LOAD_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_10_LOAD_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_10_LOAD_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_10_LOAD_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_10_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_10_LOAD_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 0.7413 |
-| 중앙값 | 1.0000 |
-| IQR | 0.2422 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 22.68% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_10_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_10_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_10_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_10_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_10_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_10_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_10_LOAD_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 0.7126 |
-| 중앙값 | 1.0000 |
-| IQR | 0.7374 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_10_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_10_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_10_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_10_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_10_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_10_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_10_LOAD_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 0.5875 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_10_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_10_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_10_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_10_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_10_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_10_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_10_LOAD_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 0.6648 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_10_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_10_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_10_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_10_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_10_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_10_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_10_LOAD_00_summary.png)
-
----
-
-#### STAND_9_LOAD 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
-
-**카테고리**: 07 Stand Load
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -4.0774 | -1.5000 |
-| 상한 경계 | 1.5518 | 2.5000 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 0.6949 |
-| 표준편차 | 0.4308 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 1.0000 |
-| Q3 (75%) | 1.0000 |
-| IQR | 1.0000 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/adjusted/STAND_9_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/adjusted/STAND_9_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/adjusted/STAND_9_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_9_LOAD_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_9_LOAD_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_9_LOAD_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_9_LOAD_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_9_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_9_LOAD_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 0.7409 |
-| 중앙값 | 1.0000 |
-| IQR | 0.2567 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 22.39% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_9_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_9_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_9_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_9_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_9_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_9_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_9_LOAD_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 0.7123 |
-| 중앙값 | 1.0000 |
-| IQR | 0.7336 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_9_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_9_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_9_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_9_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_9_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_9_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_9_LOAD_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 0.5875 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_9_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_9_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_9_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_9_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_9_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_9_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_9_LOAD_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 0.6646 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_9_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_9_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_9_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_9_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_9_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_9_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_9_LOAD_00_summary.png)
-
----
-
-#### STAND_8_LOAD 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
-
-**카테고리**: 07 Stand Load
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -4.0774 | -1.5000 |
-| 상한 경계 | 1.5518 | 2.5000 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 0.6968 |
-| 표준편차 | 0.4300 |
+| 평균 | 0.6979 |
+| 표준편차 | 0.4305 |
 | Q1 (25%) | 0.0000 |
 | 중앙값 | 1.0000 |
 | Q3 (75%) | 1.0000 |
@@ -19038,35 +16450,35 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/adjusted/STAND_8_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/adjusted/STAND_2_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/adjusted/STAND_8_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/adjusted/STAND_2_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/adjusted/STAND_8_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/adjusted/STAND_2_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_8_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_2_LOAD_04_daily_avg_trend.png)
 
 **5. 월별 이상치율 (Monthly Outlier Rate)**
 
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_8_LOAD_05_monthly_outlier_rate.png)
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_2_LOAD_05_monthly_outlier_rate.png)
 
 **6. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_8_LOAD_06_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_2_LOAD_06_hourly_pattern.png)
 
 **7. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_8_LOAD_07_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_2_LOAD_07_daily_outlier_count.png)
 
 **종합 분석 차트**
 
-![STAND_8_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_8_LOAD_analysis.png)
+![STAND_2_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_2_LOAD_analysis.png)
 
 
 ---
@@ -19080,42 +16492,42 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 7,111 |
-| 평균 | 0.7430 |
+| 평균 | 0.7448 |
 | 중앙값 | 1.0000 |
-| IQR | 0.2752 |
+| IQR | 0.2785 |
 | Bowley 왜도 | -1.0000 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
-| Std 이상치율 | 21.99% |
+| Std 이상치율 | 22.02% |
 | 개선율 | 100.0% |
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_8_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_2_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_8_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_2_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_8_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_2_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_8_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_2_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_8_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_2_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_8_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_2_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_8_LOAD_00_summary.png)
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_2_LOAD_00_summary.png)
 
 **2025-06**
 
@@ -19124,9 +16536,9 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 5,678 |
-| 평균 | 0.7142 |
+| 평균 | 0.7150 |
 | 중앙값 | 1.0000 |
-| IQR | 0.7104 |
+| IQR | 0.7062 |
 | Bowley 왜도 | -1.0000 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
@@ -19135,31 +16547,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_8_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_2_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_8_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_2_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_8_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_2_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_8_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_2_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_8_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_2_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_8_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_2_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_8_LOAD_00_summary.png)
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_2_LOAD_00_summary.png)
 
 **2025-07**
 
@@ -19168,7 +16580,7 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 2,773 |
-| 평균 | 0.5894 |
+| 평균 | 0.5899 |
 | 중앙값 | 1.0000 |
 | IQR | 1.0000 |
 | Bowley 왜도 | -1.0000 |
@@ -19179,31 +16591,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_8_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_2_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_8_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_2_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_8_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_2_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_8_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_2_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_8_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_2_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_8_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_2_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_8_LOAD_00_summary.png)
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_2_LOAD_00_summary.png)
 
 **2025-08**
 
@@ -19212,7 +16624,7 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 4,201 |
-| 평균 | 0.6659 |
+| 평균 | 0.6666 |
 | 중앙값 | 1.0000 |
 | IQR | 1.0000 |
 | Bowley 왜도 | -1.0000 |
@@ -19223,35 +16635,35 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_8_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_2_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_8_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_2_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_8_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_2_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_8_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_2_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_8_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_2_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_8_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_2_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_8_LOAD_00_summary.png)
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_2_LOAD_00_summary.png)
 
 ---
 
-#### STAND_7_LOAD 🟢
+#### STAND_3_LOAD 🟢
 
 **위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
 **Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
@@ -19271,18 +16683,18 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 |-----------|--------------|--------------|
 | 이상치 수 | 0 | 0 |
 | 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -4.0774 | -1.5000 |
-| 상한 경계 | 1.5518 | 2.5000 |
+| 하한 경계 | -3.9928 | -1.4583 |
+| 상한 경계 | 1.5426 | 2.4750 |
 
 | 기본 통계 | 값 |
 |-----------|-------|
 | 분석 레코드 | 19,763 |
-| 평균 | 0.6966 |
+| 평균 | 0.6974 |
 | 표준편차 | 0.4299 |
-| Q1 (25%) | 0.0000 |
+| Q1 (25%) | 0.0167 |
 | 중앙값 | 1.0000 |
 | Q3 (75%) | 1.0000 |
-| IQR | 1.0000 |
+| IQR | 0.9833 |
 
 **월별 이상치 추이**:
 
@@ -19298,35 +16710,35 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/adjusted/STAND_7_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/adjusted/STAND_3_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/adjusted/STAND_7_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/adjusted/STAND_3_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/adjusted/STAND_7_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/adjusted/STAND_3_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_7_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_3_LOAD_04_daily_avg_trend.png)
 
 **5. 월별 이상치율 (Monthly Outlier Rate)**
 
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_7_LOAD_05_monthly_outlier_rate.png)
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_3_LOAD_05_monthly_outlier_rate.png)
 
 **6. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_7_LOAD_06_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_3_LOAD_06_hourly_pattern.png)
 
 **7. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_7_LOAD_07_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_3_LOAD_07_daily_outlier_count.png)
 
 **종합 분석 차트**
 
-![STAND_7_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_7_LOAD_analysis.png)
+![STAND_3_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_3_LOAD_analysis.png)
 
 
 ---
@@ -19340,42 +16752,42 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 7,111 |
-| 평균 | 0.7428 |
+| 평균 | 0.7441 |
 | 중앙값 | 1.0000 |
-| IQR | 0.2992 |
+| IQR | 0.3041 |
 | Bowley 왜도 | -1.0000 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
-| Std 이상치율 | 21.54% |
+| Std 이상치율 | 21.12% |
 | 개선율 | 100.0% |
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_7_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_3_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_7_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_3_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_7_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_3_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_7_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_3_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_7_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_3_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_7_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_3_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_7_LOAD_00_summary.png)
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_3_LOAD_00_summary.png)
 
 **2025-06**
 
@@ -19384,9 +16796,9 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 5,678 |
-| 평균 | 0.7139 |
+| 평균 | 0.7145 |
 | 중앙값 | 1.0000 |
-| IQR | 0.7045 |
+| IQR | 0.6997 |
 | Bowley 왜도 | -1.0000 |
 | Adj 이상치 수 | 0 |
 | Adj 이상치율 | 0.00% |
@@ -19395,31 +16807,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_7_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_3_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_7_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_3_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_7_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_3_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_7_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_3_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_7_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_3_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_7_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_3_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_7_LOAD_00_summary.png)
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_3_LOAD_00_summary.png)
 
 **2025-07**
 
@@ -19428,7 +16840,7 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 2,773 |
-| 평균 | 0.5894 |
+| 평균 | 0.5897 |
 | 중앙값 | 1.0000 |
 | IQR | 1.0000 |
 | Bowley 왜도 | -1.0000 |
@@ -19439,31 +16851,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_7_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_3_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_7_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_3_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_7_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_3_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_7_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_3_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_7_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_3_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_7_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_3_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_7_LOAD_00_summary.png)
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_3_LOAD_00_summary.png)
 
 **2025-08**
 
@@ -19472,7 +16884,7 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 | 지표 | 값 |
 |------|-------|
 | 분석 레코드 | 4,201 |
-| 평균 | 0.6659 |
+| 평균 | 0.6664 |
 | 중앙값 | 1.0000 |
 | IQR | 1.0000 |
 | Bowley 왜도 | -1.0000 |
@@ -19483,551 +16895,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_7_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_3_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_7_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_3_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_7_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_3_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_7_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_3_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_7_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_3_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_7_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_3_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_7_LOAD_00_summary.png)
-
----
-
-#### STAND_6_LOAD 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
-
-**카테고리**: 07 Stand Load
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -4.0774 | -1.5000 |
-| 상한 경계 | 1.5518 | 2.5000 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 0.6967 |
-| 표준편차 | 0.4299 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 1.0000 |
-| Q3 (75%) | 1.0000 |
-| IQR | 1.0000 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 0.67 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/adjusted/STAND_6_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/adjusted/STAND_6_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/adjusted/STAND_6_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_6_LOAD_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_6_LOAD_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_6_LOAD_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_6_LOAD_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_6_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_6_LOAD_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 0.7429 |
-| 중앙값 | 1.0000 |
-| IQR | 0.2950 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 21.46% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_6_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_6_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_6_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_6_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_6_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_6_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_6_LOAD_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 0.7139 |
-| 중앙값 | 1.0000 |
-| IQR | 0.7051 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_6_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_6_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_6_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_6_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_6_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_6_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_6_LOAD_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 0.5894 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_6_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_6_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_6_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_6_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_6_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_6_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_6_LOAD_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 0.6658 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_6_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_6_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_6_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_6_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_6_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_6_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_6_LOAD_00_summary.png)
-
----
-
-#### STAND_5_LOAD 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
-
-**카테고리**: 07 Stand Load
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -4.0757 | -1.4992 |
-| 상한 경계 | 1.5516 | 2.4995 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 0.6967 |
-| 표준편차 | 0.4298 |
-| Q1 (25%) | 0.0003 |
-| 중앙값 | 1.0000 |
-| Q3 (75%) | 1.0000 |
-| IQR | 0.9997 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 0.67 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/adjusted/STAND_5_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/adjusted/STAND_5_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/adjusted/STAND_5_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_5_LOAD_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_5_LOAD_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_5_LOAD_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_5_LOAD_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_5_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_5_LOAD_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 0.7429 |
-| 중앙값 | 1.0000 |
-| IQR | 0.3082 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 21.00% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_5_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_5_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_5_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_5_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_5_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_5_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_5_LOAD_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 0.7139 |
-| 중앙값 | 1.0000 |
-| IQR | 0.7301 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_5_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_5_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_5_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_5_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_5_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_5_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_5_LOAD_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 0.5894 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_5_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_5_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_5_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_5_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_5_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_5_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_5_LOAD_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 0.6658 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_5_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_5_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_5_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_5_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_5_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_5_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_5_LOAD_00_summary.png)
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_3_LOAD_00_summary.png)
 
 ---
 
@@ -20131,31 +17023,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_4_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_4_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_4_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_4_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_4_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_4_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_4_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_4_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_4_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_4_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_4_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_4_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_4_LOAD_00_summary.png)
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_4_LOAD_00_summary.png)
 
 **2025-06**
 
@@ -20175,31 +17067,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_4_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_4_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_4_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_4_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_4_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_4_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_4_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_4_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_4_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_4_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_4_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_4_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_4_LOAD_00_summary.png)
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_4_LOAD_00_summary.png)
 
 **2025-07**
 
@@ -20219,31 +17111,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_4_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_4_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_4_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_4_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_4_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_4_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_4_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_4_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_4_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_4_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_4_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_4_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_4_LOAD_00_summary.png)
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_4_LOAD_00_summary.png)
 
 **2025-08**
 
@@ -20263,31 +17155,2371 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_4_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_4_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_4_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_4_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_4_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_4_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_4_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_4_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_4_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_4_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_4_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_4_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_4_LOAD_00_summary.png)
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_4_LOAD_00_summary.png)
+
+---
+
+#### STAND_5_LOAD 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+
+**카테고리**: 07 Stand Load
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -4.0757 | -1.4992 |
+| 상한 경계 | 1.5516 | 2.4995 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 0.6967 |
+| 표준편차 | 0.4298 |
+| Q1 (25%) | 0.0003 |
+| 중앙값 | 1.0000 |
+| Q3 (75%) | 1.0000 |
+| IQR | 0.9997 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 0.67 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/adjusted/STAND_5_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/adjusted/STAND_5_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/adjusted/STAND_5_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_5_LOAD_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_5_LOAD_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_5_LOAD_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_5_LOAD_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_5_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_5_LOAD_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 0.7429 |
+| 중앙값 | 1.0000 |
+| IQR | 0.3082 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 21.00% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_5_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_5_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_5_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_5_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_5_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_5_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_5_LOAD_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 0.7139 |
+| 중앙값 | 1.0000 |
+| IQR | 0.7301 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_5_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_5_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_5_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_5_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_5_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_5_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_5_LOAD_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 0.5894 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_5_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_5_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_5_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_5_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_5_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_5_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_5_LOAD_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 0.6658 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_5_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_5_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_5_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_5_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_5_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_5_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_5_LOAD_00_summary.png)
+
+---
+
+#### STAND_13_LOAD 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+
+**카테고리**: 07 Stand Load
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -4.0774 | -1.5000 |
+| 상한 경계 | 1.5518 | 2.5000 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 0.6950 |
+| 표준편차 | 0.4311 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 1.0000 |
+| Q3 (75%) | 1.0000 |
+| IQR | 1.0000 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/adjusted/STAND_13_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/adjusted/STAND_13_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/adjusted/STAND_13_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_13_LOAD_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_13_LOAD_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_13_LOAD_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_13_LOAD_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_13_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_13_LOAD_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 0.7410 |
+| 중앙값 | 1.0000 |
+| IQR | 0.2428 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 22.56% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_13_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_13_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_13_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_13_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_13_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_13_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_13_LOAD_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 0.7125 |
+| 중앙값 | 1.0000 |
+| IQR | 0.7263 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_13_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_13_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_13_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_13_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_13_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_13_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_13_LOAD_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 0.5873 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_13_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_13_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_13_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_13_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_13_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_13_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_13_LOAD_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 0.6647 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_13_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_13_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_13_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_13_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_13_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_13_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_13_LOAD_00_summary.png)
+
+---
+
+#### STAND_12_LOAD 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+
+**카테고리**: 07 Stand Load
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -4.0774 | -1.5000 |
+| 상한 경계 | 1.5518 | 2.5000 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 0.6950 |
+| 표준편차 | 0.4311 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 1.0000 |
+| Q3 (75%) | 1.0000 |
+| IQR | 1.0000 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/adjusted/STAND_12_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/adjusted/STAND_12_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/adjusted/STAND_12_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_12_LOAD_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_12_LOAD_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_12_LOAD_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_12_LOAD_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_12_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_12_LOAD_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 0.7410 |
+| 중앙값 | 1.0000 |
+| IQR | 0.2428 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 22.56% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_12_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_12_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_12_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_12_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_12_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_12_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_12_LOAD_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 0.7125 |
+| 중앙값 | 1.0000 |
+| IQR | 0.7263 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_12_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_12_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_12_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_12_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_12_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_12_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_12_LOAD_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 0.5873 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_12_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_12_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_12_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_12_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_12_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_12_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_12_LOAD_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 0.6647 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_12_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_12_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_12_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_12_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_12_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_12_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_12_LOAD_00_summary.png)
+
+---
+
+#### STAND_11_LOAD 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+
+**카테고리**: 07 Stand Load
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -4.0774 | -1.5000 |
+| 상한 경계 | 1.5518 | 2.5000 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 0.6949 |
+| 표준편차 | 0.4310 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 1.0000 |
+| Q3 (75%) | 1.0000 |
+| IQR | 1.0000 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/adjusted/STAND_11_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/adjusted/STAND_11_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/adjusted/STAND_11_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_11_LOAD_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_11_LOAD_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_11_LOAD_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_11_LOAD_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_11_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_11_LOAD_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 0.7408 |
+| 중앙값 | 1.0000 |
+| IQR | 0.2410 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 22.64% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_11_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_11_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_11_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_11_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_11_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_11_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_11_LOAD_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 0.7123 |
+| 중앙값 | 1.0000 |
+| IQR | 0.7263 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_11_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_11_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_11_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_11_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_11_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_11_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_11_LOAD_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 0.5873 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_11_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_11_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_11_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_11_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_11_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_11_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_11_LOAD_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 0.6646 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_11_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_11_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_11_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_11_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_11_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_11_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_11_LOAD_00_summary.png)
+
+---
+
+#### STAND_10_LOAD 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+
+**카테고리**: 07 Stand Load
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -4.0774 | -1.5000 |
+| 상한 경계 | 1.5518 | 2.5000 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 0.6952 |
+| 표준편차 | 0.4310 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 1.0000 |
+| Q3 (75%) | 1.0000 |
+| IQR | 1.0000 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/adjusted/STAND_10_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/adjusted/STAND_10_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/adjusted/STAND_10_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_10_LOAD_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_10_LOAD_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_10_LOAD_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_10_LOAD_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_10_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_10_LOAD_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 0.7413 |
+| 중앙값 | 1.0000 |
+| IQR | 0.2422 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 22.68% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_10_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_10_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_10_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_10_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_10_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_10_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_10_LOAD_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 0.7126 |
+| 중앙값 | 1.0000 |
+| IQR | 0.7374 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_10_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_10_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_10_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_10_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_10_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_10_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_10_LOAD_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 0.5875 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_10_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_10_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_10_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_10_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_10_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_10_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_10_LOAD_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 0.6648 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_10_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_10_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_10_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_10_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_10_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_10_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_10_LOAD_00_summary.png)
+
+---
+
+#### STAND_9_LOAD 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+
+**카테고리**: 07 Stand Load
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -4.0774 | -1.5000 |
+| 상한 경계 | 1.5518 | 2.5000 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 0.6949 |
+| 표준편차 | 0.4308 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 1.0000 |
+| Q3 (75%) | 1.0000 |
+| IQR | 1.0000 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/adjusted/STAND_9_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/adjusted/STAND_9_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/adjusted/STAND_9_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_9_LOAD_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_9_LOAD_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_9_LOAD_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_9_LOAD_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_9_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_9_LOAD_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 0.7409 |
+| 중앙값 | 1.0000 |
+| IQR | 0.2567 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 22.39% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_9_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_9_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_9_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_9_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_9_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_9_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_9_LOAD_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 0.7123 |
+| 중앙값 | 1.0000 |
+| IQR | 0.7336 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_9_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_9_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_9_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_9_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_9_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_9_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_9_LOAD_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 0.5875 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_9_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_9_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_9_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_9_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_9_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_9_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_9_LOAD_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 0.6646 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_9_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_9_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_9_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_9_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_9_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_9_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_9_LOAD_00_summary.png)
+
+---
+
+#### STAND_8_LOAD 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+
+**카테고리**: 07 Stand Load
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -4.0774 | -1.5000 |
+| 상한 경계 | 1.5518 | 2.5000 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 0.6968 |
+| 표준편차 | 0.4300 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 1.0000 |
+| Q3 (75%) | 1.0000 |
+| IQR | 1.0000 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 0.67 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/adjusted/STAND_8_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/adjusted/STAND_8_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/adjusted/STAND_8_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_8_LOAD_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_8_LOAD_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_8_LOAD_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_8_LOAD_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_8_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_8_LOAD_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 0.7430 |
+| 중앙값 | 1.0000 |
+| IQR | 0.2752 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 21.99% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_8_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_8_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_8_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_8_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_8_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_8_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_8_LOAD_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 0.7142 |
+| 중앙값 | 1.0000 |
+| IQR | 0.7104 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_8_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_8_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_8_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_8_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_8_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_8_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_8_LOAD_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 0.5894 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_8_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_8_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_8_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_8_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_8_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_8_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_8_LOAD_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 0.6659 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_8_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_8_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_8_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_8_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_8_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_8_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_8_LOAD_00_summary.png)
+
+---
+
+#### STAND_7_LOAD 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+
+**카테고리**: 07 Stand Load
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -4.0774 | -1.5000 |
+| 상한 경계 | 1.5518 | 2.5000 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 0.6966 |
+| 표준편차 | 0.4299 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 1.0000 |
+| Q3 (75%) | 1.0000 |
+| IQR | 1.0000 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 0.67 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/adjusted/STAND_7_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/adjusted/STAND_7_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/adjusted/STAND_7_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_7_LOAD_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_7_LOAD_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_7_LOAD_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_7_LOAD_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_7_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_7_LOAD_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 0.7428 |
+| 중앙값 | 1.0000 |
+| IQR | 0.2992 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 21.54% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_7_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_7_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_7_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_7_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_7_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_7_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_7_LOAD_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 0.7139 |
+| 중앙값 | 1.0000 |
+| IQR | 0.7045 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_7_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_7_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_7_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_7_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_7_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_7_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_7_LOAD_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 0.5894 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_7_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_7_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_7_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_7_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_7_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_7_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_7_LOAD_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 0.6659 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_7_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_7_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_7_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_7_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_7_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_7_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_7_LOAD_00_summary.png)
+
+---
+
+#### STAND_6_LOAD 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+
+**카테고리**: 07 Stand Load
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -4.0774 | -1.5000 |
+| 상한 경계 | 1.5518 | 2.5000 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 0.6967 |
+| 표준편차 | 0.4299 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 1.0000 |
+| Q3 (75%) | 1.0000 |
+| IQR | 1.0000 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 0.67 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/adjusted/STAND_6_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/adjusted/STAND_6_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/adjusted/STAND_6_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_6_LOAD_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_6_LOAD_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_6_LOAD_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_6_LOAD_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_6_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_6_LOAD_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 0.7429 |
+| 중앙값 | 1.0000 |
+| IQR | 0.2950 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 21.46% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_6_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_6_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_6_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_6_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_6_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_6_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_6_LOAD_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 0.7139 |
+| 중앙값 | 1.0000 |
+| IQR | 0.7051 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_6_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_6_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_6_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_6_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_6_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_6_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_6_LOAD_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 0.5894 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_6_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_6_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_6_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_6_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_6_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_6_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_6_LOAD_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 0.6658 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_6_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_6_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_6_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_6_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_6_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_6_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_6_LOAD_00_summary.png)
 
 ---
 
@@ -20391,31 +19623,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -20435,31 +19667,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -20479,31 +19711,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -20523,560 +19755,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_TORQUE_00_summary.png)
-
----
-
-#### PINCHROLL_3_ACTUAL_SPEED 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 100.0%
-**Bowley 왜도**: -0.9071 | **승수 (L/U)**: 2.477/0.404
-
-**카테고리**: 08 Pinchroll
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 속도/토크 급변 구간 제외 |
-| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
-
-**데이터**: 원본 20,144 → 필터 후 16,338 (18.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 3 |
-| 이상치율 | 0.00% | 0.02% |
-| 하한 경계 | -1311.0059 | 231.7575 |
-| 상한 경계 | 2394.1660 | 3016.9775 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 16,338 |
-| 평균 | 1649.9720 |
-| 표준편차 | 358.0700 |
-| Q1 (25%) | 1276.2150 |
-| 중앙값 | 1940.1720 |
-| Q3 (75%) | 1972.5200 |
-| IQR | 696.3050 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 6,158 | 1661.87 | 0.00% | 0.03% |
-| 2025-06 | 4,896 | 1597.69 | 0.00% | 0.00% |
-| 2025-07 | 2,011 | 1508.75 | 0.00% | 0.00% |
-| 2025-08 | 3,273 | 1792.56 | 0.00% | 0.03% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![PINCHROLL_3_ACTUAL_SPEED 종합 분석 차트](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 6,158 |
-| 평균 | 1661.8732 |
-| 중앙값 | 1958.5280 |
-| IQR | 684.3670 |
-| Bowley 왜도 | -0.9717 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.03% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_SPEED_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_SPEED_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_ACTUAL_SPEED_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,896 |
-| 평균 | 1597.6880 |
-| 중앙값 | 1276.2180 |
-| IQR | 701.3970 |
-| Bowley 왜도 | 0.9951 |
-| Adj 이상치 수 | 2 |
-| Adj 이상치율 | 0.04% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-06: 1건
-- 2. 2025-06-12: 1건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_SPEED_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_SPEED_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_ACTUAL_SPEED_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,011 |
-| 평균 | 1508.7451 |
-| 중앙값 | 1255.5970 |
-| IQR | 767.1730 |
-| Bowley 왜도 | 0.9631 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_SPEED_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_SPEED_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_ACTUAL_SPEED_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 3,273 |
-| 평균 | 1792.5635 |
-| 중앙값 | 1941.8240 |
-| IQR | 61.5300 |
-| Bowley 왜도 | 0.5810 |
-| Adj 이상치 수 | 772 |
-| Adj 이상치율 | 23.59% |
-| Std 이상치율 | 23.59% |
-| 개선율 | 0.0% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-08: 772건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_SPEED_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_SPEED_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_ACTUAL_SPEED_00_summary.png)
-
----
-
-#### STAND_14_LOAD 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
-**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
-
-**카테고리**: 07 Stand Load
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
-
-**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
-
-| 통계 지표 | Adjusted IQR | Standard IQR |
-|-----------|--------------|--------------|
-| 이상치 수 | 0 | 0 |
-| 이상치율 | 0.00% | 0.00% |
-| 하한 경계 | -4.0774 | -1.5000 |
-| 상한 경계 | 1.5518 | 2.5000 |
-
-| 기본 통계 | 값 |
-|-----------|-------|
-| 분석 레코드 | 19,763 |
-| 평균 | 0.6948 |
-| 표준편차 | 0.4311 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 1.0000 |
-| Q3 (75%) | 1.0000 |
-| IQR | 1.0000 |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
-|-----|-----------|------|--------------|---------------|
-| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
-| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
-| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
-| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/adjusted/STAND_14_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/adjusted/STAND_14_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/adjusted/STAND_14_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/adjusted/STAND_14_LOAD_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./07_Stand_Load/adjusted/STAND_14_LOAD_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/adjusted/STAND_14_LOAD_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/adjusted/STAND_14_LOAD_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![STAND_14_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_14_LOAD_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 7,111 |
-| 평균 | 0.7408 |
-| 중앙값 | 1.0000 |
-| IQR | 0.2401 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 22.71% |
-| 개선율 | 100.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-05/STAND_14_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-05/STAND_14_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-05/STAND_14_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/STAND_14_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/STAND_14_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/STAND_14_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/STAND_14_LOAD_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 5,678 |
-| 평균 | 0.7122 |
-| 중앙값 | 1.0000 |
-| IQR | 0.7225 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-06/STAND_14_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-06/STAND_14_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-06/STAND_14_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/STAND_14_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/STAND_14_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/STAND_14_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/STAND_14_LOAD_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,773 |
-| 평균 | 0.5872 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-07/STAND_14_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-07/STAND_14_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-07/STAND_14_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/STAND_14_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/STAND_14_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/STAND_14_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/STAND_14_LOAD_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 4,201 |
-| 평균 | 0.6645 |
-| 중앙값 | 1.0000 |
-| IQR | 1.0000 |
-| Bowley 왜도 | -1.0000 |
-| Adj 이상치 수 | 0 |
-| Adj 이상치율 | 0.00% |
-| Std 이상치율 | 0.00% |
-| 개선율 | 0.0% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./07_Stand_Load/monthly/2025-08/STAND_14_LOAD_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./07_Stand_Load/monthly/2025-08/STAND_14_LOAD_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./07_Stand_Load/monthly/2025-08/STAND_14_LOAD_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/STAND_14_LOAD_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/STAND_14_LOAD_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/STAND_14_LOAD_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/STAND_14_LOAD_00_summary.png)
+![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_TORQUE_00_summary.png)
 
 ---
 
@@ -21180,31 +19883,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_4_ACTUAL_SPEED_00_summary.png)
+![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_4_ACTUAL_SPEED_00_summary.png)
 
 **2025-06**
 
@@ -21224,31 +19927,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_4_ACTUAL_SPEED_00_summary.png)
+![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_4_ACTUAL_SPEED_00_summary.png)
 
 **2025-07**
 
@@ -21268,31 +19971,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_4_ACTUAL_SPEED_00_summary.png)
+![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_4_ACTUAL_SPEED_00_summary.png)
 
 **2025-08**
 
@@ -21317,31 +20020,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_SPEED_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_SPEED_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_SPEED_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_SPEED_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_SPEED_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_SPEED_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_SPEED_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_SPEED_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_SPEED_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_SPEED_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_SPEED_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_SPEED_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_4_ACTUAL_SPEED_00_summary.png)
+![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_4_ACTUAL_SPEED_00_summary.png)
 
 ---
 
@@ -21445,31 +20148,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-05/FINISHING_BLOCK_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/FINISHING_BLOCK_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-05/FINISHING_BLOCK_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/FINISHING_BLOCK_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-05/FINISHING_BLOCK_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/FINISHING_BLOCK_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-05/FINISHING_BLOCK_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/FINISHING_BLOCK_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-05/FINISHING_BLOCK_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/FINISHING_BLOCK_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-05/FINISHING_BLOCK_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/FINISHING_BLOCK_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/FINISHING_BLOCK_LOAD_00_summary.png)
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/FINISHING_BLOCK_LOAD_00_summary.png)
 
 **2025-06**
 
@@ -21489,31 +20192,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-06/FINISHING_BLOCK_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/FINISHING_BLOCK_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-06/FINISHING_BLOCK_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/FINISHING_BLOCK_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-06/FINISHING_BLOCK_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/FINISHING_BLOCK_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-06/FINISHING_BLOCK_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/FINISHING_BLOCK_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-06/FINISHING_BLOCK_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/FINISHING_BLOCK_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-06/FINISHING_BLOCK_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/FINISHING_BLOCK_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/FINISHING_BLOCK_LOAD_00_summary.png)
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/FINISHING_BLOCK_LOAD_00_summary.png)
 
 **2025-07**
 
@@ -21533,31 +20236,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-07/FINISHING_BLOCK_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/FINISHING_BLOCK_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-07/FINISHING_BLOCK_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/FINISHING_BLOCK_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-07/FINISHING_BLOCK_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/FINISHING_BLOCK_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-07/FINISHING_BLOCK_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/FINISHING_BLOCK_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-07/FINISHING_BLOCK_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/FINISHING_BLOCK_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-07/FINISHING_BLOCK_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/FINISHING_BLOCK_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/FINISHING_BLOCK_LOAD_00_summary.png)
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/FINISHING_BLOCK_LOAD_00_summary.png)
 
 **2025-08**
 
@@ -21577,31 +20280,560 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./07_Stand_Load/monthly/2025-08/FINISHING_BLOCK_LOAD_01_timeseries.png)
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/FINISHING_BLOCK_LOAD_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./07_Stand_Load/monthly/2025-08/FINISHING_BLOCK_LOAD_02_histogram.png)
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/FINISHING_BLOCK_LOAD_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./07_Stand_Load/monthly/2025-08/FINISHING_BLOCK_LOAD_03_boxplot.png)
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/FINISHING_BLOCK_LOAD_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./07_Stand_Load/monthly/2025-08/FINISHING_BLOCK_LOAD_04_daily_avg_trend.png)
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/FINISHING_BLOCK_LOAD_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./07_Stand_Load/monthly/2025-08/FINISHING_BLOCK_LOAD_05_hourly_pattern.png)
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/FINISHING_BLOCK_LOAD_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./07_Stand_Load/monthly/2025-08/FINISHING_BLOCK_LOAD_06_daily_outlier_count.png)
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/FINISHING_BLOCK_LOAD_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/FINISHING_BLOCK_LOAD_00_summary.png)
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/FINISHING_BLOCK_LOAD_00_summary.png)
+
+---
+
+#### PINCHROLL_3_ACTUAL_SPEED 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 100.0%
+**Bowley 왜도**: -0.9071 | **승수 (L/U)**: 2.477/0.404
+
+**카테고리**: 08 Pinchroll
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 속도/토크 급변 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
+
+**데이터**: 원본 20,144 → 필터 후 16,338 (18.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 3 |
+| 이상치율 | 0.00% | 0.02% |
+| 하한 경계 | -1311.0059 | 231.7575 |
+| 상한 경계 | 2394.1660 | 3016.9775 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 16,338 |
+| 평균 | 1649.9720 |
+| 표준편차 | 358.0700 |
+| Q1 (25%) | 1276.2150 |
+| 중앙값 | 1940.1720 |
+| Q3 (75%) | 1972.5200 |
+| IQR | 696.3050 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 6,158 | 1661.87 | 0.00% | 0.03% |
+| 2025-06 | 4,896 | 1597.69 | 0.00% | 0.00% |
+| 2025-07 | 2,011 | 1508.75 | 0.00% | 0.00% |
+| 2025-08 | 3,273 | 1792.56 | 0.00% | 0.03% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![PINCHROLL_3_ACTUAL_SPEED 종합 분석 차트](./08_Pinchroll/adjusted/PINCHROLL_3_ACTUAL_SPEED_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 6,158 |
+| 평균 | 1661.8732 |
+| 중앙값 | 1958.5280 |
+| IQR | 684.3670 |
+| Bowley 왜도 | -0.9717 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.03% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_SPEED_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_SPEED_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_ACTUAL_SPEED_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,896 |
+| 평균 | 1597.6880 |
+| 중앙값 | 1276.2180 |
+| IQR | 701.3970 |
+| Bowley 왜도 | 0.9951 |
+| Adj 이상치 수 | 2 |
+| Adj 이상치율 | 0.04% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-06-06: 1건
+- 2. 2025-06-12: 1건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_SPEED_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_SPEED_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_ACTUAL_SPEED_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,011 |
+| 평균 | 1508.7451 |
+| 중앙값 | 1255.5970 |
+| IQR | 767.1730 |
+| Bowley 왜도 | 0.9631 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_SPEED_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_SPEED_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_ACTUAL_SPEED_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 3,273 |
+| 평균 | 1792.5635 |
+| 중앙값 | 1941.8240 |
+| IQR | 61.5300 |
+| Bowley 왜도 | 0.5810 |
+| Adj 이상치 수 | 772 |
+| Adj 이상치율 | 23.59% |
+| Std 이상치율 | 23.59% |
+| 개선율 | 0.0% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-08-08: 772건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_SPEED_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_SPEED_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_ACTUAL_SPEED_00_summary.png)
+
+---
+
+#### STAND_14_LOAD 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: -1.0000 | **승수 (L/U)**: 2.718/0.368
+
+**카테고리**: 07 Stand Load
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 부하 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 부하 급변 구간 제외 |
+| coiling_transient | ✗ | 권취 전 공정으로 가감속 영향 없음 |
+
+**데이터**: 원본 20,144 → 필터 후 19,763 (1.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -4.0774 | -1.5000 |
+| 상한 경계 | 1.5518 | 2.5000 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 19,763 |
+| 평균 | 0.6948 |
+| 표준편차 | 0.4311 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 1.0000 |
+| Q3 (75%) | 1.0000 |
+| IQR | 1.0000 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-05 | 7,111 | 0.74 | 0.00% | 0.00% |
+| 2025-06 | 5,678 | 0.71 | 0.00% | 0.00% |
+| 2025-07 | 2,773 | 0.59 | 0.00% | 0.00% |
+| 2025-08 | 4,201 | 0.66 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/adjusted/STAND_14_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/adjusted/STAND_14_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/adjusted/STAND_14_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/adjusted/STAND_14_LOAD_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./07_Stand_Load/adjusted/STAND_14_LOAD_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/adjusted/STAND_14_LOAD_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/adjusted/STAND_14_LOAD_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![STAND_14_LOAD 종합 분석 차트](./07_Stand_Load/adjusted/STAND_14_LOAD_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 7,111 |
+| 평균 | 0.7408 |
+| 중앙값 | 1.0000 |
+| IQR | 0.2401 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 22.71% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_14_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-05/adjusted/STAND_14_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-05/adjusted/STAND_14_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-05/adjusted/STAND_14_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-05/adjusted/STAND_14_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-05/adjusted/STAND_14_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./07_Stand_Load/monthly/2025-05/adjusted/STAND_14_LOAD_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 5,678 |
+| 평균 | 0.7122 |
+| 중앙값 | 1.0000 |
+| IQR | 0.7225 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_14_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-06/adjusted/STAND_14_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-06/adjusted/STAND_14_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-06/adjusted/STAND_14_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-06/adjusted/STAND_14_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-06/adjusted/STAND_14_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./07_Stand_Load/monthly/2025-06/adjusted/STAND_14_LOAD_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 2,773 |
+| 평균 | 0.5872 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_14_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-07/adjusted/STAND_14_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-07/adjusted/STAND_14_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-07/adjusted/STAND_14_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-07/adjusted/STAND_14_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-07/adjusted/STAND_14_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./07_Stand_Load/monthly/2025-07/adjusted/STAND_14_LOAD_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 4,201 |
+| 평균 | 0.6645 |
+| 중앙값 | 1.0000 |
+| IQR | 1.0000 |
+| Bowley 왜도 | -1.0000 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_14_LOAD_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./07_Stand_Load/monthly/2025-08/adjusted/STAND_14_LOAD_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./07_Stand_Load/monthly/2025-08/adjusted/STAND_14_LOAD_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./07_Stand_Load/monthly/2025-08/adjusted/STAND_14_LOAD_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./07_Stand_Load/monthly/2025-08/adjusted/STAND_14_LOAD_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./07_Stand_Load/monthly/2025-08/adjusted/STAND_14_LOAD_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./07_Stand_Load/monthly/2025-08/adjusted/STAND_14_LOAD_00_summary.png)
 
 ---
 
@@ -21705,31 +20937,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_REFERENCE_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_REFERENCE_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_REFERENCE_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_REFERENCE_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_REFERENCE_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_REFERENCE_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_REFERENCE_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_REFERENCE_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_REFERENCE_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_REFERENCE_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_REFERENCE_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_REFERENCE_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/PINCHROLL_3_REFERENCE_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./08_Pinchroll/monthly/2025-05/adjusted/PINCHROLL_3_REFERENCE_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -21749,31 +20981,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_REFERENCE_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_REFERENCE_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_REFERENCE_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_REFERENCE_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_REFERENCE_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_REFERENCE_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_REFERENCE_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_REFERENCE_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_REFERENCE_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_REFERENCE_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_REFERENCE_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_REFERENCE_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/PINCHROLL_3_REFERENCE_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./08_Pinchroll/monthly/2025-06/adjusted/PINCHROLL_3_REFERENCE_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -21793,31 +21025,31 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_REFERENCE_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_REFERENCE_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_REFERENCE_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_REFERENCE_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_REFERENCE_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_REFERENCE_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_REFERENCE_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_REFERENCE_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_REFERENCE_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_REFERENCE_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_REFERENCE_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_REFERENCE_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/PINCHROLL_3_REFERENCE_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./08_Pinchroll/monthly/2025-07/adjusted/PINCHROLL_3_REFERENCE_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -21837,31 +21069,421 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_REFERENCE_TORQUE_01_timeseries.png)
+![시계열 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_REFERENCE_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_REFERENCE_TORQUE_02_histogram.png)
+![히스토그램](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_REFERENCE_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_REFERENCE_TORQUE_03_boxplot.png)
+![박스플롯](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_REFERENCE_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_REFERENCE_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_REFERENCE_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_REFERENCE_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_REFERENCE_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_REFERENCE_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_REFERENCE_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/PINCHROLL_3_REFERENCE_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./08_Pinchroll/monthly/2025-08/adjusted/PINCHROLL_3_REFERENCE_TORQUE_00_summary.png)
+
+---
+
+#### [A] PR8L1_ACT_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 0.0%
+**Bowley 왜도**: 0.2095 | **승수 (L/U)**: 0.811/1.233
+
+**카테고리**: 09 PR Detailed
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
+
+**데이터**: 원본 7,196 → 필터 후 5,474 (23.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 0 |
+| 이상치율 | 0.00% | 0.00% |
+| 하한 경계 | -14.7308 | -18.1632 |
+| 상한 경계 | 34.5042 | 30.2720 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 5,474 |
+| 평균 | 7.2708 |
+| 표준편차 | 7.8773 |
+| Q1 (25%) | 0.0000 |
+| 중앙값 | 4.7862 |
+| Q3 (75%) | 12.1088 |
+| IQR | 12.1088 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-06 | 1,247 | 4.44 | 0.00% | 0.00% |
+| 2025-07 | 954 | 10.95 | 0.00% | 0.00% |
+| 2025-08 | 3,273 | 7.28 | 0.00% | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![PR8L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR8L1_ACT_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 1,247 |
+| 평균 | 4.4401 |
+| 중앙값 | 0.0000 |
+| IQR | 3.9352 |
+| Bowley 왜도 | 1.0000 |
+| Adj 이상치 수 | 155 |
+| Adj 이상치율 | 12.43% |
+| Std 이상치율 | 15.96% |
+| 개선율 | 22.1% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-06-06: 155건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-06/adjusted/PR8L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-06/adjusted/PR8L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-06/adjusted/PR8L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/adjusted/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-06/adjusted/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/adjusted/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/adjusted/PR8L1_ACT_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 954 |
+| 평균 | 10.9546 |
+| 중앙값 | 4.7235 |
+| IQR | 19.3615 |
+| Bowley 왜도 | 0.9317 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR8L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-07/adjusted/PR8L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-07/adjusted/PR8L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/adjusted/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/adjusted/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/adjusted/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR8L1_ACT_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 3,273 |
+| 평균 | 7.2755 |
+| 중앙값 | 5.2114 |
+| IQR | 10.4088 |
+| Bowley 왜도 | 0.4145 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-08/adjusted/PR8L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-08/adjusted/PR8L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-08/adjusted/PR8L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/adjusted/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-08/adjusted/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/adjusted/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/adjusted/PR8L1_ACT_TORQUE_00_summary.png)
+
+---
+
+#### [A] PR9L1_ACT_TORQUE 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **개선율**: 100.0%
+**Bowley 왜도**: -0.6049 | **승수 (L/U)**: 1.831/0.546
+
+**카테고리**: 09 PR Detailed
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
+
+**데이터**: 원본 7,196 → 필터 후 5,474 (23.9% 제외)
+
+| 통계 지표 | Adjusted IQR | Standard IQR |
+|-----------|--------------|--------------|
+| 이상치 수 | 0 | 647 |
+| 이상치율 | 0.00% | 11.82% |
+| 하한 경계 | -44.4803 | -28.8567 |
+| 상한 경계 | 12.7429 | 21.2755 |
+
+| 기본 통계 | 값 |
+|-----------|-------|
+| 분석 레코드 | 5,474 |
+| 평균 | -5.8879 |
+| 표준편차 | 12.1596 |
+| Q1 (25%) | -10.0571 |
+| 중앙값 | 0.0000 |
+| Q3 (75%) | 2.4759 |
+| IQR | 12.5330 |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | Adj 이상치율 | Std 이상치율 |
+|-----|-----------|------|--------------|---------------|
+| 2025-06 | 1,247 | -5.06 | 0.00% | 11.95% |
+| 2025-07 | 954 | -12.15 | 0.00% | 29.04% |
+| 2025-08 | 3,273 | -4.38 | 0.00% | 6.75% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![PR9L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/adjusted/PR9L1_ACT_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 954 |
+| 평균 | -12.1540 |
+| 중앙값 | -3.0013 |
+| IQR | 34.6643 |
+| Bowley 왜도 | -0.6779 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 0.00% |
+| 개선율 | 0.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR9L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-07/adjusted/PR9L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-07/adjusted/PR9L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/adjusted/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/adjusted/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/adjusted/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/adjusted/PR9L1_ACT_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 3,273 |
+| 평균 | -4.3763 |
+| 중앙값 | 0.0000 |
+| IQR | 12.7040 |
+| Bowley 왜도 | -0.5828 |
+| Adj 이상치 수 | 0 |
+| Adj 이상치율 | 0.00% |
+| Std 이상치율 | 6.75% |
+| 개선율 | 100.0% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-08/adjusted/PR9L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-08/adjusted/PR9L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-08/adjusted/PR9L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/adjusted/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-08/adjusted/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/adjusted/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/adjusted/PR9L1_ACT_TORQUE_00_summary.png)
 
 ---
 
@@ -21874,10 +21496,10 @@ Adjusted IQR은 데이터 분포의 비대칭성(왜도)을 고려하여 이상�
 |-----|------------------|-------------------|--------|
 | 2025-03 | N/A | N/A | N/A |
 | 2025-04 | N/A | N/A | N/A |
-| 2025-05 | 3.01% | 3.65% | 17.7% |
-| 2025-06 | 3.91% | 4.25% | 7.8% |
-| 2025-07 | 8.29% | 8.82% | 6.0% |
-| 2025-08 | 6.89% | 6.91% | 0.3% |
+| 2025-05 | 3.17% | 3.85% | 17.7% |
+| 2025-06 | 3.76% | 4.23% | 11.1% |
+| 2025-07 | 8.10% | 8.95% | 9.5% |
+| 2025-08 | 6.82% | 6.94% | 1.7% |
 
 ---
 
@@ -21889,12 +21511,12 @@ Adjusted IQR 적용으로 가장 큰 개선을 보인 태그:
 |------|--------|--------------|--------------|--------|-------------|
 | 1 | PINCHROLL_3_ACTUAL_SPEED | 0.02% | 0.00% | **100.0%** | -0.9071 |
 | 2 | PINCHROLL_4_ACTUAL_SPEED | 0.01% | 0.00% | **100.0%** | -0.9330 |
-| 3 | PINCHROLL_2_ACTUAL_TORQUE | 16.90% | 0.01% | **100.0%** | -0.9998 |
-| 4 | HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF | 1.89% | 0.22% | **88.2%** | -0.5899 |
-| 5 | HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF | 2.04% | 0.25% | **87.8%** | -0.5872 |
-| 6 | FINISHING_BLOCK_ACTUAL_SPEED | 37.91% | 15.79% | **58.3%** | 0.9467 |
-| 7 | MAIN_GAS_PRESSURE | 4.67% | 4.00% | **14.4%** | -0.2891 |
-| 8 | PR9L1_ACT_TORQUE | 6.28% | 5.65% | **10.1%** | -0.3516 |
+| 3 | PR9L1_ACT_TORQUE | 11.82% | 0.00% | **100.0%** | -0.6049 |
+| 4 | PINCHROLL_2_ACTUAL_TORQUE | 16.90% | 0.01% | **100.0%** | -0.9998 |
+| 5 | HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF | 1.89% | 0.22% | **88.2%** | -0.5899 |
+| 6 | HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF | 2.04% | 0.25% | **87.8%** | -0.5872 |
+| 7 | FINISHING_BLOCK_ACTUAL_SPEED | 37.91% | 15.79% | **58.3%** | 0.9467 |
+| 8 | MAIN_GAS_PRESSURE | 4.67% | 4.00% | **14.4%** | -0.2891 |
 | 9 | SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF | 2.75% | 2.57% | **6.5%** | -0.4521 |
 | 10 | SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF | 2.78% | 2.60% | **6.4%** | -0.4711 |
 
@@ -21924,9 +21546,9 @@ Bowley 왜도 절대값이 큰 태그 (비대칭 분포):
 
 ### 분석 결과 요약
 
-1. **전체 개선 효과**: Adjusted IQR 적용으로 평균 **3.3%** 이상치율 감소
-2. **총 이상치 감소**: 78,944 → 73,166 (5,778개 감소)
-3. **위험등급 개선**: CRITICAL/DANGER 태그 18개 → 18개
+1. **전체 개선 효과**: Adjusted IQR 적용으로 평균 **4.6%** 이상치율 감소
+2. **총 이상치 감소**: 75,464 → 68,848 (6,616개 감소)
+3. **위험등급 개선**: CRITICAL/DANGER 태그 19개 → 19개
 
 ### c 값 검토
 

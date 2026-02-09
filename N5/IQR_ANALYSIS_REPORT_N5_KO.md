@@ -2,7 +2,8 @@
 
 **분석 기간**: 2025-03-01 ~ 2025-08-31
 **강종**: N5
-**생성일시**: 2026-02-02 20:55:17
+
+**생성일시**: 2026-02-09 21:12:44
 
 ---
 
@@ -14,27 +15,27 @@
 |------|------|
 | **분석 대상 강종** | N5 |
 | **총 분석 태그 수** | 79개 |
-| **PR_Detailed L1 태그** | 4개 |
-| **PR_Detailed L2 태그** | 2개 |
-| **양호 태그 (≤5%)** | 51개 |
+| **PR_Detailed L1 태그** | 0개 |
+| **PR_Detailed L2 태그** | 0개 |
+| **양호 태그 (≤5%)** | 50개 |
 | **주의 태그 (5~10%)** | 6개 |
-| **경고 이상 태그 (≥10%)** | 22개 |
+| **경고 이상 태그 (≥10%)** | 23개 |
 
 ### 위험도 분포
 
 | 등급 | 이상치율 | 태그 수 | 상태 |
 |------|---------|--------|------|
-| 🟢 양호 | 0~5% | 51개 | 정상 |
+| 🟢 양호 | 0~5% | 50개 | 정상 |
 | 🟡 주의 | 5~10% | 6개 | 모니터링 |
 | 🟠 경고 | 10~15% | 3개 | 원인 분석 |
-| 🔴 위험 | 15~25% | 18개 | 점검 필요 |
-| ⚫ 심각 | 25% 이상 | 1개 | 즉시 조치 |
+| 🔴 위험 | 15~25% | 20개 | 점검 필요 |
+| ⚫ 심각 | 25% 이상 | 0개 | 즉시 조치 |
 
 ### 상위 문제 태그 (이상치율 기준)
 
 | 순위 | 라인 | 태그 | 이상치율 | 위험도 | 필터 제거율 |
 |------|:----:|------|---------|--------|------------|
-| 1 | L1 | PR6L1_ACT_TORQUE | 27.90% | ⚫ | 1.0% |
+| 1 | B | PR6L2_ACT_TORQUE | 23.86% | 🔴 | 25.4% |
 | 2 | - | STAND_9_ACTUAL_SPEED | 22.52% | 🔴 | 1.0% |
 | 3 | - | STAND_12_ACTUAL_SPEED | 21.98% | 🔴 | 1.0% |
 | 4 | - | STAND_11_ACTUAL_SPEED | 21.96% | 🔴 | 1.0% |
@@ -272,12 +273,12 @@
 
 | 태그명 | L1/L2 | run | spc | roll | coil | 제거율 | 이상치 | 상태 |
 |--------|:-----:|:---:|:---:|:----:|:----:|-------:|-------:|:----:|
-| PR6L1_ACT_TORQUE | L1 | ✓ | ✓ | ✓ | ✗ | 1.0% | **27.90%** | ⚫ |
-| PR8L1_ACT_TORQUE | L1 | ✓ | ✓ | ✓ | ✗ | 1.0% | 8.42% | 🟡 |
-| PR6L2_ACT_TORQUE | L2 | ✓ | ✓ | ✓ | ✗ | 1.0% | 3.76% | 🟢 |
-| PR9L1_ACT_TORQUE | L1 | ✓ | ✓ | ✓ | ✗ | 1.0% | 2.69% | 🟢 |
-| PR7L1_ACT_TORQUE | L1 | ✓ | ✓ | ✓ | ✗ | 1.0% | 1.55% | 🟢 |
-| PR7L2_ACT_TORQUE | L2 | ✓ | ✓ | ✓ | ✗ | 1.0% | 0.50% | 🟢 |
+| PR6L2_ACT_TORQUE | B | ✓ | ✓ | ✓ | ✓ | 25.4% | **23.86%** | 🔴 |
+| PR7L2_ACT_TORQUE | B | ✓ | ✓ | ✓ | ✓ | 25.4% | **18.14%** | 🔴 |
+| PR6L1_ACT_TORQUE | A | ✓ | ✓ | ✓ | ✓ | 22.5% | 9.83% | 🟡 |
+| PR7L1_ACT_TORQUE | A | ✓ | ✓ | ✓ | ✓ | 22.5% | 4.92% | 🟢 |
+| PR8L1_ACT_TORQUE | A | ✓ | ✓ | ✓ | ✓ | 22.5% | 0.00% | 🟢 |
+| PR9L1_ACT_TORQUE | A | ✓ | ✓ | ✓ | ✓ | 22.5% | 0.00% | 🟢 |
 
 **필터 적용 이유**:
 
@@ -294,11 +295,11 @@
 
 > **정렬 기준**: 이상치율 높은 순 (⚫ 심각 → 🔴 위험 → 🟠 경고 → 🟡 주의 → 🟢 양호)
 
-### ⚫ 심각 (25% 이상) - 1개 태그
+### 🔴 위험 (15~25%) - 20개 태그
 
-#### PR6L1_ACT_TORQUE [L1] ⚫
+#### PR6L2_ACT_TORQUE [B] 🔴
 
-**위험도**: [CRITICAL] | **이상치율**: 27.90% | **이상치 방향**: 하한 미달
+**위험도**: [DANGER] | **이상치율**: 23.86% | **이상치 방향**: 하한 미달
 
 **카테고리**: 09 PR Detailed
 
@@ -307,81 +308,81 @@
 | run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
 | special_ops | ✓ | 정상 운전 조건에서 분석 |
 | roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
 
-**데이터**: 원본 148,239 → 필터 후 146,817 (1.0% 제외)
+**데이터**: 원본 83,472 → 필터 후 62,259 (25.4% 제외)
 
 | 통계 지표 | 값 |
 |-----------|-------|
-| 분석 레코드 | 146,817 |
-| 평균 | 3.8704 |
-| 표준편차 | 5.7400 |
-| Q1 (25%) | 2.3862 |
-| 중앙값 | 3.2207 |
-| Q3 (75%) | 3.6928 |
-| IQR | 1.3065 |
-| 하한 경계 | 0.4264 |
-| 상한 경계 | 5.6526 |
-| 이상치 수 | 40,955 (27.90%) |
+| 분석 레코드 | 62,259 |
+| 평균 | 5.0174 |
+| 표준편차 | 6.1943 |
+| Q1 (25%) | 3.1961 |
+| 중앙값 | 4.4066 |
+| Q3 (75%) | 4.7606 |
+| IQR | 1.5645 |
+| 하한 경계 | 0.8493 |
+| 상한 경계 | 7.1073 |
+| 이상치 수 | 14,856 (23.86%) |
 
 **월별 이상치 추이**:
 
 | 월 | 레코드 수 | 평균 | 이상치율 |
 |-----|-----------|------|----------|
-| 2025-04 | 32,788 | 2.56 | 22.83% |
-| 2025-05 | 34,301 | 3.00 | 15.78% |
-| 2025-06 | 64,178 | 3.62 | 29.13% |
-| 2025-07 | 12,715 | 9.32 | 60.95% |
-| 2025-08 | 2,835 | 10.60 | 56.90% |
+| 2025-04 | 9,928 | 2.93 | 35.16% |
+| 2025-05 | 13,826 | 4.17 | 15.18% |
+| 2025-06 | 30,416 | 4.16 | 15.19% |
+| 2025-07 | 6,920 | 12.06 | 58.68% |
+| 2025-08 | 1,169 | 13.20 | 50.13% |
 
 **주요 이상치 발생 날짜** (상위 5일):
 
 | 순위 | 날짜 | 이상치 수 |
 |:----:|------|----------:|
-| 1 | 2025-06-19 | 4,845 |
-| 2 | 2025-04-22 | 4,501 |
-| 3 | 2025-06-01 | 3,755 |
-| 4 | 2025-06-22 | 2,781 |
-| 5 | 2025-05-31 | 2,715 |
+| 1 | 2025-04-22 | 3,307 |
+| 2 | 2025-06-01 | 3,231 |
+| 3 | 2025-05-22 | 2,035 |
+| 4 | 2025-07-28 | 844 |
+| 5 | 2025-07-23 | 807 |
 
-- 이상치 발생 일수: 30일
-- 최대 일별 이상치: 4,845건 (2025-06-19)
-- 평균 일별 이상치: 1365.2건
+- 이상치 발생 일수: 21일
+- 최대 일별 이상치: 3,307건 (2025-04-22)
+- 평균 일별 이상치: 707.4건
 
 
 ##### 차트 분석
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/PR6L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/PR6L2_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/PR6L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/PR6L2_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/PR6L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/PR6L2_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 월별 이상치율 (Monthly Outlier Rate)**
 
-![월별 이상치율](./09_PR_Detailed/PR6L1_ACT_TORQUE_05_monthly_outlier_rate.png)
+![월별 이상치율](./09_PR_Detailed/PR6L2_ACT_TORQUE_05_monthly_outlier_rate.png)
 
 **6. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/PR6L1_ACT_TORQUE_06_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/PR6L2_ACT_TORQUE_06_hourly_pattern.png)
 
 **7. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/PR6L1_ACT_TORQUE_07_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/PR6L2_ACT_TORQUE_07_daily_outlier_count.png)
 
 **종합 분석 차트**
 
-![PR6L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR6L1_ACT_TORQUE_analysis.png)
+![PR6L2_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR6L2_ACT_TORQUE_analysis.png)
 
 
 ---
@@ -394,46 +395,40 @@
 
 | 지표 | 값 |
 |------|-------|
-| 분석 레코드 | 32,788 |
-| 평균 | 2.5629 |
-| 중앙값 | 2.8831 |
-| IQR | 1.1311 |
-| 이상치 수 | 7,529 |
-| 이상치율 | 22.96% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-04-22: 4,509건
-- 2. 2025-04-26: 1,336건
-- 3. 2025-04-30: 705건
+| 분석 레코드 | 9,928 |
+| 평균 | 2.9330 |
+| 중앙값 | 3.5749 |
+| IQR | 4.7098 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_00_summary.png)
+![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_00_summary.png)
 
 **2025-05**
 
@@ -441,46 +436,46 @@
 
 | 지표 | 값 |
 |------|-------|
-| 분석 레코드 | 34,301 |
-| 평균 | 3.0046 |
-| 중앙값 | 3.4486 |
-| IQR | 1.2501 |
-| 이상치 수 | 5,427 |
-| 이상치율 | 15.82% |
+| 분석 레코드 | 13,826 |
+| 평균 | 4.1742 |
+| 중앙값 | 4.5612 |
+| IQR | 1.2584 |
+| 이상치 수 | 2,104 |
+| 이상치율 | 15.22% |
 
 **주요 이상치 발생 날짜**:
 
-- 1. 2025-05-31: 2,726건
-- 2. 2025-05-22: 1,923건
-- 3. 2025-05-29: 505건
+- 1. 2025-05-22: 2,047건
+- 2. 2025-05-29: 30건
+- 3. 2025-05-31: 27건
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -488,46 +483,46 @@
 
 | 지표 | 값 |
 |------|-------|
-| 분석 레코드 | 64,178 |
-| 평균 | 3.6244 |
-| 중앙값 | 3.4054 |
-| IQR | 1.6913 |
-| 이상치 수 | 3,273 |
-| 이상치율 | 5.10% |
+| 분석 레코드 | 30,416 |
+| 평균 | 4.1650 |
+| 중앙값 | 4.3802 |
+| IQR | 1.2920 |
+| 이상치 수 | 4,660 |
+| 이상치율 | 15.32% |
 
 **주요 이상치 발생 날짜**:
 
-- 1. 2025-06-19: 1,974건
-- 2. 2025-06-22: 959건
-- 3. 2025-06-20: 259건
+- 1. 2025-06-01: 3,234건
+- 2. 2025-06-22: 696건
+- 3. 2025-06-29: 596건
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -535,40 +530,40 @@
 
 | 지표 | 값 |
 |------|-------|
-| 분석 레코드 | 12,715 |
-| 평균 | 9.3177 |
-| 중앙값 | 3.1643 |
-| IQR | 16.4102 |
+| 분석 레코드 | 6,920 |
+| 평균 | 12.0578 |
+| 중앙값 | 4.1446 |
+| IQR | 22.4650 |
 | 이상치 수 | 0 |
 | 이상치율 | 0.00% |
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -576,44 +571,42 @@
 
 | 지표 | 값 |
 |------|-------|
-| 분석 레코드 | 2,835 |
-| 평균 | 10.6027 |
-| 중앙값 | 3.2723 |
-| IQR | 20.8246 |
+| 분석 레코드 | 1,169 |
+| 평균 | 13.1969 |
+| 중앙값 | 4.2823 |
+| IQR | 21.8290 |
 | 이상치 수 | 0 |
 | 이상치율 | 0.00% |
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_00_summary.png)
 
 ---
-
-### 🔴 위험 (15~25%) - 18개 태그
 
 #### STAND_9_ACTUAL_SPEED 🔴
 
@@ -5837,6 +5830,327 @@
 
 ---
 
+#### PR7L2_ACT_TORQUE [B] 🔴
+
+**위험도**: [DANGER] | **이상치율**: 18.14% | **이상치 방향**: 하한 미달
+
+**카테고리**: 09 PR Detailed
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
+
+**데이터**: 원본 83,472 → 필터 후 62,259 (25.4% 제외)
+
+| 통계 지표 | 값 |
+|-----------|-------|
+| 분석 레코드 | 62,259 |
+| 평균 | 4.2780 |
+| 표준편차 | 2.3604 |
+| Q1 (25%) | 3.6325 |
+| 중앙값 | 4.7603 |
+| Q3 (75%) | 4.9996 |
+| IQR | 1.3670 |
+| 하한 경계 | 1.5820 |
+| 상한 경계 | 7.0501 |
+| 이상치 수 | 11,296 (18.14%) |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | 이상치율 |
+|-----|-----------|------|----------|
+| 2025-04 | 9,928 | 3.62 | 34.12% |
+| 2025-05 | 13,826 | 5.20 | 17.53% |
+| 2025-06 | 30,416 | 4.16 | 12.95% |
+| 2025-07 | 6,920 | 3.66 | 20.53% |
+| 2025-08 | 1,169 | 5.59 | 10.61% |
+
+**주요 이상치 발생 날짜** (상위 5일):
+
+| 순위 | 날짜 | 이상치 수 |
+|:----:|------|----------:|
+| 1 | 2025-06-01 | 3,231 |
+| 2 | 2025-04-22 | 3,201 |
+| 3 | 2025-05-22 | 1,922 |
+| 4 | 2025-06-29 | 593 |
+| 5 | 2025-07-28 | 530 |
+
+- 이상치 발생 일수: 18일
+- 최대 일별 이상치: 3,231건 (2025-06-01)
+- 평균 일별 이상치: 627.6건
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/PR7L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/PR7L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/PR7L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./09_PR_Detailed/PR7L2_ACT_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/PR7L2_ACT_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/PR7L2_ACT_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![PR7L2_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR7L2_ACT_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-04**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 9,928 |
+| 평균 | 3.6173 |
+| 중앙값 | 3.8276 |
+| IQR | 3.8459 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_00_summary.png)
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 13,826 |
+| 평균 | 5.1991 |
+| 중앙값 | 4.8942 |
+| IQR | 1.2295 |
+| 이상치 수 | 2,519 |
+| 이상치율 | 18.22% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-05-22: 2,029건
+- 2. 2025-05-29: 463건
+- 3. 2025-05-31: 27건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 30,416 |
+| 평균 | 4.1648 |
+| 중앙값 | 4.7452 |
+| IQR | 1.1543 |
+| 이상치 수 | 4,034 |
+| 이상치율 | 13.26% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-06-01: 3,285건
+- 2. 2025-06-29: 593건
+- 3. 2025-06-22: 102건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 6,920 |
+| 평균 | 3.6618 |
+| 중앙값 | 4.6174 |
+| IQR | 1.3444 |
+| 이상치 수 | 1,421 |
+| 이상치율 | 20.53% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-07-28: 530건
+- 2. 2025-07-23: 481건
+- 3. 2025-07-26: 410건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 1,169 |
+| 평균 | 5.5871 |
+| 중앙값 | 4.7387 |
+| IQR | 0.1148 |
+| 이상치 수 | 319 |
+| 이상치율 | 27.29% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-08-24: 319건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_00_summary.png)
+
+---
+
 #### SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF 🔴
 
 **위험도**: [DANGER] | **이상치율**: 15.61% | **이상치 방향**: 하한 미달
@@ -7803,9 +8117,9 @@
 
 ---
 
-#### PR8L1_ACT_TORQUE [L1] 🟡
+#### PR6L1_ACT_TORQUE [A] 🟡
 
-**위험도**: [CAUTION] | **이상치율**: 8.42% | **이상치 방향**: 상한 초과
+**위험도**: [CAUTION] | **이상치율**: 9.83% | **이상치 방향**: 상한 초과
 
 **카테고리**: 09 PR Detailed
 
@@ -7814,81 +8128,81 @@
 | run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
 | special_ops | ✓ | 정상 운전 조건에서 분석 |
 | roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
 
-**데이터**: 원본 148,239 → 필터 후 146,817 (1.0% 제외)
+**데이터**: 원본 64,767 → 필터 후 50,201 (22.5% 제외)
 
 | 통계 지표 | 값 |
 |-----------|-------|
-| 분석 레코드 | 146,817 |
-| 평균 | 9.8328 |
-| 표준편차 | 13.5419 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 4.2641 |
-| Q3 (75%) | 13.7212 |
-| IQR | 13.7212 |
-| 하한 경계 | -20.5818 |
-| 상한 경계 | 34.3030 |
-| 이상치 수 | 12,358 (8.42%) |
+| 분석 레코드 | 50,201 |
+| 평균 | 4.4661 |
+| 표준편차 | 5.3746 |
+| Q1 (25%) | 2.8537 |
+| 중앙값 | 3.2488 |
+| Q3 (75%) | 3.7160 |
+| IQR | 0.8622 |
+| 하한 경계 | 1.5603 |
+| 상한 경계 | 5.0093 |
+| 이상치 수 | 4,937 (9.83%) |
 
 **월별 이상치 추이**:
 
 | 월 | 레코드 수 | 평균 | 이상치율 |
 |-----|-----------|------|----------|
-| 2025-04 | 32,788 | 10.99 | 15.28% |
-| 2025-05 | 34,301 | 9.81 | 8.96% |
-| 2025-06 | 64,178 | 9.31 | 5.35% |
-| 2025-07 | 12,715 | 9.45 | 6.61% |
-| 2025-08 | 2,835 | 10.27 | 0.00% |
+| 2025-04 | 14,993 | 3.11 | 3.98% |
+| 2025-05 | 12,988 | 3.37 | 0.91% |
+| 2025-06 | 17,677 | 4.87 | 8.25% |
+| 2025-07 | 3,374 | 9.75 | 64.14% |
+| 2025-08 | 1,169 | 12.68 | 51.41% |
 
 **주요 이상치 발생 날짜** (상위 5일):
 
 | 순위 | 날짜 | 이상치 수 |
 |:----:|------|----------:|
-| 1 | 2025-05-23 | 1,970 |
-| 2 | 2025-04-24 | 1,890 |
-| 3 | 2025-04-22 | 1,792 |
-| 4 | 2025-05-22 | 1,103 |
-| 5 | 2025-06-26 | 1,053 |
+| 1 | 2025-07-28 | 865 |
+| 2 | 2025-06-19 | 840 |
+| 3 | 2025-07-31 | 652 |
+| 4 | 2025-07-26 | 647 |
+| 5 | 2025-08-24 | 601 |
 
-- 이상치 발생 일수: 16일
-- 최대 일별 이상치: 1,970건 (2025-05-23)
-- 평균 일별 이상치: 772.4건
+- 이상치 발생 일수: 19일
+- 최대 일별 이상치: 865건 (2025-07-28)
+- 평균 일별 이상치: 259.8건
 
 
 ##### 차트 분석
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/PR8L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/PR6L1_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/PR8L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/PR6L1_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/PR8L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/PR6L1_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 월별 이상치율 (Monthly Outlier Rate)**
 
-![월별 이상치율](./09_PR_Detailed/PR8L1_ACT_TORQUE_05_monthly_outlier_rate.png)
+![월별 이상치율](./09_PR_Detailed/PR6L1_ACT_TORQUE_05_monthly_outlier_rate.png)
 
 **6. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/PR8L1_ACT_TORQUE_06_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/PR6L1_ACT_TORQUE_06_hourly_pattern.png)
 
 **7. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/PR8L1_ACT_TORQUE_07_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/PR6L1_ACT_TORQUE_07_daily_outlier_count.png)
 
 **종합 분석 차트**
 
-![PR8L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR8L1_ACT_TORQUE_analysis.png)
+![PR6L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR6L1_ACT_TORQUE_analysis.png)
 
 
 ---
@@ -7901,46 +8215,46 @@
 
 | 지표 | 값 |
 |------|-------|
-| 분석 레코드 | 32,788 |
-| 평균 | 10.9875 |
-| 중앙값 | 3.4754 |
-| IQR | 15.6105 |
-| 이상치 수 | 4,517 |
-| 이상치율 | 13.78% |
+| 분석 레코드 | 14,993 |
+| 평균 | 3.1110 |
+| 중앙값 | 2.9178 |
+| IQR | 0.4394 |
+| 이상치 수 | 1,991 |
+| 이상치율 | 13.28% |
 
 **주요 이상치 발생 날짜**:
 
-- 1. 2025-04-24: 1,710건
-- 2. 2025-04-22: 1,608건
-- 3. 2025-04-23: 656건
+- 1. 2025-04-24: 810건
+- 2. 2025-04-22: 466건
+- 3. 2025-04-23: 294건
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_00_summary.png)
+![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_00_summary.png)
 
 **2025-05**
 
@@ -7948,46 +8262,46 @@
 
 | 지표 | 값 |
 |------|-------|
-| 분석 레코드 | 34,301 |
-| 평균 | 9.8115 |
-| 중앙값 | 4.3412 |
-| IQR | 9.8631 |
-| 이상치 수 | 5,924 |
-| 이상치율 | 17.27% |
+| 분석 레코드 | 12,988 |
+| 평균 | 3.3707 |
+| 중앙값 | 2.9732 |
+| IQR | 1.1426 |
+| 이상치 수 | 114 |
+| 이상치율 | 0.88% |
 
 **주요 이상치 발생 날짜**:
 
-- 1. 2025-05-23: 2,294건
-- 2. 2025-05-31: 1,474건
-- 3. 2025-05-22: 1,303건
+- 1. 2025-05-22: 85건
+- 2. 2025-05-29: 13건
+- 3. 2025-05-31: 9건
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_00_summary.png)
+![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR6L1_ACT_TORQUE_00_summary.png)
 
 **2025-06**
 
@@ -7995,46 +8309,46 @@
 
 | 지표 | 값 |
 |------|-------|
-| 분석 레코드 | 64,178 |
-| 평균 | 9.3102 |
-| 중앙값 | 4.2889 |
-| IQR | 12.3308 |
-| 이상치 수 | 3,646 |
-| 이상치율 | 5.68% |
+| 분석 레코드 | 17,677 |
+| 평균 | 4.8696 |
+| 중앙값 | 3.4451 |
+| IQR | 0.7545 |
+| 이상치 수 | 1,490 |
+| 이상치율 | 8.43% |
 
 **주요 이상치 발생 날짜**:
 
-- 1. 2025-06-26: 1,119건
-- 2. 2025-06-28: 826건
-- 3. 2025-06-25: 565건
+- 1. 2025-06-19: 840건
+- 2. 2025-06-22: 371건
+- 3. 2025-06-20: 165건
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_00_summary.png)
+![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR6L1_ACT_TORQUE_00_summary.png)
 
 **2025-07**
 
@@ -8042,46 +8356,40 @@
 
 | 지표 | 값 |
 |------|-------|
-| 분석 레코드 | 12,715 |
-| 평균 | 9.4533 |
-| 중앙값 | 4.2640 |
-| IQR | 14.2277 |
-| 이상치 수 | 824 |
-| 이상치율 | 6.48% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-07-25: 358건
-- 2. 2025-07-23: 348건
-- 3. 2025-07-26: 118건
+| 분석 레코드 | 3,374 |
+| 평균 | 9.7458 |
+| 중앙값 | 3.2023 |
+| IQR | 19.9742 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_00_summary.png)
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR6L1_ACT_TORQUE_00_summary.png)
 
 **2025-08**
 
@@ -8089,40 +8397,40 @@
 
 | 지표 | 값 |
 |------|-------|
-| 분석 레코드 | 2,835 |
-| 평균 | 10.2700 |
-| 중앙값 | 4.2969 |
-| IQR | 16.3526 |
+| 분석 레코드 | 1,169 |
+| 평균 | 12.6761 |
+| 중앙값 | 3.3291 |
+| IQR | 22.0692 |
 | 이상치 수 | 0 |
 | 이상치율 | 0.00% |
 
 **1. 시계열 (Time Series)**
 
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_01_timeseries.png)
+![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_01_timeseries.png)
 
 **2. 분포 히스토그램 (Distribution Histogram)**
 
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_02_histogram.png)
+![히스토그램](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_02_histogram.png)
 
 **3. 박스플롯 (Box Plot)**
 
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_03_boxplot.png)
+![박스플롯](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_03_boxplot.png)
 
 **4. 일별 평균 추이 (Daily Average Trend)**
 
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_04_daily_avg_trend.png)
 
 **5. 시간별 패턴 (Hourly Pattern)**
 
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_05_hourly_pattern.png)
 
 **6. 일별 이상치 수 (Daily Outlier Count)**
 
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_06_daily_outlier_count.png)
 
 **월별 종합 차트**
 
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_00_summary.png)
+![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR6L1_ACT_TORQUE_00_summary.png)
 
 ---
 
@@ -9414,7 +9722,328 @@
 
 ---
 
-### 🟢 양호 (0~5%) - 51개 태그
+### 🟢 양호 (0~5%) - 50개 태그
+
+#### PR7L1_ACT_TORQUE [A] 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 4.92% | **이상치 방향**: 양방향
+
+**카테고리**: 09 PR Detailed
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
+
+**데이터**: 원본 64,767 → 필터 후 50,201 (22.5% 제외)
+
+| 통계 지표 | 값 |
+|-----------|-------|
+| 분석 레코드 | 50,201 |
+| 평균 | 3.7578 |
+| 표준편차 | 1.7619 |
+| Q1 (25%) | 2.9902 |
+| 중앙값 | 3.7380 |
+| Q3 (75%) | 4.2319 |
+| IQR | 1.2416 |
+| 하한 경계 | 1.1278 |
+| 상한 경계 | 6.0943 |
+| 이상치 수 | 2,469 (4.92%) |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | 이상치율 |
+|-----|-----------|------|----------|
+| 2025-04 | 14,993 | 3.28 | 3.64% |
+| 2025-05 | 12,988 | 3.88 | 2.56% |
+| 2025-06 | 17,677 | 4.10 | 2.88% |
+| 2025-07 | 3,374 | 3.17 | 28.36% |
+| 2025-08 | 1,169 | 5.16 | 10.61% |
+
+**주요 이상치 발생 날짜** (상위 5일):
+
+| 순위 | 날짜 | 이상치 수 |
+|:----:|------|----------:|
+| 1 | 2025-07-28 | 530 |
+| 2 | 2025-07-26 | 427 |
+| 3 | 2025-04-22 | 422 |
+| 4 | 2025-05-29 | 233 |
+| 5 | 2025-06-25 | 158 |
+
+- 이상치 발생 일수: 19일
+- 최대 일별 이상치: 530건 (2025-07-28)
+- 평균 일별 이상치: 129.9건
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/PR7L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/PR7L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/PR7L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./09_PR_Detailed/PR7L1_ACT_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/PR7L1_ACT_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/PR7L1_ACT_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![PR7L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR7L1_ACT_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-04**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 14,993 |
+| 평균 | 3.2755 |
+| 중앙값 | 3.0070 |
+| IQR | 0.6845 |
+| 이상치 수 | 1,832 |
+| 이상치율 | 12.22% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-04-24: 807건
+- 2. 2025-04-22: 462건
+- 3. 2025-04-23: 302건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_00_summary.png)
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 12,988 |
+| 평균 | 3.8828 |
+| 중앙값 | 3.0350 |
+| IQR | 1.4187 |
+| 이상치 수 | 326 |
+| 이상치율 | 2.51% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-05-29: 228건
+- 2. 2025-05-22: 82건
+- 3. 2025-05-31: 9건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 17,677 |
+| 평균 | 4.0950 |
+| 중앙값 | 4.0842 |
+| IQR | 0.7767 |
+| 이상치 수 | 1,231 |
+| 이상치율 | 6.96% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-06-22: 230건
+- 2. 2025-06-25: 214건
+- 3. 2025-06-21: 169건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 3,374 |
+| 평균 | 3.1660 |
+| 중앙값 | 4.0618 |
+| IQR | 4.3365 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 1,169 |
+| 평균 | 5.1610 |
+| 중앙값 | 4.1696 |
+| IQR | 0.2697 |
+| 이상치 수 | 248 |
+| 이상치율 | 21.21% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-08-24: 248건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_00_summary.png)
+
+---
 
 #### HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE 🟢
 
@@ -9741,629 +10370,6 @@
 
 ---
 
-#### PR6L2_ACT_TORQUE [L2] 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 3.76% | **이상치 방향**: 상한 초과
-
-**카테고리**: 09 PR Detailed
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
-
-**데이터**: 원본 148,239 → 필터 후 146,817 (1.0% 제외)
-
-| 통계 지표 | 값 |
-|-----------|-------|
-| 분석 레코드 | 146,817 |
-| 평균 | 3.9017 |
-| 표준편차 | 5.2475 |
-| Q1 (25%) | 0.0000 |
-| 중앙값 | 4.0839 |
-| Q3 (75%) | 4.5560 |
-| IQR | 4.5560 |
-| 하한 경계 | -6.8340 |
-| 상한 경계 | 11.3900 |
-| 이상치 수 | 5,518 (3.76%) |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | 이상치율 |
-|-----|-----------|------|----------|
-| 2025-04 | 32,788 | 2.34 | 0.00% |
-| 2025-05 | 34,301 | 3.52 | 0.00% |
-| 2025-06 | 64,178 | 3.46 | 1.47% |
-| 2025-07 | 12,715 | 9.58 | 28.27% |
-| 2025-08 | 2,835 | 11.11 | 34.64% |
-
-**주요 이상치 발생 날짜** (상위 5일):
-
-| 순위 | 날짜 | 이상치 수 |
-|:----:|------|----------:|
-| 1 | 2025-07-31 | 1,160 |
-| 2 | 2025-08-24 | 982 |
-| 3 | 2025-06-22 | 809 |
-| 4 | 2025-07-28 | 598 |
-| 5 | 2025-07-25 | 591 |
-
-- 이상치 발생 일수: 9일
-- 최대 일별 이상치: 1,160건 (2025-07-31)
-- 평균 일별 이상치: 613.1건
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/PR6L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/PR6L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/PR6L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./09_PR_Detailed/PR6L2_ACT_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/PR6L2_ACT_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/PR6L2_ACT_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![PR6L2_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR6L2_ACT_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-04**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 32,788 |
-| 평균 | 2.3390 |
-| 중앙값 | 3.3919 |
-| IQR | 4.2845 |
-| 이상치 수 | 0 |
-| 이상치율 | 0.00% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_00_summary.png)
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 34,301 |
-| 평균 | 3.5178 |
-| 중앙값 | 4.4932 |
-| IQR | 1.9391 |
-| 이상치 수 | 7,600 |
-| 이상치율 | 22.16% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-22: 4,122건
-- 2. 2025-05-31: 2,705건
-- 3. 2025-05-29: 505건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR6L2_ACT_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 64,178 |
-| 평균 | 3.4618 |
-| 중앙값 | 4.3459 |
-| IQR | 4.4478 |
-| 이상치 수 | 948 |
-| 이상치율 | 1.48% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-22: 815건
-- 2. 2025-06-19: 133건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR6L2_ACT_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 12,715 |
-| 평균 | 9.5814 |
-| 중앙값 | 4.1079 |
-| IQR | 16.4716 |
-| 이상치 수 | 0 |
-| 이상치율 | 0.00% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR6L2_ACT_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,835 |
-| 평균 | 11.1059 |
-| 중앙값 | 4.1980 |
-| IQR | 19.2896 |
-| 이상치 수 | 0 |
-| 이상치율 | 0.00% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR6L2_ACT_TORQUE_00_summary.png)
-
----
-
-#### PR9L1_ACT_TORQUE [L1] 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 2.69% | **이상치 방향**: 하한 미달
-
-**카테고리**: 09 PR Detailed
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
-
-**데이터**: 원본 148,239 → 필터 후 146,817 (1.0% 제외)
-
-| 통계 지표 | 값 |
-|-----------|-------|
-| 분석 레코드 | 146,817 |
-| 평균 | -4.0359 |
-| 표준편차 | 9.0724 |
-| Q1 (25%) | -10.3493 |
-| 중앙값 | 0.0000 |
-| Q3 (75%) | 2.5337 |
-| IQR | 12.8830 |
-| 하한 경계 | -29.6738 |
-| 상한 경계 | 21.8582 |
-| 이상치 수 | 3,951 (2.69%) |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | 이상치율 |
-|-----|-----------|------|----------|
-| 2025-04 | 32,788 | -5.34 | 6.15% |
-| 2025-05 | 34,301 | -4.17 | 3.70% |
-| 2025-06 | 64,178 | -3.31 | 0.63% |
-| 2025-07 | 12,715 | -3.85 | 1.30% |
-| 2025-08 | 2,835 | -4.56 | 3.46% |
-
-**주요 이상치 발생 날짜** (상위 5일):
-
-| 순위 | 날짜 | 이상치 수 |
-|:----:|------|----------:|
-| 1 | 2025-04-22 | 1,784 |
-| 2 | 2025-05-22 | 856 |
-| 3 | 2025-05-29 | 414 |
-| 4 | 2025-06-29 | 402 |
-| 5 | 2025-04-23 | 232 |
-
-- 이상치 발생 일수: 7일
-- 최대 일별 이상치: 1,784건 (2025-04-22)
-- 평균 일별 이상치: 564.4건
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/PR9L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/PR9L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/PR9L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./09_PR_Detailed/PR9L1_ACT_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/PR9L1_ACT_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/PR9L1_ACT_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![PR9L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR9L1_ACT_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-04**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 32,788 |
-| 평균 | -5.3409 |
-| 중앙값 | 0.0000 |
-| IQR | 17.2207 |
-| 이상치 수 | 0 |
-| 이상치율 | 0.00% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_00_summary.png)
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 34,301 |
-| 평균 | -4.1662 |
-| 중앙값 | 0.0000 |
-| IQR | 12.6992 |
-| 이상치 수 | 1,290 |
-| 이상치율 | 3.76% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-22: 864건
-- 2. 2025-05-29: 426건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 64,178 |
-| 평균 | -3.3132 |
-| 중앙값 | 0.0000 |
-| IQR | 12.0492 |
-| 이상치 수 | 417 |
-| 이상치율 | 0.65% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-29: 416건
-- 2. 2025-06-27: 1건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 12,715 |
-| 평균 | -3.8496 |
-| 중앙값 | 0.0000 |
-| IQR | 12.1936 |
-| 이상치 수 | 172 |
-| 이상치율 | 1.35% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-07-23: 172건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,835 |
-| 평균 | -4.5607 |
-| 중앙값 | 0.0000 |
-| IQR | 17.0787 |
-| 이상치 수 | 0 |
-| 이상치율 | 0.00% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_00_summary.png)
-
----
-
 #### COMBUSTION_AIR_TEMPERATURE 🟢
 
 **위험도**: [NORMAL] | **이상치율**: 1.83% | **이상치 방향**: 상한 초과
@@ -10683,327 +10689,6 @@
 **월별 종합 차트**
 
 ![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/COMBUSTION_AIR_TEMPERATURE_00_summary.png)
-
----
-
-#### PR7L1_ACT_TORQUE [L1] 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 1.55% | **이상치 방향**: 상한 초과
-
-**카테고리**: 09 PR Detailed
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
-
-**데이터**: 원본 148,239 → 필터 후 146,817 (1.0% 제외)
-
-| 통계 지표 | 값 |
-|-----------|-------|
-| 분석 레코드 | 146,817 |
-| 평균 | 3.1392 |
-| 표준편차 | 2.2483 |
-| Q1 (25%) | 2.3311 |
-| 중앙값 | 3.6801 |
-| Q3 (75%) | 4.2024 |
-| IQR | 1.8713 |
-| 하한 경계 | -0.4759 |
-| 상한 경계 | 7.0094 |
-| 이상치 수 | 2,277 (1.55%) |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | 이상치율 |
-|-----|-----------|------|----------|
-| 2025-04 | 32,788 | 2.70 | 2.27% |
-| 2025-05 | 34,301 | 3.52 | 3.03% |
-| 2025-06 | 64,178 | 3.15 | 0.44% |
-| 2025-07 | 12,715 | 2.92 | 0.51% |
-| 2025-08 | 2,835 | 4.37 | 5.15% |
-
-**주요 이상치 발생 날짜** (상위 5일):
-
-| 순위 | 날짜 | 이상치 수 |
-|:----:|------|----------:|
-| 1 | 2025-05-29 | 653 |
-| 2 | 2025-04-22 | 632 |
-| 3 | 2025-05-22 | 316 |
-| 4 | 2025-06-29 | 153 |
-| 5 | 2025-08-24 | 146 |
-
-- 이상치 발생 일수: 24일
-- 최대 일별 이상치: 653건 (2025-05-29)
-- 평균 일별 이상치: 94.9건
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/PR7L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/PR7L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/PR7L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./09_PR_Detailed/PR7L1_ACT_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/PR7L1_ACT_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/PR7L1_ACT_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![PR7L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR7L1_ACT_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-04**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 32,788 |
-| 평균 | 2.6962 |
-| 중앙값 | 2.9689 |
-| IQR | 1.6788 |
-| 이상치 수 | 758 |
-| 이상치율 | 2.31% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-04-22: 640건
-- 2. 2025-04-23: 84건
-- 3. 2025-04-24: 16건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_00_summary.png)
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 34,301 |
-| 평균 | 3.5230 |
-| 중앙값 | 3.7022 |
-| IQR | 1.5372 |
-| 이상치 수 | 6,021 |
-| 이상치율 | 17.55% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-31: 2,684건
-- 2. 2025-05-22: 1,908건
-- 3. 2025-05-29: 1,156건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR7L1_ACT_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 64,178 |
-| 평균 | 3.1499 |
-| 중앙값 | 4.0073 |
-| IQR | 1.7710 |
-| 이상치 수 | 298 |
-| 이상치율 | 0.46% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-29: 153건
-- 2. 2025-06-21: 58건
-- 3. 2025-06-19: 40건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR7L1_ACT_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 12,715 |
-| 평균 | 2.9177 |
-| 중앙값 | 3.9323 |
-| IQR | 4.2431 |
-| 이상치 수 | 0 |
-| 이상치율 | 0.00% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR7L1_ACT_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,835 |
-| 평균 | 4.3726 |
-| 중앙값 | 4.1452 |
-| IQR | 0.2898 |
-| 이상치 수 | 922 |
-| 이상치율 | 32.52% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-24: 922건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR7L1_ACT_TORQUE_00_summary.png)
 
 ---
 
@@ -12285,319 +11970,6 @@
 **월별 종합 차트**
 
 ![2025-08 종합 분석 차트](./04_Furnace_Auxiliary/monthly/2025-08/MAIN_GAS_TEMPERATURE_00_summary.png)
-
----
-
-#### PR7L2_ACT_TORQUE [L2] 🟢
-
-**위험도**: [NORMAL] | **이상치율**: 0.50% | **이상치 방향**: 상한 초과
-
-**카테고리**: 09 PR Detailed
-
-| 필터 | 적용 | 이유 |
-|------|:----:|------|
-| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
-| special_ops | ✓ | 정상 운전 조건에서 분석 |
-| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
-| coiling_transient | ✗ | 권취 시작/종료 가감속 구간 제외 |
-
-**데이터**: 원본 148,239 → 필터 후 146,817 (1.0% 제외)
-
-| 통계 지표 | 값 |
-|-----------|-------|
-| 분석 레코드 | 146,817 |
-| 평균 | 3.5380 |
-| 표준편차 | 2.5478 |
-| Q1 (25%) | 1.1632 |
-| 중앙값 | 4.6032 |
-| Q3 (75%) | 4.8651 |
-| IQR | 3.7019 |
-| 하한 경계 | -4.3896 |
-| 상한 경계 | 10.4180 |
-| 이상치 수 | 734 (0.50%) |
-
-**월별 이상치 추이**:
-
-| 월 | 레코드 수 | 평균 | 이상치율 |
-|-----|-----------|------|----------|
-| 2025-04 | 32,788 | 2.87 | 0.00% |
-| 2025-05 | 34,301 | 4.26 | 1.73% |
-| 2025-06 | 64,178 | 3.52 | 0.02% |
-| 2025-07 | 12,715 | 3.15 | 0.00% |
-| 2025-08 | 2,835 | 4.74 | 4.59% |
-
-**주요 이상치 발생 날짜** (상위 5일):
-
-| 순위 | 날짜 | 이상치 수 |
-|:----:|------|----------:|
-| 1 | 2025-05-29 | 594 |
-| 2 | 2025-08-24 | 130 |
-| 3 | 2025-06-01 | 5 |
-| 4 | 2025-06-22 | 5 |
-
-- 이상치 발생 일수: 4일
-- 최대 일별 이상치: 594건 (2025-05-29)
-- 평균 일별 이상치: 183.5건
-
-
-##### 차트 분석
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/PR7L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/PR7L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/PR7L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 월별 이상치율 (Monthly Outlier Rate)**
-
-![월별 이상치율](./09_PR_Detailed/PR7L2_ACT_TORQUE_05_monthly_outlier_rate.png)
-
-**6. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/PR7L2_ACT_TORQUE_06_hourly_pattern.png)
-
-**7. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/PR7L2_ACT_TORQUE_07_daily_outlier_count.png)
-
-**종합 분석 차트**
-
-![PR7L2_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR7L2_ACT_TORQUE_analysis.png)
-
-
----
-
-##### 월별 상세 분석
-
-**2025-04**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 32,788 |
-| 평균 | 2.8704 |
-| 중앙값 | 3.7209 |
-| IQR | 3.8467 |
-| 이상치 수 | 0 |
-| 이상치율 | 0.00% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_00_summary.png)
-
-**2025-05**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 34,301 |
-| 평균 | 4.2588 |
-| 중앙값 | 4.8299 |
-| IQR | 2.3093 |
-| 이상치 수 | 5,654 |
-| 이상치율 | 16.48% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-05-31: 2,673건
-- 2. 2025-05-22: 1,594건
-- 3. 2025-05-29: 1,123건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR7L2_ACT_TORQUE_00_summary.png)
-
-**2025-06**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 64,178 |
-| 평균 | 3.5177 |
-| 중앙값 | 4.6978 |
-| IQR | 3.9059 |
-| 이상치 수 | 8 |
-| 이상치율 | 0.01% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-06-22: 5건
-- 2. 2025-06-01: 3건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR7L2_ACT_TORQUE_00_summary.png)
-
-**2025-07**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 12,715 |
-| 평균 | 3.1501 |
-| 중앙값 | 4.5736 |
-| IQR | 4.7199 |
-| 이상치 수 | 0 |
-| 이상치율 | 0.00% |
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR7L2_ACT_TORQUE_00_summary.png)
-
-**2025-08**
-
-**통계 요약**:
-
-| 지표 | 값 |
-|------|-------|
-| 분석 레코드 | 2,835 |
-| 평균 | 4.7404 |
-| 중앙값 | 4.7257 |
-| IQR | 0.1525 |
-| 이상치 수 | 998 |
-| 이상치율 | 35.20% |
-
-**주요 이상치 발생 날짜**:
-
-- 1. 2025-08-24: 998건
-
-**1. 시계열 (Time Series)**
-
-![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_01_timeseries.png)
-
-**2. 분포 히스토그램 (Distribution Histogram)**
-
-![히스토그램](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_02_histogram.png)
-
-**3. 박스플롯 (Box Plot)**
-
-![박스플롯](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_03_boxplot.png)
-
-**4. 일별 평균 추이 (Daily Average Trend)**
-
-![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_04_daily_avg_trend.png)
-
-**5. 시간별 패턴 (Hourly Pattern)**
-
-![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_05_hourly_pattern.png)
-
-**6. 일별 이상치 수 (Daily Outlier Count)**
-
-![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_06_daily_outlier_count.png)
-
-**월별 종합 차트**
-
-![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR7L2_ACT_TORQUE_00_summary.png)
 
 ---
 
@@ -24398,6 +23770,580 @@
 
 ---
 
+#### PR8L1_ACT_TORQUE [A] 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **이상치 방향**: 양방향
+
+**카테고리**: 09 PR Detailed
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
+
+**데이터**: 원본 64,767 → 필터 후 50,201 (22.5% 제외)
+
+| 통계 지표 | 값 |
+|-----------|-------|
+| 분석 레코드 | 50,201 |
+| 평균 | 13.3118 |
+| 표준편차 | 15.1137 |
+| Q1 (25%) | 3.4660 |
+| 중앙값 | 4.3779 |
+| Q3 (75%) | 29.2602 |
+| IQR | 25.7942 |
+| 하한 경계 | -35.2254 |
+| 상한 경계 | 67.9515 |
+| 이상치 수 | 0 (0.00%) |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | 이상치율 |
+|-----|-----------|------|----------|
+| 2025-04 | 14,993 | 14.70 | 0.00% |
+| 2025-05 | 12,988 | 13.08 | 0.00% |
+| 2025-06 | 17,677 | 13.13 | 0.00% |
+| 2025-07 | 3,374 | 9.35 | 0.00% |
+| 2025-08 | 1,169 | 12.25 | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/PR8L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/PR8L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/PR8L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./09_PR_Detailed/PR8L1_ACT_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/PR8L1_ACT_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/PR8L1_ACT_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![PR8L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR8L1_ACT_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-04**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 14,993 |
+| 평균 | 14.6994 |
+| 중앙값 | 3.5838 |
+| IQR | 26.6287 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_00_summary.png)
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 12,988 |
+| 평균 | 13.0824 |
+| 중앙값 | 4.7112 |
+| IQR | 21.5264 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR8L1_ACT_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 17,677 |
+| 평균 | 13.1300 |
+| 중앙값 | 4.4267 |
+| IQR | 25.3704 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR8L1_ACT_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 3,374 |
+| 평균 | 9.3479 |
+| 중앙값 | 4.3707 |
+| IQR | 14.9923 |
+| 이상치 수 | 55 |
+| 이상치율 | 1.63% |
+
+**주요 이상치 발생 날짜**:
+
+- 1. 2025-07-26: 55건
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR8L1_ACT_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 1,169 |
+| 평균 | 12.2538 |
+| 중앙값 | 4.3841 |
+| IQR | 20.7965 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR8L1_ACT_TORQUE_00_summary.png)
+
+---
+
+#### PR9L1_ACT_TORQUE [A] 🟢
+
+**위험도**: [NORMAL] | **이상치율**: 0.00% | **이상치 방향**: 양방향
+
+**카테고리**: 09 PR Detailed
+
+| 필터 | 적용 | 이유 |
+|------|:----:|------|
+| run_only | ✓ | 가동 상태에서만 토크 측정이 유효함 |
+| special_ops | ✓ | 정상 운전 조건에서 분석 |
+| roll_change | ✓ | 롤교환 시 토크 급변 구간 제외 |
+| coiling_transient | ✓ | 권취 시작/종료 가감속 구간 제외 |
+
+**데이터**: 원본 64,767 → 필터 후 50,201 (22.5% 제외)
+
+| 통계 지표 | 값 |
+|-----------|-------|
+| 분석 레코드 | 50,201 |
+| 평균 | -5.9349 |
+| 표준편차 | 10.2331 |
+| Q1 (25%) | -15.0052 |
+| 중앙값 | 1.5164 |
+| Q3 (75%) | 2.3255 |
+| IQR | 17.3307 |
+| 하한 경계 | -41.0012 |
+| 상한 경계 | 28.3215 |
+| 이상치 수 | 0 (0.00%) |
+
+**월별 이상치 추이**:
+
+| 월 | 레코드 수 | 평균 | 이상치율 |
+|-----|-----------|------|----------|
+| 2025-04 | 14,993 | -7.43 | 0.00% |
+| 2025-05 | 12,988 | -6.08 | 0.00% |
+| 2025-06 | 17,677 | -5.06 | 0.00% |
+| 2025-07 | 3,374 | -3.43 | 0.00% |
+| 2025-08 | 1,169 | -5.56 | 0.00% |
+
+
+##### 차트 분석
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/PR9L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/PR9L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/PR9L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 월별 이상치율 (Monthly Outlier Rate)**
+
+![월별 이상치율](./09_PR_Detailed/PR9L1_ACT_TORQUE_05_monthly_outlier_rate.png)
+
+**6. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/PR9L1_ACT_TORQUE_06_hourly_pattern.png)
+
+**7. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/PR9L1_ACT_TORQUE_07_daily_outlier_count.png)
+
+**종합 분석 차트**
+
+![PR9L1_ACT_TORQUE 종합 분석 차트](./09_PR_Detailed/PR9L1_ACT_TORQUE_analysis.png)
+
+
+---
+
+##### 월별 상세 분석
+
+**2025-04**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 14,993 |
+| 평균 | -7.4333 |
+| 중앙값 | 1.5416 |
+| IQR | 22.2347 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-04 종합 분석 차트](./09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_00_summary.png)
+
+**2025-05**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 12,988 |
+| 평균 | -6.0767 |
+| 중앙값 | 1.6472 |
+| IQR | 17.2518 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-05 종합 분석 차트](./09_PR_Detailed/monthly/2025-05/PR9L1_ACT_TORQUE_00_summary.png)
+
+**2025-06**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 17,677 |
+| 평균 | -5.0627 |
+| 중앙값 | 1.5560 |
+| IQR | 17.6212 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-06 종합 분석 차트](./09_PR_Detailed/monthly/2025-06/PR9L1_ACT_TORQUE_00_summary.png)
+
+**2025-07**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 3,374 |
+| 평균 | -3.4289 |
+| 중앙값 | 0.0000 |
+| IQR | 12.5968 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-07 종합 분석 차트](./09_PR_Detailed/monthly/2025-07/PR9L1_ACT_TORQUE_00_summary.png)
+
+**2025-08**
+
+**통계 요약**:
+
+| 지표 | 값 |
+|------|-------|
+| 분석 레코드 | 1,169 |
+| 평균 | -5.5628 |
+| 중앙값 | 0.0000 |
+| IQR | 17.5223 |
+| 이상치 수 | 0 |
+| 이상치율 | 0.00% |
+
+**1. 시계열 (Time Series)**
+
+![시계열 차트](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_01_timeseries.png)
+
+**2. 분포 히스토그램 (Distribution Histogram)**
+
+![히스토그램](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_02_histogram.png)
+
+**3. 박스플롯 (Box Plot)**
+
+![박스플롯](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_03_boxplot.png)
+
+**4. 일별 평균 추이 (Daily Average Trend)**
+
+![일별 평균 추이](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_04_daily_avg_trend.png)
+
+**5. 시간별 패턴 (Hourly Pattern)**
+
+![시간별 패턴](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_05_hourly_pattern.png)
+
+**6. 일별 이상치 수 (Daily Outlier Count)**
+
+![일별 이상치 수](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_06_daily_outlier_count.png)
+
+**월별 종합 차트**
+
+![2025-08 종합 분석 차트](./09_PR_Detailed/monthly/2025-08/PR9L1_ACT_TORQUE_00_summary.png)
+
+---
+
 
 ## 분석 메타데이터
 
@@ -24406,7 +24352,7 @@
 | 분석 스크립트 | steel_grade_iqr_analysis_v2.py |
 | 분석 기간 | 2025-03-01 ~ 2025-08-31 |
 | 강종 | N5 |
-| 생성일시 | 2026-02-02 20:55:17 |
+| 생성일시 | 2026-02-09 21:12:44 |
 | 총 분석 태그 | 79개 |
 
 ---

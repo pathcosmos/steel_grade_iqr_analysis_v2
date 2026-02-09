@@ -2,7 +2,7 @@
 
 **분석 기간**: 2025-03-01 ~ 2025-08-31
 **강종**: N5
-**생성일시**: 2026-02-06 15:47:02
+**생성일시**: 2026-02-09 21:03:06
 
 ---
 
@@ -31,9 +31,9 @@
 
 | 순위 | 태그 | 카테고리 | CUSUM 드리프트 | EWMA 시프트 | 상태 |
 |------|------|----------|----------------|-------------|------|
-| 1 | PR8L1_ACT_TORQUE | PR 상세 토크 | 2099 | 2000 | 🔴 |
-| 2 | PR9L1_ACT_TORQUE | PR 상세 토크 | 2068 | 1462 | 🔴 |
-| 3 | FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE | 가열로 추출 온도 | 1507 | 1718 | 🔴 |
+| 1 | FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE | 가열로 추출 온도 | 1507 | 1718 | 🔴 |
+| 2 | PR9L1_ACT_TORQUE | PR 상세 토크 | 1027 | 769 | 🔴 |
+| 3 | PR8L1_ACT_TORQUE | PR 상세 토크 | 990 | 701 | 🔴 |
 | 4 | PINCHROLL_2_ACTUAL_TORQUE | 핀치롤 | 935 | 926 | 🔴 |
 | 5 | PINCHROLL_4_REFERENCE_TORQUE | 핀치롤 | 641 | 1320 | 🔴 |
 | 6 | STAND_2_LOAD | 스탠드 부하 | 590 | 750 | 🔴 |
@@ -325,24 +325,24 @@
 
 | 태그 | CUSUM Drift | EWMA Shift | 상태 |
 |------|-------------|------------|------|
-| PR6L1_ACT_TORQUE | 12 | 675 | 🔴 |
-| PR6L2_ACT_TORQUE | 13 | 466 | 🔴 |
-| PR7L1_ACT_TORQUE | 111 | 148 | 🔴 |
-| PR7L2_ACT_TORQUE | 22 | 468 | 🔴 |
-| PR8L1_ACT_TORQUE | 2099 | 2000 | 🔴 |
-| PR9L1_ACT_TORQUE | 2068 | 1462 | 🔴 |
+| PR6L1_ACT_TORQUE | 7 | 271 | 🔴 |
+| PR6L2_ACT_TORQUE | 8 | 323 | 🔴 |
+| PR7L1_ACT_TORQUE | 20 | 20 | 🔴 |
+| PR7L2_ACT_TORQUE | 14 | 351 | 🔴 |
+| PR8L1_ACT_TORQUE | 990 | 701 | 🔴 |
+| PR9L1_ACT_TORQUE | 1027 | 769 | 🔴 |
 
 #### 주요 태그 차트
 
-**PR8L1_ACT_TORQUE** (Drift: 2099, Shift: 2000)
-
-![PR8L1_ACT_TORQUE](09_PR_Detailed/PR8L1_ACT_TORQUE_combined.png)
-
-**PR9L1_ACT_TORQUE** (Drift: 2068, Shift: 1462)
+**PR9L1_ACT_TORQUE** (Drift: 1027, Shift: 769)
 
 ![PR9L1_ACT_TORQUE](09_PR_Detailed/PR9L1_ACT_TORQUE_combined.png)
 
-**PR7L1_ACT_TORQUE** (Drift: 111, Shift: 148)
+**PR8L1_ACT_TORQUE** (Drift: 990, Shift: 701)
+
+![PR8L1_ACT_TORQUE](09_PR_Detailed/PR8L1_ACT_TORQUE_combined.png)
+
+**PR7L1_ACT_TORQUE** (Drift: 20, Shift: 20)
 
 ![PR7L1_ACT_TORQUE](09_PR_Detailed/PR7L1_ACT_TORQUE_combined.png)
 
@@ -384,7 +384,7 @@
 | 분석 스크립트 | steel_grade_cusum_ewma_analysis.py |
 | 분석 기간 | 2025-03-01 ~ 2025-08-31 |
 | 강종 | N5 |
-| 생성일시 | 2026-02-06 15:47:02 |
+| 생성일시 | 2026-02-09 21:03:06 |
 | 총 분석 태그 | 79개 |
 
 ---

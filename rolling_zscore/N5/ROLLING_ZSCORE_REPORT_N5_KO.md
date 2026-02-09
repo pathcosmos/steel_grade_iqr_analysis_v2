@@ -2,7 +2,7 @@
 
 **분석 기간**: 2025-03-01 ~ 2025-08-31
 **강종**: N5
-**생성일시**: 2026-02-03 20:48:35
+**생성일시**: 2026-02-09 20:59:55
 
 ---
 
@@ -34,16 +34,16 @@ $$Z_{rolling}(t) = \frac{x(t) - \mu_{window}(t)}{\sigma_{window}(t)}$$
 |------|---------|------|
 | **총 분석 태그** | 79개 | 100% |
 | 🔴 높은 이상치율 (≥10%) | 0개 | 0.0% |
-| 🟠 중간 이상치율 (3~10%) | 8개 | 10.1% |
+| 🟠 중간 이상치율 (3~10%) | 9개 | 11.4% |
 | 🟢 낮은 이상치율 (<3%) | 60개 | 75.9% |
-| 🟡 불안정 기준선 | 11개 | 13.9% |
+| 🟡 불안정 기준선 | 10개 | 12.7% |
 
 #### 전체 평균
 
 | 지표 | 값 |
 |------|-----|
-| 평균 이상치율 | 1.69% |
-| 평균 기준선 안정성 | 0.602 |
+| 평균 이상치율 | 1.68% |
+| 평균 기준선 안정성 | 0.603 |
 
 ---
 
@@ -55,17 +55,17 @@ $$Z_{rolling}(t) = \frac{x(t) - \mu_{window}(t)}{\sigma_{window}(t)}$$
 | 2 | FURNACE_O2_ANALYZER | 가열로 보조설비 | 4.96% | 3582 | 0.479 | 🟠 |
 | 3 | SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF | 가열로 상부 온도 | 4.21% | 2974 | 0.000 | 🟠 |
 | 4 | SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF | 가열로 상부 온도 | 4.15% | 3130 | 0.000 | 🟠 |
-| 5 | HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF | 가열로 상부 온도 | 3.34% | 1494 | 0.148 | 🟠 |
-| 6 | HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF | 가열로 상부 온도 | 3.28% | 1506 | 0.157 | 🟠 |
-| 7 | PINCHROLL_4_ACTUAL_SPEED | 핀치롤 | 3.21% | 2089 | 0.000 | 🟠 |
-| 8 | PINCHROLL_3_ACTUAL_SPEED | 핀치롤 | 3.12% | 1989 | 0.000 | 🟠 |
-| 9 | PR6L2_ACT_TORQUE | PR 상세 토크 | 2.99% | 1850 | 0.000 | 🟡 |
-| 10 | PR6L1_ACT_TORQUE | PR 상세 토크 | 2.93% | 1968 | 0.000 | 🟡 |
-| 11 | COMBUSTION_AIR_TEMPERATURE | 가열로 보조설비 | 2.84% | 1301 | 0.587 | 🟢 |
-| 12 | SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE | 가열로 하부 온도 | 2.82% | 1760 | 0.028 | 🟡 |
-| 13 | SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE | 가열로 하부 온도 | 2.71% | 1636 | 0.048 | 🟡 |
-| 14 | MAIN_GAS_PRESSURE | 가열로 보조설비 | 2.71% | 1146 | 0.000 | 🟡 |
-| 15 | MAIN_COMBUSTION_AIR_PRESSURE | 가열로 보조설비 | 2.50% | 2052 | 0.000 | 🟡 |
+| 5 | PR6L2_ACT_TORQUE | PR 상세 토크 | 3.41% | 1157 | 0.000 | 🟠 |
+| 6 | HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF | 가열로 상부 온도 | 3.34% | 1494 | 0.148 | 🟠 |
+| 7 | HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF | 가열로 상부 온도 | 3.28% | 1506 | 0.157 | 🟠 |
+| 8 | PINCHROLL_4_ACTUAL_SPEED | 핀치롤 | 3.21% | 2089 | 0.000 | 🟠 |
+| 9 | PINCHROLL_3_ACTUAL_SPEED | 핀치롤 | 3.12% | 1989 | 0.000 | 🟠 |
+| 10 | COMBUSTION_AIR_TEMPERATURE | 가열로 보조설비 | 2.84% | 1301 | 0.587 | 🟢 |
+| 11 | SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE | 가열로 하부 온도 | 2.82% | 1760 | 0.028 | 🟡 |
+| 12 | SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE | 가열로 하부 온도 | 2.71% | 1636 | 0.048 | 🟡 |
+| 13 | MAIN_GAS_PRESSURE | 가열로 보조설비 | 2.71% | 1146 | 0.000 | 🟡 |
+| 14 | MAIN_COMBUSTION_AIR_PRESSURE | 가열로 보조설비 | 2.50% | 2052 | 0.000 | 🟡 |
+| 15 | FINISHING_BLOCK_ACTUAL_SPEED | 스탠드 속도 | 2.44% | 1353 | 0.726 | 🟢 |
 
 ---
 
@@ -82,10 +82,10 @@ $$Z_{rolling}(t) = \frac{x(t) - \mu_{window}(t)}{\sigma_{window}(t)}$$
 | MAIN_COMBUSTION_AIR_PRESSURE | 가열로 보조설비 | 0.000 | 2.50% |
 | PINCHROLL_3_ACTUAL_SPEED | 핀치롤 | 0.000 | 3.12% |
 | PINCHROLL_4_ACTUAL_SPEED | 핀치롤 | 0.000 | 3.21% |
-| PR6L1_ACT_TORQUE | PR 상세 토크 | 0.000 | 2.93% |
-| PR6L2_ACT_TORQUE | PR 상세 토크 | 0.000 | 2.99% |
-| PR7L1_ACT_TORQUE | PR 상세 토크 | 0.000 | 2.36% |
-| PR7L2_ACT_TORQUE | PR 상세 토크 | 0.000 | 2.29% |
+| PR6L1_ACT_TORQUE | PR 상세 토크 | 0.000 | 1.76% |
+| PR6L2_ACT_TORQUE | PR 상세 토크 | 0.000 | 3.41% |
+| PR7L1_ACT_TORQUE | PR 상세 토크 | 0.000 | 1.62% |
+| PR7L2_ACT_TORQUE | PR 상세 토크 | 0.000 | 2.38% |
 
 ---
 
@@ -351,31 +351,31 @@ $$Z_{rolling}(t) = \frac{x(t) - \mu_{window}(t)}{\sigma_{window}(t)}$$
 ### PR 상세 토크 (09_PR_Detailed)
 
 - 분석 태그: 6개
-- 평균 이상치율: 1.93%
-- 평균 안정성: 0.232
+- 평균 이상치율: 1.70%
+- 평균 안정성: 0.243
 
 | 태그 | 이상치율 | 심각 이상치 | 안정성 | Max \|Z\| |
 |------|----------|-------------|--------|--------|
-| PR6L1_ACT_TORQUE | 2.93% | 1968 | 0.000 | 48.90 |
-| PR6L2_ACT_TORQUE | 2.99% | 1850 | 0.000 | 49.20 |
-| PR7L1_ACT_TORQUE | 2.36% | 1321 | 0.000 | 32.57 |
-| PR7L2_ACT_TORQUE | 2.29% | 1249 | 0.000 | 32.57 |
-| PR8L1_ACT_TORQUE | 0.46% | 295 | 0.686 | 32.57 |
-| PR9L1_ACT_TORQUE | 0.52% | 275 | 0.705 | 32.57 |
+| PR6L1_ACT_TORQUE | 1.76% | 499 | 0.000 | 37.96 |
+| PR6L2_ACT_TORQUE | 3.41% | 1157 | 0.000 | 46.58 |
+| PR7L1_ACT_TORQUE | 1.62% | 323 | 0.000 | 23.00 |
+| PR7L2_ACT_TORQUE | 2.38% | 711 | 0.000 | 23.00 |
+| PR8L1_ACT_TORQUE | 0.46% | 133 | 0.722 | 23.00 |
+| PR9L1_ACT_TORQUE | 0.56% | 129 | 0.737 | 23.00 |
 
 #### Z-Score 차트
 
-**PR6L2_ACT_TORQUE** (이상치율: 2.99%, 안정성: 0.000)
+**PR6L2_ACT_TORQUE** (이상치율: 3.41%, 안정성: 0.000)
 
 ![PR6L2_ACT_TORQUE](09_PR_Detailed/PR6L2_ACT_TORQUE_rolling_zscore.png)
 
-**PR6L1_ACT_TORQUE** (이상치율: 2.93%, 안정성: 0.000)
+**PR7L2_ACT_TORQUE** (이상치율: 2.38%, 안정성: 0.000)
+
+![PR7L2_ACT_TORQUE](09_PR_Detailed/PR7L2_ACT_TORQUE_rolling_zscore.png)
+
+**PR6L1_ACT_TORQUE** (이상치율: 1.76%, 안정성: 0.000)
 
 ![PR6L1_ACT_TORQUE](09_PR_Detailed/PR6L1_ACT_TORQUE_rolling_zscore.png)
-
-**PR7L1_ACT_TORQUE** (이상치율: 2.36%, 안정성: 0.000)
-
-![PR7L1_ACT_TORQUE](09_PR_Detailed/PR7L1_ACT_TORQUE_rolling_zscore.png)
 
 
 
@@ -429,7 +429,7 @@ $$Z_{rolling}(t) = \frac{x(t) - \mu_{window}(t)}{\sigma_{window}(t)}$$
 | 강종 | N5 |
 | 윈도우 크기 | 24시간 |
 | Z 임계값 | ±3.0σ |
-| 생성일시 | 2026-02-03 20:48:35 |
+| 생성일시 | 2026-02-09 20:59:55 |
 | 총 분석 태그 | 79개 |
 
 ---

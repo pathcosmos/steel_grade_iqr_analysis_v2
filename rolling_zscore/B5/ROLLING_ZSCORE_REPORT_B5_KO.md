@@ -2,7 +2,7 @@
 
 **분석 기간**: 2025-03-01 ~ 2025-08-31
 **강종**: B5
-**생성일시**: 2026-02-03 20:50:44
+**생성일시**: 2026-02-09 21:02:13
 
 ---
 
@@ -43,7 +43,7 @@ $$Z_{rolling}(t) = \frac{x(t) - \mu_{window}(t)}{\sigma_{window}(t)}$$
 | 지표 | 값 |
 |------|-----|
 | 평균 이상치율 | 1.21% |
-| 평균 기준선 안정성 | 0.728 |
+| 평균 기준선 안정성 | 0.730 |
 
 ---
 
@@ -77,10 +77,10 @@ $$Z_{rolling}(t) = \frac{x(t) - \mu_{window}(t)}{\sigma_{window}(t)}$$
 | 태그 | 카테고리 | 안정성 | 이상치율 |
 |------|----------|--------|----------|
 | MAIN_COMBUSTION_AIR_PRESSURE | 가열로 보조설비 | 0.000 | 3.97% |
-| PR7L1_ACT_TORQUE | PR 상세 토크 | 0.195 | 0.02% |
-| PR7L2_ACT_TORQUE | PR 상세 토크 | 0.197 | 0.00% |
+| PR7L1_ACT_TORQUE | PR 상세 토크 | 0.000 | 0.02% |
 | MAIN_GAS_TEMPERATURE | 가열로 보조설비 | 0.328 | 4.97% |
 | COMBUSTION_AIR_TEMPERATURE | 가열로 보조설비 | 0.359 | 2.22% |
+| PR7L2_ACT_TORQUE | PR 상세 토크 | 0.409 | 0.00% |
 
 ---
 
@@ -346,29 +346,29 @@ $$Z_{rolling}(t) = \frac{x(t) - \mu_{window}(t)}{\sigma_{window}(t)}$$
 ### PR 상세 토크 (09_PR_Detailed)
 
 - 분석 태그: 6개
-- 평균 이상치율: 0.03%
-- 평균 안정성: 0.553
+- 평균 이상치율: 0.02%
+- 평균 안정성: 0.575
 
 | 태그 | 이상치율 | 심각 이상치 | 안정성 | Max \|Z\| |
 |------|----------|-------------|--------|--------|
-| PR6L1_ACT_TORQUE | 0.08% | 2 | 0.693 | 10.61 |
-| PR6L2_ACT_TORQUE | 0.06% | 1 | 0.722 | 12.31 |
-| PR7L1_ACT_TORQUE | 0.02% | 1 | 0.195 | 4.36 |
-| PR7L2_ACT_TORQUE | 0.00% | 0 | 0.197 | 2.98 |
-| PR8L1_ACT_TORQUE | 0.00% | 0 | 0.716 | 2.13 |
-| PR9L1_ACT_TORQUE | 0.00% | 0 | 0.792 | 2.83 |
+| PR6L1_ACT_TORQUE | 0.02% | 0 | 0.749 | 3.33 |
+| PR6L2_ACT_TORQUE | 0.09% | 1 | 0.714 | 12.31 |
+| PR7L1_ACT_TORQUE | 0.02% | 0 | 0.000 | 3.33 |
+| PR7L2_ACT_TORQUE | 0.00% | 0 | 0.409 | 2.83 |
+| PR8L1_ACT_TORQUE | 0.00% | 0 | 0.779 | 2.11 |
+| PR9L1_ACT_TORQUE | 0.00% | 0 | 0.799 | 2.03 |
 
 #### Z-Score 차트
 
-**PR6L1_ACT_TORQUE** (이상치율: 0.08%, 안정성: 0.693)
-
-![PR6L1_ACT_TORQUE](09_PR_Detailed/PR6L1_ACT_TORQUE_rolling_zscore.png)
-
-**PR6L2_ACT_TORQUE** (이상치율: 0.06%, 안정성: 0.722)
+**PR6L2_ACT_TORQUE** (이상치율: 0.09%, 안정성: 0.714)
 
 ![PR6L2_ACT_TORQUE](09_PR_Detailed/PR6L2_ACT_TORQUE_rolling_zscore.png)
 
-**PR7L1_ACT_TORQUE** (이상치율: 0.02%, 안정성: 0.195)
+**PR6L1_ACT_TORQUE** (이상치율: 0.02%, 안정성: 0.749)
+
+![PR6L1_ACT_TORQUE](09_PR_Detailed/PR6L1_ACT_TORQUE_rolling_zscore.png)
+
+**PR7L1_ACT_TORQUE** (이상치율: 0.02%, 안정성: 0.000)
 
 ![PR7L1_ACT_TORQUE](09_PR_Detailed/PR7L1_ACT_TORQUE_rolling_zscore.png)
 
@@ -424,7 +424,7 @@ $$Z_{rolling}(t) = \frac{x(t) - \mu_{window}(t)}{\sigma_{window}(t)}$$
 | 강종 | B5 |
 | 윈도우 크기 | 24시간 |
 | Z 임계값 | ±3.0σ |
-| 생성일시 | 2026-02-03 20:50:44 |
+| 생성일시 | 2026-02-09 21:02:13 |
 | 총 분석 태그 | 79개 |
 
 ---

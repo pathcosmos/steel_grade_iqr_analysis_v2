@@ -2,7 +2,7 @@
 
 **분석 기간**: 2025-03-01 ~ 2025-08-31
 **강종**: B5
-**생성일시**: 2026-02-03 20:41:11
+**생성일시**: 2026-02-09 21:08:54
 
 ---
 
@@ -31,11 +31,11 @@
 
 | 순위 | 태그 | 카테고리 | CUSUM 드리프트 | EWMA 시프트 | 상태 |
 |------|------|----------|----------------|-------------|------|
-| 1 | PR6L1_ACT_TORQUE | PR 상세 토크 | 249 | 202 | 🔴 |
-| 2 | PR9L1_ACT_TORQUE | PR 상세 토크 | 242 | 68 | 🔴 |
-| 3 | PR8L1_ACT_TORQUE | PR 상세 토크 | 237 | 188 | 🔴 |
-| 4 | PINCHROLL_4_REFERENCE_TORQUE | 핀치롤 | 232 | 144 | 🔴 |
-| 5 | FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE | 가열로 추출 온도 | 219 | 202 | 🔴 |
+| 1 | PINCHROLL_4_REFERENCE_TORQUE | 핀치롤 | 232 | 144 | 🔴 |
+| 2 | FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE | 가열로 추출 온도 | 219 | 202 | 🔴 |
+| 3 | PR8L1_ACT_TORQUE | PR 상세 토크 | 210 | 157 | 🔴 |
+| 4 | PR7L2_ACT_TORQUE | PR 상세 토크 | 199 | 137 | 🔴 |
+| 5 | PR6L1_ACT_TORQUE | PR 상세 토크 | 179 | 73 | 🔴 |
 | 6 | PINCHROLL_3_REFERENCE_TORQUE | 핀치롤 | 171 | 142 | 🔴 |
 | 7 | STAND_9_ACTUAL_TORQUE | 스탠드 토크 | 157 | 79 | 🔴 |
 | 8 | FINISHING_BLOCK_LOAD | 스탠드 부하 | 153 | 107 | 🔴 |
@@ -325,26 +325,26 @@
 
 | 태그 | CUSUM Drift | EWMA Shift | 상태 |
 |------|-------------|------------|------|
-| PR6L1_ACT_TORQUE | 249 | 202 | 🔴 |
-| PR6L2_ACT_TORQUE | 97 | 274 | 🔴 |
-| PR7L1_ACT_TORQUE | 28 | 451 | 🔴 |
-| PR7L2_ACT_TORQUE | 18 | 472 | 🔴 |
-| PR8L1_ACT_TORQUE | 237 | 188 | 🔴 |
-| PR9L1_ACT_TORQUE | 242 | 68 | 🔴 |
+| PR6L1_ACT_TORQUE | 179 | 73 | 🔴 |
+| PR6L2_ACT_TORQUE | 4 | 188 | 🔴 |
+| PR7L1_ACT_TORQUE | 2 | 187 | 🔴 |
+| PR7L2_ACT_TORQUE | 199 | 137 | 🔴 |
+| PR8L1_ACT_TORQUE | 210 | 157 | 🔴 |
+| PR9L1_ACT_TORQUE | 29 | 1 | 🔴 |
 
 #### 주요 태그 차트
 
-**PR6L1_ACT_TORQUE** (Drift: 249, Shift: 202)
-
-![PR6L1_ACT_TORQUE](09_PR_Detailed/PR6L1_ACT_TORQUE_combined.png)
-
-**PR9L1_ACT_TORQUE** (Drift: 242, Shift: 68)
-
-![PR9L1_ACT_TORQUE](09_PR_Detailed/PR9L1_ACT_TORQUE_combined.png)
-
-**PR8L1_ACT_TORQUE** (Drift: 237, Shift: 188)
+**PR8L1_ACT_TORQUE** (Drift: 210, Shift: 157)
 
 ![PR8L1_ACT_TORQUE](09_PR_Detailed/PR8L1_ACT_TORQUE_combined.png)
+
+**PR7L2_ACT_TORQUE** (Drift: 199, Shift: 137)
+
+![PR7L2_ACT_TORQUE](09_PR_Detailed/PR7L2_ACT_TORQUE_combined.png)
+
+**PR6L1_ACT_TORQUE** (Drift: 179, Shift: 73)
+
+![PR6L1_ACT_TORQUE](09_PR_Detailed/PR6L1_ACT_TORQUE_combined.png)
 
 
 
@@ -384,7 +384,7 @@
 | 분석 스크립트 | steel_grade_cusum_ewma_analysis.py |
 | 분석 기간 | 2025-03-01 ~ 2025-08-31 |
 | 강종 | B5 |
-| 생성일시 | 2026-02-03 20:41:11 |
+| 생성일시 | 2026-02-09 21:08:54 |
 | 총 분석 태그 | 79개 |
 
 ---

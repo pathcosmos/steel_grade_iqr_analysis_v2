@@ -2,7 +2,7 @@
 
 **분석 기간**: 2025-03-01 ~ 2025-08-31
 **강종**: D5
-**생성일시**: 2026-02-03 20:44:11
+**생성일시**: 2026-02-09 21:01:48
 
 ---
 
@@ -48,8 +48,8 @@
 
 | 지표 | 값 |
 |------|-----|
-| 평균 계절성 강도 | 0.039 |
-| 평균 추세 강도 | 0.902 |
+| 평균 계절성 강도 | 0.042 |
+| 평균 추세 강도 | 0.901 |
 
 ---
 
@@ -57,21 +57,21 @@
 
 | 순위 | 태그 | 카테고리 | 이상치율 | 계절성 강도 | 계절성 분류 |
 |------|------|----------|----------|-------------|-------------|
-| 1 | MAIN_COMBUSTION_AIR_PRESSURE | 가열로 보조설비 | 45.03% | 0.119 | none |
-| 2 | STAND_12_ACTUAL_SPEED | 스탠드 속도 | 44.79% | 0.000 | none |
-| 3 | SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE | 가열로 하부 온도 | 44.58% | 0.000 | none |
-| 4 | STAND_6_ACTUAL_SPEED | 스탠드 속도 | 44.24% | 0.000 | none |
-| 5 | PINCHROLL_3_ACTUAL_SPEED | 핀치롤 | 44.04% | 0.000 | none |
-| 6 | STAND_11_LOAD | 스탠드 부하 | 44.01% | 0.036 | none |
-| 7 | STAND_7_ACTUAL_SPEED | 스탠드 속도 | 43.93% | 0.000 | none |
-| 8 | STAND_7_LOAD | 스탠드 부하 | 43.78% | 0.000 | none |
-| 9 | STAND_11_ACTUAL_SPEED | 스탠드 속도 | 43.67% | 0.000 | none |
-| 10 | STAND_4_LOAD | 스탠드 부하 | 43.67% | 0.090 | none |
-| 11 | PR6L1_ACT_TORQUE | PR 상세 토크 | 43.67% | 0.000 | none |
-| 12 | STAND_5_LOAD | 스탠드 부하 | 43.65% | 0.000 | none |
-| 13 | STAND_2_ACTUAL_TORQUE | 스탠드 토크 | 43.62% | 0.000 | none |
-| 14 | STAND_5_ACTUAL_TORQUE | 스탠드 토크 | 43.41% | 0.000 | none |
-| 15 | FINISHING_BLOCK_MASTER_ACTUAL_TORQUE | 스탠드 토크 | 43.31% | 0.000 | none |
+| 1 | PR6L1_ACT_TORQUE | PR 상세 토크 | 45.91% | 0.042 | none |
+| 2 | MAIN_COMBUSTION_AIR_PRESSURE | 가열로 보조설비 | 45.03% | 0.119 | none |
+| 3 | STAND_12_ACTUAL_SPEED | 스탠드 속도 | 44.79% | 0.000 | none |
+| 4 | SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE | 가열로 하부 온도 | 44.58% | 0.000 | none |
+| 5 | STAND_6_ACTUAL_SPEED | 스탠드 속도 | 44.24% | 0.000 | none |
+| 6 | PINCHROLL_3_ACTUAL_SPEED | 핀치롤 | 44.04% | 0.000 | none |
+| 7 | STAND_11_LOAD | 스탠드 부하 | 44.01% | 0.036 | none |
+| 8 | STAND_7_ACTUAL_SPEED | 스탠드 속도 | 43.93% | 0.000 | none |
+| 9 | PR9L1_ACT_TORQUE | PR 상세 토크 | 43.85% | 0.000 | none |
+| 10 | STAND_7_LOAD | 스탠드 부하 | 43.78% | 0.000 | none |
+| 11 | STAND_11_ACTUAL_SPEED | 스탠드 속도 | 43.67% | 0.000 | none |
+| 12 | STAND_4_LOAD | 스탠드 부하 | 43.67% | 0.090 | none |
+| 13 | STAND_5_LOAD | 스탠드 부하 | 43.65% | 0.000 | none |
+| 14 | STAND_2_ACTUAL_TORQUE | 스탠드 토크 | 43.62% | 0.000 | none |
+| 15 | STAND_5_ACTUAL_TORQUE | 스탠드 토크 | 43.41% | 0.000 | none |
 
 ---
 
@@ -348,29 +348,29 @@
 ### PR 상세 토크 (09_PR_Detailed)
 
 - 분석 태그: 6개
-- 평균 잔차 이상치율: 41.92%
-- 평균 계절성 강도: 0.017
+- 평균 잔차 이상치율: 41.99%
+- 평균 계절성 강도: 0.053
 
 | 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
 |------|----------|-------------|-----------|
-| PR6L1_ACT_TORQUE | 43.67% | 0.000 | 0.961 |
-| PR6L2_ACT_TORQUE | 42.34% | 0.000 | 0.914 |
-| PR7L1_ACT_TORQUE | 43.26% | 0.010 | 0.956 |
-| PR7L2_ACT_TORQUE | 42.37% | 0.093 | 0.968 |
-| PR8L1_ACT_TORQUE | 38.07% | 0.000 | 0.945 |
-| PR9L1_ACT_TORQUE | 41.82% | 0.000 | 0.896 |
+| PR6L1_ACT_TORQUE | 45.91% | 0.042 | 0.937 |
+| PR6L2_ACT_TORQUE | 42.47% | 0.276 | 0.908 |
+| PR7L1_ACT_TORQUE | 35.23% | 0.000 | 0.937 |
+| PR7L2_ACT_TORQUE | 43.20% | 0.000 | 0.970 |
+| PR8L1_ACT_TORQUE | 41.25% | 0.000 | 0.961 |
+| PR9L1_ACT_TORQUE | 43.85% | 0.000 | 0.855 |
 
 #### STL 분해 차트
 
-**PR6L1_ACT_TORQUE** (이상치율: 43.67%, 계절성: 0.000)
+**PR6L1_ACT_TORQUE** (이상치율: 45.91%, 계절성: 0.042)
 
 ![PR6L1_ACT_TORQUE](09_PR_Detailed/PR6L1_ACT_TORQUE_stl_decomposition.png)
 
-**PR7L1_ACT_TORQUE** (이상치율: 43.26%, 계절성: 0.010)
+**PR9L1_ACT_TORQUE** (이상치율: 43.85%, 계절성: 0.000)
 
-![PR7L1_ACT_TORQUE](09_PR_Detailed/PR7L1_ACT_TORQUE_stl_decomposition.png)
+![PR9L1_ACT_TORQUE](09_PR_Detailed/PR9L1_ACT_TORQUE_stl_decomposition.png)
 
-**PR7L2_ACT_TORQUE** (이상치율: 42.37%, 계절성: 0.093)
+**PR7L2_ACT_TORQUE** (이상치율: 43.20%, 계절성: 0.000)
 
 ![PR7L2_ACT_TORQUE](09_PR_Detailed/PR7L2_ACT_TORQUE_stl_decomposition.png)
 
@@ -425,7 +425,7 @@
 | 분석 기간 | 2025-03-01 ~ 2025-08-31 |
 | 강종 | D5 |
 | 계절 주기 | 25시간 |
-| 생성일시 | 2026-02-03 20:44:11 |
+| 생성일시 | 2026-02-09 21:01:48 |
 | 총 분석 태그 | 79개 |
 
 ---

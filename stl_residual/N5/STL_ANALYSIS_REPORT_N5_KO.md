@@ -2,7 +2,7 @@
 
 **분석 기간**: 2025-03-01 ~ 2025-08-31
 **강종**: N5
-**생성일시**: 2026-02-03 20:42:45
+**생성일시**: 2026-02-09 21:00:17
 
 ---
 
@@ -48,8 +48,8 @@
 
 | 지표 | 값 |
 |------|-----|
-| 평균 계절성 강도 | 0.005 |
-| 평균 추세 강도 | 0.818 |
+| 평균 계절성 강도 | 0.010 |
+| 평균 추세 강도 | 0.815 |
 
 ---
 
@@ -58,15 +58,15 @@
 | 순위 | 태그 | 카테고리 | 이상치율 | 계절성 강도 | 계절성 분류 |
 |------|------|----------|----------|-------------|-------------|
 | 1 | FINISHING_BLOCK_MASTER_ACTUAL_TORQUE | 스탠드 토크 | 45.57% | 0.000 | none |
-| 2 | PR7L2_ACT_TORQUE | PR 상세 토크 | 44.91% | 0.000 | none |
-| 3 | PINCHROLL_4_REFERENCE_TORQUE | 핀치롤 | 44.74% | 0.000 | none |
+| 2 | PINCHROLL_4_REFERENCE_TORQUE | 핀치롤 | 44.74% | 0.000 | none |
+| 3 | PR9L1_ACT_TORQUE | PR 상세 토크 | 44.51% | 0.000 | none |
 | 4 | FURNACE_PRESSURE | 가열로 보조설비 | 44.27% | 0.000 | none |
 | 5 | FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE | 가열로 추출 온도 | 43.73% | 0.011 | none |
 | 6 | INDIRECT_COOLING_WATER_FLOW | 가열로 보조설비 | 43.70% | 0.000 | none |
 | 7 | PINCHROLL_2_ACTUAL_TORQUE | 핀치롤 | 43.57% | 0.013 | none |
-| 8 | SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE | 가열로 하부 온도 | 43.30% | 0.033 | none |
-| 9 | FINISHING_BLOCK_LOAD | 스탠드 부하 | 43.23% | 0.034 | none |
-| 10 | PR9L1_ACT_TORQUE | PR 상세 토크 | 43.17% | 0.000 | none |
+| 8 | PR7L1_ACT_TORQUE | PR 상세 토크 | 43.37% | 0.000 | none |
+| 9 | SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE | 가열로 하부 온도 | 43.30% | 0.033 | none |
+| 10 | FINISHING_BLOCK_LOAD | 스탠드 부하 | 43.23% | 0.034 | none |
 | 11 | STAND_9_LOAD | 스탠드 부하 | 43.07% | 0.000 | none |
 | 12 | MAIN_GAS_FLOW | 가열로 보조설비 | 42.93% | 0.000 | none |
 | 13 | INDIRECT_WATER_MAIN_TEMPERATURE | 가열로 보조설비 | 42.90% | 0.000 | none |
@@ -347,29 +347,29 @@
 ### PR 상세 토크 (09_PR_Detailed)
 
 - 분석 태그: 6개
-- 평균 잔차 이상치율: 40.38%
-- 평균 계절성 강도: 0.002
+- 평균 잔차 이상치율: 40.72%
+- 평균 계절성 강도: 0.068
 
 | 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
 |------|----------|-------------|-----------|
-| PR6L1_ACT_TORQUE | 34.89% | 0.000 | 0.951 |
-| PR6L2_ACT_TORQUE | 39.00% | 0.000 | 0.940 |
-| PR7L1_ACT_TORQUE | 38.50% | 0.000 | 0.925 |
-| PR7L2_ACT_TORQUE | 44.91% | 0.000 | 0.920 |
-| PR8L1_ACT_TORQUE | 41.80% | 0.010 | 0.875 |
-| PR9L1_ACT_TORQUE | 43.17% | 0.000 | 0.776 |
+| PR6L1_ACT_TORQUE | 37.50% | 0.000 | 0.921 |
+| PR6L2_ACT_TORQUE | 39.63% | 0.334 | 0.980 |
+| PR7L1_ACT_TORQUE | 43.37% | 0.000 | 0.794 |
+| PR7L2_ACT_TORQUE | 37.33% | 0.000 | 0.921 |
+| PR8L1_ACT_TORQUE | 41.97% | 0.072 | 0.863 |
+| PR9L1_ACT_TORQUE | 44.51% | 0.000 | 0.623 |
 
 #### STL 분해 차트
 
-**PR7L2_ACT_TORQUE** (이상치율: 44.91%, 계절성: 0.000)
-
-![PR7L2_ACT_TORQUE](09_PR_Detailed/PR7L2_ACT_TORQUE_stl_decomposition.png)
-
-**PR9L1_ACT_TORQUE** (이상치율: 43.17%, 계절성: 0.000)
+**PR9L1_ACT_TORQUE** (이상치율: 44.51%, 계절성: 0.000)
 
 ![PR9L1_ACT_TORQUE](09_PR_Detailed/PR9L1_ACT_TORQUE_stl_decomposition.png)
 
-**PR8L1_ACT_TORQUE** (이상치율: 41.80%, 계절성: 0.010)
+**PR7L1_ACT_TORQUE** (이상치율: 43.37%, 계절성: 0.000)
+
+![PR7L1_ACT_TORQUE](09_PR_Detailed/PR7L1_ACT_TORQUE_stl_decomposition.png)
+
+**PR8L1_ACT_TORQUE** (이상치율: 41.97%, 계절성: 0.072)
 
 ![PR8L1_ACT_TORQUE](09_PR_Detailed/PR8L1_ACT_TORQUE_stl_decomposition.png)
 
@@ -424,7 +424,7 @@
 | 분석 기간 | 2025-03-01 ~ 2025-08-31 |
 | 강종 | N5 |
 | 계절 주기 | 25시간 |
-| 생성일시 | 2026-02-03 20:42:45 |
+| 생성일시 | 2026-02-09 21:00:17 |
 | 총 분석 태그 | 79개 |
 
 ---
