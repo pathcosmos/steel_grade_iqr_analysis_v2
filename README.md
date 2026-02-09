@@ -1,7 +1,7 @@
 # 강종별 다각적 이상치 분석 (Steel Grade Multi-Method Anomaly Analysis) v2 - 종합 보고서
 
-> **문서 버전**: 3.0
-> **작성일**: 2026-02-06
+> **문서 버전**: 3.1
+> **작성일**: 2026-02-09
 > **목적**: 강종별/규격별 IQR 분석 및 다각적 이상치 탐지(CUSUM-EWMA, Rolling Z-Score, Mahalanobis, STL) 방법론, 필터 시스템, 태그 상세 설명 종합 정리
 
 ---
@@ -97,6 +97,10 @@ analysis_output/steel_grade_iqr_analysis_v2/
 │   │   ├── {카테고리}/{tag}_cusum.png        # CUSUM 누적합 차트
 │   │   ├── {카테고리}/{tag}_ewma.png         # EWMA 지수가중 차트
 │   │   ├── {카테고리}/{tag}_combined.png     # 통합 차트
+│   │   ├── {규격}/                           # 규격별 분석 결과
+│   │   │   ├── {카테고리}/{tag}_*.png
+│   │   │   ├── cusum_ewma_{강종}_{규격}_results.json
+│   │   │   └── CUSUM_EWMA_REPORT_{강종}_{규격}_KO.md
 │   │   ├── cusum_ewma_{강종}_results.json
 │   │   └── CUSUM_EWMA_REPORT_{강종}_KO.md
 │   └── summary/drift_detection_summary.csv
@@ -104,6 +108,10 @@ analysis_output/steel_grade_iqr_analysis_v2/
 ├── rolling_zscore/
 │   ├── {강종}/
 │   │   ├── {카테고리}/{tag}_rolling_zscore.png
+│   │   ├── {규격}/                           # 규격별 분석 결과
+│   │   │   ├── {카테고리}/{tag}_rolling_zscore.png
+│   │   │   ├── rolling_zscore_{강종}_{규격}_results.json
+│   │   │   └── ROLLING_ZSCORE_REPORT_{강종}_{규격}_KO.md
 │   │   ├── rolling_zscore_{강종}_results.json
 │   │   └── ROLLING_ZSCORE_REPORT_{강종}_KO.md
 │
@@ -112,6 +120,10 @@ analysis_output/steel_grade_iqr_analysis_v2/
 │   │   ├── {카테고리}_correlation_heatmap.png  # 상관계수 히트맵
 │   │   ├── {카테고리}_distance.png             # 거리 분포
 │   │   ├── {카테고리}_pca_scatter.png          # PCA 산점도
+│   │   ├── {규격}/                             # 규격별 분석 결과
+│   │   │   ├── {카테고리}_*.png
+│   │   │   ├── mahalanobis_{강종}_{규격}_results.json
+│   │   │   └── MAHALANOBIS_REPORT_{강종}_{규격}_KO.md
 │   │   ├── mahalanobis_{강종}_results.json
 │   │   └── MAHALANOBIS_REPORT_{강종}_KO.md
 │
@@ -119,6 +131,10 @@ analysis_output/steel_grade_iqr_analysis_v2/
     ├── {강종}/
     │   ├── {카테고리}/{tag}_stl_decomposition.png  # Trend/Seasonal/Residual 분해
     │   ├── {카테고리}/{tag}_residual_outliers.png   # 잔차 이상치
+    │   ├── {규격}/                                  # 규격별 분석 결과
+    │   │   ├── {카테고리}/{tag}_*.png
+    │   │   ├── stl_analysis_{강종}_{규격}_results.json
+    │   │   └── STL_ANALYSIS_REPORT_{강종}_{규격}_KO.md
     │   ├── stl_analysis_{강종}_results.json
     │   └── STL_ANALYSIS_REPORT_{강종}_KO.md
 ```
@@ -127,21 +143,31 @@ analysis_output/steel_grade_iqr_analysis_v2/
 
 | 분석 유형 | B5 | D4 | D5 | N5 | 규격별 분석 |
 |-----------|:--:|:--:|:--:|:--:|:-----------:|
-| Standard IQR | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Standard IQR | ✅ | ✅ | ✅ | ✅ | ✅ (10/10) |
 | Adjusted IQR | ✅ | ✅ | ✅ | ✅ | - |
-| CUSUM-EWMA | ✅ | ✅ | ✅ | ✅ | - |
-| Rolling Z-Score | ✅ | ✅ | ✅ | ✅ | - |
-| Mahalanobis | ✅ | ✅ | ✅ | ✅ | - |
-| STL Residual | ✅ | ✅ | ✅ | ✅ | - |
+| CUSUM-EWMA | ✅ | ✅ | ✅ | ✅ | ✅ (10/10) |
+| Rolling Z-Score | ✅ | ✅ | ✅ | ✅ | ✅ (10/10) |
+| Mahalanobis | ✅ | ✅ | ✅ | ✅ | ✅ (10/10) |
+| STL Residual | ✅ | ✅ | ✅ | ✅ | ✅ (9/10)* |
+
+> *STL B5/D16: 데이터가 1일(24시간)만 존재하여 STL seasonal=25×3=75시간 최소 요구사항 미달로 분석 불가
 
 ### 1.6 규격별 분석 현황
 
-| 강종 | 사이즈 규격 |
-|------|------------|
-| **B5** | D13, D16 |
-| **D4** | D10, D13 |
-| **D5** | D10, D13 |
-| **N5** | D10, D12, D16, D20 |
+| 강종 | 사이즈 규격 | 레코드 수 | 시간 범위 |
+|------|------------|----------|----------|
+| **B5** | D13 | 7,191 | 7일 (96시간) |
+| **B5** | D16 | 7,200 | 1일 (24시간) |
+| **D4** | D10 | 31,610 | 473일 (240시간) |
+| **D4** | D13 | 1,435 | 1일 (24시간) |
+| **D5** | D10 | 119,377 | 353일 (408시간) |
+| **D5** | D13 | 14,385 | 290일 (120시간) |
+| **N5** | D10 | 27,333 | 485일 (96시간) |
+| **N5** | D12 | 23,005 | 368일 (216시간) |
+| **N5** | D16 | 23,032 | 292일 (168시간) |
+| **N5** | D20 | 18,713 | 210일 (72시간) |
+
+> **참고**: "시간 범위"의 일수는 첫 데이터~마지막 데이터의 달력 범위이며, 괄호 안 시간은 실제 데이터가 존재하는 고유 시간대 수입니다. 레코드가 많아도 고유 시간이 적으면 데이터가 특정 기간에 밀집되어 있음을 의미합니다.
 
 ---
 
@@ -509,7 +535,14 @@ Z(t) = λ·x(t) + (1-λ)·Z(t-1)
 ### 7.3 실행 방법
 
 ```bash
+# 강종 통합 분석
 ./venv/bin/python scripts/steel_grade_cusum_ewma_analysis.py --grade B5
+
+# 특정 규격만 분석
+./venv/bin/python scripts/steel_grade_cusum_ewma_analysis.py --grade B5 --size D13
+
+# 전체 규격별 분석
+./venv/bin/python scripts/steel_grade_cusum_ewma_analysis.py --grade B5 --all-sizes
 ```
 
 ---
@@ -548,11 +581,17 @@ Standard IQR이 **전체 기간의 고정 기준**으로 판정하는 반면, Ro
 ### 8.4 실행 방법
 
 ```bash
-# 기본 윈도우 (24시간)
+# 강종 통합 분석 (기본 윈도우 24시간)
 ./venv/bin/python scripts/steel_grade_rolling_zscore_analysis.py --grade B5
 
 # 윈도우 크기 지정
 ./venv/bin/python scripts/steel_grade_rolling_zscore_analysis.py --grade B5 --window 48
+
+# 특정 규격만 분석
+./venv/bin/python scripts/steel_grade_rolling_zscore_analysis.py --grade B5 --size D13
+
+# 전체 규격별 분석
+./venv/bin/python scripts/steel_grade_rolling_zscore_analysis.py --grade B5 --all-sizes
 ```
 
 ---
@@ -585,7 +624,14 @@ D_M(x) = √((x - μ)ᵀ · Σ⁻¹ · (x - μ))
 ### 9.3 실행 방법
 
 ```bash
+# 강종 통합 분석
 ./venv/bin/python scripts/steel_grade_mahalanobis_analysis.py --grade B5
+
+# 특정 규격만 분석
+./venv/bin/python scripts/steel_grade_mahalanobis_analysis.py --grade B5 --size D13
+
+# 전체 규격별 분석
+./venv/bin/python scripts/steel_grade_mahalanobis_analysis.py --grade B5 --all-sizes
 ```
 
 ---
@@ -623,14 +669,24 @@ X(t) = Trend(t) + Seasonal(t) + Residual(t)
 | STL 분해 | `{tag}_stl_decomposition.png` | Trend/Seasonal/Residual 3단 분해 |
 | 잔차 이상치 | `{tag}_residual_outliers.png` | 잔차 시계열 + 이상치 표시 |
 
-### 10.4 실행 방법
+### 10.4 데이터 요구사항
+
+STL 분해는 최소 `seasonal × 3`개의 hourly 데이터 포인트가 필요합니다 (기본 seasonal=25 → **최소 75시간**). 데이터가 부족한 규격은 자동으로 건너뜁니다.
+
+### 10.5 실행 방법
 
 ```bash
-# 기본 계절 주기 (25시간)
+# 강종 통합 분석 (기본 계절 주기 25시간)
 ./venv/bin/python scripts/steel_grade_stl_analysis.py --grade B5
 
 # 계절 주기 지정
 ./venv/bin/python scripts/steel_grade_stl_analysis.py --grade B5 --seasonal 49
+
+# 특정 규격만 분석
+./venv/bin/python scripts/steel_grade_stl_analysis.py --grade B5 --size D13
+
+# 전체 규격별 분석
+./venv/bin/python scripts/steel_grade_stl_analysis.py --grade B5 --all-sizes
 ```
 
 ---
@@ -897,37 +953,37 @@ CUSUM-EWMA:      ████████████████████  1
 |---|---------|----------|-----------|
 | 1 | `steel_grade_iqr_analysis_v2.py` | Standard IQR + 규격별 | `--grade`, `--size`, `--all-sizes`, `--filter-preset` |
 | 2 | `steel_grade_adjusted_iqr_analysis.py` | Adjusted IQR | `--grade`, `--c-value` |
-| 3 | `steel_grade_cusum_ewma_analysis.py` | CUSUM-EWMA | `--grade` |
-| 4 | `steel_grade_rolling_zscore_analysis.py` | Rolling Z-Score | `--grade`, `--window` |
-| 5 | `steel_grade_mahalanobis_analysis.py` | Mahalanobis | `--grade` |
-| 6 | `steel_grade_stl_analysis.py` | STL Residual | `--grade`, `--seasonal` |
+| 3 | `steel_grade_cusum_ewma_analysis.py` | CUSUM-EWMA + 규격별 | `--grade`, `--size`, `--all-sizes` |
+| 4 | `steel_grade_rolling_zscore_analysis.py` | Rolling Z-Score + 규격별 | `--grade`, `--size`, `--all-sizes`, `--window` |
+| 5 | `steel_grade_mahalanobis_analysis.py` | Mahalanobis + 규격별 | `--grade`, `--size`, `--all-sizes` |
+| 6 | `steel_grade_stl_analysis.py` | STL Residual + 규격별 | `--grade`, `--size`, `--all-sizes`, `--seasonal` |
 
 모든 스크립트는 `--test` 옵션으로 첫 번째 태그/카테고리만 빠르게 테스트 가능합니다.
 
 ### 15.2 전체 분석 일괄 실행
 
 ```bash
-# 전체 강종에 대해 모든 분석 실행
+# 전체 강종에 대해 모든 분석 실행 (강종 통합 + 규격별)
 for grade in B5 D4 D5 N5; do
     echo "=== ${grade} 강종 분석 시작 ==="
 
     # ① Standard IQR (강종 통합 + 규격별)
     ./venv/bin/python scripts/steel_grade_iqr_analysis_v2.py --grade $grade --all-sizes
 
-    # ② Adjusted IQR
+    # ② Adjusted IQR (강종 통합만)
     ./venv/bin/python scripts/steel_grade_adjusted_iqr_analysis.py --grade $grade
 
-    # ③ CUSUM-EWMA
-    ./venv/bin/python scripts/steel_grade_cusum_ewma_analysis.py --grade $grade
+    # ③ CUSUM-EWMA (강종 통합 + 규격별)
+    ./venv/bin/python scripts/steel_grade_cusum_ewma_analysis.py --grade $grade --all-sizes
 
-    # ④ Rolling Z-Score
-    ./venv/bin/python scripts/steel_grade_rolling_zscore_analysis.py --grade $grade
+    # ④ Rolling Z-Score (강종 통합 + 규격별)
+    ./venv/bin/python scripts/steel_grade_rolling_zscore_analysis.py --grade $grade --all-sizes
 
-    # ⑤ Mahalanobis
-    ./venv/bin/python scripts/steel_grade_mahalanobis_analysis.py --grade $grade
+    # ⑤ Mahalanobis (강종 통합 + 규격별)
+    ./venv/bin/python scripts/steel_grade_mahalanobis_analysis.py --grade $grade --all-sizes
 
-    # ⑥ STL Residual
-    ./venv/bin/python scripts/steel_grade_stl_analysis.py --grade $grade
+    # ⑥ STL Residual (강종 통합 + 규격별)
+    ./venv/bin/python scripts/steel_grade_stl_analysis.py --grade $grade --all-sizes
 
     echo "=== ${grade} 완료 ==="
 done
@@ -1021,6 +1077,7 @@ done
 **문서 이력**
 | 버전 | 날짜 | 변경 내용 |
 |------|------|-----------|
+| 3.1 | 2026-02-09 | CUSUM-EWMA/Mahalanobis/STL/Rolling Z-Score 규격별 분석 지원 추가, 규격별 데이터 현황 상세화 |
 | 3.0 | 2026-02-06 | 다각적 분석 방법론 6종 추가, 규격별 분석/출력 구조 반영, 실행 가이드 확장 |
 | 2.0 | 2026-02-03 | 종합 보고서 작성 - 4개 참조 문서 통합 |
 
