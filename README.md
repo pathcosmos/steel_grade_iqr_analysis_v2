@@ -1,7 +1,7 @@
 # 강종별 다각적 이상치 분석 (Steel Grade Multi-Method Anomaly Analysis) v2 - 종합 보고서
 
-> **문서 버전**: 3.3
-> **작성일**: 2026-02-09
+> **문서 버전**: 3.4
+> **작성일**: 2026-02-10
 > **목적**: 강종별/규격별 IQR 분석 및 다각적 이상치 탐지(CUSUM-EWMA, Rolling Z-Score, Mahalanobis, STL) 방법론, 필터 시스템, 태그 상세 설명 종합 정리
 
 ---
@@ -75,7 +75,12 @@ analysis_output/steel_grade_iqr_analysis_v2/
 │
 ├── ATTENTION_TAGS_REPORT.md                  # 전 강종 주의 태그 종합 보고서
 ├── VCC_TAG_DATA_REQUEST.md                   # VCC/권취부 태그 수집 요청서 (v1.2)
+├── FILTER_REVIEW_REQUEST.md                  # 4종 필터 설정값 검토 요청서 (현업 확인용)
+├── TAG_CROSS_VERIFICATION_ACTIONS.md         # 현업 47개 태그 DB 교차 검증 조치 로드맵
 ├── README.md                                 # 본 문서
+│
+├── references/                               # 참조 문서
+│   └── IBA_TAG_BY_DH.md                     #   현업 확인 47개 태그 PLC별 상세 목록
 │
 ├── {강종}/                                   # B5, D4, D5, N5
 │   ├── 01_Furnace_Top_Temperature/           # 카테고리별 IQR 차트
@@ -940,6 +945,8 @@ CUSUM-EWMA:      ████████████████████  1
 
 > **DB 검증 결과 (2026-02-09)**: PR6~PR9는 DB에 42개 컬럼이 이미 적재되어 있으나, PR8L2/PR9L2는 DB에 미존재 (L1만 존재). 상세 검증 결과는 [`VCC_TAG_DATA_REQUEST.md`](VCC_TAG_DATA_REQUEST.md) v1.2를 참조하세요.
 
+> **현업 교차 검증 결과 (2026-02-10)**: 현업 확인 47개 태그를 DB 및 분석 스크립트와 교차 검증한 결과, **15개**(32%)가 분석에 포함 중이며, **8개**(17%)는 DB에 존재하나 분석 미포함으로 즉시 추가 가능, **24개**(51%)는 DB 미존재로 수집이 선행되어야 합니다. 상세 조치 로드맵은 [`TAG_CROSS_VERIFICATION_ACTIONS.md`](TAG_CROSS_VERIFICATION_ACTIONS.md)를, 현업 확인 태그 원본 목록은 [`references/IBA_TAG_BY_DH.md`](references/IBA_TAG_BY_DH.md)를 참조하세요.
+
 ### 14.2 즉시 조치 가능 항목: PR6~PR9 뷰 확장
 
 DB에 이미 적재된 42개 PR6~PR9 태그 중 **36개가 미분석** 상태입니다. 별도 데이터 수집 없이 분석 뷰 확장만으로 즉시 활용 가능합니다.
@@ -953,6 +960,8 @@ DB에 이미 적재된 42개 PR6~PR9 태그 중 **36개가 미분석** 상태입
 | **합계** | **42개** | **6개** | **36개** | PR8L2/PR9L2 **14개** 수집 필요 |
 
 > 각 태그는 속도(m/s), 속도(%), 전류(%), 토크, 전력(%), 기준속도, 기준토크의 7종으로 구성됩니다.
+
+> **현업 교차 검증 추가 확인**: 현업 확인 47개 태그 중 DB에 존재하나 분석에 미포함된 **8개 태그**를 즉시 추가 가능합니다: PR6~PR9 속도 6개 (`PR6L1/L2_ACT_SPD_MS`, `PR7L1/L2_ACT_SPD_MS`, `PR8L1_ACT_SPD_MS`, `PR9L1_ACT_SPD_MS`) + PR3/4 기준속도 2개 (`PINCHROLL_3_REFERENCE_SPEED`, `PINCHROLL_4_REFERENCE_SPEED`). 상세는 [`TAG_CROSS_VERIFICATION_ACTIONS.md`](TAG_CROSS_VERIFICATION_ACTIONS.md) §2를 참조하세요.
 
 ### 14.3 신규 수집 필요 태그 영역
 
@@ -1110,7 +1119,11 @@ done
 | 분석 방법론 | `docs/IBA_DATA_ANALYSIS_METHODOLOGY_KO.md` | 분석 방법론 상세 |
 | 태그 상세 목록 | `docs/IBA_태그_상세_목록.md` | 전체 태그 목록 및 추가 수집 필요 태그 |
 | 분석 설정 종합 | `docs/IBA_분석설정_종합문서.md` | 종합 설정 문서 |
-| 필터 시스템 상세 가이드 | `FILTER_SYSTEM_DETAILED_GUIDE_KO.md`* | 필터 시스템 및 데이터 품질 상세 (\*별도 리포) |
+| 필터 시스템 상세 가이드 | [`../filtered_and_seperated_analysis/FILTER_SYSTEM_DETAILED_GUIDE_KO.md`](../filtered_and_seperated_analysis/FILTER_SYSTEM_DETAILED_GUIDE_KO.md) | 필터 시스템 및 데이터 품질 상세 |
+| 주의 태그 종합 보고서 | [`ATTENTION_TAGS_REPORT.md`](ATTENTION_TAGS_REPORT.md) | 전 강종 주의 태그 분석 (41개 태그, 위험도별 분류) |
+| 필터 조정 요청서 | [`FILTER_REVIEW_REQUEST.md`](FILTER_REVIEW_REQUEST.md) | 4종 필터 설정값 검토 요청 (현업 확인용) |
+| 현업 태그 교차 검증 조치 | [`TAG_CROSS_VERIFICATION_ACTIONS.md`](TAG_CROSS_VERIFICATION_ACTIONS.md) | 현업 47개 태그 DB 교차 검증 결과 및 조치 로드맵 |
+| 현업 확인 태그 목록 | [`references/IBA_TAG_BY_DH.md`](references/IBA_TAG_BY_DH.md) | 현업 확인 47개 태그 PLC별 상세 목록 |
 
 ### 16.4 설정 파일 위치
 
@@ -1130,6 +1143,7 @@ done
 **문서 이력**
 | 버전 | 날짜 | 변경 내용 |
 |------|------|-----------|
+| 3.4 | 2026-02-10 | 현업 태그 교차 검증 문서 연계 (TAG_CROSS_VERIFICATION_ACTIONS.md, references/IBA_TAG_BY_DH.md), §16.3 관련 문서 4건 추가, FILTER_REVIEW_REQUEST.md 참조 추가 |
 | 3.3 | 2026-02-09 | §14 추가 수집 필요 태그 DB 검증 결과 반영 (PR6~PR9 42개 확인, PR8L2/PR9L2 미존재 정정), VCC_TAG_DATA_REQUEST.md v1.2 연계 |
 | 3.2 | 2026-02-09 | §3.5 A/B 라인(L1/L2) 필터링 구현 상세 추가, FILTER_REVIEW_REQUEST에 A/B 필터 항목 추가 |
 | 3.1 | 2026-02-09 | CUSUM-EWMA/Mahalanobis/STL/Rolling Z-Score 규격별 분석 지원 추가, 규격별 데이터 현황 상세화 |
