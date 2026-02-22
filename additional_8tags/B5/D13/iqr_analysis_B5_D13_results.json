@@ -1,0 +1,2818 @@
+[
+  {
+    "count": 6366,
+    "mean": -322.987850243481,
+    "std": 8.72313999775865,
+    "min": -343.6276,
+    "max": -60.17555,
+    "q1": -326.16965,
+    "median": -319.2539,
+    "q3": -317.31645000000003,
+    "iqr": 8.853199999999958,
+    "lower_bound": -339.44944999999996,
+    "upper_bound": -304.0366500000001,
+    "outlier_count": 347,
+    "outlier_ratio": 5.4508325479107755,
+    "direction": "lower",
+    "upper_outliers": "4",
+    "lower_outliers": "343",
+    "risk_level": "caution",
+    "tag_name": "PINCHROLL_2_ACTUAL_SPEED",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 6366,
+        "mean": -322.987850243481,
+        "std": 8.72313999775865,
+        "outlier_count": 347,
+        "outlier_ratio": 5.4508325479107755
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 225
+        },
+        {
+          "date": "2025-04-17",
+          "count": 120
+        },
+        {
+          "date": "2025-04-11",
+          "count": 2
+        }
+      ],
+      "total_outlier_days": 3,
+      "max_daily_count": 225,
+      "avg_daily_outliers": 115.66666666666667,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 7191,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 815,
+        "roll_change": 106
+      },
+      "final_count": 6366,
+      "total_removed": 825,
+      "removal_rate": 11.4726741760534
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 6366,
+          "mean": -322.987850243481,
+          "std": 8.72313999775865,
+          "min": -343.6276,
+          "max": -60.17555,
+          "q1": -326.16965,
+          "median": -319.2539,
+          "q3": -317.31645000000003,
+          "iqr": 8.853199999999958,
+          "lower_bound": -339.44944999999996,
+          "upper_bound": -304.0366500000001,
+          "outlier_count": 347,
+          "outlier_ratio": 5.4508325479107755,
+          "direction": "lower",
+          "upper_outliers": "4",
+          "lower_outliers": "343",
+          "risk_level": "caution"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 225
+            },
+            {
+              "date": "2025-04-17",
+              "count": 120
+            },
+            {
+              "date": "2025-04-11",
+              "count": 2
+            }
+          ],
+          "total_outlier_days": 3,
+          "max_daily_count": 225,
+          "avg_daily_outliers": 115.66666666666667,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_SPEED_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 6366
+      }
+    ],
+    "line": null
+  },
+  {
+    "count": 6366,
+    "mean": 1286.8822153314484,
+    "std": 10.214729887550181,
+    "min": 873.6808,
+    "max": 1308.673,
+    "q1": 1280.914,
+    "median": 1284.4595,
+    "q3": 1289.1432499999999,
+    "iqr": 8.229249999999865,
+    "lower_bound": 1268.5701250000002,
+    "upper_bound": 1301.4871249999997,
+    "outlier_count": 711,
+    "outlier_ratio": 11.16870876531574,
+    "direction": "upper",
+    "upper_outliers": "710",
+    "lower_outliers": "1",
+    "risk_level": "warning",
+    "tag_name": "PINCHROLL_3_ACTUAL_SPEED",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 6366,
+        "mean": 1286.8822153314484,
+        "std": 10.214729887550181,
+        "outlier_count": 711,
+        "outlier_ratio": 11.16870876531574
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 267
+        },
+        {
+          "date": "2025-04-11",
+          "count": 170
+        },
+        {
+          "date": "2025-04-17",
+          "count": 148
+        },
+        {
+          "date": "2025-04-12",
+          "count": 126
+        }
+      ],
+      "total_outlier_days": 4,
+      "max_daily_count": 267,
+      "avg_daily_outliers": 177.75,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 7191,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 815,
+        "roll_change": 106
+      },
+      "final_count": 6366,
+      "total_removed": 825,
+      "removal_rate": 11.4726741760534
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 6366,
+          "mean": 1286.8822153314484,
+          "std": 10.214729887550181,
+          "min": 873.6808,
+          "max": 1308.673,
+          "q1": 1280.914,
+          "median": 1284.4595,
+          "q3": 1289.1432499999999,
+          "iqr": 8.229249999999865,
+          "lower_bound": 1268.5701250000002,
+          "upper_bound": 1301.4871249999997,
+          "outlier_count": 711,
+          "outlier_ratio": 11.16870876531574,
+          "direction": "upper",
+          "upper_outliers": "710",
+          "lower_outliers": "1",
+          "risk_level": "warning"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 267
+            },
+            {
+              "date": "2025-04-11",
+              "count": 170
+            },
+            {
+              "date": "2025-04-17",
+              "count": 148
+            }
+          ],
+          "total_outlier_days": 4,
+          "max_daily_count": 267,
+          "avg_daily_outliers": 177.75,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_SPEED_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 6366
+      }
+    ],
+    "line": null
+  },
+  {
+    "count": 6366,
+    "mean": 1285.8803820295318,
+    "std": 10.799442675743137,
+    "min": 1267.489,
+    "max": 1315.138,
+    "q1": 1278.55625,
+    "median": 1282.5749999999998,
+    "q3": 1288.63225,
+    "iqr": 10.076000000000022,
+    "lower_bound": 1263.44225,
+    "upper_bound": 1303.7462500000001,
+    "outlier_count": 708,
+    "outlier_ratio": 11.121583411875589,
+    "direction": "upper",
+    "upper_outliers": "708",
+    "lower_outliers": "0",
+    "risk_level": "warning",
+    "tag_name": "PINCHROLL_4_ACTUAL_SPEED",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 6366,
+        "mean": 1285.8803820295318,
+        "std": 10.799442675743137,
+        "outlier_count": 708,
+        "outlier_ratio": 11.121583411875589
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 251
+        },
+        {
+          "date": "2025-04-11",
+          "count": 184
+        },
+        {
+          "date": "2025-04-12",
+          "count": 140
+        },
+        {
+          "date": "2025-04-17",
+          "count": 133
+        }
+      ],
+      "total_outlier_days": 4,
+      "max_daily_count": 251,
+      "avg_daily_outliers": 177.0,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 7191,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 815,
+        "roll_change": 106
+      },
+      "final_count": 6366,
+      "total_removed": 825,
+      "removal_rate": 11.4726741760534
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 6366,
+          "mean": 1285.8803820295318,
+          "std": 10.799442675743137,
+          "min": 1267.489,
+          "max": 1315.138,
+          "q1": 1278.55625,
+          "median": 1282.5749999999998,
+          "q3": 1288.63225,
+          "iqr": 10.076000000000022,
+          "lower_bound": 1263.44225,
+          "upper_bound": 1303.7462500000001,
+          "outlier_count": 708,
+          "outlier_ratio": 11.121583411875589,
+          "direction": "upper",
+          "upper_outliers": "708",
+          "lower_outliers": "0",
+          "risk_level": "warning"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 251
+            },
+            {
+              "date": "2025-04-11",
+              "count": 184
+            },
+            {
+              "date": "2025-04-12",
+              "count": 140
+            }
+          ],
+          "total_outlier_days": 4,
+          "max_daily_count": 251,
+          "avg_daily_outliers": 177.0,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_SPEED_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 6366
+      }
+    ],
+    "line": null
+  },
+  {
+    "count": 6366,
+    "mean": 16.71621271017908,
+    "std": 6.00618551002248,
+    "min": 1.102752,
+    "max": 19.9962,
+    "q1": 16.83172,
+    "median": 19.9947,
+    "q3": 19.99504,
+    "iqr": 3.163319999999999,
+    "lower_bound": 12.086740000000002,
+    "upper_bound": 24.740019999999998,
+    "outlier_count": 1253,
+    "outlier_ratio": 19.682689286836318,
+    "direction": "lower",
+    "upper_outliers": "0",
+    "lower_outliers": "1253",
+    "risk_level": "danger",
+    "tag_name": "PINCHROLL_2_ACTUAL_TORQUE",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 6366,
+        "mean": 16.71621271017908,
+        "std": 6.00618551002248,
+        "outlier_count": 1253,
+        "outlier_ratio": 19.682689286836318
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 499
+        },
+        {
+          "date": "2025-04-11",
+          "count": 288
+        },
+        {
+          "date": "2025-04-17",
+          "count": 250
+        },
+        {
+          "date": "2025-04-12",
+          "count": 216
+        }
+      ],
+      "total_outlier_days": 4,
+      "max_daily_count": 499,
+      "avg_daily_outliers": 313.25,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 7191,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 815,
+        "roll_change": 106
+      },
+      "final_count": 6366,
+      "total_removed": 825,
+      "removal_rate": 11.4726741760534
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 6366,
+          "mean": 16.71621271017908,
+          "std": 6.00618551002248,
+          "min": 1.102752,
+          "max": 19.9962,
+          "q1": 16.83172,
+          "median": 19.9947,
+          "q3": 19.99504,
+          "iqr": 3.163319999999999,
+          "lower_bound": 12.086740000000002,
+          "upper_bound": 24.740019999999998,
+          "outlier_count": 1253,
+          "outlier_ratio": 19.682689286836318,
+          "direction": "lower",
+          "upper_outliers": "0",
+          "lower_outliers": "1253",
+          "risk_level": "danger"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 499
+            },
+            {
+              "date": "2025-04-11",
+              "count": 288
+            },
+            {
+              "date": "2025-04-17",
+              "count": 250
+            }
+          ],
+          "total_outlier_days": 4,
+          "max_daily_count": 499,
+          "avg_daily_outliers": 313.25,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_ACTUAL_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 6366
+      }
+    ],
+    "line": null
+  },
+  {
+    "count": 6366,
+    "mean": 29.358074856110587,
+    "std": 10.76854261615152,
+    "min": 3.151712,
+    "max": 35.70765,
+    "q1": 30.6908775,
+    "median": 34.986835,
+    "q3": 34.99556,
+    "iqr": 4.304682499999998,
+    "lower_bound": 24.23385375,
+    "upper_bound": 41.452583749999995,
+    "outlier_count": 1355,
+    "outlier_ratio": 21.284951303801446,
+    "direction": "lower",
+    "upper_outliers": "0",
+    "lower_outliers": "1355",
+    "risk_level": "danger",
+    "tag_name": "PINCHROLL_3_ACTUAL_TORQUE",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 6366,
+        "mean": 29.358074856110587,
+        "std": 10.76854261615152,
+        "outlier_count": 1355,
+        "outlier_ratio": 21.284951303801446
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 537
+        },
+        {
+          "date": "2025-04-11",
+          "count": 317
+        },
+        {
+          "date": "2025-04-17",
+          "count": 264
+        },
+        {
+          "date": "2025-04-12",
+          "count": 237
+        }
+      ],
+      "total_outlier_days": 4,
+      "max_daily_count": 537,
+      "avg_daily_outliers": 338.75,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 7191,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 815,
+        "roll_change": 106
+      },
+      "final_count": 6366,
+      "total_removed": 825,
+      "removal_rate": 11.4726741760534
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 6366,
+          "mean": 29.358074856110587,
+          "std": 10.76854261615152,
+          "min": 3.151712,
+          "max": 35.70765,
+          "q1": 30.6908775,
+          "median": 34.986835,
+          "q3": 34.99556,
+          "iqr": 4.304682499999998,
+          "lower_bound": 24.23385375,
+          "upper_bound": 41.452583749999995,
+          "outlier_count": 1355,
+          "outlier_ratio": 21.284951303801446,
+          "direction": "lower",
+          "upper_outliers": "0",
+          "lower_outliers": "1355",
+          "risk_level": "danger"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 537
+            },
+            {
+              "date": "2025-04-11",
+              "count": 317
+            },
+            {
+              "date": "2025-04-17",
+              "count": 264
+            }
+          ],
+          "total_outlier_days": 4,
+          "max_daily_count": 537,
+          "avg_daily_outliers": 338.75,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_ACTUAL_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 6366
+      }
+    ],
+    "line": null
+  },
+  {
+    "count": 6366,
+    "mean": 29.49737473437009,
+    "std": 10.460512362372471,
+    "min": 4.129958,
+    "max": 35.70357,
+    "q1": 30.3987875,
+    "median": 34.990735,
+    "q3": 34.9956475,
+    "iqr": 4.596859999999996,
+    "lower_bound": 23.50349750000001,
+    "upper_bound": 41.89093749999999,
+    "outlier_count": 1330,
+    "outlier_ratio": 20.89224002513352,
+    "direction": "lower",
+    "upper_outliers": "0",
+    "lower_outliers": "1330",
+    "risk_level": "danger",
+    "tag_name": "PINCHROLL_4_ACTUAL_TORQUE",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 6366,
+        "mean": 29.49737473437009,
+        "std": 10.460512362372471,
+        "outlier_count": 1330,
+        "outlier_ratio": 20.89224002513352
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 523
+        },
+        {
+          "date": "2025-04-11",
+          "count": 312
+        },
+        {
+          "date": "2025-04-17",
+          "count": 260
+        },
+        {
+          "date": "2025-04-12",
+          "count": 235
+        }
+      ],
+      "total_outlier_days": 4,
+      "max_daily_count": 523,
+      "avg_daily_outliers": 332.5,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 7191,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 815,
+        "roll_change": 106
+      },
+      "final_count": 6366,
+      "total_removed": 825,
+      "removal_rate": 11.4726741760534
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 6366,
+          "mean": 29.49737473437009,
+          "std": 10.460512362372471,
+          "min": 4.129958,
+          "max": 35.70357,
+          "q1": 30.3987875,
+          "median": 34.990735,
+          "q3": 34.9956475,
+          "iqr": 4.596859999999996,
+          "lower_bound": 23.50349750000001,
+          "upper_bound": 41.89093749999999,
+          "outlier_count": 1330,
+          "outlier_ratio": 20.89224002513352,
+          "direction": "lower",
+          "upper_outliers": "0",
+          "lower_outliers": "1330",
+          "risk_level": "danger"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 523
+            },
+            {
+              "date": "2025-04-11",
+              "count": 312
+            },
+            {
+              "date": "2025-04-17",
+              "count": 260
+            }
+          ],
+          "total_outlier_days": 4,
+          "max_daily_count": 523,
+          "avg_daily_outliers": 332.5,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_ACTUAL_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 6366
+      }
+    ],
+    "line": null
+  },
+  {
+    "count": 6366,
+    "mean": 20.072009635563933,
+    "std": 2.259392364481045,
+    "min": 20.0,
+    "max": 100.0,
+    "q1": 20.0,
+    "median": 20.0,
+    "q3": 20.0,
+    "iqr": 0.0,
+    "lower_bound": 20.0,
+    "upper_bound": 20.0,
+    "outlier_count": 8,
+    "outlier_ratio": 0.12566760917373546,
+    "direction": "upper",
+    "upper_outliers": "8",
+    "lower_outliers": "0",
+    "risk_level": "normal",
+    "tag_name": "PINCHROLL_2_REFERENCE_TORQUE",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 6366,
+        "mean": 20.072009635563933,
+        "std": 2.259392364481045,
+        "outlier_count": 8,
+        "outlier_ratio": 0.12566760917373546
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 4
+        },
+        {
+          "date": "2025-04-11",
+          "count": 2
+        },
+        {
+          "date": "2025-04-17",
+          "count": 2
+        }
+      ],
+      "total_outlier_days": 3,
+      "max_daily_count": 4,
+      "avg_daily_outliers": 2.6666666666666665,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 7191,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 815,
+        "roll_change": 106
+      },
+      "final_count": 6366,
+      "total_removed": 825,
+      "removal_rate": 11.4726741760534
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 6366,
+          "mean": 20.072009635563933,
+          "std": 2.259392364481045,
+          "min": 20.0,
+          "max": 100.0,
+          "q1": 20.0,
+          "median": 20.0,
+          "q3": 20.0,
+          "iqr": 0.0,
+          "lower_bound": 20.0,
+          "upper_bound": 20.0,
+          "outlier_count": 8,
+          "outlier_ratio": 0.12566760917373546,
+          "direction": "upper",
+          "upper_outliers": "8",
+          "lower_outliers": "0",
+          "risk_level": "normal"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 4
+            },
+            {
+              "date": "2025-04-11",
+              "count": 2
+            },
+            {
+              "date": "2025-04-17",
+              "count": 2
+            }
+          ],
+          "total_outlier_days": 3,
+          "max_daily_count": 4,
+          "avg_daily_outliers": 2.6666666666666665,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_2_REFERENCE_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 6366
+      }
+    ],
+    "line": null
+  },
+  {
+    "count": 6366,
+    "mean": 46.172064885328304,
+    "std": 21.184612750827366,
+    "min": 35.0,
+    "max": 100.0,
+    "q1": 35.0,
+    "median": 35.134585,
+    "q3": 42.439585,
+    "iqr": 7.439585000000001,
+    "lower_bound": 23.8406225,
+    "upper_bound": 53.5989625,
+    "outlier_count": 1349,
+    "outlier_ratio": 21.190700596921143,
+    "direction": "upper",
+    "upper_outliers": "1349",
+    "lower_outliers": "0",
+    "risk_level": "danger",
+    "tag_name": "PINCHROLL_3_REFERENCE_TORQUE",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 6366,
+        "mean": 46.172064885328304,
+        "std": 21.184612750827366,
+        "outlier_count": 1349,
+        "outlier_ratio": 21.190700596921143
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 533
+        },
+        {
+          "date": "2025-04-11",
+          "count": 319
+        },
+        {
+          "date": "2025-04-17",
+          "count": 271
+        },
+        {
+          "date": "2025-04-12",
+          "count": 226
+        }
+      ],
+      "total_outlier_days": 4,
+      "max_daily_count": 533,
+      "avg_daily_outliers": 337.25,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 7191,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 815,
+        "roll_change": 106
+      },
+      "final_count": 6366,
+      "total_removed": 825,
+      "removal_rate": 11.4726741760534
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 6366,
+          "mean": 46.172064885328304,
+          "std": 21.184612750827366,
+          "min": 35.0,
+          "max": 100.0,
+          "q1": 35.0,
+          "median": 35.134585,
+          "q3": 42.439585,
+          "iqr": 7.439585000000001,
+          "lower_bound": 23.8406225,
+          "upper_bound": 53.5989625,
+          "outlier_count": 1349,
+          "outlier_ratio": 21.190700596921143,
+          "direction": "upper",
+          "upper_outliers": "1349",
+          "lower_outliers": "0",
+          "risk_level": "danger"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 533
+            },
+            {
+              "date": "2025-04-11",
+              "count": 319
+            },
+            {
+              "date": "2025-04-17",
+              "count": 271
+            }
+          ],
+          "total_outlier_days": 4,
+          "max_daily_count": 533,
+          "avg_daily_outliers": 337.25,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 6366
+      }
+    ],
+    "line": null
+  },
+  {
+    "count": 6366,
+    "mean": 46.2740995193214,
+    "std": 21.300685077588327,
+    "min": 35.0,
+    "max": 100.0,
+    "q1": 35.0,
+    "median": 35.12,
+    "q3": 42.909792499999995,
+    "iqr": 7.909792499999995,
+    "lower_bound": 23.135311250000008,
+    "upper_bound": 54.77448124999999,
+    "outlier_count": 1341,
+    "outlier_ratio": 21.065032987747408,
+    "direction": "upper",
+    "upper_outliers": "1341",
+    "lower_outliers": "0",
+    "risk_level": "danger",
+    "tag_name": "PINCHROLL_4_REFERENCE_TORQUE",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 6366,
+        "mean": 46.2740995193214,
+        "std": 21.300685077588327,
+        "outlier_count": 1341,
+        "outlier_ratio": 21.065032987747408
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 529
+        },
+        {
+          "date": "2025-04-11",
+          "count": 316
+        },
+        {
+          "date": "2025-04-17",
+          "count": 270
+        },
+        {
+          "date": "2025-04-12",
+          "count": 226
+        }
+      ],
+      "total_outlier_days": 4,
+      "max_daily_count": 529,
+      "avg_daily_outliers": 335.25,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 7191,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 815,
+        "roll_change": 106
+      },
+      "final_count": 6366,
+      "total_removed": 825,
+      "removal_rate": 11.4726741760534
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 6366,
+          "mean": 46.2740995193214,
+          "std": 21.300685077588327,
+          "min": 35.0,
+          "max": 100.0,
+          "q1": 35.0,
+          "median": 35.12,
+          "q3": 42.909792499999995,
+          "iqr": 7.909792499999995,
+          "lower_bound": 23.135311250000008,
+          "upper_bound": 54.77448124999999,
+          "outlier_count": 1341,
+          "outlier_ratio": 21.065032987747408,
+          "direction": "upper",
+          "upper_outliers": "1341",
+          "lower_outliers": "0",
+          "risk_level": "danger"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 529
+            },
+            {
+              "date": "2025-04-11",
+              "count": 316
+            },
+            {
+              "date": "2025-04-17",
+              "count": 270
+            }
+          ],
+          "total_outlier_days": 4,
+          "max_daily_count": 529,
+          "avg_daily_outliers": 335.25,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 6366
+      }
+    ],
+    "line": null
+  },
+  {
+    "count": 6366,
+    "mean": 1307.9162078071006,
+    "std": 6.278487020475912,
+    "min": 904.8969,
+    "max": 1308.6,
+    "q1": 1308.6,
+    "median": 1308.6,
+    "q3": 1308.6,
+    "iqr": 0.0,
+    "lower_bound": 1308.6,
+    "upper_bound": 1308.6,
+    "outlier_count": 783,
+    "outlier_ratio": 12.299717247879359,
+    "direction": "lower",
+    "upper_outliers": "0",
+    "lower_outliers": "783",
+    "risk_level": "warning",
+    "tag_name": "PINCHROLL_3_REFERENCE_SPEED",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 6366,
+        "mean": 1307.9162078071006,
+        "std": 6.278487020475912,
+        "outlier_count": 783,
+        "outlier_ratio": 12.299717247879359
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 334
+        },
+        {
+          "date": "2025-04-11",
+          "count": 154
+        },
+        {
+          "date": "2025-04-12",
+          "count": 150
+        },
+        {
+          "date": "2025-04-17",
+          "count": 145
+        }
+      ],
+      "total_outlier_days": 4,
+      "max_daily_count": 334,
+      "avg_daily_outliers": 195.75,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 7191,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 815,
+        "roll_change": 106
+      },
+      "final_count": 6366,
+      "total_removed": 825,
+      "removal_rate": 11.4726741760534
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 6366,
+          "mean": 1307.9162078071006,
+          "std": 6.278487020475912,
+          "min": 904.8969,
+          "max": 1308.6,
+          "q1": 1308.6,
+          "median": 1308.6,
+          "q3": 1308.6,
+          "iqr": 0.0,
+          "lower_bound": 1308.6,
+          "upper_bound": 1308.6,
+          "outlier_count": 783,
+          "outlier_ratio": 12.299717247879359,
+          "direction": "lower",
+          "upper_outliers": "0",
+          "lower_outliers": "783",
+          "risk_level": "warning"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 334
+            },
+            {
+              "date": "2025-04-11",
+              "count": 154
+            },
+            {
+              "date": "2025-04-12",
+              "count": 150
+            }
+          ],
+          "total_outlier_days": 4,
+          "max_daily_count": 334,
+          "avg_daily_outliers": 195.75,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_SPEED_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_SPEED_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_SPEED_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_SPEED_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_3_REFERENCE_SPEED_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 6366
+      }
+    ],
+    "line": null
+  },
+  {
+    "count": 6366,
+    "mean": 1311.664083411876,
+    "std": 5.062825534447686,
+    "min": 1278.96,
+    "max": 1315.08,
+    "q1": 1310.88,
+    "median": 1310.88,
+    "q3": 1315.08,
+    "iqr": 4.199999999999818,
+    "lower_bound": 1304.5800000000004,
+    "upper_bound": 1321.3799999999997,
+    "outlier_count": 153,
+    "outlier_ratio": 2.403393025447691,
+    "direction": "lower",
+    "upper_outliers": "0",
+    "lower_outliers": "153",
+    "risk_level": "normal",
+    "tag_name": "PINCHROLL_4_REFERENCE_SPEED",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 6366,
+        "mean": 1311.664083411876,
+        "std": 5.062825534447686,
+        "outlier_count": 153,
+        "outlier_ratio": 2.403393025447691
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 64
+        },
+        {
+          "date": "2025-04-12",
+          "count": 32
+        },
+        {
+          "date": "2025-04-11",
+          "count": 30
+        },
+        {
+          "date": "2025-04-17",
+          "count": 27
+        }
+      ],
+      "total_outlier_days": 4,
+      "max_daily_count": 64,
+      "avg_daily_outliers": 38.25,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 7191,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 815,
+        "roll_change": 106
+      },
+      "final_count": 6366,
+      "total_removed": 825,
+      "removal_rate": 11.4726741760534
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 6366,
+          "mean": 1311.664083411876,
+          "std": 5.062825534447686,
+          "min": 1278.96,
+          "max": 1315.08,
+          "q1": 1310.88,
+          "median": 1310.88,
+          "q3": 1315.08,
+          "iqr": 4.199999999999818,
+          "lower_bound": 1304.5800000000004,
+          "upper_bound": 1321.3799999999997,
+          "outlier_count": 153,
+          "outlier_ratio": 2.403393025447691,
+          "direction": "lower",
+          "upper_outliers": "0",
+          "lower_outliers": "153",
+          "risk_level": "normal"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 64
+            },
+            {
+              "date": "2025-04-12",
+              "count": 32
+            },
+            {
+              "date": "2025-04-11",
+              "count": 30
+            }
+          ],
+          "total_outlier_days": 4,
+          "max_daily_count": 64,
+          "avg_daily_outliers": 38.25,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_SPEED_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_SPEED_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_SPEED_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_SPEED_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_SPEED_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_SPEED_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/08_Pinchroll/monthly/2025-04/PINCHROLL_4_REFERENCE_SPEED_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 6366
+      }
+    ],
+    "line": null
+  },
+  {
+    "count": 1285,
+    "mean": 3.5932854,
+    "std": 0.30073901286012833,
+    "min": 3.298683,
+    "max": 4.49491,
+    "q1": 3.431913,
+    "median": 3.495917,
+    "q3": 3.58699,
+    "iqr": 0.1550769999999999,
+    "lower_bound": 3.1992975,
+    "upper_bound": 3.8196054999999998,
+    "outlier_count": 190,
+    "outlier_ratio": 14.785992217898833,
+    "direction": "upper",
+    "upper_outliers": "190",
+    "lower_outliers": "0",
+    "risk_level": "warning",
+    "tag_name": "PR6L1_ACT_TORQUE",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 1285,
+        "mean": 3.5932854,
+        "std": 0.30073901286012833,
+        "outlier_count": 190,
+        "outlier_ratio": 14.785992217898833
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-11",
+          "count": 190
+        }
+      ],
+      "total_outlier_days": 1,
+      "max_daily_count": 190,
+      "avg_daily_outliers": 190.0,
+      "max_date": "2025-04-11"
+    },
+    "filter_stats": {
+      "original_count": 1439,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 153,
+        "roll_change": 31
+      },
+      "final_count": 1285,
+      "total_removed": 154,
+      "removal_rate": 10.701876302988186
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 1285,
+          "mean": 3.5932854,
+          "std": 0.30073901286012833,
+          "min": 3.298683,
+          "max": 4.49491,
+          "q1": 3.431913,
+          "median": 3.495917,
+          "q3": 3.58699,
+          "iqr": 0.1550769999999999,
+          "lower_bound": 3.1992975,
+          "upper_bound": 3.8196054999999998,
+          "outlier_count": 190,
+          "outlier_ratio": 14.785992217898833,
+          "direction": "upper",
+          "upper_outliers": "190",
+          "lower_outliers": "0",
+          "risk_level": "warning"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-11",
+              "count": 190
+            }
+          ],
+          "total_outlier_days": 1,
+          "max_daily_count": 190,
+          "avg_daily_outliers": 190.0,
+          "max_date": "2025-04-11"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 1285
+      }
+    ],
+    "line": "A"
+  },
+  {
+    "count": 5081,
+    "mean": 4.636406916355048,
+    "std": 0.3567587338126049,
+    "min": 0.0,
+    "max": 5.856647,
+    "q1": 4.381454,
+    "median": 4.536773,
+    "q3": 4.763147,
+    "iqr": 0.3816930000000003,
+    "lower_bound": 3.8089144999999993,
+    "upper_bound": 5.3356865,
+    "outlier_count": 356,
+    "outlier_ratio": 7.006494784491242,
+    "direction": "upper",
+    "upper_outliers": "355",
+    "lower_outliers": "1",
+    "risk_level": "caution",
+    "tag_name": "PR6L2_ACT_TORQUE",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 5081,
+        "mean": 4.636406916355048,
+        "std": 0.3567587338126049,
+        "outlier_count": 356,
+        "outlier_ratio": 7.006494784491242
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 285
+        },
+        {
+          "date": "2025-04-17",
+          "count": 51
+        },
+        {
+          "date": "2025-04-12",
+          "count": 20
+        }
+      ],
+      "total_outlier_days": 3,
+      "max_daily_count": 285,
+      "avg_daily_outliers": 118.66666666666667,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 5752,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 662,
+        "roll_change": 75
+      },
+      "final_count": 5081,
+      "total_removed": 671,
+      "removal_rate": 11.665507649513213
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 5081,
+          "mean": 4.636406916355048,
+          "std": 0.3567587338126049,
+          "min": 0.0,
+          "max": 5.856647,
+          "q1": 4.381454,
+          "median": 4.536773,
+          "q3": 4.763147,
+          "iqr": 0.3816930000000003,
+          "lower_bound": 3.8089144999999993,
+          "upper_bound": 5.3356865,
+          "outlier_count": 356,
+          "outlier_ratio": 7.006494784491242,
+          "direction": "upper",
+          "upper_outliers": "355",
+          "lower_outliers": "1",
+          "risk_level": "caution"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 285
+            },
+            {
+              "date": "2025-04-17",
+              "count": 51
+            },
+            {
+              "date": "2025-04-12",
+              "count": 20
+            }
+          ],
+          "total_outlier_days": 3,
+          "max_daily_count": 285,
+          "avg_daily_outliers": 118.66666666666667,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 5081
+      }
+    ],
+    "line": "B"
+  },
+  {
+    "count": 1285,
+    "mean": 11.552741842023346,
+    "std": 9.193674907411783,
+    "min": 1.21944,
+    "max": 24.99641,
+    "q1": 3.7269,
+    "median": 4.681016,
+    "q3": 23.67736,
+    "iqr": 19.95046,
+    "lower_bound": -26.19879,
+    "upper_bound": 53.603049999999996,
+    "outlier_count": 0,
+    "outlier_ratio": 0.0,
+    "direction": "balanced",
+    "upper_outliers": "0",
+    "lower_outliers": "0",
+    "risk_level": "normal",
+    "tag_name": "PR7L1_ACT_TORQUE",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 1285,
+        "mean": 11.552741842023346,
+        "std": 9.193674907411783,
+        "outlier_count": 0,
+        "outlier_ratio": 0.0
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [],
+      "total_outlier_days": 0,
+      "avg_daily_outliers": 0,
+      "max_daily_count": 0,
+      "max_date": null
+    },
+    "filter_stats": {
+      "original_count": 1439,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 153,
+        "roll_change": 31
+      },
+      "final_count": 1285,
+      "total_removed": 154,
+      "removal_rate": 10.701876302988186
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 1285,
+          "mean": 11.552741842023346,
+          "std": 9.193674907411783,
+          "min": 1.21944,
+          "max": 24.99641,
+          "q1": 3.7269,
+          "median": 4.681016,
+          "q3": 23.67736,
+          "iqr": 19.95046,
+          "lower_bound": -26.19879,
+          "upper_bound": 53.603049999999996,
+          "outlier_count": 0,
+          "outlier_ratio": 0.0,
+          "direction": "balanced",
+          "upper_outliers": "0",
+          "lower_outliers": "0",
+          "risk_level": "normal"
+        },
+        "daily_peaks": {
+          "peak_dates": [],
+          "total_outlier_days": 0,
+          "avg_daily_outliers": 0,
+          "max_daily_count": 0,
+          "max_date": null
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 1285
+      }
+    ],
+    "line": "A"
+  },
+  {
+    "count": 5081,
+    "mean": 12.578651121039165,
+    "std": 8.811736412501869,
+    "min": 0.0,
+    "max": 25.0098,
+    "q1": 4.65042,
+    "median": 7.305863,
+    "q3": 24.99195,
+    "iqr": 20.34153,
+    "lower_bound": -25.861874999999998,
+    "upper_bound": 55.504245,
+    "outlier_count": 0,
+    "outlier_ratio": 0.0,
+    "direction": "balanced",
+    "upper_outliers": "0",
+    "lower_outliers": "0",
+    "risk_level": "normal",
+    "tag_name": "PR7L2_ACT_TORQUE",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 5081,
+        "mean": 12.578651121039165,
+        "std": 8.811736412501869,
+        "outlier_count": 0,
+        "outlier_ratio": 0.0
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [],
+      "total_outlier_days": 0,
+      "avg_daily_outliers": 0,
+      "max_daily_count": 0,
+      "max_date": null
+    },
+    "filter_stats": {
+      "original_count": 5752,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 662,
+        "roll_change": 75
+      },
+      "final_count": 5081,
+      "total_removed": 671,
+      "removal_rate": 11.665507649513213
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 5081,
+          "mean": 12.578651121039165,
+          "std": 8.811736412501869,
+          "min": 0.0,
+          "max": 25.0098,
+          "q1": 4.65042,
+          "median": 7.305863,
+          "q3": 24.99195,
+          "iqr": 20.34153,
+          "lower_bound": -25.861874999999998,
+          "upper_bound": 55.504245,
+          "outlier_count": 0,
+          "outlier_ratio": 0.0,
+          "direction": "balanced",
+          "upper_outliers": "0",
+          "lower_outliers": "0",
+          "risk_level": "normal"
+        },
+        "daily_peaks": {
+          "peak_dates": [],
+          "total_outlier_days": 0,
+          "avg_daily_outliers": 0,
+          "max_daily_count": 0,
+          "max_date": null
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 5081
+      }
+    ],
+    "line": "B"
+  },
+  {
+    "count": 1285,
+    "mean": 10.899813312280157,
+    "std": 9.237538772091959,
+    "min": -5.495883,
+    "max": 24.99708,
+    "q1": 4.228607,
+    "median": 4.486283,
+    "q3": 22.89842,
+    "iqr": 18.669813,
+    "lower_bound": -23.7761125,
+    "upper_bound": 50.9031395,
+    "outlier_count": 0,
+    "outlier_ratio": 0.0,
+    "direction": "balanced",
+    "upper_outliers": "0",
+    "lower_outliers": "0",
+    "risk_level": "normal",
+    "tag_name": "PR8L1_ACT_TORQUE",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 1285,
+        "mean": 10.899813312280157,
+        "std": 9.237538772091959,
+        "outlier_count": 0,
+        "outlier_ratio": 0.0
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [],
+      "total_outlier_days": 0,
+      "avg_daily_outliers": 0,
+      "max_daily_count": 0,
+      "max_date": null
+    },
+    "filter_stats": {
+      "original_count": 1439,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 153,
+        "roll_change": 31
+      },
+      "final_count": 1285,
+      "total_removed": 154,
+      "removal_rate": 10.701876302988186
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 1285,
+          "mean": 10.899813312280157,
+          "std": 9.237538772091959,
+          "min": -5.495883,
+          "max": 24.99708,
+          "q1": 4.228607,
+          "median": 4.486283,
+          "q3": 22.89842,
+          "iqr": 18.669813,
+          "lower_bound": -23.7761125,
+          "upper_bound": 50.9031395,
+          "outlier_count": 0,
+          "outlier_ratio": 0.0,
+          "direction": "balanced",
+          "upper_outliers": "0",
+          "lower_outliers": "0",
+          "risk_level": "normal"
+        },
+        "daily_peaks": {
+          "peak_dates": [],
+          "total_outlier_days": 0,
+          "avg_daily_outliers": 0,
+          "max_daily_count": 0,
+          "max_date": null
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 1285
+      }
+    ],
+    "line": "A"
+  },
+  {
+    "count": 1285,
+    "mean": -12.190161270326847,
+    "std": 16.231192769774545,
+    "min": -38.7983,
+    "max": 3.54577,
+    "q1": -32.08711,
+    "median": -3.6654,
+    "q3": 2.58382,
+    "iqr": 34.670930000000006,
+    "lower_bound": -84.09350500000002,
+    "upper_bound": 54.590215000000015,
+    "outlier_count": 0,
+    "outlier_ratio": 0.0,
+    "direction": "balanced",
+    "upper_outliers": "0",
+    "lower_outliers": "0",
+    "risk_level": "normal",
+    "tag_name": "PR9L1_ACT_TORQUE",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 1285,
+        "mean": -12.190161270326847,
+        "std": 16.231192769774545,
+        "outlier_count": 0,
+        "outlier_ratio": 0.0
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [],
+      "total_outlier_days": 0,
+      "avg_daily_outliers": 0,
+      "max_daily_count": 0,
+      "max_date": null
+    },
+    "filter_stats": {
+      "original_count": 1439,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 153,
+        "roll_change": 31
+      },
+      "final_count": 1285,
+      "total_removed": 154,
+      "removal_rate": 10.701876302988186
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 1285,
+          "mean": -12.190161270326847,
+          "std": 16.231192769774545,
+          "min": -38.7983,
+          "max": 3.54577,
+          "q1": -32.08711,
+          "median": -3.6654,
+          "q3": 2.58382,
+          "iqr": 34.670930000000006,
+          "lower_bound": -84.09350500000002,
+          "upper_bound": 54.590215000000015,
+          "outlier_count": 0,
+          "outlier_ratio": 0.0,
+          "direction": "balanced",
+          "upper_outliers": "0",
+          "lower_outliers": "0",
+          "risk_level": "normal"
+        },
+        "daily_peaks": {
+          "peak_dates": [],
+          "total_outlier_days": 0,
+          "avg_daily_outliers": 0,
+          "max_daily_count": 0,
+          "max_date": null
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_TORQUE_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 1285
+      }
+    ],
+    "line": "A"
+  },
+  {
+    "count": 1285,
+    "mean": 22.577356256809338,
+    "std": 0.020310367537625666,
+    "min": 22.52463,
+    "max": 22.58608,
+    "q1": 22.58578,
+    "median": 22.58583,
+    "q3": 22.58587,
+    "iqr": 9.000000000014552e-05,
+    "lower_bound": 22.585645,
+    "upper_bound": 22.586005,
+    "outlier_count": 200,
+    "outlier_ratio": 15.56420233463035,
+    "direction": "lower",
+    "upper_outliers": "7",
+    "lower_outliers": "193",
+    "risk_level": "danger",
+    "tag_name": "PR6L1_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 1285,
+        "mean": 22.577356256809338,
+        "std": 0.020310367537625666,
+        "outlier_count": 200,
+        "outlier_ratio": 15.56420233463035
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-11",
+          "count": 200
+        }
+      ],
+      "total_outlier_days": 1,
+      "max_daily_count": 200,
+      "avg_daily_outliers": 200.0,
+      "max_date": "2025-04-11"
+    },
+    "filter_stats": {
+      "original_count": 1439,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 153,
+        "roll_change": 31
+      },
+      "final_count": 1285,
+      "total_removed": 154,
+      "removal_rate": 10.701876302988186
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 1285,
+          "mean": 22.577356256809338,
+          "std": 0.020310367537625666,
+          "min": 22.52463,
+          "max": 22.58608,
+          "q1": 22.58578,
+          "median": 22.58583,
+          "q3": 22.58587,
+          "iqr": 9.000000000014552e-05,
+          "lower_bound": 22.585645,
+          "upper_bound": 22.586005,
+          "outlier_count": 200,
+          "outlier_ratio": 15.56420233463035,
+          "direction": "lower",
+          "upper_outliers": "7",
+          "lower_outliers": "193",
+          "risk_level": "danger"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-11",
+              "count": 200
+            }
+          ],
+          "total_outlier_days": 1,
+          "max_daily_count": 200,
+          "avg_daily_outliers": 200.0,
+          "max_date": "2025-04-11"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_SPD_MS_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_SPD_MS_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_SPD_MS_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_SPD_MS_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_SPD_MS_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_SPD_MS_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L1_ACT_SPD_MS_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 1285
+      }
+    ],
+    "line": "A"
+  },
+  {
+    "count": 5081,
+    "mean": 22.567868313324148,
+    "std": 0.37120654486869614,
+    "min": 0.0,
+    "max": 22.58525,
+    "q1": 22.58503,
+    "median": 22.58506,
+    "q3": 22.58509,
+    "iqr": 6.000000000128125e-05,
+    "lower_bound": 22.584939999999996,
+    "upper_bound": 22.58518,
+    "outlier_count": 836,
+    "outlier_ratio": 16.453454044479432,
+    "direction": "lower",
+    "upper_outliers": "14",
+    "lower_outliers": "822",
+    "risk_level": "danger",
+    "tag_name": "PR6L2_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 5081,
+        "mean": 22.567868313324148,
+        "std": 0.37120654486869614,
+        "outlier_count": 836,
+        "outlier_ratio": 16.453454044479432
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 421
+        },
+        {
+          "date": "2025-04-17",
+          "count": 225
+        },
+        {
+          "date": "2025-04-12",
+          "count": 190
+        }
+      ],
+      "total_outlier_days": 3,
+      "max_daily_count": 421,
+      "avg_daily_outliers": 278.6666666666667,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 5752,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 662,
+        "roll_change": 75
+      },
+      "final_count": 5081,
+      "total_removed": 671,
+      "removal_rate": 11.665507649513213
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 5081,
+          "mean": 22.567868313324148,
+          "std": 0.37120654486869614,
+          "min": 0.0,
+          "max": 22.58525,
+          "q1": 22.58503,
+          "median": 22.58506,
+          "q3": 22.58509,
+          "iqr": 6.000000000128125e-05,
+          "lower_bound": 22.584939999999996,
+          "upper_bound": 22.58518,
+          "outlier_count": 836,
+          "outlier_ratio": 16.453454044479432,
+          "direction": "lower",
+          "upper_outliers": "14",
+          "lower_outliers": "822",
+          "risk_level": "danger"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 421
+            },
+            {
+              "date": "2025-04-17",
+              "count": 225
+            },
+            {
+              "date": "2025-04-12",
+              "count": 190
+            }
+          ],
+          "total_outlier_days": 3,
+          "max_daily_count": 421,
+          "avg_daily_outliers": 278.6666666666667,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_SPD_MS_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_SPD_MS_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_SPD_MS_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_SPD_MS_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_SPD_MS_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_SPD_MS_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR6L2_ACT_SPD_MS_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 5081
+      }
+    ],
+    "line": "B"
+  },
+  {
+    "count": 1285,
+    "mean": 22.121247237354087,
+    "std": 0.4919381050131562,
+    "min": 21.26635,
+    "max": 22.58654,
+    "q1": 21.55304,
+    "median": 22.3221,
+    "q3": 22.58504,
+    "iqr": 1.032,
+    "lower_bound": 20.00504,
+    "upper_bound": 24.13304,
+    "outlier_count": 0,
+    "outlier_ratio": 0.0,
+    "direction": "balanced",
+    "upper_outliers": "0",
+    "lower_outliers": "0",
+    "risk_level": "normal",
+    "tag_name": "PR7L1_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 1285,
+        "mean": 22.121247237354087,
+        "std": 0.4919381050131562,
+        "outlier_count": 0,
+        "outlier_ratio": 0.0
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [],
+      "total_outlier_days": 0,
+      "avg_daily_outliers": 0,
+      "max_daily_count": 0,
+      "max_date": null
+    },
+    "filter_stats": {
+      "original_count": 1439,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 153,
+        "roll_change": 31
+      },
+      "final_count": 1285,
+      "total_removed": 154,
+      "removal_rate": 10.701876302988186
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 1285,
+          "mean": 22.121247237354087,
+          "std": 0.4919381050131562,
+          "min": 21.26635,
+          "max": 22.58654,
+          "q1": 21.55304,
+          "median": 22.3221,
+          "q3": 22.58504,
+          "iqr": 1.032,
+          "lower_bound": 20.00504,
+          "upper_bound": 24.13304,
+          "outlier_count": 0,
+          "outlier_ratio": 0.0,
+          "direction": "balanced",
+          "upper_outliers": "0",
+          "lower_outliers": "0",
+          "risk_level": "normal"
+        },
+        "daily_peaks": {
+          "peak_dates": [],
+          "total_outlier_days": 0,
+          "avg_daily_outliers": 0,
+          "max_daily_count": 0,
+          "max_date": null
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_SPD_MS_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_SPD_MS_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_SPD_MS_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_SPD_MS_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_SPD_MS_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_SPD_MS_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L1_ACT_SPD_MS_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 1285
+      }
+    ],
+    "line": "A"
+  },
+  {
+    "count": 5081,
+    "mean": 22.085813310371975,
+    "std": 0.6121347228789417,
+    "min": 0.0,
+    "max": 22.58685,
+    "q1": 21.54333,
+    "median": 22.22132,
+    "q3": 22.58587,
+    "iqr": 1.042539999999999,
+    "lower_bound": 19.97952,
+    "upper_bound": 24.149679999999996,
+    "outlier_count": 3,
+    "outlier_ratio": 0.0590434953749262,
+    "direction": "lower",
+    "upper_outliers": "0",
+    "lower_outliers": "3",
+    "risk_level": "normal",
+    "tag_name": "PR7L2_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 5081,
+        "mean": 22.085813310371975,
+        "std": 0.6121347228789417,
+        "outlier_count": 3,
+        "outlier_ratio": 0.0590434953749262
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-16",
+          "count": 3
+        }
+      ],
+      "total_outlier_days": 1,
+      "max_daily_count": 3,
+      "avg_daily_outliers": 3.0,
+      "max_date": "2025-04-16"
+    },
+    "filter_stats": {
+      "original_count": 5752,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 662,
+        "roll_change": 75
+      },
+      "final_count": 5081,
+      "total_removed": 671,
+      "removal_rate": 11.665507649513213
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 5081,
+          "mean": 22.085813310371975,
+          "std": 0.6121347228789417,
+          "min": 0.0,
+          "max": 22.58685,
+          "q1": 21.54333,
+          "median": 22.22132,
+          "q3": 22.58587,
+          "iqr": 1.042539999999999,
+          "lower_bound": 19.97952,
+          "upper_bound": 24.149679999999996,
+          "outlier_count": 3,
+          "outlier_ratio": 0.0590434953749262,
+          "direction": "lower",
+          "upper_outliers": "0",
+          "lower_outliers": "3",
+          "risk_level": "normal"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-16",
+              "count": 3
+            }
+          ],
+          "total_outlier_days": 1,
+          "max_daily_count": 3,
+          "avg_daily_outliers": 3.0,
+          "max_date": "2025-04-16"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_SPD_MS_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_SPD_MS_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_SPD_MS_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_SPD_MS_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_SPD_MS_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_SPD_MS_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR7L2_ACT_SPD_MS_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 5081
+      }
+    ],
+    "line": "B"
+  },
+  {
+    "count": 1285,
+    "mean": 21.891778747081712,
+    "std": 0.8282464823483034,
+    "min": 18.97625,
+    "max": 22.58738,
+    "q1": 21.46697,
+    "median": 22.16747,
+    "q3": 22.58612,
+    "iqr": 1.1191500000000012,
+    "lower_bound": 19.788244999999996,
+    "upper_bound": 24.264845,
+    "outlier_count": 50,
+    "outlier_ratio": 3.8910505836575875,
+    "direction": "lower",
+    "upper_outliers": "0",
+    "lower_outliers": "50",
+    "risk_level": "normal",
+    "tag_name": "PR8L1_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 1285,
+        "mean": 21.891778747081712,
+        "std": 0.8282464823483034,
+        "outlier_count": 50,
+        "outlier_ratio": 3.8910505836575875
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-11",
+          "count": 50
+        }
+      ],
+      "total_outlier_days": 1,
+      "max_daily_count": 50,
+      "avg_daily_outliers": 50.0,
+      "max_date": "2025-04-11"
+    },
+    "filter_stats": {
+      "original_count": 1439,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 153,
+        "roll_change": 31
+      },
+      "final_count": 1285,
+      "total_removed": 154,
+      "removal_rate": 10.701876302988186
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 1285,
+          "mean": 21.891778747081712,
+          "std": 0.8282464823483034,
+          "min": 18.97625,
+          "max": 22.58738,
+          "q1": 21.46697,
+          "median": 22.16747,
+          "q3": 22.58612,
+          "iqr": 1.1191500000000012,
+          "lower_bound": 19.788244999999996,
+          "upper_bound": 24.264845,
+          "outlier_count": 50,
+          "outlier_ratio": 3.8910505836575875,
+          "direction": "lower",
+          "upper_outliers": "0",
+          "lower_outliers": "50",
+          "risk_level": "normal"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-11",
+              "count": 50
+            }
+          ],
+          "total_outlier_days": 1,
+          "max_daily_count": 50,
+          "avg_daily_outliers": 50.0,
+          "max_date": "2025-04-11"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_SPD_MS_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_SPD_MS_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_SPD_MS_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_SPD_MS_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_SPD_MS_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_SPD_MS_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR8L1_ACT_SPD_MS_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 1285
+      }
+    ],
+    "line": "A"
+  },
+  {
+    "count": 1285,
+    "mean": 21.373496210116734,
+    "std": 0.8383771861567455,
+    "min": 17.52395,
+    "max": 21.94198,
+    "q1": 21.31314,
+    "median": 21.64167,
+    "q3": 21.94076,
+    "iqr": 0.6276200000000003,
+    "lower_bound": 20.37171,
+    "upper_bound": 22.88219,
+    "outlier_count": 190,
+    "outlier_ratio": 14.785992217898833,
+    "direction": "lower",
+    "upper_outliers": "0",
+    "lower_outliers": "190",
+    "risk_level": "warning",
+    "tag_name": "PR9L1_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "monthly_stats": [
+      {
+        "month": "2025-04",
+        "count": 1285,
+        "mean": 21.373496210116734,
+        "std": 0.8383771861567455,
+        "outlier_count": 190,
+        "outlier_ratio": 14.785992217898833
+      }
+    ],
+    "daily_peaks": {
+      "peak_dates": [
+        {
+          "date": "2025-04-11",
+          "count": 190
+        }
+      ],
+      "total_outlier_days": 1,
+      "max_daily_count": 190,
+      "avg_daily_outliers": 190.0,
+      "max_date": "2025-04-11"
+    },
+    "filter_stats": {
+      "original_count": 1439,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 153,
+        "roll_change": 31
+      },
+      "final_count": 1285,
+      "total_removed": 154,
+      "removal_rate": 10.701876302988186
+    },
+    "filters_applied": {
+      "run_only": true,
+      "special_ops": true,
+      "roll_change": true,
+      "coiling_transient": true
+    },
+    "steel_grade": "B5",
+    "size": "D13",
+    "monthly_individual_charts": [
+      {
+        "month": "2025-04",
+        "stats": {
+          "count": 1285,
+          "mean": 21.373496210116734,
+          "std": 0.8383771861567455,
+          "min": 17.52395,
+          "max": 21.94198,
+          "q1": 21.31314,
+          "median": 21.64167,
+          "q3": 21.94076,
+          "iqr": 0.6276200000000003,
+          "lower_bound": 20.37171,
+          "upper_bound": 22.88219,
+          "outlier_count": 190,
+          "outlier_ratio": 14.785992217898833,
+          "direction": "lower",
+          "upper_outliers": "0",
+          "lower_outliers": "190",
+          "risk_level": "warning"
+        },
+        "daily_peaks": {
+          "peak_dates": [
+            {
+              "date": "2025-04-11",
+              "count": 190
+            }
+          ],
+          "total_outlier_days": 1,
+          "max_daily_count": 190,
+          "avg_daily_outliers": 190.0,
+          "max_date": "2025-04-11"
+        },
+        "chart_paths": {
+          "timeseries": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_SPD_MS_01_timeseries.png",
+          "histogram": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_SPD_MS_02_histogram.png",
+          "boxplot": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_SPD_MS_03_boxplot.png",
+          "daily_avg_trend": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_SPD_MS_04_daily_avg_trend.png",
+          "hourly_pattern": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_SPD_MS_05_hourly_pattern.png",
+          "daily_outlier_count": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_SPD_MS_06_daily_outlier_count.png",
+          "summary": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2_additional_8tags/B5/D13/09_PR_Detailed/monthly/2025-04/PR9L1_ACT_SPD_MS_00_summary.png"
+        },
+        "month_dir": "monthly/2025-04",
+        "record_count": 1285
+      }
+    ],
+    "line": "A"
+  }
+]
