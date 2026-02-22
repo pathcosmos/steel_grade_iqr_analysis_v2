@@ -2,7 +2,7 @@
 
 **분석 기간**: 2025-03-01 ~ 2025-08-31
 **강종**: B5 | 사이즈: D13
-**생성일시**: 2026-02-09 15:11:05
+**생성일시**: 2026-02-23 01:42:56
 
 ---
 
@@ -26,29 +26,29 @@
 
 | 구분 | 태그 수 | 비율 |
 |------|---------|------|
-| **총 분석 태그** | 79개 | 100% |
+| **총 분석 태그** | 15개 | 100% |
 
 #### 잔차 이상치율 분포
 
 | 구분 | 태그 수 | 비율 |
 |------|---------|------|
-| 🔴 높음 (≥15%) | 68개 | 86.1% |
-| 🟠 중간 (5~15%) | 9개 | 11.4% |
-| 🟢 낮음 (<5%) | 2개 | 2.5% |
+| 🔴 높음 (≥15%) | 11개 | 73.3% |
+| 🟠 중간 (5~15%) | 4개 | 26.7% |
+| 🟢 낮음 (<5%) | 0개 | 0.0% |
 
 #### 계절성 강도 분포
 
 | 구분 | 태그 수 | 비율 |
 |------|---------|------|
 | 🔵 강함 (≥0.7) | 0개 | 0.0% |
-| 중간 (0.4~0.7) | 2개 | 2.5% |
-| 약함 (<0.4) | 77개 | 97.5% |
+| 중간 (0.4~0.7) | 0개 | 0.0% |
+| 약함 (<0.4) | 15개 | 100.0% |
 
 #### 전체 평균
 
 | 지표 | 값 |
 |------|-----|
-| 평균 계절성 강도 | 0.131 |
+| 평균 계절성 강도 | 0.083 |
 | 평균 추세 강도 | 0.167 |
 
 ---
@@ -57,21 +57,21 @@
 
 | 순위 | 태그 | 카테고리 | 이상치율 | 계절성 강도 | 계절성 분류 |
 |------|------|----------|----------|-------------|-------------|
-| 1 | STAND_9_ACTUAL_SPEED | 스탠드 속도 | 28.57% | 0.007 | none |
-| 2 | STAND_10_ACTUAL_SPEED | 스탠드 속도 | 28.57% | 0.000 | none |
-| 3 | STAND_11_ACTUAL_SPEED | 스탠드 속도 | 26.79% | 0.000 | none |
-| 4 | FINISHING_BLOCK_ACTUAL_SPEED | 스탠드 속도 | 26.19% | 0.000 | none |
-| 5 | STAND_1_ACTUAL_SPEED | 스탠드 속도 | 25.60% | 0.009 | none |
-| 6 | STAND_2_ACTUAL_SPEED | 스탠드 속도 | 25.60% | 0.001 | none |
-| 7 | STAND_7_ACTUAL_SPEED | 스탠드 속도 | 25.60% | 0.013 | none |
-| 8 | STAND_5_ACTUAL_SPEED | 스탠드 속도 | 25.00% | 0.001 | none |
-| 9 | STAND_14_ACTUAL_SPEED | 스탠드 속도 | 24.40% | 0.000 | none |
-| 10 | FURNACE_PRESSURE | 가열로 보조설비 | 23.21% | 0.103 | none |
-| 11 | MAIN_COMBUSTION_AIR_PRESSURE | 가열로 보조설비 | 23.21% | 0.006 | none |
-| 12 | SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF | 가열로 상부 온도 | 22.62% | 0.199 | none |
-| 13 | INDIRECT_COOLING_WATER_FLOW | 가열로 보조설비 | 22.62% | 0.000 | none |
-| 14 | STAND_3_ACTUAL_SPEED | 스탠드 속도 | 22.62% | 0.000 | none |
-| 15 | STAND_12_ACTUAL_SPEED | 스탠드 속도 | 22.62% | 0.001 | none |
+| 1 | PINCHROLL_4_REFERENCE_SPEED | 핀치롤 | 37.50% | 0.000 | none |
+| 2 | PR7L2_ACT_TORQUE | PR 상세 (토크+속도) | 23.61% | 0.035 | none |
+| 3 | PINCHROLL_3_REFERENCE_SPEED | 핀치롤 | 20.83% | 0.016 | none |
+| 4 | PR7L2_ACT_SPD_MS | PR 상세 (토크+속도) | 20.83% | 0.001 | none |
+| 5 | PINCHROLL_2_ACTUAL_SPEED | 핀치롤 | 20.24% | 0.110 | none |
+| 6 | PINCHROLL_2_ACTUAL_TORQUE | 핀치롤 | 18.45% | 0.217 | weak |
+| 7 | PINCHROLL_3_ACTUAL_TORQUE | 핀치롤 | 18.45% | 0.215 | weak |
+| 8 | PINCHROLL_4_ACTUAL_TORQUE | 핀치롤 | 18.45% | 0.218 | weak |
+| 9 | PINCHROLL_3_REFERENCE_TORQUE | 핀치롤 | 16.67% | 0.109 | none |
+| 10 | PINCHROLL_4_REFERENCE_TORQUE | 핀치롤 | 16.67% | 0.109 | none |
+| 11 | PR6L2_ACT_TORQUE | PR 상세 (토크+속도) | 16.67% | 0.081 | none |
+| 12 | PR6L2_ACT_SPD_MS | PR 상세 (토크+속도) | 14.58% | 0.000 | none |
+| 13 | PINCHROLL_3_ACTUAL_SPEED | 핀치롤 | 12.50% | 0.008 | none |
+| 14 | PINCHROLL_2_REFERENCE_TORQUE | 핀치롤 | 12.50% | 0.000 | none |
+| 15 | PINCHROLL_4_ACTUAL_SPEED | 핀치롤 | 11.31% | 0.132 | none |
 
 ---
 
@@ -87,235 +87,11 @@
 
 ## 카테고리별 분석 결과
 
-### 가열로 상부 온도 (01_Furnace_Top_Temperature)
-
-- 분석 태그: 4개
-- 평균 잔차 이상치율: 17.26%
-- 평균 계절성 강도: 0.203
-
-| 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
-|------|----------|-------------|-----------|
-| HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF | 10.71% | 0.197 | 0.103 |
-| HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF | 13.69% | 0.184 | 0.125 |
-| SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF | 22.62% | 0.199 | 0.051 |
-| SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF | 22.02% | 0.232 | 0.154 |
-
-#### STL 분해 차트
-
-**SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF** (이상치율: 22.62%, 계절성: 0.199)
-
-![SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF](01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_stl_decomposition.png)
-
-**SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF** (이상치율: 22.02%, 계절성: 0.232)
-
-![SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF](01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_stl_decomposition.png)
-
-**HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF** (이상치율: 13.69%, 계절성: 0.184)
-
-![HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF](01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_stl_decomposition.png)
-
-
-### 가열로 하부 온도 (02_Furnace_Bottom_Temperature)
-
-- 분석 태그: 4개
-- 평균 잔차 이상치율: 13.54%
-- 평균 계절성 강도: 0.261
-
-| 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
-|------|----------|-------------|-----------|
-| HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE | 21.43% | 0.158 | 0.197 |
-| HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE | 21.43% | 0.115 | 0.159 |
-| SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE | 7.74% | 0.365 | 0.464 |
-| SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE | 3.57% | 0.408 | 0.474 |
-
-#### STL 분해 차트
-
-**HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE** (이상치율: 21.43%, 계절성: 0.158)
-
-![HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE](02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_stl_decomposition.png)
-
-**HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE** (이상치율: 21.43%, 계절성: 0.115)
-
-![HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE](02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_stl_decomposition.png)
-
-**SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE** (이상치율: 7.74%, 계절성: 0.365)
-
-![SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE](02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_stl_decomposition.png)
-
-
-### 가열로 추출 온도 (03_Furnace_Discharge_Temperature)
-
-- 분석 태그: 1개
-- 평균 잔차 이상치율: 19.05%
-- 평균 계절성 강도: 0.220
-
-| 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
-|------|----------|-------------|-----------|
-| FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE | 19.05% | 0.220 | 0.537 |
-
-#### STL 분해 차트
-
-**FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE** (이상치율: 19.05%, 계절성: 0.220)
-
-![FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE](03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_stl_decomposition.png)
-
-
-### 가열로 보조설비 (04_Furnace_Auxiliary)
-
-- 분석 태그: 9개
-- 평균 잔차 이상치율: 15.41%
-- 평균 계절성 강도: 0.138
-
-| 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
-|------|----------|-------------|-----------|
-| FURNACE_PRESSURE | 23.21% | 0.103 | 0.190 |
-| FURNACE_O2_ANALYZER | 7.14% | 0.269 | 0.282 |
-| MAIN_GAS_PRESSURE | 9.52% | 0.229 | 0.228 |
-| MAIN_GAS_FLOW | 11.31% | 0.173 | 0.221 |
-| MAIN_GAS_TEMPERATURE | 3.57% | 0.431 | 0.833 |
-| MAIN_COMBUSTION_AIR_PRESSURE | 23.21% | 0.006 | 0.083 |
-| COMBUSTION_AIR_TEMPERATURE | 18.45% | 0.000 | 0.705 |
-| INDIRECT_COOLING_WATER_FLOW | 22.62% | 0.000 | 0.654 |
-| INDIRECT_WATER_MAIN_TEMPERATURE | 19.64% | 0.032 | 0.552 |
-
-#### STL 분해 차트
-
-**FURNACE_PRESSURE** (이상치율: 23.21%, 계절성: 0.103)
-
-![FURNACE_PRESSURE](04_Furnace_Auxiliary/FURNACE_PRESSURE_stl_decomposition.png)
-
-**MAIN_COMBUSTION_AIR_PRESSURE** (이상치율: 23.21%, 계절성: 0.006)
-
-![MAIN_COMBUSTION_AIR_PRESSURE](04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_stl_decomposition.png)
-
-**INDIRECT_COOLING_WATER_FLOW** (이상치율: 22.62%, 계절성: 0.000)
-
-![INDIRECT_COOLING_WATER_FLOW](04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_stl_decomposition.png)
-
-
-### 스탠드 토크 (05_Stand_Torque)
-
-- 분석 태그: 16개
-- 평균 잔차 이상치율: 19.75%
-- 평균 계절성 강도: 0.156
-
-| 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
-|------|----------|-------------|-----------|
-| STAND_1_ACTUAL_TORQUE | 19.05% | 0.162 | 0.254 |
-| STAND_2_ACTUAL_TORQUE | 19.05% | 0.179 | 0.224 |
-| STAND_3_ACTUAL_TORQUE | 19.64% | 0.167 | 0.194 |
-| STAND_4_ACTUAL_TORQUE | 18.45% | 0.158 | 0.166 |
-| STAND_5_ACTUAL_TORQUE | 19.05% | 0.182 | 0.157 |
-| STAND_6_ACTUAL_TORQUE | 19.05% | 0.154 | 0.137 |
-| STAND_7_ACTUAL_TORQUE | 21.43% | 0.153 | 0.097 |
-| STAND_8_ACTUAL_TORQUE | 21.43% | 0.162 | 0.137 |
-| STAND_9_ACTUAL_TORQUE | 19.64% | 0.152 | 0.155 |
-| STAND_10_ACTUAL_TORQUE | 20.24% | 0.147 | 0.164 |
-| STAND_11_ACTUAL_TORQUE | 20.24% | 0.153 | 0.114 |
-| STAND_12_ACTUAL_TORQUE | 20.24% | 0.157 | 0.143 |
-| STAND_13_ACTUAL_TORQUE | 19.05% | 0.152 | 0.126 |
-| STAND_14_ACTUAL_TORQUE | 19.05% | 0.142 | 0.135 |
-| FINISHING_BLOCK_MASTER_ACTUAL_TORQUE | 20.24% | 0.136 | 0.145 |
-| FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE | 20.24% | 0.136 | 0.145 |
-
-#### STL 분해 차트
-
-**STAND_7_ACTUAL_TORQUE** (이상치율: 21.43%, 계절성: 0.153)
-
-![STAND_7_ACTUAL_TORQUE](05_Stand_Torque/STAND_7_ACTUAL_TORQUE_stl_decomposition.png)
-
-**STAND_8_ACTUAL_TORQUE** (이상치율: 21.43%, 계절성: 0.162)
-
-![STAND_8_ACTUAL_TORQUE](05_Stand_Torque/STAND_8_ACTUAL_TORQUE_stl_decomposition.png)
-
-**STAND_10_ACTUAL_TORQUE** (이상치율: 20.24%, 계절성: 0.147)
-
-![STAND_10_ACTUAL_TORQUE](05_Stand_Torque/STAND_10_ACTUAL_TORQUE_stl_decomposition.png)
-
-
-### 스탠드 속도 (06_Stand_Speed)
-
-- 분석 태그: 15개
-- 평균 잔차 이상치율: 24.56%
-- 평균 계절성 강도: 0.003
-
-| 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
-|------|----------|-------------|-----------|
-| STAND_1_ACTUAL_SPEED | 25.60% | 0.009 | 0.000 |
-| STAND_2_ACTUAL_SPEED | 25.60% | 0.001 | 0.016 |
-| STAND_3_ACTUAL_SPEED | 22.62% | 0.000 | 0.007 |
-| STAND_4_ACTUAL_SPEED | 20.24% | 0.000 | 0.079 |
-| STAND_5_ACTUAL_SPEED | 25.00% | 0.001 | 0.036 |
-| STAND_6_ACTUAL_SPEED | 22.02% | 0.000 | 0.043 |
-| STAND_7_ACTUAL_SPEED | 25.60% | 0.013 | 0.000 |
-| STAND_8_ACTUAL_SPEED | 22.02% | 0.011 | 0.000 |
-| STAND_9_ACTUAL_SPEED | 28.57% | 0.007 | 0.000 |
-| STAND_10_ACTUAL_SPEED | 28.57% | 0.000 | 0.000 |
-| STAND_11_ACTUAL_SPEED | 26.79% | 0.000 | 0.006 |
-| STAND_12_ACTUAL_SPEED | 22.62% | 0.001 | 0.001 |
-| STAND_13_ACTUAL_SPEED | 22.62% | 0.000 | 0.000 |
-| STAND_14_ACTUAL_SPEED | 24.40% | 0.000 | 0.000 |
-| FINISHING_BLOCK_ACTUAL_SPEED | 26.19% | 0.000 | 0.002 |
-
-#### STL 분해 차트
-
-**STAND_9_ACTUAL_SPEED** (이상치율: 28.57%, 계절성: 0.007)
-
-![STAND_9_ACTUAL_SPEED](06_Stand_Speed/STAND_9_ACTUAL_SPEED_stl_decomposition.png)
-
-**STAND_10_ACTUAL_SPEED** (이상치율: 28.57%, 계절성: 0.000)
-
-![STAND_10_ACTUAL_SPEED](06_Stand_Speed/STAND_10_ACTUAL_SPEED_stl_decomposition.png)
-
-**STAND_11_ACTUAL_SPEED** (이상치율: 26.79%, 계절성: 0.000)
-
-![STAND_11_ACTUAL_SPEED](06_Stand_Speed/STAND_11_ACTUAL_SPEED_stl_decomposition.png)
-
-
-### 스탠드 부하 (07_Stand_Load)
-
-- 분석 태그: 15개
-- 평균 잔차 이상치율: 19.33%
-- 평균 계절성 강도: 0.158
-
-| 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
-|------|----------|-------------|-----------|
-| STAND_1_LOAD | 20.83% | 0.149 | 0.093 |
-| STAND_2_LOAD | 19.64% | 0.153 | 0.091 |
-| STAND_3_LOAD | 19.64% | 0.154 | 0.090 |
-| STAND_4_LOAD | 19.64% | 0.159 | 0.091 |
-| STAND_5_LOAD | 19.05% | 0.162 | 0.092 |
-| STAND_6_LOAD | 18.45% | 0.163 | 0.092 |
-| STAND_7_LOAD | 18.45% | 0.163 | 0.091 |
-| STAND_8_LOAD | 16.67% | 0.164 | 0.092 |
-| STAND_9_LOAD | 19.64% | 0.157 | 0.086 |
-| STAND_10_LOAD | 19.64% | 0.156 | 0.086 |
-| STAND_11_LOAD | 19.64% | 0.157 | 0.086 |
-| STAND_12_LOAD | 19.64% | 0.157 | 0.086 |
-| STAND_13_LOAD | 19.64% | 0.157 | 0.086 |
-| STAND_14_LOAD | 19.64% | 0.157 | 0.086 |
-| FINISHING_BLOCK_LOAD | 19.64% | 0.158 | 0.087 |
-
-#### STL 분해 차트
-
-**STAND_1_LOAD** (이상치율: 20.83%, 계절성: 0.149)
-
-![STAND_1_LOAD](07_Stand_Load/STAND_1_LOAD_stl_decomposition.png)
-
-**STAND_2_LOAD** (이상치율: 19.64%, 계절성: 0.153)
-
-![STAND_2_LOAD](07_Stand_Load/STAND_2_LOAD_stl_decomposition.png)
-
-**STAND_3_LOAD** (이상치율: 19.64%, 계절성: 0.154)
-
-![STAND_3_LOAD](07_Stand_Load/STAND_3_LOAD_stl_decomposition.png)
-
-
 ### 핀치롤 (08_Pinchroll)
 
-- 분석 태그: 9개
-- 평균 잔차 이상치율: 16.14%
-- 평균 계절성 강도: 0.124
+- 분석 태그: 11개
+- 평균 잔차 이상치율: 18.51%
+- 평균 계절성 강도: 0.103
 
 | 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
 |------|----------|-------------|-----------|
@@ -328,50 +104,50 @@
 | PINCHROLL_2_REFERENCE_TORQUE | 12.50% | 0.000 | 0.000 |
 | PINCHROLL_3_REFERENCE_TORQUE | 16.67% | 0.109 | 0.087 |
 | PINCHROLL_4_REFERENCE_TORQUE | 16.67% | 0.109 | 0.088 |
+| PINCHROLL_3_REFERENCE_SPEED | 20.83% | 0.016 | 0.001 |
+| PINCHROLL_4_REFERENCE_SPEED | 37.50% | 0.000 | 0.131 |
 
 #### STL 분해 차트
+
+**PINCHROLL_4_REFERENCE_SPEED** (이상치율: 37.50%, 계절성: 0.000)
+
+![PINCHROLL_4_REFERENCE_SPEED](08_Pinchroll/PINCHROLL_4_REFERENCE_SPEED_stl_decomposition.png)
+
+**PINCHROLL_3_REFERENCE_SPEED** (이상치율: 20.83%, 계절성: 0.016)
+
+![PINCHROLL_3_REFERENCE_SPEED](08_Pinchroll/PINCHROLL_3_REFERENCE_SPEED_stl_decomposition.png)
 
 **PINCHROLL_2_ACTUAL_SPEED** (이상치율: 20.24%, 계절성: 0.110)
 
 ![PINCHROLL_2_ACTUAL_SPEED](08_Pinchroll/PINCHROLL_2_ACTUAL_SPEED_stl_decomposition.png)
 
-**PINCHROLL_2_ACTUAL_TORQUE** (이상치율: 18.45%, 계절성: 0.217)
 
-![PINCHROLL_2_ACTUAL_TORQUE](08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_stl_decomposition.png)
+### PR 상세 (토크+속도) (09_PR_Detailed)
 
-**PINCHROLL_3_ACTUAL_TORQUE** (이상치율: 18.45%, 계절성: 0.215)
-
-![PINCHROLL_3_ACTUAL_TORQUE](08_Pinchroll/PINCHROLL_3_ACTUAL_TORQUE_stl_decomposition.png)
-
-
-### PR 상세 토크 (09_PR_Detailed)
-
-- 분석 태그: 6개
-- 평균 잔차 이상치율: 17.86%
-- 평균 계절성 강도: 0.172
+- 분석 태그: 4개
+- 평균 잔차 이상치율: 18.92%
+- 평균 계절성 강도: 0.029
 
 | 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
 |------|----------|-------------|-----------|
-| PR6L1_ACT_TORQUE | 16.07% | 0.251 | 0.566 |
-| PR6L2_ACT_TORQUE | 17.26% | 0.120 | 0.620 |
-| PR7L1_ACT_TORQUE | 17.86% | 0.158 | 0.088 |
-| PR7L2_ACT_TORQUE | 17.26% | 0.146 | 0.067 |
-| PR8L1_ACT_TORQUE | 19.64% | 0.154 | 0.074 |
-| PR9L1_ACT_TORQUE | 19.05% | 0.205 | 0.083 |
+| PR6L2_ACT_TORQUE | 16.67% | 0.081 | 0.617 |
+| PR7L2_ACT_TORQUE | 23.61% | 0.035 | 0.016 |
+| PR6L2_ACT_SPD_MS | 14.58% | 0.000 | 0.000 |
+| PR7L2_ACT_SPD_MS | 20.83% | 0.001 | 0.064 |
 
 #### STL 분해 차트
 
-**PR8L1_ACT_TORQUE** (이상치율: 19.64%, 계절성: 0.154)
+**PR7L2_ACT_TORQUE** (이상치율: 23.61%, 계절성: 0.035)
 
-![PR8L1_ACT_TORQUE](09_PR_Detailed/PR8L1_ACT_TORQUE_stl_decomposition.png)
+![PR7L2_ACT_TORQUE](09_PR_Detailed/PR7L2_ACT_TORQUE_stl_decomposition.png)
 
-**PR9L1_ACT_TORQUE** (이상치율: 19.05%, 계절성: 0.205)
+**PR7L2_ACT_SPD_MS** (이상치율: 20.83%, 계절성: 0.001)
 
-![PR9L1_ACT_TORQUE](09_PR_Detailed/PR9L1_ACT_TORQUE_stl_decomposition.png)
+![PR7L2_ACT_SPD_MS](09_PR_Detailed/PR7L2_ACT_SPD_MS_stl_decomposition.png)
 
-**PR7L1_ACT_TORQUE** (이상치율: 17.86%, 계절성: 0.158)
+**PR6L2_ACT_TORQUE** (이상치율: 16.67%, 계절성: 0.081)
 
-![PR7L1_ACT_TORQUE](09_PR_Detailed/PR7L1_ACT_TORQUE_stl_decomposition.png)
+![PR6L2_ACT_TORQUE](09_PR_Detailed/PR6L2_ACT_TORQUE_stl_decomposition.png)
 
 
 
@@ -424,8 +200,8 @@
 | 분석 기간 | 2025-03-01 ~ 2025-08-31 |
 | 강종 | B5 |
 | 계절 주기 | 25시간 |
-| 생성일시 | 2026-02-09 15:11:05 |
-| 총 분석 태그 | 79개 |
+| 생성일시 | 2026-02-23 01:42:56 |
+| 총 분석 태그 | 15개 |
 
 ---
 

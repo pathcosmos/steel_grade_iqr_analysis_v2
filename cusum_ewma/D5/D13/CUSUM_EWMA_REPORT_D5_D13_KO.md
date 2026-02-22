@@ -3,7 +3,7 @@
 **분석 기간**: 2025-03-01 ~ 2025-08-31
 **강종**: D5
 **규격**: D13
-**생성일시**: 2026-02-09 14:54:00
+**생성일시**: 2026-02-23 01:38:38
 
 ---
 
@@ -20,9 +20,9 @@
 
 | 구분 | 태그 수 | 비율 |
 |------|---------|------|
-| **총 분석 태그** | 79개 | 100% |
-| 🔴 드리프트 탐지 | 79개 | 100.0% |
-| 🟠 시프트 탐지 | 79개 | 100.0% |
+| **총 분석 태그** | 23개 | 100% |
+| 🔴 드리프트 탐지 | 23개 | 100.0% |
+| 🟠 시프트 탐지 | 21개 | 91.3% |
 | 🟡 경고 | 0개 | 0.0% |
 | 🟢 안정 | 0개 | 0.0% |
 
@@ -32,262 +32,31 @@
 
 | 순위 | 태그 | 카테고리 | CUSUM 드리프트 | EWMA 시프트 | 상태 |
 |------|------|----------|----------------|-------------|------|
-| 1 | PR7L1_ACT_TORQUE | PR 상세 토크 | 205 | 119 | 🔴 |
-| 2 | PR9L1_ACT_TORQUE | PR 상세 토크 | 204 | 117 | 🔴 |
-| 3 | PR8L1_ACT_TORQUE | PR 상세 토크 | 166 | 123 | 🔴 |
-| 4 | PR7L2_ACT_TORQUE | PR 상세 토크 | 152 | 112 | 🔴 |
-| 5 | PINCHROLL_3_REFERENCE_TORQUE | 핀치롤 | 108 | 76 | 🔴 |
-| 6 | PINCHROLL_4_REFERENCE_TORQUE | 핀치롤 | 108 | 76 | 🔴 |
-| 7 | PINCHROLL_2_ACTUAL_TORQUE | 핀치롤 | 82 | 63 | 🔴 |
-| 8 | PINCHROLL_2_ACTUAL_SPEED | 핀치롤 | 54 | 47 | 🔴 |
-| 9 | FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE | 가열로 추출 온도 | 53 | 131 | 🔴 |
-| 10 | PR6L1_ACT_TORQUE | PR 상세 토크 | 36 | 101 | 🔴 |
-| 11 | PINCHROLL_4_ACTUAL_TORQUE | 핀치롤 | 32 | 62 | 🔴 |
-| 12 | PINCHROLL_3_ACTUAL_TORQUE | 핀치롤 | 30 | 62 | 🔴 |
-| 13 | STAND_1_ACTUAL_TORQUE | 스탠드 토크 | 27 | 67 | 🔴 |
-| 14 | STAND_2_ACTUAL_TORQUE | 스탠드 토크 | 22 | 115 | 🔴 |
-| 15 | STAND_5_ACTUAL_TORQUE | 스탠드 토크 | 22 | 55 | 🔴 |
+| 1 | PR7L2_ACT_TORQUE | PR 상세 (토크+속도) | 146 | 110 | 🔴 |
+| 2 | PINCHROLL_3_REFERENCE_TORQUE | 핀치롤 | 108 | 76 | 🔴 |
+| 3 | PINCHROLL_4_REFERENCE_TORQUE | 핀치롤 | 108 | 76 | 🔴 |
+| 4 | PINCHROLL_2_ACTUAL_TORQUE | 핀치롤 | 82 | 63 | 🔴 |
+| 5 | PINCHROLL_2_ACTUAL_SPEED | 핀치롤 | 54 | 47 | 🔴 |
+| 6 | PINCHROLL_4_ACTUAL_TORQUE | 핀치롤 | 32 | 62 | 🔴 |
+| 7 | PINCHROLL_3_ACTUAL_TORQUE | 핀치롤 | 30 | 62 | 🔴 |
+| 8 | PR9L1_ACT_TORQUE | PR 상세 (토크+속도) | 28 | 0 | 🔴 |
+| 9 | PR7L1_ACT_SPD_MS | PR 상세 (토크+속도) | 22 | 1 | 🔴 |
+| 10 | PR6L2_ACT_SPD_MS | PR 상세 (토크+속도) | 19 | 8 | 🔴 |
+| 11 | PINCHROLL_2_REFERENCE_TORQUE | 핀치롤 | 18 | 18 | 🔴 |
+| 12 | PR7L1_ACT_TORQUE | PR 상세 (토크+속도) | 17 | 0 | 🔴 |
+| 13 | PINCHROLL_3_ACTUAL_SPEED | 핀치롤 | 15 | 17 | 🔴 |
+| 14 | PINCHROLL_3_REFERENCE_SPEED | 핀치롤 | 15 | 17 | 🔴 |
+| 15 | PR6L1_ACT_SPD_MS | PR 상세 (토크+속도) | 11 | 102 | 🔴 |
 
 ---
 
 ## 카테고리별 분석 결과
 
-### 가열로 상부 온도 (01_Furnace_Top_Temperature)
-
-- 분석 태그: 4개
-- 드리프트 탐지: 4개
-- 시프트 탐지: 4개
-- 안정: 0개
-
-| 태그 | CUSUM Drift | EWMA Shift | 상태 |
-|------|-------------|------------|------|
-| HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF | 10 | 30 | 🔴 |
-| HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF | 9 | 28 | 🔴 |
-| SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF | 5 | 15 | 🔴 |
-| SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF | 5 | 12 | 🔴 |
-
-#### 주요 태그 차트
-
-**HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF** (Drift: 10, Shift: 30)
-
-![HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF](01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_combined.png)
-
-**HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF** (Drift: 9, Shift: 28)
-
-![HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF](01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_combined.png)
-
-**SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF** (Drift: 5, Shift: 15)
-
-![SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF](01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_combined.png)
-
-
-### 가열로 하부 온도 (02_Furnace_Bottom_Temperature)
-
-- 분석 태그: 4개
-- 드리프트 탐지: 4개
-- 시프트 탐지: 4개
-- 안정: 0개
-
-| 태그 | CUSUM Drift | EWMA Shift | 상태 |
-|------|-------------|------------|------|
-| HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE | 2 | 28 | 🔴 |
-| HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE | 3 | 29 | 🔴 |
-| SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE | 7 | 9 | 🔴 |
-| SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE | 7 | 13 | 🔴 |
-
-#### 주요 태그 차트
-
-**SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE** (Drift: 7, Shift: 13)
-
-![SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE](02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_combined.png)
-
-**SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE** (Drift: 7, Shift: 9)
-
-![SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE](02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_combined.png)
-
-**HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE** (Drift: 3, Shift: 29)
-
-![HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE](02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_combined.png)
-
-
-### 가열로 추출 온도 (03_Furnace_Discharge_Temperature)
-
-- 분석 태그: 1개
-- 드리프트 탐지: 1개
-- 시프트 탐지: 1개
-- 안정: 0개
-
-| 태그 | CUSUM Drift | EWMA Shift | 상태 |
-|------|-------------|------------|------|
-| FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE | 53 | 131 | 🔴 |
-
-#### 주요 태그 차트
-
-**FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE** (Drift: 53, Shift: 131)
-
-![FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE](03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_combined.png)
-
-
-### 가열로 보조설비 (04_Furnace_Auxiliary)
-
-- 분석 태그: 9개
-- 드리프트 탐지: 9개
-- 시프트 탐지: 9개
-- 안정: 0개
-
-| 태그 | CUSUM Drift | EWMA Shift | 상태 |
-|------|-------------|------------|------|
-| FURNACE_PRESSURE | 19 | 135 | 🔴 |
-| FURNACE_O2_ANALYZER | 4 | 64 | 🔴 |
-| MAIN_GAS_PRESSURE | 18 | 95 | 🔴 |
-| MAIN_GAS_FLOW | 4 | 39 | 🔴 |
-| MAIN_GAS_TEMPERATURE | 1 | 4 | 🔴 |
-| MAIN_COMBUSTION_AIR_PRESSURE | 1 | 3 | 🔴 |
-| COMBUSTION_AIR_TEMPERATURE | 1 | 14 | 🔴 |
-| INDIRECT_COOLING_WATER_FLOW | 4 | 43 | 🔴 |
-| INDIRECT_WATER_MAIN_TEMPERATURE | 1 | 15 | 🔴 |
-
-#### 주요 태그 차트
-
-**FURNACE_PRESSURE** (Drift: 19, Shift: 135)
-
-![FURNACE_PRESSURE](04_Furnace_Auxiliary/FURNACE_PRESSURE_combined.png)
-
-**MAIN_GAS_PRESSURE** (Drift: 18, Shift: 95)
-
-![MAIN_GAS_PRESSURE](04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_combined.png)
-
-**FURNACE_O2_ANALYZER** (Drift: 4, Shift: 64)
-
-![FURNACE_O2_ANALYZER](04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_combined.png)
-
-
-### 스탠드 토크 (05_Stand_Torque)
-
-- 분석 태그: 16개
-- 드리프트 탐지: 16개
-- 시프트 탐지: 16개
-- 안정: 0개
-
-| 태그 | CUSUM Drift | EWMA Shift | 상태 |
-|------|-------------|------------|------|
-| STAND_1_ACTUAL_TORQUE | 27 | 67 | 🔴 |
-| STAND_2_ACTUAL_TORQUE | 22 | 115 | 🔴 |
-| STAND_3_ACTUAL_TORQUE | 18 | 53 | 🔴 |
-| STAND_4_ACTUAL_TORQUE | 19 | 54 | 🔴 |
-| STAND_5_ACTUAL_TORQUE | 22 | 55 | 🔴 |
-| STAND_6_ACTUAL_TORQUE | 10 | 148 | 🔴 |
-| STAND_7_ACTUAL_TORQUE | 16 | 46 | 🔴 |
-| STAND_8_ACTUAL_TORQUE | 8 | 132 | 🔴 |
-| STAND_9_ACTUAL_TORQUE | 5 | 206 | 🔴 |
-| STAND_10_ACTUAL_TORQUE | 11 | 160 | 🔴 |
-| STAND_11_ACTUAL_TORQUE | 13 | 130 | 🔴 |
-| STAND_12_ACTUAL_TORQUE | 16 | 99 | 🔴 |
-| STAND_13_ACTUAL_TORQUE | 19 | 51 | 🔴 |
-| STAND_14_ACTUAL_TORQUE | 19 | 94 | 🔴 |
-| FINISHING_BLOCK_MASTER_ACTUAL_TORQUE | 13 | 130 | 🔴 |
-| FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE | 13 | 131 | 🔴 |
-
-#### 주요 태그 차트
-
-**STAND_1_ACTUAL_TORQUE** (Drift: 27, Shift: 67)
-
-![STAND_1_ACTUAL_TORQUE](05_Stand_Torque/STAND_1_ACTUAL_TORQUE_combined.png)
-
-**STAND_2_ACTUAL_TORQUE** (Drift: 22, Shift: 115)
-
-![STAND_2_ACTUAL_TORQUE](05_Stand_Torque/STAND_2_ACTUAL_TORQUE_combined.png)
-
-**STAND_5_ACTUAL_TORQUE** (Drift: 22, Shift: 55)
-
-![STAND_5_ACTUAL_TORQUE](05_Stand_Torque/STAND_5_ACTUAL_TORQUE_combined.png)
-
-
-### 스탠드 속도 (06_Stand_Speed)
-
-- 분석 태그: 15개
-- 드리프트 탐지: 15개
-- 시프트 탐지: 15개
-- 안정: 0개
-
-| 태그 | CUSUM Drift | EWMA Shift | 상태 |
-|------|-------------|------------|------|
-| STAND_1_ACTUAL_SPEED | 7 | 51 | 🔴 |
-| STAND_2_ACTUAL_SPEED | 2 | 33 | 🔴 |
-| STAND_3_ACTUAL_SPEED | 2 | 33 | 🔴 |
-| STAND_4_ACTUAL_SPEED | 3 | 33 | 🔴 |
-| STAND_5_ACTUAL_SPEED | 2 | 33 | 🔴 |
-| STAND_6_ACTUAL_SPEED | 3 | 33 | 🔴 |
-| STAND_7_ACTUAL_SPEED | 3 | 34 | 🔴 |
-| STAND_8_ACTUAL_SPEED | 13 | 33 | 🔴 |
-| STAND_9_ACTUAL_SPEED | 7 | 34 | 🔴 |
-| STAND_10_ACTUAL_SPEED | 6 | 34 | 🔴 |
-| STAND_11_ACTUAL_SPEED | 6 | 34 | 🔴 |
-| STAND_12_ACTUAL_SPEED | 6 | 34 | 🔴 |
-| STAND_13_ACTUAL_SPEED | 2 | 34 | 🔴 |
-| STAND_14_ACTUAL_SPEED | 4 | 34 | 🔴 |
-| FINISHING_BLOCK_ACTUAL_SPEED | 8 | 34 | 🔴 |
-
-#### 주요 태그 차트
-
-**STAND_8_ACTUAL_SPEED** (Drift: 13, Shift: 33)
-
-![STAND_8_ACTUAL_SPEED](06_Stand_Speed/STAND_8_ACTUAL_SPEED_combined.png)
-
-**FINISHING_BLOCK_ACTUAL_SPEED** (Drift: 8, Shift: 34)
-
-![FINISHING_BLOCK_ACTUAL_SPEED](06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_combined.png)
-
-**STAND_1_ACTUAL_SPEED** (Drift: 7, Shift: 51)
-
-![STAND_1_ACTUAL_SPEED](06_Stand_Speed/STAND_1_ACTUAL_SPEED_combined.png)
-
-
-### 스탠드 부하 (07_Stand_Load)
-
-- 분석 태그: 15개
-- 드리프트 탐지: 15개
-- 시프트 탐지: 15개
-- 안정: 0개
-
-| 태그 | CUSUM Drift | EWMA Shift | 상태 |
-|------|-------------|------------|------|
-| STAND_1_LOAD | 12 | 141 | 🔴 |
-| STAND_2_LOAD | 12 | 140 | 🔴 |
-| STAND_3_LOAD | 12 | 139 | 🔴 |
-| STAND_4_LOAD | 13 | 139 | 🔴 |
-| STAND_5_LOAD | 13 | 139 | 🔴 |
-| STAND_6_LOAD | 13 | 141 | 🔴 |
-| STAND_7_LOAD | 13 | 140 | 🔴 |
-| STAND_8_LOAD | 13 | 139 | 🔴 |
-| STAND_9_LOAD | 12 | 141 | 🔴 |
-| STAND_10_LOAD | 12 | 142 | 🔴 |
-| STAND_11_LOAD | 12 | 142 | 🔴 |
-| STAND_12_LOAD | 12 | 142 | 🔴 |
-| STAND_13_LOAD | 12 | 142 | 🔴 |
-| STAND_14_LOAD | 13 | 142 | 🔴 |
-| FINISHING_BLOCK_LOAD | 13 | 142 | 🔴 |
-
-#### 주요 태그 차트
-
-**STAND_14_LOAD** (Drift: 13, Shift: 142)
-
-![STAND_14_LOAD](07_Stand_Load/STAND_14_LOAD_combined.png)
-
-**FINISHING_BLOCK_LOAD** (Drift: 13, Shift: 142)
-
-![FINISHING_BLOCK_LOAD](07_Stand_Load/FINISHING_BLOCK_LOAD_combined.png)
-
-**STAND_6_LOAD** (Drift: 13, Shift: 141)
-
-![STAND_6_LOAD](07_Stand_Load/STAND_6_LOAD_combined.png)
-
-
 ### 핀치롤 (08_Pinchroll)
 
-- 분석 태그: 9개
-- 드리프트 탐지: 9개
-- 시프트 탐지: 9개
+- 분석 태그: 11개
+- 드리프트 탐지: 11개
+- 시프트 탐지: 11개
 - 안정: 0개
 
 | 태그 | CUSUM Drift | EWMA Shift | 상태 |
@@ -301,6 +70,8 @@
 | PINCHROLL_2_REFERENCE_TORQUE | 18 | 18 | 🔴 |
 | PINCHROLL_3_REFERENCE_TORQUE | 108 | 76 | 🔴 |
 | PINCHROLL_4_REFERENCE_TORQUE | 108 | 76 | 🔴 |
+| PINCHROLL_3_REFERENCE_SPEED | 15 | 17 | 🔴 |
+| PINCHROLL_4_REFERENCE_SPEED | 9 | 12 | 🔴 |
 
 #### 주요 태그 차트
 
@@ -317,35 +88,41 @@
 ![PINCHROLL_2_ACTUAL_TORQUE](08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_combined.png)
 
 
-### PR 상세 토크 (09_PR_Detailed)
+### PR 상세 (토크+속도) (09_PR_Detailed)
 
-- 분석 태그: 6개
-- 드리프트 탐지: 6개
-- 시프트 탐지: 6개
+- 분석 태그: 12개
+- 드리프트 탐지: 12개
+- 시프트 탐지: 10개
 - 안정: 0개
 
 | 태그 | CUSUM Drift | EWMA Shift | 상태 |
 |------|-------------|------------|------|
-| PR6L1_ACT_TORQUE | 36 | 101 | 🔴 |
-| PR6L2_ACT_TORQUE | 2 | 18 | 🔴 |
-| PR7L1_ACT_TORQUE | 205 | 119 | 🔴 |
-| PR7L2_ACT_TORQUE | 152 | 112 | 🔴 |
-| PR8L1_ACT_TORQUE | 166 | 123 | 🔴 |
-| PR9L1_ACT_TORQUE | 204 | 117 | 🔴 |
+| PR6L1_ACT_TORQUE | 6 | 101 | 🔴 |
+| PR6L2_ACT_TORQUE | 1 | 16 | 🔴 |
+| PR7L1_ACT_TORQUE | 17 | 0 | 🔴 |
+| PR7L2_ACT_TORQUE | 146 | 110 | 🔴 |
+| PR8L1_ACT_TORQUE | 4 | 1 | 🔴 |
+| PR9L1_ACT_TORQUE | 28 | 0 | 🔴 |
+| PR6L1_ACT_SPD_MS | 11 | 102 | 🔴 |
+| PR6L2_ACT_SPD_MS | 19 | 8 | 🔴 |
+| PR7L1_ACT_SPD_MS | 22 | 1 | 🔴 |
+| PR7L2_ACT_SPD_MS | 8 | 8 | 🔴 |
+| PR8L1_ACT_SPD_MS | 4 | 3 | 🔴 |
+| PR9L1_ACT_SPD_MS | 5 | 4 | 🔴 |
 
 #### 주요 태그 차트
 
-**PR7L1_ACT_TORQUE** (Drift: 205, Shift: 119)
+**PR7L2_ACT_TORQUE** (Drift: 146, Shift: 110)
 
-![PR7L1_ACT_TORQUE](09_PR_Detailed/PR7L1_ACT_TORQUE_combined.png)
+![PR7L2_ACT_TORQUE](09_PR_Detailed/PR7L2_ACT_TORQUE_combined.png)
 
-**PR9L1_ACT_TORQUE** (Drift: 204, Shift: 117)
+**PR9L1_ACT_TORQUE** (Drift: 28, Shift: 0)
 
 ![PR9L1_ACT_TORQUE](09_PR_Detailed/PR9L1_ACT_TORQUE_combined.png)
 
-**PR8L1_ACT_TORQUE** (Drift: 166, Shift: 123)
+**PR7L1_ACT_SPD_MS** (Drift: 22, Shift: 1)
 
-![PR8L1_ACT_TORQUE](09_PR_Detailed/PR8L1_ACT_TORQUE_combined.png)
+![PR7L1_ACT_SPD_MS](09_PR_Detailed/PR7L1_ACT_SPD_MS_combined.png)
 
 
 
@@ -386,8 +163,8 @@
 | 분석 기간 | 2025-03-01 ~ 2025-08-31 |
 | 강종 | D5 |
 | 규격 | D13 |
-| 생성일시 | 2026-02-09 14:54:00 |
-| 총 분석 태그 | 79개 |
+| 생성일시 | 2026-02-23 01:38:38 |
+| 총 분석 태그 | 23개 |
 
 ---
 

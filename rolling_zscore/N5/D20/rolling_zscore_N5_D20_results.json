@@ -1,1983 +1,5 @@
 [
   {
-    "tag_name": "HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF",
-    "category": "01_Furnace_Top_Temperature",
-    "category_description": "가열로 상부 온도",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1290,
-      "outlier_ratio": 6.401349741961096,
-      "severe_outlier_count": 638,
-      "severe_outlier_ratio": 3.1659388646288207,
-      "baseline_stability": 0.44645447629325685,
-      "mean_z": 0.7190020677556823,
-      "std_z": 1.431872216615857,
-      "max_z": 11.608610451735094
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF",
-    "category": "01_Furnace_Top_Temperature",
-    "category_description": "가열로 상부 온도",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1298,
-      "outlier_ratio": 6.441048034934497,
-      "severe_outlier_count": 650,
-      "severe_outlier_ratio": 3.2254863040889243,
-      "baseline_stability": 0.44356234019692853,
-      "mean_z": 0.7112553565355465,
-      "std_z": 1.4454603727921809,
-      "max_z": 12.170288663360926
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/01_Furnace_Top_Temperature/HEATING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF",
-    "category": "01_Furnace_Top_Temperature",
-    "category_description": "가열로 상부 온도",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1596,
-      "outlier_ratio": 7.919809448193728,
-      "severe_outlier_count": 789,
-      "severe_outlier_ratio": 3.9152441445017865,
-      "baseline_stability": 0.4246822397475455,
-      "mean_z": 0.8428287201977109,
-      "std_z": 1.437273357626226,
-      "max_z": 9.653206964135629
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_1_TEMPERATURE_ROOF_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF",
-    "category": "01_Furnace_Top_Temperature",
-    "category_description": "가열로 상부 온도",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1641,
-      "outlier_ratio": 8.143112346169115,
-      "severe_outlier_count": 826,
-      "severe_outlier_ratio": 4.098848749503771,
-      "baseline_stability": 0.41905132852837335,
-      "mean_z": 0.71963520600062,
-      "std_z": 1.5006178342727634,
-      "max_z": 10.82355031703039
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/01_Furnace_Top_Temperature/SOAKING_TOP_ZONE_NO_2_TEMPERATURE_ROOF_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE",
-    "category": "02_Furnace_Bottom_Temperature",
-    "category_description": "가열로 하부 온도",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1316,
-      "outlier_ratio": 6.530369194124653,
-      "severe_outlier_count": 578,
-      "severe_outlier_ratio": 2.868201667328305,
-      "baseline_stability": 0.46773052308445806,
-      "mean_z": 0.7187942473721595,
-      "std_z": 1.463208872794899,
-      "max_z": 11.402989733846947
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE",
-    "category": "02_Furnace_Bottom_Temperature",
-    "category_description": "가열로 하부 온도",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1359,
-      "outlier_ratio": 6.743747518856689,
-      "severe_outlier_count": 588,
-      "severe_outlier_ratio": 2.9178245335450574,
-      "baseline_stability": 0.44810321141610077,
-      "mean_z": 0.6887112257756021,
-      "std_z": 1.4898418878870547,
-      "max_z": 8.235659909517507
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/02_Furnace_Bottom_Temperature/HEATING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE",
-    "category": "02_Furnace_Bottom_Temperature",
-    "category_description": "가열로 하부 온도",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1692,
-      "outlier_ratio": 8.396188963874554,
-      "severe_outlier_count": 676,
-      "severe_outlier_ratio": 3.3545057562524816,
-      "baseline_stability": 0.42542312997629295,
-      "mean_z": 0.9291602701451608,
-      "std_z": 1.3554256883276379,
-      "max_z": 7.280513602805155
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_1_TEMPERATURE_OPP_SIDE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE",
-    "category": "02_Furnace_Bottom_Temperature",
-    "category_description": "가열로 하부 온도",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1720,
-      "outlier_ratio": 8.535132989281461,
-      "severe_outlier_count": 814,
-      "severe_outlier_ratio": 4.039301310043668,
-      "baseline_stability": 0.4152168730803586,
-      "mean_z": 0.7132587537450332,
-      "std_z": 1.501657816192193,
-      "max_z": 7.021126352956775
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/02_Furnace_Bottom_Temperature/SOAKING_BOTTOM_ZONE_NO_2_TEMPERATURE_MILL_SIDE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE",
-    "category": "03_Furnace_Discharge_Temperature",
-    "category_description": "가열로 추출 온도",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1187,
-      "outlier_ratio": 5.890234219928543,
-      "severe_outlier_count": 737,
-      "severe_outlier_ratio": 3.657205240174673,
-      "baseline_stability": 0.37295877819338374,
-      "mean_z": 0.39742664642555225,
-      "std_z": 1.8624924514847703,
-      "max_z": 62.60191894053232
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/03_Furnace_Discharge_Temperature/FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "FURNACE_PRESSURE",
-    "category": "04_Furnace_Auxiliary",
-    "category_description": "가열로 보조설비",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 887,
-      "outlier_ratio": 4.401548233425963,
-      "severe_outlier_count": 297,
-      "severe_outlier_ratio": 1.4737991266375545,
-      "baseline_stability": 0.38803977685506563,
-      "mean_z": 0.6421967425761201,
-      "std_z": 1.3895762537334322,
-      "max_z": 15.441147607347263
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/04_Furnace_Auxiliary/FURNACE_PRESSURE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "FURNACE_O2_ANALYZER",
-    "category": "04_Furnace_Auxiliary",
-    "category_description": "가열로 보조설비",
-    "steel_grade": "N5",
-    "status": "high_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 2429,
-      "outlier_ratio": 12.053394204049225,
-      "severe_outlier_count": 955,
-      "severe_outlier_ratio": 4.738983723699881,
-      "baseline_stability": 0.13824297525260465,
-      "mean_z": -0.5460962559643091,
-      "std_z": 2.209490335547874,
-      "max_z": 69.21245338497465
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/04_Furnace_Auxiliary/FURNACE_O2_ANALYZER_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "MAIN_GAS_PRESSURE",
-    "category": "04_Furnace_Auxiliary",
-    "category_description": "가열로 보조설비",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1183,
-      "outlier_ratio": 5.870385073441842,
-      "severe_outlier_count": 450,
-      "severe_outlier_ratio": 2.2330289797538705,
-      "baseline_stability": 0.0,
-      "mean_z": -0.6712789289328417,
-      "std_z": 1.3679993644307717,
-      "max_z": 26.438002953448475
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/04_Furnace_Auxiliary/MAIN_GAS_PRESSURE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "MAIN_GAS_FLOW",
-    "category": "04_Furnace_Auxiliary",
-    "category_description": "가열로 보조설비",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1464,
-      "outlier_ratio": 7.264787614132592,
-      "severe_outlier_count": 1145,
-      "severe_outlier_ratio": 5.681818181818182,
-      "baseline_stability": 0.42698077481792873,
-      "mean_z": 0.8268494961933289,
-      "std_z": 1.5375588301881702,
-      "max_z": 10.027756257456685
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/04_Furnace_Auxiliary/MAIN_GAS_FLOW_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "MAIN_GAS_TEMPERATURE",
-    "category": "04_Furnace_Auxiliary",
-    "category_description": "가열로 보조설비",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1422,
-      "outlier_ratio": 7.056371576022231,
-      "severe_outlier_count": 408,
-      "severe_outlier_ratio": 2.0246129416435092,
-      "baseline_stability": 0.3835988813872554,
-      "mean_z": -0.40903436661814796,
-      "std_z": 1.6730470404075082,
-      "max_z": 5.9528685233583225
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/04_Furnace_Auxiliary/MAIN_GAS_TEMPERATURE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "MAIN_COMBUSTION_AIR_PRESSURE",
-    "category": "04_Furnace_Auxiliary",
-    "category_description": "가열로 보조설비",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 991,
-      "outlier_ratio": 4.91762604208019,
-      "severe_outlier_count": 531,
-      "severe_outlier_ratio": 2.634974196109567,
-      "baseline_stability": 0.10306358977665331,
-      "mean_z": 0.2682240553302739,
-      "std_z": 1.6427122281108575,
-      "max_z": 49.99014730412971
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/04_Furnace_Auxiliary/MAIN_COMBUSTION_AIR_PRESSURE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "COMBUSTION_AIR_TEMPERATURE",
-    "category": "04_Furnace_Auxiliary",
-    "category_description": "가열로 보조설비",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 779,
-      "outlier_ratio": 3.8656212782850337,
-      "severe_outlier_count": 343,
-      "severe_outlier_ratio": 1.702064311234617,
-      "baseline_stability": 0.270429086218101,
-      "mean_z": -0.32962352806104106,
-      "std_z": 1.3877128722497865,
-      "max_z": 9.360964667789464
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/04_Furnace_Auxiliary/COMBUSTION_AIR_TEMPERATURE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "INDIRECT_COOLING_WATER_FLOW",
-    "category": "04_Furnace_Auxiliary",
-    "category_description": "가열로 보조설비",
-    "steel_grade": "N5",
-    "status": "unstable",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 353,
-      "outlier_ratio": 1.7516871774513696,
-      "severe_outlier_count": 37,
-      "severe_outlier_ratio": 0.18360460500198492,
-      "baseline_stability": 0.2030953104130242,
-      "mean_z": 0.292959931044575,
-      "std_z": 1.2328272285674362,
-      "max_z": 55.501335446232126
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/04_Furnace_Auxiliary/INDIRECT_COOLING_WATER_FLOW_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "INDIRECT_WATER_MAIN_TEMPERATURE",
-    "category": "04_Furnace_Auxiliary",
-    "category_description": "가열로 보조설비",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": null,
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 120,
-      "outlier_ratio": 0.5954743946010321,
-      "severe_outlier_count": 4,
-      "severe_outlier_ratio": 0.01984914648670107,
-      "baseline_stability": 0.6157085345062463,
-      "mean_z": 0.45150512822892847,
-      "std_z": 1.2744883375263922,
-      "max_z": 6.246950475544036
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/04_Furnace_Auxiliary/INDIRECT_WATER_MAIN_TEMPERATURE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_1_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1093,
-      "outlier_ratio": 5.46308791922827,
-      "severe_outlier_count": 604,
-      "severe_outlier_ratio": 3.0189433698205628,
-      "baseline_stability": 0.5453857690787502,
-      "mean_z": 0.7202790675030062,
-      "std_z": 1.9093790693212949,
-      "max_z": 49.68903706749061
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_1_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_2_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 965,
-      "outlier_ratio": 4.823311840855701,
-      "severe_outlier_count": 522,
-      "severe_outlier_ratio": 2.6090868196131356,
-      "baseline_stability": 0.5170992410568124,
-      "mean_z": 0.6790972958618136,
-      "std_z": 1.7967277365650358,
-      "max_z": 43.98864076397748
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_2_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_3_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1110,
-      "outlier_ratio": 5.548058179637127,
-      "severe_outlier_count": 586,
-      "severe_outlier_ratio": 2.92897485879942,
-      "baseline_stability": 0.5581200401133726,
-      "mean_z": 0.7287880718267884,
-      "std_z": 1.9067514110433859,
-      "max_z": 49.68903706749061
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_3_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_4_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1159,
-      "outlier_ratio": 5.7929724596391265,
-      "severe_outlier_count": 632,
-      "severe_outlier_ratio": 3.1588943869645623,
-      "baseline_stability": 0.5844717188071238,
-      "mean_z": 0.7343365839198255,
-      "std_z": 1.876617778566296,
-      "max_z": 49.68903706749061
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_4_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_5_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1032,
-      "outlier_ratio": 5.1581946318788425,
-      "severe_outlier_count": 555,
-      "severe_outlier_ratio": 2.7740290898185633,
-      "baseline_stability": 0.547805836220693,
-      "mean_z": 0.6923051468650644,
-      "std_z": 1.840960815570718,
-      "max_z": 44.49719659193001
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_5_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_6_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1080,
-      "outlier_ratio": 5.398110661268556,
-      "severe_outlier_count": 578,
-      "severe_outlier_ratio": 2.8889888539011346,
-      "baseline_stability": 0.5570010253361602,
-      "mean_z": 0.7261300747904464,
-      "std_z": 1.8441452089396155,
-      "max_z": 49.68903706749062
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_6_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_7_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1049,
-      "outlier_ratio": 5.2431648922877,
-      "severe_outlier_count": 573,
-      "severe_outlier_ratio": 2.8639976008397063,
-      "baseline_stability": 0.5611369104815207,
-      "mean_z": 0.7147632616333013,
-      "std_z": 1.8428110751945674,
-      "max_z": 44.83302908590822
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_7_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_8_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1096,
-      "outlier_ratio": 5.478082671065128,
-      "severe_outlier_count": 605,
-      "severe_outlier_ratio": 3.0239416204328484,
-      "baseline_stability": 0.5678556684540472,
-      "mean_z": 0.7160187761266583,
-      "std_z": 1.8341173530618167,
-      "max_z": 45.0777161316108
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_8_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_9_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1097,
-      "outlier_ratio": 5.483080921677413,
-      "severe_outlier_count": 563,
-      "severe_outlier_ratio": 2.8140150947168494,
-      "baseline_stability": 0.5842675573076213,
-      "mean_z": 0.7183558641232948,
-      "std_z": 1.9073899458537074,
-      "max_z": 49.6890370674906
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_9_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_10_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1078,
-      "outlier_ratio": 5.388114160043984,
-      "severe_outlier_count": 572,
-      "severe_outlier_ratio": 2.8589993502274202,
-      "baseline_stability": 0.5898521540427262,
-      "mean_z": 0.7354331134744468,
-      "std_z": 1.8860412388462005,
-      "max_z": 49.68903706749061
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_10_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_11_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1053,
-      "outlier_ratio": 5.263157894736842,
-      "severe_outlier_count": 595,
-      "severe_outlier_ratio": 2.9739591143099915,
-      "baseline_stability": 0.536219553727262,
-      "mean_z": 0.6243125864773645,
-      "std_z": 1.8440861505388304,
-      "max_z": 45.40925549374405
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_11_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_12_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1015,
-      "outlier_ratio": 5.073224371469986,
-      "severe_outlier_count": 536,
-      "severe_outlier_ratio": 2.679062328185135,
-      "baseline_stability": 0.6032560170837322,
-      "mean_z": 0.7170941128930512,
-      "std_z": 1.8491310165967518,
-      "max_z": 49.6890370674906
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_12_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_13_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1058,
-      "outlier_ratio": 5.28814914779827,
-      "severe_outlier_count": 554,
-      "severe_outlier_ratio": 2.7690308392062777,
-      "baseline_stability": 0.5846330473977422,
-      "mean_z": 0.728671089307818,
-      "std_z": 1.8749062099392257,
-      "max_z": 49.68903706749061
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_13_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_14_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 991,
-      "outlier_ratio": 4.953266356775129,
-      "severe_outlier_count": 537,
-      "severe_outlier_ratio": 2.684060578797421,
-      "baseline_stability": 0.6144780611006471,
-      "mean_z": 0.7094590442209596,
-      "std_z": 1.7808518393475958,
-      "max_z": 49.68903706749061
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/STAND_14_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "FINISHING_BLOCK_MASTER_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1043,
-      "outlier_ratio": 5.213175388613985,
-      "severe_outlier_count": 485,
-      "severe_outlier_ratio": 2.424151546958565,
-      "baseline_stability": 0.5619308356137429,
-      "mean_z": 0.7411861586588314,
-      "std_z": 1.6411587643948842,
-      "max_z": 43.89761403998306
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE",
-    "category": "05_Stand_Torque",
-    "category_description": "스탠드 토크",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 1049,
-      "outlier_ratio": 5.2431648922877,
-      "severe_outlier_count": 499,
-      "severe_outlier_ratio": 2.4941270555305644,
-      "baseline_stability": 0.5601812947272401,
-      "mean_z": 0.7497528209037329,
-      "std_z": 1.6409166867877547,
-      "max_z": 43.89761403998306
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/05_Stand_Torque/FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_1_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 453,
-      "outlier_ratio": 2.2642075273654223,
-      "severe_outlier_count": 259,
-      "severe_outlier_ratio": 1.2945469085819963,
-      "baseline_stability": 0.7441369336646395,
-      "mean_z": 0.554059507478537,
-      "std_z": 1.4524899670305598,
-      "max_z": 49.68903706749061
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_1_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_2_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 473,
-      "outlier_ratio": 2.364172539611136,
-      "severe_outlier_count": 267,
-      "severe_outlier_ratio": 1.334532913480282,
-      "baseline_stability": 0.7059485695869239,
-      "mean_z": 0.5357495166481845,
-      "std_z": 1.4937689554525895,
-      "max_z": 43.98864076397748
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_2_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_3_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 457,
-      "outlier_ratio": 2.284200529814565,
-      "severe_outlier_count": 257,
-      "severe_outlier_ratio": 1.284550407357425,
-      "baseline_stability": 0.7490706235561913,
-      "mean_z": 0.5645950520626438,
-      "std_z": 1.4685347080992428,
-      "max_z": 49.68903706749061
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_3_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_4_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 456,
-      "outlier_ratio": 2.2792022792022792,
-      "severe_outlier_count": 254,
-      "severe_outlier_ratio": 1.2695556555205678,
-      "baseline_stability": 0.7822490289504755,
-      "mean_z": 0.5668472931342493,
-      "std_z": 1.458984069281595,
-      "max_z": 49.6890370674906
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_4_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_5_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 459,
-      "outlier_ratio": 2.2941970310391366,
-      "severe_outlier_count": 259,
-      "severe_outlier_ratio": 1.2945469085819963,
-      "baseline_stability": 0.7305279833302554,
-      "mean_z": 0.5523608926020093,
-      "std_z": 1.4889059771172475,
-      "max_z": 44.49719659193001
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_5_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_6_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 457,
-      "outlier_ratio": 2.284200529814565,
-      "severe_outlier_count": 258,
-      "severe_outlier_ratio": 1.2895486579697106,
-      "baseline_stability": 0.7482447058532522,
-      "mean_z": 0.5631348345164611,
-      "std_z": 1.4819308351991802,
-      "max_z": 49.68903706749061
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_6_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_7_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 461,
-      "outlier_ratio": 2.3041935322637075,
-      "severe_outlier_count": 262,
-      "severe_outlier_ratio": 1.3095416604188534,
-      "baseline_stability": 0.7319518070853894,
-      "mean_z": 0.5523297575080841,
-      "std_z": 1.5016917245304047,
-      "max_z": 44.83302908590822
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_7_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_8_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 462,
-      "outlier_ratio": 2.3091917828759936,
-      "severe_outlier_count": 263,
-      "severe_outlier_ratio": 1.314539911031139,
-      "baseline_stability": 0.7275724323640315,
-      "mean_z": 0.5545722789067207,
-      "std_z": 1.5501085123033027,
-      "max_z": 45.62180885480182
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_8_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_9_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 457,
-      "outlier_ratio": 2.284200529814565,
-      "severe_outlier_count": 258,
-      "severe_outlier_ratio": 1.2895486579697106,
-      "baseline_stability": 0.7828177345768657,
-      "mean_z": 0.5553094757521059,
-      "std_z": 1.5064039984069202,
-      "max_z": 49.68903706749061
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_9_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_10_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 460,
-      "outlier_ratio": 2.299195281651422,
-      "severe_outlier_count": 260,
-      "severe_outlier_ratio": 1.299545159194282,
-      "baseline_stability": 0.7869665126290967,
-      "mean_z": 0.5567300342817032,
-      "std_z": 1.5064106530973158,
-      "max_z": 49.68903706749061
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_10_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_11_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 508,
-      "outlier_ratio": 2.5391113110411356,
-      "severe_outlier_count": 304,
-      "severe_outlier_ratio": 1.519468186134853,
-      "baseline_stability": 0.7548768779048354,
-      "mean_z": 0.43767432136743295,
-      "std_z": 1.437073337141405,
-      "max_z": 45.40925549374404
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_11_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_12_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 460,
-      "outlier_ratio": 2.299195281651422,
-      "severe_outlier_count": 262,
-      "severe_outlier_ratio": 1.3095416604188534,
-      "baseline_stability": 0.7862817580188521,
-      "mean_z": 0.5569576403169683,
-      "std_z": 1.5151840699983663,
-      "max_z": 49.74676750212715
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_12_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_13_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 459,
-      "outlier_ratio": 2.2941970310391366,
-      "severe_outlier_count": 261,
-      "severe_outlier_ratio": 1.3045434098065678,
-      "baseline_stability": 0.7751331504618613,
-      "mean_z": 0.5610642090374139,
-      "std_z": 1.5150267661549004,
-      "max_z": 49.75182372977752
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_13_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_14_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 461,
-      "outlier_ratio": 2.3041935322637075,
-      "severe_outlier_count": 260,
-      "severe_outlier_ratio": 1.299545159194282,
-      "baseline_stability": 0.7860741858888115,
-      "mean_z": 0.5651697288056482,
-      "std_z": 1.5177205984602409,
-      "max_z": 49.75838034421692
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/STAND_14_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "FINISHING_BLOCK_ACTUAL_SPEED",
-    "category": "06_Stand_Speed",
-    "category_description": "스탠드 속도",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 851,
-      "outlier_ratio": 4.253511271055131,
-      "severe_outlier_count": 662,
-      "severe_outlier_ratio": 3.3088419053331335,
-      "baseline_stability": 0.7211545335017409,
-      "mean_z": 0.6890573477834563,
-      "std_z": 1.6904147414478403,
-      "max_z": 43.89761403998306
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/06_Stand_Speed/FINISHING_BLOCK_ACTUAL_SPEED_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_1_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 590,
-      "outlier_ratio": 2.948967861248563,
-      "severe_outlier_count": 294,
-      "severe_outlier_ratio": 1.4694856800119958,
-      "baseline_stability": 0.790420066621911,
-      "mean_z": 0.5074674184640601,
-      "std_z": 1.509632818493753,
-      "max_z": 50.22947736180025
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_1_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_2_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 600,
-      "outlier_ratio": 2.99895036737142,
-      "severe_outlier_count": 286,
-      "severe_outlier_ratio": 1.4294996751137101,
-      "baseline_stability": 0.7905202931972974,
-      "mean_z": 0.504247676781209,
-      "std_z": 1.5083842123270552,
-      "max_z": 50.22947736180025
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_2_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_3_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 603,
-      "outlier_ratio": 3.013945119208277,
-      "severe_outlier_count": 264,
-      "severe_outlier_ratio": 1.3195381616434247,
-      "baseline_stability": 0.7909252291170668,
-      "mean_z": 0.50646627961488,
-      "std_z": 1.5385926686548363,
-      "max_z": 50.22947736180026
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_3_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_4_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 570,
-      "outlier_ratio": 2.849002849002849,
-      "severe_outlier_count": 267,
-      "severe_outlier_ratio": 1.334532913480282,
-      "baseline_stability": 0.7912787717460179,
-      "mean_z": 0.509166641972795,
-      "std_z": 1.5562243594185912,
-      "max_z": 50.22947736180025
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_4_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_5_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 565,
-      "outlier_ratio": 2.8240115959414203,
-      "severe_outlier_count": 258,
-      "severe_outlier_ratio": 1.2895486579697106,
-      "baseline_stability": 0.7927194228135058,
-      "mean_z": 0.5001092731178486,
-      "std_z": 1.4541646741816219,
-      "max_z": 50.3090488360572
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_5_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_6_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 568,
-      "outlier_ratio": 2.8390063477782777,
-      "severe_outlier_count": 263,
-      "severe_outlier_ratio": 1.314539911031139,
-      "baseline_stability": 0.7922381060238515,
-      "mean_z": 0.50208061139031,
-      "std_z": 1.4626281104902785,
-      "max_z": 50.3090488360572
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_6_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_7_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 569,
-      "outlier_ratio": 2.8440045983905633,
-      "severe_outlier_count": 272,
-      "severe_outlier_ratio": 1.3595241665417104,
-      "baseline_stability": 0.7920040961740543,
-      "mean_z": 0.5032856052745619,
-      "std_z": 1.4691989515935624,
-      "max_z": 50.309048836057194
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_7_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_8_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 563,
-      "outlier_ratio": 2.8140150947168494,
-      "severe_outlier_count": 275,
-      "severe_outlier_ratio": 1.3745189183785675,
-      "baseline_stability": 0.7916612234908229,
-      "mean_z": 0.5044844965331102,
-      "std_z": 1.474135695157895,
-      "max_z": 50.3090488360572
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_8_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_9_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 575,
-      "outlier_ratio": 2.873994102064277,
-      "severe_outlier_count": 273,
-      "severe_outlier_ratio": 1.364522417153996,
-      "baseline_stability": 0.7912816208619107,
-      "mean_z": 0.5064855648320782,
-      "std_z": 1.4868603495541257,
-      "max_z": 50.309048836057194
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_9_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_10_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 572,
-      "outlier_ratio": 2.8589993502274202,
-      "severe_outlier_count": 280,
-      "severe_outlier_ratio": 1.399510171439996,
-      "baseline_stability": 0.7907265045758711,
-      "mean_z": 0.507202749504264,
-      "std_z": 1.4922552838669165,
-      "max_z": 50.309048836057194
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_10_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_11_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 574,
-      "outlier_ratio": 2.868995851451992,
-      "severe_outlier_count": 281,
-      "severe_outlier_ratio": 1.4045084220522817,
-      "baseline_stability": 0.7902753846619344,
-      "mean_z": 0.5074418956611698,
-      "std_z": 1.4965165989022418,
-      "max_z": 50.309048836057194
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_11_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_12_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 597,
-      "outlier_ratio": 2.983955615534563,
-      "severe_outlier_count": 279,
-      "severe_outlier_ratio": 1.3945119208277104,
-      "baseline_stability": 0.7899370110951496,
-      "mean_z": 0.5078052304175077,
-      "std_z": 1.4996684841863688,
-      "max_z": 50.3090488360572
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_12_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_13_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 597,
-      "outlier_ratio": 2.983955615534563,
-      "severe_outlier_count": 279,
-      "severe_outlier_ratio": 1.3945119208277104,
-      "baseline_stability": 0.7899370110951496,
-      "mean_z": 0.5078052304175077,
-      "std_z": 1.4996684841863688,
-      "max_z": 50.3090488360572
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_13_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "STAND_14_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "moderate_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 610,
-      "outlier_ratio": 3.048932873494277,
-      "severe_outlier_count": 274,
-      "severe_outlier_ratio": 1.369520667766282,
-      "baseline_stability": 0.7896157636203813,
-      "mean_z": 0.5079112636582929,
-      "std_z": 1.504136095889325,
-      "max_z": 50.309048836057194
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/STAND_14_LOAD_rolling_zscore.png"
-    }
-  },
-  {
-    "tag_name": "FINISHING_BLOCK_LOAD",
-    "category": "07_Stand_Load",
-    "category_description": "스탠드 부하",
-    "steel_grade": "N5",
-    "status": "low_anomaly",
-    "filter_stats": {
-      "original_count": 20152,
-      "filters_applied": [
-        "ROLL_CHANGE"
-      ],
-      "records_removed": {
-        "roll_change": 145
-      },
-      "final_count": 20007,
-      "total_removed": 145,
-      "removal_rate": 0.7195315601429139
-    },
-    "rolling_zscore": {
-      "window_hours": 24,
-      "z_threshold": 3.0,
-      "outlier_count": 593,
-      "outlier_ratio": 2.96396261308542,
-      "severe_outlier_count": 292,
-      "severe_outlier_ratio": 1.4594891787874245,
-      "baseline_stability": 0.7890982330128324,
-      "mean_z": 0.5075273305389801,
-      "std_z": 1.5128592612000253,
-      "max_z": 50.3090488360572
-    },
-    "charts": {
-      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/07_Stand_Load/FINISHING_BLOCK_LOAD_rolling_zscore.png"
-    }
-  },
-  {
     "tag_name": "PINCHROLL_2_ACTUAL_SPEED",
     "category": "08_Pinchroll",
     "category_description": "핀치롤",
@@ -2302,9 +324,9 @@
     }
   },
   {
-    "tag_name": "PR6L1_ACT_TORQUE",
-    "category": "09_PR_Detailed",
-    "category_description": "PR 상세 토크",
+    "tag_name": "PINCHROLL_3_REFERENCE_SPEED",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
     "steel_grade": "N5",
     "status": "moderate_anomaly",
     "filter_stats": {
@@ -2324,14 +346,86 @@
     "rolling_zscore": {
       "window_hours": 24,
       "z_threshold": 3.0,
-      "outlier_count": 592,
-      "outlier_ratio": 4.505327245053273,
-      "severe_outlier_count": 96,
-      "severe_outlier_ratio": 0.730593607305936,
-      "baseline_stability": 0.758084008556588,
-      "mean_z": -0.12795324890402746,
-      "std_z": 1.1657379079646406,
-      "max_z": 11.145109060622602
+      "outlier_count": 437,
+      "outlier_ratio": 3.3257229832572297,
+      "severe_outlier_count": 252,
+      "severe_outlier_ratio": 1.9178082191780823,
+      "baseline_stability": 0.0,
+      "mean_z": 0.34001246747354164,
+      "std_z": 1.5065444605929967,
+      "max_z": 29.104738760788948
+    },
+    "charts": {
+      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/08_Pinchroll/PINCHROLL_3_REFERENCE_SPEED_rolling_zscore.png"
+    }
+  },
+  {
+    "tag_name": "PINCHROLL_4_REFERENCE_SPEED",
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "steel_grade": "N5",
+    "status": "moderate_anomaly",
+    "filter_stats": {
+      "original_count": 20152,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 6983,
+        "roll_change": 145
+      },
+      "final_count": 13140,
+      "total_removed": 7012,
+      "removal_rate": 34.795553791186975
+    },
+    "rolling_zscore": {
+      "window_hours": 24,
+      "z_threshold": 3.0,
+      "outlier_count": 486,
+      "outlier_ratio": 3.6986301369863015,
+      "severe_outlier_count": 272,
+      "severe_outlier_ratio": 2.070015220700152,
+      "baseline_stability": 0.3311398055550486,
+      "mean_z": 0.2953347750911395,
+      "std_z": 1.369640526635462,
+      "max_z": 33.4454947410238
+    },
+    "charts": {
+      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/08_Pinchroll/PINCHROLL_4_REFERENCE_SPEED_rolling_zscore.png"
+    }
+  },
+  {
+    "tag_name": "PR6L1_ACT_TORQUE",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "steel_grade": "N5",
+    "status": "moderate_anomaly",
+    "filter_stats": {
+      "original_count": 8637,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 3114,
+        "roll_change": 139
+      },
+      "final_count": 5503,
+      "total_removed": 3134,
+      "removal_rate": 36.28574736598356
+    },
+    "rolling_zscore": {
+      "window_hours": 24,
+      "z_threshold": 3.0,
+      "outlier_count": 250,
+      "outlier_ratio": 4.54297655824096,
+      "severe_outlier_count": 37,
+      "severe_outlier_ratio": 0.672360530619662,
+      "baseline_stability": 0.7488788640951287,
+      "mean_z": -0.15360401216786243,
+      "std_z": 1.1799090646426043,
+      "max_z": 9.764832434209529
     },
     "charts": {
       "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR6L1_ACT_TORQUE_rolling_zscore.png"
@@ -2340,34 +434,34 @@
   {
     "tag_name": "PR6L2_ACT_TORQUE",
     "category": "09_PR_Detailed",
-    "category_description": "PR 상세 토크",
+    "category_description": "PR 상세 (토크+속도)",
     "steel_grade": "N5",
     "status": "moderate_anomaly",
     "filter_stats": {
-      "original_count": 20152,
+      "original_count": 11515,
       "filters_applied": [
         "COILING_TRANSIENT",
         "ROLL_CHANGE"
       ],
       "records_removed": {
-        "coiling_transient": 6983,
-        "roll_change": 145
+        "coiling_transient": 4037,
+        "roll_change": 140
       },
-      "final_count": 13140,
-      "total_removed": 7012,
-      "removal_rate": 34.795553791186975
+      "final_count": 7453,
+      "total_removed": 4062,
+      "removal_rate": 35.275727312201475
     },
     "rolling_zscore": {
       "window_hours": 24,
       "z_threshold": 3.0,
-      "outlier_count": 735,
-      "outlier_ratio": 5.5936073059360725,
-      "severe_outlier_count": 139,
-      "severe_outlier_ratio": 1.0578386605783867,
-      "baseline_stability": 0.6357720214681684,
-      "mean_z": -0.09656829998575481,
-      "std_z": 1.2773747378212505,
-      "max_z": 14.517140986264566
+      "outlier_count": 378,
+      "outlier_ratio": 5.07178317456058,
+      "severe_outlier_count": 73,
+      "severe_outlier_ratio": 0.9794713538172548,
+      "baseline_stability": 0.6344977058029972,
+      "mean_z": -0.06876443259523152,
+      "std_z": 1.3087753565050728,
+      "max_z": 12.685381924323934
     },
     "charts": {
       "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR6L2_ACT_TORQUE_rolling_zscore.png"
@@ -2376,34 +470,34 @@
   {
     "tag_name": "PR7L1_ACT_TORQUE",
     "category": "09_PR_Detailed",
-    "category_description": "PR 상세 토크",
+    "category_description": "PR 상세 (토크+속도)",
     "steel_grade": "N5",
     "status": "moderate_anomaly",
     "filter_stats": {
-      "original_count": 20152,
+      "original_count": 8637,
       "filters_applied": [
         "COILING_TRANSIENT",
         "ROLL_CHANGE"
       ],
       "records_removed": {
-        "coiling_transient": 6983,
-        "roll_change": 145
+        "coiling_transient": 3114,
+        "roll_change": 139
       },
-      "final_count": 13140,
-      "total_removed": 7012,
-      "removal_rate": 34.795553791186975
+      "final_count": 5503,
+      "total_removed": 3134,
+      "removal_rate": 36.28574736598356
     },
     "rolling_zscore": {
       "window_hours": 24,
       "z_threshold": 3.0,
-      "outlier_count": 740,
-      "outlier_ratio": 5.6316590563165905,
-      "severe_outlier_count": 120,
-      "severe_outlier_ratio": 0.91324200913242,
-      "baseline_stability": 0.7298049466207044,
-      "mean_z": -0.07936296478896732,
-      "std_z": 1.209408364117232,
-      "max_z": 17.133845261605547
+      "outlier_count": 327,
+      "outlier_ratio": 5.942213338179175,
+      "severe_outlier_count": 50,
+      "severe_outlier_ratio": 0.9085953116481919,
+      "baseline_stability": 0.7269055278970133,
+      "mean_z": -0.09330292082731309,
+      "std_z": 1.21354815962117,
+      "max_z": 13.488899668049882
     },
     "charts": {
       "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR7L1_ACT_TORQUE_rolling_zscore.png"
@@ -2412,34 +506,34 @@
   {
     "tag_name": "PR7L2_ACT_TORQUE",
     "category": "09_PR_Detailed",
-    "category_description": "PR 상세 토크",
+    "category_description": "PR 상세 (토크+속도)",
     "steel_grade": "N5",
     "status": "moderate_anomaly",
     "filter_stats": {
-      "original_count": 20152,
+      "original_count": 11515,
       "filters_applied": [
         "COILING_TRANSIENT",
         "ROLL_CHANGE"
       ],
       "records_removed": {
-        "coiling_transient": 6983,
-        "roll_change": 145
+        "coiling_transient": 4037,
+        "roll_change": 140
       },
-      "final_count": 13140,
-      "total_removed": 7012,
-      "removal_rate": 34.795553791186975
+      "final_count": 7453,
+      "total_removed": 4062,
+      "removal_rate": 35.275727312201475
     },
     "rolling_zscore": {
       "window_hours": 24,
       "z_threshold": 3.0,
-      "outlier_count": 785,
-      "outlier_ratio": 5.974124809741248,
-      "severe_outlier_count": 134,
-      "severe_outlier_ratio": 1.0197869101978692,
-      "baseline_stability": 0.698552577351388,
-      "mean_z": -0.04845271168984448,
-      "std_z": 1.2399367091202849,
-      "max_z": 14.709978171880008
+      "outlier_count": 401,
+      "outlier_ratio": 5.380383738092044,
+      "severe_outlier_count": 74,
+      "severe_outlier_ratio": 0.9928887696229707,
+      "baseline_stability": 0.6958442346117817,
+      "mean_z": -0.03383044068472999,
+      "std_z": 1.2499693377469623,
+      "max_z": 14.110047161852783
     },
     "charts": {
       "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR7L2_ACT_TORQUE_rolling_zscore.png"
@@ -2448,34 +542,34 @@
   {
     "tag_name": "PR8L1_ACT_TORQUE",
     "category": "09_PR_Detailed",
-    "category_description": "PR 상세 토크",
+    "category_description": "PR 상세 (토크+속도)",
     "steel_grade": "N5",
     "status": "low_anomaly",
     "filter_stats": {
-      "original_count": 20152,
+      "original_count": 8637,
       "filters_applied": [
         "COILING_TRANSIENT",
         "ROLL_CHANGE"
       ],
       "records_removed": {
-        "coiling_transient": 6983,
-        "roll_change": 145
+        "coiling_transient": 3114,
+        "roll_change": 139
       },
-      "final_count": 13140,
-      "total_removed": 7012,
-      "removal_rate": 34.795553791186975
+      "final_count": 5503,
+      "total_removed": 3134,
+      "removal_rate": 36.28574736598356
     },
     "rolling_zscore": {
       "window_hours": 24,
       "z_threshold": 3.0,
-      "outlier_count": 227,
-      "outlier_ratio": 1.7275494672754947,
-      "severe_outlier_count": 135,
-      "severe_outlier_ratio": 1.0273972602739725,
-      "baseline_stability": 0.6798383655922229,
-      "mean_z": 0.11959608489128748,
-      "std_z": 1.292554288189857,
-      "max_z": 16.17405320810304
+      "outlier_count": 104,
+      "outlier_ratio": 1.889878248228239,
+      "severe_outlier_count": 60,
+      "severe_outlier_ratio": 1.0903143739778303,
+      "baseline_stability": 0.6769094769485746,
+      "mean_z": 0.09579386257028784,
+      "std_z": 1.3195103898616272,
+      "max_z": 13.955219325108345
     },
     "charts": {
       "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR8L1_ACT_TORQUE_rolling_zscore.png"
@@ -2484,37 +578,253 @@
   {
     "tag_name": "PR9L1_ACT_TORQUE",
     "category": "09_PR_Detailed",
-    "category_description": "PR 상세 토크",
+    "category_description": "PR 상세 (토크+속도)",
     "steel_grade": "N5",
     "status": "low_anomaly",
     "filter_stats": {
-      "original_count": 20152,
+      "original_count": 8637,
       "filters_applied": [
         "COILING_TRANSIENT",
         "ROLL_CHANGE"
       ],
       "records_removed": {
-        "coiling_transient": 6983,
-        "roll_change": 145
+        "coiling_transient": 3114,
+        "roll_change": 139
       },
-      "final_count": 13140,
-      "total_removed": 7012,
-      "removal_rate": 34.795553791186975
+      "final_count": 5503,
+      "total_removed": 3134,
+      "removal_rate": 36.28574736598356
     },
     "rolling_zscore": {
       "window_hours": 24,
       "z_threshold": 3.0,
-      "outlier_count": 213,
-      "outlier_ratio": 1.6210045662100456,
-      "severe_outlier_count": 130,
-      "severe_outlier_ratio": 0.989345509893455,
-      "baseline_stability": 0.6830095727840735,
-      "mean_z": -0.24871044409651313,
-      "std_z": 1.2647331611081634,
-      "max_z": 16.854991190641563
+      "outlier_count": 103,
+      "outlier_ratio": 1.8717063419952753,
+      "severe_outlier_count": 64,
+      "severe_outlier_ratio": 1.1630019989096856,
+      "baseline_stability": 0.6805592527254025,
+      "mean_z": -0.27864002950834604,
+      "std_z": 1.2836439287974655,
+      "max_z": 14.403006640393606
     },
     "charts": {
       "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR9L1_ACT_TORQUE_rolling_zscore.png"
+    }
+  },
+  {
+    "tag_name": "PR6L1_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "steel_grade": "N5",
+    "status": "moderate_anomaly",
+    "filter_stats": {
+      "original_count": 8637,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 3114,
+        "roll_change": 139
+      },
+      "final_count": 5503,
+      "total_removed": 3134,
+      "removal_rate": 36.28574736598356
+    },
+    "rolling_zscore": {
+      "window_hours": 24,
+      "z_threshold": 3.0,
+      "outlier_count": 229,
+      "outlier_ratio": 4.161366527348719,
+      "severe_outlier_count": 151,
+      "severe_outlier_ratio": 2.7439578411775396,
+      "baseline_stability": 0.40076075792709054,
+      "mean_z": -0.016392501981355227,
+      "std_z": 1.4196498736263168,
+      "max_z": 27.225478592329527
+    },
+    "charts": {
+      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR6L1_ACT_SPD_MS_rolling_zscore.png"
+    }
+  },
+  {
+    "tag_name": "PR6L2_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "steel_grade": "N5",
+    "status": "moderate_anomaly",
+    "filter_stats": {
+      "original_count": 11515,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 4037,
+        "roll_change": 140
+      },
+      "final_count": 7453,
+      "total_removed": 4062,
+      "removal_rate": 35.275727312201475
+    },
+    "rolling_zscore": {
+      "window_hours": 24,
+      "z_threshold": 3.0,
+      "outlier_count": 386,
+      "outlier_ratio": 5.179122501006306,
+      "severe_outlier_count": 243,
+      "severe_outlier_ratio": 3.2604320407889444,
+      "baseline_stability": 0.16895549305618152,
+      "mean_z": 0.1490161973380942,
+      "std_z": 1.6974698283682976,
+      "max_z": 48.04523416661337
+    },
+    "charts": {
+      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR6L2_ACT_SPD_MS_rolling_zscore.png"
+    }
+  },
+  {
+    "tag_name": "PR7L1_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "steel_grade": "N5",
+    "status": "moderate_anomaly",
+    "filter_stats": {
+      "original_count": 8637,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 3114,
+        "roll_change": 139
+      },
+      "final_count": 5503,
+      "total_removed": 3134,
+      "removal_rate": 36.28574736598356
+    },
+    "rolling_zscore": {
+      "window_hours": 24,
+      "z_threshold": 3.0,
+      "outlier_count": 201,
+      "outlier_ratio": 3.6525531528257313,
+      "severe_outlier_count": 146,
+      "severe_outlier_ratio": 2.6530983100127203,
+      "baseline_stability": 0.39000484161306226,
+      "mean_z": -0.017815800254903126,
+      "std_z": 1.4219893580805953,
+      "max_z": 27.166806738897986
+    },
+    "charts": {
+      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR7L1_ACT_SPD_MS_rolling_zscore.png"
+    }
+  },
+  {
+    "tag_name": "PR7L2_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "steel_grade": "N5",
+    "status": "moderate_anomaly",
+    "filter_stats": {
+      "original_count": 11515,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 4037,
+        "roll_change": 140
+      },
+      "final_count": 7453,
+      "total_removed": 4062,
+      "removal_rate": 35.275727312201475
+    },
+    "rolling_zscore": {
+      "window_hours": 24,
+      "z_threshold": 3.0,
+      "outlier_count": 373,
+      "outlier_ratio": 5.004696095532,
+      "severe_outlier_count": 241,
+      "severe_outlier_ratio": 3.2335972091775127,
+      "baseline_stability": 0.16351732044297163,
+      "mean_z": 0.1440196684962953,
+      "std_z": 1.6871008113336785,
+      "max_z": 47.976717687422614
+    },
+    "charts": {
+      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR7L2_ACT_SPD_MS_rolling_zscore.png"
+    }
+  },
+  {
+    "tag_name": "PR8L1_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "steel_grade": "N5",
+    "status": "moderate_anomaly",
+    "filter_stats": {
+      "original_count": 8637,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 3114,
+        "roll_change": 139
+      },
+      "final_count": 5503,
+      "total_removed": 3134,
+      "removal_rate": 36.28574736598356
+    },
+    "rolling_zscore": {
+      "window_hours": 24,
+      "z_threshold": 3.0,
+      "outlier_count": 203,
+      "outlier_ratio": 3.688896965291659,
+      "severe_outlier_count": 141,
+      "severe_outlier_ratio": 2.562238778847901,
+      "baseline_stability": 0.5780193042234125,
+      "mean_z": -0.09932602845061106,
+      "std_z": 1.2620200653690912,
+      "max_z": 15.568251546043884
+    },
+    "charts": {
+      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR8L1_ACT_SPD_MS_rolling_zscore.png"
+    }
+  },
+  {
+    "tag_name": "PR9L1_ACT_SPD_MS",
+    "category": "09_PR_Detailed",
+    "category_description": "PR 상세 (토크+속도)",
+    "steel_grade": "N5",
+    "status": "moderate_anomaly",
+    "filter_stats": {
+      "original_count": 8637,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 3114,
+        "roll_change": 139
+      },
+      "final_count": 5503,
+      "total_removed": 3134,
+      "removal_rate": 36.28574736598356
+    },
+    "rolling_zscore": {
+      "window_hours": 24,
+      "z_threshold": 3.0,
+      "outlier_count": 184,
+      "outlier_ratio": 3.343630746865346,
+      "severe_outlier_count": 131,
+      "severe_outlier_ratio": 2.380519716518263,
+      "baseline_stability": 0.6281639053712691,
+      "mean_z": -0.07156098350578091,
+      "std_z": 1.236538038473981,
+      "max_z": 13.240587639408117
+    },
+    "charts": {
+      "rolling_zscore": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/rolling_zscore/N5/D20/09_PR_Detailed/PR9L1_ACT_SPD_MS_rolling_zscore.png"
     }
   }
 ]
