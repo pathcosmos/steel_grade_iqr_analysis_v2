@@ -1,0 +1,21 @@
+﻿steel_grade,method,tag_count,avg_outlier_ratio,max_outlier_ratio,problem_tag_count,problem_tag_pct,risk_distribution
+B5,CUSUM,46,15.96,62.22,9,19.6,drift_detected:41; stable:5
+B5,IQR,46,11.25,21.28,30,65.2,caution:2; danger:23; normal:14; warning:7
+B5,Mahalanobis,46,2.33,3.19,0,0.0,low_anomaly:27; moderate_anomaly:19
+B5,Rolling_Z,46,0.51,3.66,3,6.5,low_anomaly:41; moderate_anomaly:3; unstable:2
+B5,STL,15,18.62,37.50,15,100.0,high_residual:11; moderate_residual:4
+D4,CUSUM,45,77.42,99.80,43,95.6,drift_detected:45
+D4,IQR,46,6.12,39.29,13,28.3,critical:1; danger:10; normal:33; warning:2
+D4,Mahalanobis,46,3.52,5.50,11,23.9,low_anomaly:19; moderate_anomaly:27
+D4,Rolling_Z,46,2.21,6.32,15,32.6,low_anomaly:16; moderate_anomaly:15; unstable:15
+D4,STL,34,38.91,45.12,34,100.0,high_residual:32; strong_seasonal:2
+D5,CUSUM,46,35.58,85.81,26,56.5,drift_detected:46
+D5,IQR,46,9.38,32.92,19,41.3,caution:2; critical:2; danger:17; normal:25
+D5,Mahalanobis,46,3.67,4.48,0,0.0,low_anomaly:12; moderate_anomaly:34
+D5,Rolling_Z,46,1.32,3.38,5,10.9,low_anomaly:22; moderate_anomaly:5; unstable:19
+D5,STL,46,40.63,47.37,46,100.0,high_residual:43; strong_seasonal:3
+N5,CUSUM,92,45.73,99.94,60,65.2,drift_detected:92
+N5,IQR,92,11.00,39.53,42,45.7,caution:15; critical:10; danger:24; normal:35; warning:8
+N5,Mahalanobis,92,5.79,9.05,53,57.6,low_anomaly:4; moderate_anomaly:88
+N5,Rolling_Z,92,2.15,7.46,27,29.3,low_anomaly:37; moderate_anomaly:27; unstable:28
+N5,STL,92,38.95,47.49,92,100.0,high_residual:89; strong_seasonal:3
