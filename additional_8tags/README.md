@@ -90,15 +90,15 @@
 
 ### 기법별 차트 수
 
-| 기법 | PNG 차트 수 | 강종별 리포트 |
-|------|-------------|-------------|
+| 기법 | PNG 차트 수 | 리포트 수 |
+|------|-------------|----------|
 | IQR | 7,792 | 10개 (강종×규격별) |
-| CUSUM-EWMA | 2,211 | 4개 (강종별) |
-| Rolling Z-Score | 738 | 4개 (강종별) |
-| STL Residual | 1,346 | 4개 (강종별) |
-| Mahalanobis | 210 | 4개 (강종별) |
+| CUSUM-EWMA | 687 | 10개 (강종×규격별) |
+| Rolling Z-Score | 230 | 10개 (강종×규격별) |
+| STL Residual | 374 | 9개 (B5/D16 데이터 부족 제외) |
+| Mahalanobis | 90 | 10개 (강종×규격별) |
 | PPT 발표 차트 | 348 | 6개 (종합) |
-| **합계** | **12,645** | **32개** |
+| **합계** | **9,521** | **55개** |
 
 ## 폴더 구조
 
@@ -181,41 +181,66 @@ additional_8tags/
 | N5 | D16 | [IQR_ANALYSIS_REPORT_N5_D16_KO.md](N5/D16/IQR_ANALYSIS_REPORT_N5_D16_KO.md) | [JSON](N5/D16/iqr_analysis_N5_D16_results.json) |
 | N5 | D20 | [IQR_ANALYSIS_REPORT_N5_D20_KO.md](N5/D20/IQR_ANALYSIS_REPORT_N5_D20_KO.md) | [JSON](N5/D20/iqr_analysis_N5_D20_results.json) |
 
-### CUSUM-EWMA 리포트 (4개)
+### CUSUM-EWMA 리포트 (10개, 사이즈별)
 
-| 강종 | 리포트 | 데이터 |
-|------|--------|--------|
-| B5 | [CUSUM_EWMA_REPORT_B5_KO.md](cusum_ewma/B5/CUSUM_EWMA_REPORT_B5_KO.md) | [JSON](cusum_ewma/B5/cusum_ewma_B5_results.json) |
-| D4 | [CUSUM_EWMA_REPORT_D4_KO.md](cusum_ewma/D4/CUSUM_EWMA_REPORT_D4_KO.md) | [JSON](cusum_ewma/D4/cusum_ewma_D4_results.json) |
-| D5 | [CUSUM_EWMA_REPORT_D5_KO.md](cusum_ewma/D5/CUSUM_EWMA_REPORT_D5_KO.md) | [JSON](cusum_ewma/D5/cusum_ewma_D5_results.json) |
-| N5 | [CUSUM_EWMA_REPORT_N5_KO.md](cusum_ewma/N5/CUSUM_EWMA_REPORT_N5_KO.md) | [JSON](cusum_ewma/N5/cusum_ewma_N5_results.json) |
+| 강종 | 규격 | 리포트 | 데이터 |
+|------|------|--------|--------|
+| B5 | D13 | [CUSUM_EWMA_REPORT_B5_D13_KO.md](cusum_ewma/B5/D13/CUSUM_EWMA_REPORT_B5_D13_KO.md) | [JSON](cusum_ewma/B5/D13/cusum_ewma_B5_D13_results.json) |
+| B5 | D16 | [CUSUM_EWMA_REPORT_B5_D16_KO.md](cusum_ewma/B5/D16/CUSUM_EWMA_REPORT_B5_D16_KO.md) | [JSON](cusum_ewma/B5/D16/cusum_ewma_B5_D16_results.json) |
+| D4 | D10 | [CUSUM_EWMA_REPORT_D4_D10_KO.md](cusum_ewma/D4/D10/CUSUM_EWMA_REPORT_D4_D10_KO.md) | [JSON](cusum_ewma/D4/D10/cusum_ewma_D4_D10_results.json) |
+| D4 | D13 | [CUSUM_EWMA_REPORT_D4_D13_KO.md](cusum_ewma/D4/D13/CUSUM_EWMA_REPORT_D4_D13_KO.md) | [JSON](cusum_ewma/D4/D13/cusum_ewma_D4_D13_results.json) |
+| D5 | D10 | [CUSUM_EWMA_REPORT_D5_D10_KO.md](cusum_ewma/D5/D10/CUSUM_EWMA_REPORT_D5_D10_KO.md) | [JSON](cusum_ewma/D5/D10/cusum_ewma_D5_D10_results.json) |
+| D5 | D13 | [CUSUM_EWMA_REPORT_D5_D13_KO.md](cusum_ewma/D5/D13/CUSUM_EWMA_REPORT_D5_D13_KO.md) | [JSON](cusum_ewma/D5/D13/cusum_ewma_D5_D13_results.json) |
+| N5 | D10 | [CUSUM_EWMA_REPORT_N5_D10_KO.md](cusum_ewma/N5/D10/CUSUM_EWMA_REPORT_N5_D10_KO.md) | [JSON](cusum_ewma/N5/D10/cusum_ewma_N5_D10_results.json) |
+| N5 | D12 | [CUSUM_EWMA_REPORT_N5_D12_KO.md](cusum_ewma/N5/D12/CUSUM_EWMA_REPORT_N5_D12_KO.md) | [JSON](cusum_ewma/N5/D12/cusum_ewma_N5_D12_results.json) |
+| N5 | D16 | [CUSUM_EWMA_REPORT_N5_D16_KO.md](cusum_ewma/N5/D16/CUSUM_EWMA_REPORT_N5_D16_KO.md) | [JSON](cusum_ewma/N5/D16/cusum_ewma_N5_D16_results.json) |
+| N5 | D20 | [CUSUM_EWMA_REPORT_N5_D20_KO.md](cusum_ewma/N5/D20/CUSUM_EWMA_REPORT_N5_D20_KO.md) | [JSON](cusum_ewma/N5/D20/cusum_ewma_N5_D20_results.json) |
 
-### Rolling Z-Score 리포트 (4개)
+### Rolling Z-Score 리포트 (10개, 사이즈별)
 
-| 강종 | 리포트 | 데이터 |
-|------|--------|--------|
-| B5 | [ROLLING_ZSCORE_REPORT_B5_KO.md](rolling_zscore/B5/ROLLING_ZSCORE_REPORT_B5_KO.md) | [JSON](rolling_zscore/B5/rolling_zscore_B5_results.json) |
-| D4 | [ROLLING_ZSCORE_REPORT_D4_KO.md](rolling_zscore/D4/ROLLING_ZSCORE_REPORT_D4_KO.md) | [JSON](rolling_zscore/D4/rolling_zscore_D4_results.json) |
-| D5 | [ROLLING_ZSCORE_REPORT_D5_KO.md](rolling_zscore/D5/ROLLING_ZSCORE_REPORT_D5_KO.md) | [JSON](rolling_zscore/D5/rolling_zscore_D5_results.json) |
-| N5 | [ROLLING_ZSCORE_REPORT_N5_KO.md](rolling_zscore/N5/ROLLING_ZSCORE_REPORT_N5_KO.md) | [JSON](rolling_zscore/N5/rolling_zscore_N5_results.json) |
+| 강종 | 규격 | 리포트 | 데이터 |
+|------|------|--------|--------|
+| B5 | D13 | [ROLLING_ZSCORE_REPORT_B5_D13_KO.md](rolling_zscore/B5/D13/ROLLING_ZSCORE_REPORT_B5_D13_KO.md) | [JSON](rolling_zscore/B5/D13/rolling_zscore_B5_D13_results.json) |
+| B5 | D16 | [ROLLING_ZSCORE_REPORT_B5_D16_KO.md](rolling_zscore/B5/D16/ROLLING_ZSCORE_REPORT_B5_D16_KO.md) | [JSON](rolling_zscore/B5/D16/rolling_zscore_B5_D16_results.json) |
+| D4 | D10 | [ROLLING_ZSCORE_REPORT_D4_D10_KO.md](rolling_zscore/D4/D10/ROLLING_ZSCORE_REPORT_D4_D10_KO.md) | [JSON](rolling_zscore/D4/D10/rolling_zscore_D4_D10_results.json) |
+| D4 | D13 | [ROLLING_ZSCORE_REPORT_D4_D13_KO.md](rolling_zscore/D4/D13/ROLLING_ZSCORE_REPORT_D4_D13_KO.md) | [JSON](rolling_zscore/D4/D13/rolling_zscore_D4_D13_results.json) |
+| D5 | D10 | [ROLLING_ZSCORE_REPORT_D5_D10_KO.md](rolling_zscore/D5/D10/ROLLING_ZSCORE_REPORT_D5_D10_KO.md) | [JSON](rolling_zscore/D5/D10/rolling_zscore_D5_D10_results.json) |
+| D5 | D13 | [ROLLING_ZSCORE_REPORT_D5_D13_KO.md](rolling_zscore/D5/D13/ROLLING_ZSCORE_REPORT_D5_D13_KO.md) | [JSON](rolling_zscore/D5/D13/rolling_zscore_D5_D13_results.json) |
+| N5 | D10 | [ROLLING_ZSCORE_REPORT_N5_D10_KO.md](rolling_zscore/N5/D10/ROLLING_ZSCORE_REPORT_N5_D10_KO.md) | [JSON](rolling_zscore/N5/D10/rolling_zscore_N5_D10_results.json) |
+| N5 | D12 | [ROLLING_ZSCORE_REPORT_N5_D12_KO.md](rolling_zscore/N5/D12/ROLLING_ZSCORE_REPORT_N5_D12_KO.md) | [JSON](rolling_zscore/N5/D12/rolling_zscore_N5_D12_results.json) |
+| N5 | D16 | [ROLLING_ZSCORE_REPORT_N5_D16_KO.md](rolling_zscore/N5/D16/ROLLING_ZSCORE_REPORT_N5_D16_KO.md) | [JSON](rolling_zscore/N5/D16/rolling_zscore_N5_D16_results.json) |
+| N5 | D20 | [ROLLING_ZSCORE_REPORT_N5_D20_KO.md](rolling_zscore/N5/D20/ROLLING_ZSCORE_REPORT_N5_D20_KO.md) | [JSON](rolling_zscore/N5/D20/rolling_zscore_N5_D20_results.json) |
 
-### STL Residual 리포트 (4개)
+### STL Residual 리포트 (9개, 사이즈별)
 
-| 강종 | 리포트 | 데이터 |
-|------|--------|--------|
-| B5 | [STL_ANALYSIS_REPORT_B5_KO.md](stl_residual/B5/STL_ANALYSIS_REPORT_B5_KO.md) | [JSON](stl_residual/B5/stl_analysis_B5_results.json) |
-| D4 | [STL_ANALYSIS_REPORT_D4_KO.md](stl_residual/D4/STL_ANALYSIS_REPORT_D4_KO.md) | [JSON](stl_residual/D4/stl_analysis_D4_results.json) |
-| D5 | [STL_ANALYSIS_REPORT_D5_KO.md](stl_residual/D5/STL_ANALYSIS_REPORT_D5_KO.md) | [JSON](stl_residual/D5/stl_analysis_D5_results.json) |
-| N5 | [STL_ANALYSIS_REPORT_N5_KO.md](stl_residual/N5/STL_ANALYSIS_REPORT_N5_KO.md) | [JSON](stl_residual/N5/stl_analysis_N5_results.json) |
+| 강종 | 규격 | 리포트 | 데이터 |
+|------|------|--------|--------|
+| B5 | D13 | [STL_ANALYSIS_REPORT_B5_D13_KO.md](stl_residual/B5/D13/STL_ANALYSIS_REPORT_B5_D13_KO.md) | [JSON](stl_residual/B5/D13/stl_analysis_B5_D13_results.json) |
+| D4 | D10 | [STL_ANALYSIS_REPORT_D4_D10_KO.md](stl_residual/D4/D10/STL_ANALYSIS_REPORT_D4_D10_KO.md) | [JSON](stl_residual/D4/D10/stl_analysis_D4_D10_results.json) |
+| D4 | D13 | [STL_ANALYSIS_REPORT_D4_D13_KO.md](stl_residual/D4/D13/STL_ANALYSIS_REPORT_D4_D13_KO.md) | [JSON](stl_residual/D4/D13/stl_analysis_D4_D13_results.json) |
+| D5 | D10 | [STL_ANALYSIS_REPORT_D5_D10_KO.md](stl_residual/D5/D10/STL_ANALYSIS_REPORT_D5_D10_KO.md) | [JSON](stl_residual/D5/D10/stl_analysis_D5_D10_results.json) |
+| D5 | D13 | [STL_ANALYSIS_REPORT_D5_D13_KO.md](stl_residual/D5/D13/STL_ANALYSIS_REPORT_D5_D13_KO.md) | [JSON](stl_residual/D5/D13/stl_analysis_D5_D13_results.json) |
+| N5 | D10 | [STL_ANALYSIS_REPORT_N5_D10_KO.md](stl_residual/N5/D10/STL_ANALYSIS_REPORT_N5_D10_KO.md) | [JSON](stl_residual/N5/D10/stl_analysis_N5_D10_results.json) |
+| N5 | D12 | [STL_ANALYSIS_REPORT_N5_D12_KO.md](stl_residual/N5/D12/STL_ANALYSIS_REPORT_N5_D12_KO.md) | [JSON](stl_residual/N5/D12/stl_analysis_N5_D12_results.json) |
+| N5 | D16 | [STL_ANALYSIS_REPORT_N5_D16_KO.md](stl_residual/N5/D16/STL_ANALYSIS_REPORT_N5_D16_KO.md) | [JSON](stl_residual/N5/D16/stl_analysis_N5_D16_results.json) |
+| N5 | D20 | [STL_ANALYSIS_REPORT_N5_D20_KO.md](stl_residual/N5/D20/STL_ANALYSIS_REPORT_N5_D20_KO.md) | [JSON](stl_residual/N5/D20/stl_analysis_N5_D20_results.json) |
 
-### Mahalanobis 리포트 (4개)
+> **참고**: B5/D16은 STL 분석에 필요한 최소 데이터(51 포인트) 미달로 리포트 미생성
 
-| 강종 | 리포트 | 데이터 |
-|------|--------|--------|
-| B5 | [MAHALANOBIS_REPORT_B5_KO.md](mahalanobis/B5/MAHALANOBIS_REPORT_B5_KO.md) | [JSON](mahalanobis/B5/mahalanobis_B5_results.json) |
-| D4 | [MAHALANOBIS_REPORT_D4_KO.md](mahalanobis/D4/MAHALANOBIS_REPORT_D4_KO.md) | [JSON](mahalanobis/D4/mahalanobis_D4_results.json) |
-| D5 | [MAHALANOBIS_REPORT_D5_KO.md](mahalanobis/D5/MAHALANOBIS_REPORT_D5_KO.md) | [JSON](mahalanobis/D5/mahalanobis_D5_results.json) |
-| N5 | [MAHALANOBIS_REPORT_N5_KO.md](mahalanobis/N5/MAHALANOBIS_REPORT_N5_KO.md) | [JSON](mahalanobis/N5/mahalanobis_N5_results.json) |
+### Mahalanobis 리포트 (10개, 사이즈별)
+
+| 강종 | 규격 | 리포트 | 데이터 |
+|------|------|--------|--------|
+| B5 | D13 | [MAHALANOBIS_REPORT_B5_D13_KO.md](mahalanobis/B5/D13/MAHALANOBIS_REPORT_B5_D13_KO.md) | [JSON](mahalanobis/B5/D13/mahalanobis_B5_D13_results.json) |
+| B5 | D16 | [MAHALANOBIS_REPORT_B5_D16_KO.md](mahalanobis/B5/D16/MAHALANOBIS_REPORT_B5_D16_KO.md) | [JSON](mahalanobis/B5/D16/mahalanobis_B5_D16_results.json) |
+| D4 | D10 | [MAHALANOBIS_REPORT_D4_D10_KO.md](mahalanobis/D4/D10/MAHALANOBIS_REPORT_D4_D10_KO.md) | [JSON](mahalanobis/D4/D10/mahalanobis_D4_D10_results.json) |
+| D4 | D13 | [MAHALANOBIS_REPORT_D4_D13_KO.md](mahalanobis/D4/D13/MAHALANOBIS_REPORT_D4_D13_KO.md) | [JSON](mahalanobis/D4/D13/mahalanobis_D4_D13_results.json) |
+| D5 | D10 | [MAHALANOBIS_REPORT_D5_D10_KO.md](mahalanobis/D5/D10/MAHALANOBIS_REPORT_D5_D10_KO.md) | [JSON](mahalanobis/D5/D10/mahalanobis_D5_D10_results.json) |
+| D5 | D13 | [MAHALANOBIS_REPORT_D5_D13_KO.md](mahalanobis/D5/D13/MAHALANOBIS_REPORT_D5_D13_KO.md) | [JSON](mahalanobis/D5/D13/mahalanobis_D5_D13_results.json) |
+| N5 | D10 | [MAHALANOBIS_REPORT_N5_D10_KO.md](mahalanobis/N5/D10/MAHALANOBIS_REPORT_N5_D10_KO.md) | [JSON](mahalanobis/N5/D10/mahalanobis_N5_D10_results.json) |
+| N5 | D12 | [MAHALANOBIS_REPORT_N5_D12_KO.md](mahalanobis/N5/D12/MAHALANOBIS_REPORT_N5_D12_KO.md) | [JSON](mahalanobis/N5/D12/mahalanobis_N5_D12_results.json) |
+| N5 | D16 | [MAHALANOBIS_REPORT_N5_D16_KO.md](mahalanobis/N5/D16/MAHALANOBIS_REPORT_N5_D16_KO.md) | [JSON](mahalanobis/N5/D16/mahalanobis_N5_D16_results.json) |
+| N5 | D20 | [MAHALANOBIS_REPORT_N5_D20_KO.md](mahalanobis/N5/D20/MAHALANOBIS_REPORT_N5_D20_KO.md) | [JSON](mahalanobis/N5/D20/mahalanobis_N5_D20_results.json) |
 
 ### PPT 발표자료 (6개 MD + 1 PPTX)
 
@@ -241,18 +266,22 @@ additional_8tags/
 
 | 구분 | 파일 수 |
 |------|--------|
-| PNG 차트 | 12,645 |
-| MD 리포트 | 33 (README 포함) |
-| JSON 데이터 | 27 |
-| CSV 요약 | 2 |
+| PNG 차트 | 9,521 |
+| MD 리포트 | 56 (README 포함) |
+| JSON 데이터 | 50 |
+| CSV 요약 | 4 |
 | PPTX 발표자료 | 1 |
-| **총 파일** | **12,708** |
+| **총 파일** | **9,632** |
 
 ## 수정된 파일
 
 | 파일 | 수정 내용 |
 |------|----------|
 | `scripts/steel_grade_iqr_analysis_v2.py` | TAG_CATEGORIES에 8개 태그 추가, `--output-dir`/`--categories` CLI 옵션 추가 |
+| `scripts/steel_grade_cusum_ewma_analysis.py` | `--output-dir` CLI 옵션 추가 (절대/상대 경로 지원) |
+| `scripts/steel_grade_rolling_zscore_analysis.py` | `--output-dir` CLI 옵션 추가 (절대/상대 경로 지원) |
+| `scripts/steel_grade_stl_analysis.py` | `--output-dir` CLI 옵션 추가 (절대/상대 경로 지원) |
+| `scripts/steel_grade_mahalanobis_analysis.py` | TAG_CATEGORIES에 8개 태그 추가, `--categories`/`--output-dir` CLI 옵션 추가 |
 | `config/tag_filter_config.py` | `10_PR_Detailed` → `09_PR_Detailed` 통일, 6개 속도 태그 추가 |
 | `config/tag_filter_config.yaml` | 08/09 카테고리 notes 업데이트 (태그 수, 속도 태그 명시) |
 | ClickHouse VIEW | `v_iba_by_steel_grade` 뷰에 8개 컬럼 추가 (`CREATE OR REPLACE VIEW`) |
@@ -263,29 +292,38 @@ additional_8tags/
 # IQR 분석 — 특정 강종 + 특정 카테고리만 (추가 태그용)
 ./venv/bin/python scripts/steel_grade_iqr_analysis_v2.py \
     --grade B5 --all-sizes \
-    --output-dir steel_grade_iqr_analysis_v2_additional_8tags \
+    --output-dir steel_grade_iqr_analysis_v2/additional_8tags \
     --categories 08_Pinchroll 09_PR_Detailed
 
 # CUSUM-EWMA 분석
-./venv/bin/python scripts/cusum_ewma_analysis.py \
-    --grade B5 --all-sizes --tags-from additional_8tags
+./venv/bin/python scripts/steel_grade_cusum_ewma_analysis.py \
+    --grade B5 --all-sizes \
+    --categories 08_Pinchroll 09_PR_Detailed \
+    --output-dir steel_grade_iqr_analysis_v2/additional_8tags/cusum_ewma
 
 # Rolling Z-Score 분석
-./venv/bin/python scripts/rolling_zscore_analysis.py \
-    --grade B5 --all-sizes --tags-from additional_8tags
+./venv/bin/python scripts/steel_grade_rolling_zscore_analysis.py \
+    --grade B5 --all-sizes \
+    --categories 08_Pinchroll 09_PR_Detailed \
+    --output-dir steel_grade_iqr_analysis_v2/additional_8tags/rolling_zscore
 
 # STL Residual 분석
-./venv/bin/python scripts/stl_full_analysis.py \
-    --grade B5 --all-sizes --tags-from additional_8tags
+./venv/bin/python scripts/steel_grade_stl_analysis.py \
+    --grade B5 --all-sizes \
+    --categories 08_Pinchroll 09_PR_Detailed \
+    --output-dir steel_grade_iqr_analysis_v2/additional_8tags/stl_residual
 
 # Mahalanobis 분석
-./venv/bin/python scripts/mahalanobis_analysis.py \
-    --grade B5 --all-sizes --tags-from additional_8tags
+./venv/bin/python scripts/steel_grade_mahalanobis_analysis.py \
+    --grade B5 --all-sizes \
+    --categories 08_Pinchroll 09_PR_Detailed \
+    --output-dir steel_grade_iqr_analysis_v2/additional_8tags/mahalanobis
 ```
 
 ## 생성일
 
 - **IQR 분석**: 2026-02-20
-- **CUSUM-EWMA / Rolling Z-Score / STL / Mahalanobis**: 2026-02-22
+- **CUSUM-EWMA / Rolling Z-Score / STL / Mahalanobis (초기, 전체 태그)**: 2026-02-22
 - **PPT 발표자료**: 2026-02-23
+- **4기법 재분석 (8개 추가 태그 한정, 사이즈별)**: 2026-02-23
 - **README 업데이트**: 2026-02-23

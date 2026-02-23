@@ -1,0 +1,175 @@
+[
+  {
+    "category": "08_Pinchroll",
+    "category_description": "핀치롤",
+    "steel_grade": "B5",
+    "line": null,
+    "status": "low_anomaly",
+    "filter_stats": {
+      "original_count": 7200,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 1000,
+        "roll_change": 47
+      },
+      "final_count": 6191,
+      "total_removed": 1009,
+      "removal_rate": 14.01388888888889
+    },
+    "tags_analyzed": [
+      "PINCHROLL_2_ACTUAL_SPEED",
+      "PINCHROLL_3_ACTUAL_SPEED",
+      "PINCHROLL_4_ACTUAL_SPEED",
+      "PINCHROLL_2_ACTUAL_TORQUE",
+      "PINCHROLL_3_ACTUAL_TORQUE",
+      "PINCHROLL_4_ACTUAL_TORQUE",
+      "PINCHROLL_2_REFERENCE_TORQUE",
+      "PINCHROLL_3_REFERENCE_TORQUE",
+      "PINCHROLL_4_REFERENCE_TORQUE",
+      "PINCHROLL_3_REFERENCE_SPEED",
+      "PINCHROLL_4_REFERENCE_SPEED"
+    ],
+    "tag_count": 11,
+    "sample_count": 6191,
+    "mahalanobis": {
+      "chi2_threshold": 5.591433950270716,
+      "percentile_threshold": 16.025371178111378,
+      "outlier_count": 97,
+      "outlier_ratio": 1.5667905023421094,
+      "mean_distance": 2.333317645367704,
+      "max_distance": 48.596530307886695
+    },
+    "correlation": {
+      "avg_correlation": -0.028603217998674643,
+      "max_correlation": 0.9997392413656896,
+      "min_correlation": -0.9714759143675243
+    },
+    "pca": {
+      "explained_variance_ratio": [
+        0.7064334836286205,
+        0.1796466697397571
+      ],
+      "total_explained_variance": 0.8860801533683775
+    },
+    "charts": {
+      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/additional_8tags/mahalanobis/B5/D16/08_Pinchroll_correlation_heatmap.png",
+      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/additional_8tags/mahalanobis/B5/D16/08_Pinchroll_distance.png",
+      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/additional_8tags/mahalanobis/B5/D16/08_Pinchroll_pca_scatter.png"
+    }
+  },
+  {
+    "category": "09_PR_Detailed_L1",
+    "category_description": "PR 상세 (토크+속도)",
+    "steel_grade": "B5",
+    "line": "L1",
+    "status": "low_anomaly",
+    "filter_stats": {
+      "original_count": 4320,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 626,
+        "roll_change": 49
+      },
+      "final_count": 3685,
+      "total_removed": 635,
+      "removal_rate": 14.699074074074073
+    },
+    "tags_analyzed": [
+      "PR6L1_ACT_TORQUE",
+      "PR7L1_ACT_TORQUE",
+      "PR8L1_ACT_TORQUE",
+      "PR9L1_ACT_TORQUE",
+      "PR6L1_ACT_SPD_MS",
+      "PR7L1_ACT_SPD_MS",
+      "PR8L1_ACT_SPD_MS",
+      "PR9L1_ACT_SPD_MS"
+    ],
+    "tag_count": 8,
+    "sample_count": 3685,
+    "mahalanobis": {
+      "chi2_threshold": 5.111211359196187,
+      "percentile_threshold": 10.313132898012476,
+      "outlier_count": 90,
+      "outlier_ratio": 2.4423337856173677,
+      "mean_distance": 2.4941134859477736,
+      "max_distance": 16.841824112975925
+    },
+    "correlation": {
+      "avg_correlation": -0.013314975831716128,
+      "max_correlation": 0.991168751308173,
+      "min_correlation": -0.994117671724179
+    },
+    "pca": {
+      "explained_variance_ratio": [
+        0.5003627619203191,
+        0.3539438282754176
+      ],
+      "total_explained_variance": 0.8543065901957367
+    },
+    "charts": {
+      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/additional_8tags/mahalanobis/B5/D16/09_PR_Detailed_L1_correlation_heatmap.png",
+      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/additional_8tags/mahalanobis/B5/D16/09_PR_Detailed_L1_distance.png",
+      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/additional_8tags/mahalanobis/B5/D16/09_PR_Detailed_L1_pca_scatter.png"
+    }
+  },
+  {
+    "category": "09_PR_Detailed_L2",
+    "category_description": "PR 상세 (토크+속도)",
+    "steel_grade": "B5",
+    "line": "L2",
+    "status": "low_anomaly",
+    "filter_stats": {
+      "original_count": 2880,
+      "filters_applied": [
+        "COILING_TRANSIENT",
+        "ROLL_CHANGE"
+      ],
+      "records_removed": {
+        "coiling_transient": 439,
+        "roll_change": 50
+      },
+      "final_count": 2436,
+      "total_removed": 444,
+      "removal_rate": 15.416666666666668
+    },
+    "tags_analyzed": [
+      "PR6L2_ACT_TORQUE",
+      "PR7L2_ACT_TORQUE",
+      "PR6L2_ACT_SPD_MS",
+      "PR7L2_ACT_SPD_MS"
+    ],
+    "tag_count": 4,
+    "sample_count": 2436,
+    "mahalanobis": {
+      "chi2_threshold": 4.297304614860711,
+      "percentile_threshold": 8.084218218401567,
+      "outlier_count": 58,
+      "outlier_ratio": 2.380952380952381,
+      "mean_distance": 1.6560995147323796,
+      "max_distance": 9.375367774107692
+    },
+    "correlation": {
+      "avg_correlation": -0.3260246926924442,
+      "max_correlation": 0.9751072170184942,
+      "min_correlation": -0.9940640531245808
+    },
+    "pca": {
+      "explained_variance_ratio": [
+        0.9810290654258725,
+        0.013311000306624033
+      ],
+      "total_explained_variance": 0.9943400657324966
+    },
+    "charts": {
+      "correlation_heatmap": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/additional_8tags/mahalanobis/B5/D16/09_PR_Detailed_L2_correlation_heatmap.png",
+      "distance": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/additional_8tags/mahalanobis/B5/D16/09_PR_Detailed_L2_distance.png",
+      "pca_scatter": "/home/lanco/cursor/temp_git/dhsteel-iba-data-profile/analysis_output/steel_grade_iqr_analysis_v2/additional_8tags/mahalanobis/B5/D16/09_PR_Detailed_L2_pca_scatter.png"
+    }
+  }
+]

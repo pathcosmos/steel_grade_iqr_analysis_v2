@@ -1,0 +1,217 @@
+# 강종 [D5] 사이즈 [D10] STL 계절-추세 분해 분석 보고서
+
+**분석 기간**: 2025-03-01 ~ 2025-08-31
+**강종**: D5 | 사이즈: D10
+**생성일시**: 2026-02-23 16:02:32
+
+---
+
+## 분석 개요
+
+### 분석 방법론
+
+**STL (Seasonal-Trend Decomposition using LOESS)**
+
+시계열 데이터를 세 가지 성분으로 분해:
+- **Trend (추세)**: 장기적인 변화 패턴
+- **Seasonal (계절성)**: 주기적으로 반복되는 패턴
+- **Residual (잔차)**: 추세와 계절성으로 설명되지 않는 변동
+
+| 파라미터 | 값 | 설명 |
+|----------|-----|------|
+| seasonal | 25h | 계절 주기 |
+| robust | True | 강건 추정 |
+
+### 분석 결과 요약
+
+| 구분 | 태그 수 | 비율 |
+|------|---------|------|
+| **총 분석 태그** | 23개 | 100% |
+
+#### 잔차 이상치율 분포
+
+| 구분 | 태그 수 | 비율 |
+|------|---------|------|
+| 🔴 높음 (≥15%) | 23개 | 100.0% |
+| 🟠 중간 (5~15%) | 0개 | 0.0% |
+| 🟢 낮음 (<5%) | 0개 | 0.0% |
+
+#### 계절성 강도 분포
+
+| 구분 | 태그 수 | 비율 |
+|------|---------|------|
+| 🔵 강함 (≥0.7) | 2개 | 8.7% |
+| 중간 (0.4~0.7) | 2개 | 8.7% |
+| 약함 (<0.4) | 19개 | 82.6% |
+
+#### 전체 평균
+
+| 지표 | 값 |
+|------|-----|
+| 평균 계절성 강도 | 0.177 |
+| 평균 추세 강도 | 0.926 |
+
+---
+
+## 상위 문제 태그 (잔차 이상치율 기준)
+
+| 순위 | 태그 | 카테고리 | 이상치율 | 계절성 강도 | 계절성 분류 |
+|------|------|----------|----------|-------------|-------------|
+| 1 | PINCHROLL_2_ACTUAL_TORQUE | 핀치롤 | 44.58% | 0.000 | none |
+| 2 | PR6L2_ACT_TORQUE | PR 상세 (토크+속도) | 43.41% | 0.010 | none |
+| 3 | PR6L1_ACT_TORQUE | PR 상세 (토크+속도) | 43.10% | 0.311 | weak |
+| 4 | PINCHROLL_3_REFERENCE_SPEED | 핀치롤 | 42.86% | 0.252 | weak |
+| 5 | PR8L1_ACT_SPD_MS | PR 상세 (토크+속도) | 41.98% | 0.132 | none |
+| 6 | PR6L2_ACT_SPD_MS | PR 상세 (토크+속도) | 41.85% | 0.003 | none |
+| 7 | PINCHROLL_4_ACTUAL_SPEED | 핀치롤 | 41.56% | 0.319 | weak |
+| 8 | PR7L1_ACT_TORQUE | PR 상세 (토크+속도) | 41.41% | 0.000 | none |
+| 9 | PR6L1_ACT_SPD_MS | PR 상세 (토크+속도) | 41.20% | 0.000 | none |
+| 10 | PINCHROLL_4_REFERENCE_TORQUE | 핀치롤 | 40.83% | 0.000 | none |
+| 11 | PR9L1_ACT_TORQUE | PR 상세 (토크+속도) | 40.76% | 0.000 | none |
+| 12 | PINCHROLL_4_ACTUAL_TORQUE | 핀치롤 | 40.70% | 0.000 | none |
+| 13 | PR7L1_ACT_SPD_MS | PR 상세 (토크+속도) | 40.55% | 0.099 | none |
+| 14 | PINCHROLL_3_ACTUAL_TORQUE | 핀치롤 | 40.26% | 0.000 | none |
+| 15 | PR7L2_ACT_SPD_MS | PR 상세 (토크+속도) | 39.45% | 0.000 | none |
+
+---
+
+## 강한 계절성 태그 목록
+
+계절성 강도가 0.7 이상인 태그입니다. 이 태그들은 STL 분석이 특히 효과적입니다.
+
+| 태그 | 카테고리 | 계절성 강도 | 잔차 이상치율 |
+|------|----------|-------------|---------------|
+| PINCHROLL_2_ACTUAL_SPEED | 핀치롤 | 0.935 | 38.49% |
+| PINCHROLL_4_REFERENCE_SPEED | 핀치롤 | 0.809 | 35.83% |
+
+---
+
+## 카테고리별 분석 결과
+
+### 핀치롤 (08_Pinchroll)
+
+- 분석 태그: 11개
+- 평균 잔차 이상치율: 40.01%
+- 평균 계절성 강도: 0.313
+
+| 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
+|------|----------|-------------|-----------|
+| PINCHROLL_2_ACTUAL_SPEED | 38.49% | 0.935 | 0.927 |
+| PINCHROLL_3_ACTUAL_SPEED | 38.36% | 0.695 | 0.998 |
+| PINCHROLL_4_ACTUAL_SPEED | 41.56% | 0.319 | 0.965 |
+| PINCHROLL_2_ACTUAL_TORQUE | 44.58% | 0.000 | 0.946 |
+| PINCHROLL_3_ACTUAL_TORQUE | 40.26% | 0.000 | 0.966 |
+| PINCHROLL_4_ACTUAL_TORQUE | 40.70% | 0.000 | 0.956 |
+| PINCHROLL_2_REFERENCE_TORQUE | 37.89% | 0.429 | 0.978 |
+| PINCHROLL_3_REFERENCE_TORQUE | 38.72% | 0.000 | 0.957 |
+| PINCHROLL_4_REFERENCE_TORQUE | 40.83% | 0.000 | 0.699 |
+| PINCHROLL_3_REFERENCE_SPEED | 42.86% | 0.252 | 0.392 |
+| PINCHROLL_4_REFERENCE_SPEED | 35.83% | 0.809 | 0.987 |
+
+#### STL 분해 차트
+
+**PINCHROLL_2_ACTUAL_TORQUE** (이상치율: 44.58%, 계절성: 0.000)
+
+![PINCHROLL_2_ACTUAL_TORQUE](08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_stl_decomposition.png)
+
+**PINCHROLL_3_REFERENCE_SPEED** (이상치율: 42.86%, 계절성: 0.252)
+
+![PINCHROLL_3_REFERENCE_SPEED](08_Pinchroll/PINCHROLL_3_REFERENCE_SPEED_stl_decomposition.png)
+
+**PINCHROLL_4_ACTUAL_SPEED** (이상치율: 41.56%, 계절성: 0.319)
+
+![PINCHROLL_4_ACTUAL_SPEED](08_Pinchroll/PINCHROLL_4_ACTUAL_SPEED_stl_decomposition.png)
+
+
+### PR 상세 (토크+속도) (09_PR_Detailed)
+
+- 분석 태그: 12개
+- 평균 잔차 이상치율: 40.35%
+- 평균 계절성 강도: 0.052
+
+| 태그 | 이상치율 | 계절성 강도 | 추세 강도 |
+|------|----------|-------------|-----------|
+| PR6L1_ACT_TORQUE | 43.10% | 0.311 | 0.965 |
+| PR6L2_ACT_TORQUE | 43.41% | 0.010 | 0.970 |
+| PR7L1_ACT_TORQUE | 41.41% | 0.000 | 0.884 |
+| PR7L2_ACT_TORQUE | 36.74% | 0.002 | 0.973 |
+| PR8L1_ACT_TORQUE | 38.41% | 0.016 | 0.970 |
+| PR9L1_ACT_TORQUE | 40.76% | 0.000 | 0.963 |
+| PR6L1_ACT_SPD_MS | 41.20% | 0.000 | 0.963 |
+| PR6L2_ACT_SPD_MS | 41.85% | 0.003 | 0.988 |
+| PR7L1_ACT_SPD_MS | 40.55% | 0.099 | 0.955 |
+| PR7L2_ACT_SPD_MS | 39.45% | 0.000 | 0.968 |
+| PR8L1_ACT_SPD_MS | 41.98% | 0.132 | 0.974 |
+| PR9L1_ACT_SPD_MS | 35.34% | 0.052 | 0.961 |
+
+#### STL 분해 차트
+
+**PR6L2_ACT_TORQUE** (이상치율: 43.41%, 계절성: 0.010)
+
+![PR6L2_ACT_TORQUE](09_PR_Detailed/PR6L2_ACT_TORQUE_stl_decomposition.png)
+
+**PR6L1_ACT_TORQUE** (이상치율: 43.10%, 계절성: 0.311)
+
+![PR6L1_ACT_TORQUE](09_PR_Detailed/PR6L1_ACT_TORQUE_stl_decomposition.png)
+
+**PR8L1_ACT_SPD_MS** (이상치율: 41.98%, 계절성: 0.132)
+
+![PR8L1_ACT_SPD_MS](09_PR_Detailed/PR8L1_ACT_SPD_MS_stl_decomposition.png)
+
+
+
+---
+
+## 해석 가이드
+
+### STL 분해 해석
+
+1. **추세 (Trend)**
+   - 장기적인 상승/하락 패턴
+   - 설비 노화, 계절적 변화 등 반영
+   - 추세 강도 높을수록 장기 변화가 뚜렷함
+
+2. **계절성 (Seasonal)**
+   - 주기적으로 반복되는 패턴 (24시간 기준)
+   - 계절성 강도 ≥ 0.7: 강한 주기적 패턴
+   - 계절성이 강한 태그는 STL 분석이 효과적
+
+3. **잔차 (Residual)**
+   - 추세와 계절성으로 설명되지 않는 변동
+   - **순수한 이상치**를 포함
+   - 잔차 기반 IQR로 "진짜" 이상치 탐지
+
+### 계절성 강도 분류
+
+| 분류 | 강도 범위 | 해석 |
+|------|----------|------|
+| Strong | ≥ 0.7 | 명확한 주기적 패턴, STL 매우 효과적 |
+| Moderate | 0.4 ~ 0.7 | 적당한 주기적 패턴, STL 효과적 |
+| Weak | 0.2 ~ 0.4 | 약한 주기적 패턴 |
+| None | < 0.2 | 주기적 패턴 거의 없음 |
+
+### Standard IQR vs STL Residual IQR
+
+| 방법 | 장점 | 단점 |
+|------|------|------|
+| Standard IQR | 간단, 빠름 | 계절성에 영향받음 |
+| STL Residual IQR | 계절성 제거, 순수 이상치 | 계산 복잡, 데이터 필요 |
+
+**권장**: 계절성 강도 ≥ 0.4인 태그에는 STL Residual IQR 사용
+
+---
+
+## 메타데이터
+
+| 항목 | 값 |
+|------|-----|
+| 분석 스크립트 | steel_grade_stl_analysis.py |
+| 분석 기간 | 2025-03-01 ~ 2025-08-31 |
+| 강종 | D5 |
+| 계절 주기 | 25시간 |
+| 생성일시 | 2026-02-23 16:02:32 |
+| 총 분석 태그 | 23개 |
+
+---
+
+*본 보고서는 자동 생성되었습니다.*

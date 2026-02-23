@@ -1,0 +1,170 @@
+# 강종 [D4] | 규격: D13 CUSUM-EWMA 공정 관리도 분석 보고서
+
+**분석 기간**: 2025-03-01 ~ 2025-08-31
+**강종**: D4
+**규격**: D13
+**생성일시**: 2026-02-23 15:56:00
+
+---
+
+## 분석 개요
+
+### 분석 방법론
+
+| 방법 | 목적 | 파라미터 |
+|------|------|----------|
+| **CUSUM** | 점진적 드리프트 탐지 | k=0.5σ, h=5.0σ |
+| **EWMA** | 급격한 변화 탐지 | λ=0.2, L=3.0 |
+
+### 분석 결과 요약
+
+| 구분 | 태그 수 | 비율 |
+|------|---------|------|
+| **총 분석 태그** | 22개 | 100% |
+| 🔴 드리프트 탐지 | 22개 | 100.0% |
+| 🟠 시프트 탐지 | 19개 | 86.4% |
+| 🟡 경고 | 0개 | 0.0% |
+| 🟢 안정 | 0개 | 0.0% |
+
+---
+
+## 상위 문제 태그 (드리프트 빈도 기준)
+
+| 순위 | 태그 | 카테고리 | CUSUM 드리프트 | EWMA 시프트 | 상태 |
+|------|------|----------|----------------|-------------|------|
+| 1 | PINCHROLL_4_REFERENCE_TORQUE | 핀치롤 | 75 | 84 | 🔴 |
+| 2 | PINCHROLL_4_ACTUAL_TORQUE | 핀치롤 | 67 | 60 | 🔴 |
+| 3 | PINCHROLL_2_ACTUAL_TORQUE | 핀치롤 | 62 | 63 | 🔴 |
+| 4 | PINCHROLL_2_ACTUAL_SPEED | 핀치롤 | 28 | 54 | 🔴 |
+| 5 | PINCHROLL_4_ACTUAL_SPEED | 핀치롤 | 23 | 29 | 🔴 |
+| 6 | PINCHROLL_3_ACTUAL_TORQUE | 핀치롤 | 12 | 313 | 🔴 |
+| 7 | PR6L1_ACT_TORQUE | PR 상세 (토크+속도) | 5 | 125 | 🔴 |
+| 8 | PR9L1_ACT_TORQUE | PR 상세 (토크+속도) | 5 | 0 | 🔴 |
+| 9 | PINCHROLL_3_ACTUAL_SPEED | 핀치롤 | 4 | 27 | 🔴 |
+| 10 | PR7L1_ACT_TORQUE | PR 상세 (토크+속도) | 3 | 0 | 🔴 |
+| 11 | PINCHROLL_3_REFERENCE_TORQUE | 핀치롤 | 2 | 30 | 🔴 |
+| 12 | PINCHROLL_3_REFERENCE_SPEED | 핀치롤 | 2 | 2 | 🔴 |
+| 13 | PR7L2_ACT_TORQUE | PR 상세 (토크+속도) | 1 | 70 | 🔴 |
+| 14 | PINCHROLL_4_REFERENCE_SPEED | 핀치롤 | 1 | 10 | 🔴 |
+| 15 | PR6L2_ACT_TORQUE | PR 상세 (토크+속도) | 1 | 1 | 🔴 |
+
+---
+
+## 카테고리별 분석 결과
+
+### 핀치롤 (08_Pinchroll)
+
+- 분석 태그: 10개
+- 드리프트 탐지: 10개
+- 시프트 탐지: 10개
+- 안정: 0개
+
+| 태그 | CUSUM Drift | EWMA Shift | 상태 |
+|------|-------------|------------|------|
+| PINCHROLL_2_ACTUAL_SPEED | 28 | 54 | 🔴 |
+| PINCHROLL_3_ACTUAL_SPEED | 4 | 27 | 🔴 |
+| PINCHROLL_4_ACTUAL_SPEED | 23 | 29 | 🔴 |
+| PINCHROLL_2_ACTUAL_TORQUE | 62 | 63 | 🔴 |
+| PINCHROLL_3_ACTUAL_TORQUE | 12 | 313 | 🔴 |
+| PINCHROLL_4_ACTUAL_TORQUE | 67 | 60 | 🔴 |
+| PINCHROLL_3_REFERENCE_TORQUE | 2 | 30 | 🔴 |
+| PINCHROLL_4_REFERENCE_TORQUE | 75 | 84 | 🔴 |
+| PINCHROLL_3_REFERENCE_SPEED | 2 | 2 | 🔴 |
+| PINCHROLL_4_REFERENCE_SPEED | 1 | 10 | 🔴 |
+
+#### 주요 태그 차트
+
+**PINCHROLL_4_REFERENCE_TORQUE** (Drift: 75, Shift: 84)
+
+![PINCHROLL_4_REFERENCE_TORQUE](08_Pinchroll/PINCHROLL_4_REFERENCE_TORQUE_combined.png)
+
+**PINCHROLL_4_ACTUAL_TORQUE** (Drift: 67, Shift: 60)
+
+![PINCHROLL_4_ACTUAL_TORQUE](08_Pinchroll/PINCHROLL_4_ACTUAL_TORQUE_combined.png)
+
+**PINCHROLL_2_ACTUAL_TORQUE** (Drift: 62, Shift: 63)
+
+![PINCHROLL_2_ACTUAL_TORQUE](08_Pinchroll/PINCHROLL_2_ACTUAL_TORQUE_combined.png)
+
+
+### PR 상세 (토크+속도) (09_PR_Detailed)
+
+- 분석 태그: 12개
+- 드리프트 탐지: 12개
+- 시프트 탐지: 9개
+- 안정: 0개
+
+| 태그 | CUSUM Drift | EWMA Shift | 상태 |
+|------|-------------|------------|------|
+| PR6L1_ACT_TORQUE | 5 | 125 | 🔴 |
+| PR6L2_ACT_TORQUE | 1 | 1 | 🔴 |
+| PR7L1_ACT_TORQUE | 3 | 0 | 🔴 |
+| PR7L2_ACT_TORQUE | 1 | 70 | 🔴 |
+| PR8L1_ACT_TORQUE | 1 | 0 | 🔴 |
+| PR9L1_ACT_TORQUE | 5 | 0 | 🔴 |
+| PR6L1_ACT_SPD_MS | 1 | 1 | 🔴 |
+| PR6L2_ACT_SPD_MS | 1 | 1 | 🔴 |
+| PR7L1_ACT_SPD_MS | 1 | 1 | 🔴 |
+| PR7L2_ACT_SPD_MS | 1 | 1 | 🔴 |
+| PR8L1_ACT_SPD_MS | 1 | 1 | 🔴 |
+| PR9L1_ACT_SPD_MS | 1 | 1 | 🔴 |
+
+#### 주요 태그 차트
+
+**PR6L1_ACT_TORQUE** (Drift: 5, Shift: 125)
+
+![PR6L1_ACT_TORQUE](09_PR_Detailed/PR6L1_ACT_TORQUE_combined.png)
+
+**PR9L1_ACT_TORQUE** (Drift: 5, Shift: 0)
+
+![PR9L1_ACT_TORQUE](09_PR_Detailed/PR9L1_ACT_TORQUE_combined.png)
+
+**PR7L1_ACT_TORQUE** (Drift: 3, Shift: 0)
+
+![PR7L1_ACT_TORQUE](09_PR_Detailed/PR7L1_ACT_TORQUE_combined.png)
+
+
+
+---
+
+## 해석 가이드
+
+### CUSUM (Cumulative Sum) 관리도
+
+- **원리**: 목표값 대비 편차의 누적합을 추적
+- **장점**: 작은 지속적 변화(0.5σ~2σ)에 민감
+- **드리프트**: 누적합이 결정 구간(h)을 초과하면 탐지
+- **활용**: 점진적인 공정 악화, 센서 드리프트 탐지
+
+### EWMA (Exponentially Weighted Moving Average) 관리도
+
+- **원리**: 최근 데이터에 더 큰 가중치를 부여
+- **장점**: 급격한 변화에 빠른 반응
+- **시프트**: EWMA 값이 제어 한계를 벗어나면 탐지
+- **활용**: 급격한 공정 변화, 이상 상태 전환 탐지
+
+### 상태 정의
+
+| 상태 | 설명 | 권장 조치 |
+|------|------|----------|
+| 🔴 드리프트 탐지 | CUSUM에서 점진적 변화 감지 | 원인 분석 및 공정 조정 |
+| 🟠 시프트 탐지 | EWMA에서 급격한 변화 감지 | 즉시 점검 필요 |
+| 🟡 경고 | 위반율 5% 초과 | 모니터링 강화 |
+| 🟢 안정 | 정상 범위 | 현 상태 유지 |
+
+---
+
+## 메타데이터
+
+| 항목 | 값 |
+|------|-----|
+| 분석 스크립트 | steel_grade_cusum_ewma_analysis.py |
+| 분석 기간 | 2025-03-01 ~ 2025-08-31 |
+| 강종 | D4 |
+| 규격 | D13 |
+| 생성일시 | 2026-02-23 15:56:00 |
+| 총 분석 태그 | 22개 |
+
+---
+
+*본 보고서는 자동 생성되었습니다.*
