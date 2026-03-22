@@ -400,7 +400,7 @@ TRANS/IDLE을 모두 제외하고 **RUN 상태 번들만** 비교:
 
 **불량의 50%가 비-RUN 시점에 매칭** → IDLE/TRANS 토크값(~0)이 불량 그룹 평균을 인위적으로 끌어내려 **허위 신호 생성**.
 
-![OPERATION_STATUS별 불량 분포](../analysis_output/2026_01_02_defect_factor_analysis/charts/F1_operation_status_defect_distribution.png)
+![OPERATION_STATUS별 불량 분포](charts/F1_operation_status_defect_distribution.png)
 
 **RUN 필터 적용 시 태그별 변화**:
 
@@ -414,7 +414,7 @@ TRANS/IDLE을 모두 제외하고 **RUN 상태 번들만** 비교:
 | FB_MASTER_TORQUE | <0.001 | **0.409** | **소멸** |
 | BILLET_TEMPERATURE | 0.877 | 0.655 | 원래 비유의 |
 
-![RUN 필터 전후 p-value 비교](../analysis_output/2026_01_02_defect_factor_analysis/charts/F2_run_filter_pvalue_comparison.png)
+![RUN 필터 전후 p-value 비교](charts/F2_run_filter_pvalue_comparison.png)
 
 > **결론**: `OPERATION_STATUS = 'RUN'` 필터는 **필수**. P2/P3 추가 필터는 불필요 (RUN으로 충분).
 
@@ -432,9 +432,9 @@ TRANS/IDLE을 모두 제외하고 **RUN 상태 번들만** 비교:
 
 PR3 토크가 규격별 23.4~69.4로 **3배 차이**. 전체 풀링하면 규격 구성비가 결과를 왜곡.
 
-![PR3 토크 규격별 박스플롯](../analysis_output/2026_01_02_defect_factor_analysis/charts/F3_pr3_torque_boxplot_by_grade_size.png)
+![PR3 토크 규격별 박스플롯](charts/F3_pr3_torque_boxplot_by_grade_size.png)
 
-![로압 규격별 박스플롯](../analysis_output/2026_01_02_defect_factor_analysis/charts/F4_furnace_pressure_boxplot_by_grade_size.png)
+![로압 규격별 박스플롯](charts/F4_furnace_pressure_boxplot_by_grade_size.png)
 
 #### Simpson's Paradox 확인
 
@@ -446,7 +446,7 @@ PR3 토크가 규격별 23.4~69.4로 **3배 차이**. 전체 풀링하면 규격
 - N5-D12 내: -1.8% (p=0.329) → 비유의
 - D4-D16 내: 0.0% (p=0.076) → 비유의
 
-![Simpson's Paradox — PR3](../analysis_output/2026_01_02_defect_factor_analysis/charts/F5_simpsons_paradox_pr3.png)
+![Simpson's Paradox — PR3](charts/F5_simpsons_paradox_pr3.png)
 
 > **PR3 토크 효과는 D5-D10에서만 실재. 나머지 규격에서는 confounding.**
 
@@ -473,7 +473,7 @@ PR3 토크가 규격별 23.4~69.4로 **3배 차이**. 전체 풀링하면 규격
 | S9 토크 | **0.009** | 0.024 | 0.544 | D4/D5 유의, N5 비유의 |
 | 빌렛 온도 | **0.009** | 0.011 | 0.614 | D4/D5 유의, N5 비유의 |
 
-![강종별 유의 태그 히트맵](../analysis_output/2026_01_02_defect_factor_analysis/charts/F8_grade_significance_heatmap.png)
+![강종별 유의 태그 히트맵](charts/F8_grade_significance_heatmap.png)
 
 > 강종별 유의 태그가 **완전히 다름**. 전체 분석만으로는 이 차이를 놓침.
 
@@ -504,7 +504,7 @@ D5-D10 RUN 번들 중 PR3 < 10인 경우:
 - 정상: 137/852건 (16.1%)
 - **Odds Ratio = 15.7** (p=0.000001)
 
-![D5-D10 PR3 극저값 OR](../analysis_output/2026_01_02_defect_factor_analysis/charts/F7_d5d10_pr3_odds_ratio.png)
+![D5-D10 PR3 극저값 OR](charts/F7_d5d10_pr3_odds_ratio.png)
 
 > PR3 < 10은 D5-D10에서 불량의 강력한 예측 지표. 다만 정상에서도 16.1%가 이 구간이므로 **충분조건은 아님**.
 
@@ -522,11 +522,11 @@ D5-D10 RUN 번들 중 PR3 < 10인 경우:
 
 ### 11.7 불량 유형별 센서 프로파일
 
-![불량 유형별 센서 프로파일](../analysis_output/2026_01_02_defect_factor_analysis/charts/F6_defect_type_sensor_profile.png)
+![불량 유형별 센서 프로파일](charts/F6_defect_type_sensor_profile.png)
 
 ### 11.8 최종 인과 판정 요약
 
-![인과 판정 요약](../analysis_output/2026_01_02_defect_factor_analysis/charts/F9_causal_verdict_summary.png)
+![인과 판정 요약](charts/F9_causal_verdict_summary.png)
 
 ---
 

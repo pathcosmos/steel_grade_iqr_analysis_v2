@@ -52,7 +52,7 @@
 
 ### 2.3 강종별 생산 및 불량 현황
 
-![강종x사이즈 불량률 히트맵](../analysis_output/2026_01_02_defect_factor_analysis/charts/A4_defect_heatmap_grade_size.png)
+![강종x사이즈 불량률 히트맵](charts/A4_defect_heatmap_grade_size.png)
 
 | 강종 | 생산 | 불량 | 불량률 | 고위험 규격 |
 |------|------|------|--------|-----------|
@@ -69,7 +69,7 @@
 
 ### 3.1 시간대별 불량 분포
 
-![시간대별 불량](../analysis_output/2026_01_02_defect_factor_analysis/charts/A1_defect_by_hour.png)
+![시간대별 불량](charts/A1_defect_by_hour.png)
 
 - **17시 12건, 21시 10건, 14시 9건** -- 오후~야간에 집중
 - 오전(7~12시)은 상대적으로 적음
@@ -77,7 +77,7 @@
 
 ### 3.2 요일별 불량률
 
-![요일별 불량률](../analysis_output/2026_01_02_defect_factor_analysis/charts/A2_defect_by_dayofweek.png)
+![요일별 불량률](charts/A2_defect_by_dayofweek.png)
 
 | 요일 | 생산 | 불량 | 불량률 |
 |------|------|------|--------|
@@ -92,7 +92,7 @@
 
 ### 3.3 근무조별 불량률
 
-![근무조별 불량률](../analysis_output/2026_01_02_defect_factor_analysis/charts/A3_defect_by_shift.png)
+![근무조별 불량률](charts/A3_defect_by_shift.png)
 
 | 근무조 | 생산 | 불량 | 불량률 |
 |--------|------|------|--------|
@@ -157,7 +157,7 @@
 
 ### 4.3 Top 10 태그 랭킹
 
-![Top 10 상관 태그](../analysis_output/2026_01_02_defect_factor_analysis/charts/B1_top10_correlation_ranking.png)
+![Top 10 상관 태그](charts/B1_top10_correlation_ranking.png)
 
 | 순위 | 태그 | 상관계수(r) | p값 | 해석 |
 |------|------|-----------|------|------|
@@ -176,7 +176,7 @@
 
 ### 4.4 최강 예측 인자: STAND_9 토크 변동성
 
-![STAND_9 토크 vs 불량률](../analysis_output/2026_01_02_defect_factor_analysis/charts/B2_stand9_torque_std_vs_defect_rate.png)
+![STAND_9 토크 vs 불량률](charts/B2_stand9_torque_std_vs_defect_rate.png)
 
 - STAND_9 토크 변동성이 높은 날 = 불량률이 높은 날
 - **4개 분석 모두 Top 진입** (상관, Granger, Mann-Whitney, ML)
@@ -184,7 +184,7 @@
 
 ### 4.5 인과 관계: Granger 검정
 
-![Granger 인과 Top 10](../analysis_output/2026_01_02_defect_factor_analysis/charts/B3_granger_causality_top10.png)
+![Granger 인과 Top 10](charts/B3_granger_causality_top10.png)
 
 | 순위 | 태그 | 선행 일수 | p값 | 해석 |
 |------|------|----------|------|------|
@@ -198,13 +198,13 @@
 
 ### 4.6 전체 상관 구조
 
-![상관 히트맵](../analysis_output/2026_01_02_defect_factor_analysis/charts/B4_correlation_heatmap.png)
+![상관 히트맵](charts/B4_correlation_heatmap.png)
 
 ### 4.7 통계적 비교: 불량일 vs 정상일
 
-![박스플롯 비교](../analysis_output/2026_01_02_defect_factor_analysis/charts/C1_defect_vs_normal_boxplot.png)
+![박스플롯 비교](charts/C1_defect_vs_normal_boxplot.png)
 
-![토네이도 차트](../analysis_output/2026_01_02_defect_factor_analysis/charts/C2_tornado_defect_vs_normal.png)
+![토네이도 차트](charts/C2_tornado_defect_vs_normal.png)
 
 **유의미한 차이** (p < 0.05):
 
@@ -220,7 +220,7 @@
 
 ### 4.8 머신러닝 교차 검증
 
-![ML Feature Importance](../analysis_output/2026_01_02_defect_factor_analysis/charts/C3_ml_feature_importance.png)
+![ML Feature Importance](charts/C3_ml_feature_importance.png)
 
 Random Forest와 XGBoost 두 모델 모두에서 **4/4 만장일치 태그**:
 - STAND_12 토크 변동(std)
@@ -291,7 +291,7 @@ IBA 데이터에는 비가동, 롤교체, 권취 과도상태 등 분석에 부�
 
 ### 6.2 정지 유형별 불량률
 
-![정지 유형별 불량률](../analysis_output/2026_01_02_defect_factor_analysis/charts/D1_stop_type_defect_rate.png)
+![정지 유형별 불량률](charts/D1_stop_type_defect_rate.png)
 
 | 정지유형 | 코드 | 정지 횟수 | 후속 불량 | 불량률 | 전체 대비 |
 |----------|------|-----------|----------|--------|----------|
@@ -304,7 +304,7 @@ IBA 데이터에는 비가동, 롤교체, 권취 과도상태 등 분석에 부�
 
 ### 6.3 정지 시간대별 위험도
 
-![정지 시간대별 불량률](../analysis_output/2026_01_02_defect_factor_analysis/charts/D2_stop_duration_defect_rate.png)
+![정지 시간대별 불량률](charts/D2_stop_duration_defect_rate.png)
 
 | 정지 시간 | 불량률 | 해석 |
 |----------|--------|------|
@@ -327,7 +327,7 @@ IBA 데이터에는 비가동, 롤교체, 권취 과도상태 등 분석에 부�
 
 ### 6.5 정지 전후 센서 변화
 
-![정지 전후 비교](../analysis_output/2026_01_02_defect_factor_analysis/charts/D3_before_after_stop.png)
+![정지 전후 비교](charts/D3_before_after_stop.png)
 
 5건의 고위험 정지 이벤트에서 공통 패턴:
 
@@ -340,7 +340,7 @@ IBA 데이터에는 비가동, 롤교체, 권취 과도상태 등 분석에 부�
 
 ### 6.6 Odds Ratio: 정지 후 2시간 위험도
 
-![Odds Ratio](../analysis_output/2026_01_02_defect_factor_analysis/charts/D4_odds_ratio_stop_defect.png)
+![Odds Ratio](charts/D4_odds_ratio_stop_defect.png)
 
 | 구간 | 번들 | 불량 | 불량률 |
 |------|------|------|--------|
@@ -355,7 +355,7 @@ IBA 데이터에는 비가동, 롤교체, 권취 과도상태 등 분석에 부�
 
 ### 7.1 D5 vs N5 비교
 
-![D5 vs N5 비교](../analysis_output/2026_01_02_defect_factor_analysis/charts/E1_d5_vs_n5_comparison.png)
+![D5 vs N5 비교](charts/E1_d5_vs_n5_comparison.png)
 
 **공통점** (양 강종 모두):
 - STAND_9 토크: D5 ρ=+0.51, N5 ρ=+0.46 → **양 강종 동일 방향**
@@ -401,7 +401,7 @@ IBA 데이터에는 비가동, 롤교체, 권취 과도상태 등 분석에 부�
 
 ### 8.1 D5-D10: 핀치롤3 토크 저하
 
-![D5-D10 PR3 산점도](../analysis_output/2026_01_02_defect_factor_analysis/charts/E2_d5d10_pr3_torque_scatter.png)
+![D5-D10 PR3 산점도](charts/E2_d5d10_pr3_torque_scatter.png)
 
 | 지표 | 값 |
 |------|-----|
@@ -417,7 +417,7 @@ IBA 데이터에는 비가동, 롤교체, 권취 과도상태 등 분석에 부�
 
 ### 8.2 N5-D16: 가열로 압력 저하 (n=5 조업일 기반, 탐색적 참고치)
 
-![N5-D16 로압 산점도](../analysis_output/2026_01_02_defect_factor_analysis/charts/E3_n5d16_furnace_pressure_scatter.png)
+![N5-D16 로압 산점도](charts/E3_n5d16_furnace_pressure_scatter.png)
 
 | 지표 | 값 |
 |------|-----|
