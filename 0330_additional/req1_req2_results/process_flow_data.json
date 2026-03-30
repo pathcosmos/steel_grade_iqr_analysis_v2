@@ -1,0 +1,602 @@
+{
+  "process_flow": [
+    {
+      "from": "MAIN_GAS_FLOW",
+      "to": "FURNACE_PRESSURE",
+      "stage": "furnace_internal"
+    },
+    {
+      "from": "FURNACE_PRESSURE",
+      "to": "STAND_1 (roughing)",
+      "stage": "furnace_to_roughing"
+    },
+    {
+      "from": "FURNACE_PRESSURE",
+      "to": "STAND_8 (intermediate)",
+      "stage": "furnace_to_intermediate"
+    },
+    {
+      "from": "STAND_6",
+      "to": "STAND_8",
+      "stage": "roughing_to_intermediate"
+    },
+    {
+      "from": "STAND_8",
+      "to": "STAND_10",
+      "stage": "within_intermediate"
+    },
+    {
+      "from": "STAND_10",
+      "to": "STAND_14 (finishing)",
+      "stage": "intermediate_to_finishing"
+    },
+    {
+      "from": "STAND_14",
+      "to": "PR3 (pinchroll)",
+      "stage": "finishing_to_pinchroll"
+    },
+    {
+      "from": "FURNACE_PRESSURE",
+      "to": "PR3 (full path)",
+      "stage": "furnace_to_pinchroll"
+    }
+  ],
+  "ccf_results": [
+    {
+      "pair": "MAIN_GAS_FLOW → 폐가스 압력",
+      "hypothesis": "A",
+      "x_tag": "MAIN_GAS_FLOW_avg",
+      "y_tag": "MAIN_WASTE_GAS_PRESSURE_avg",
+      "best_lag": 0,
+      "max_ccf": -0.4837,
+      "abs_ccf": 0.4837,
+      "direction": "simultaneous",
+      "significant": true,
+      "threshold": 0.1775,
+      "status": "ok"
+    },
+    {
+      "pair": "폐가스 압력 → Stand 1 토크",
+      "hypothesis": "A",
+      "x_tag": "MAIN_WASTE_GAS_PRESSURE_avg",
+      "y_tag": "STAND_1_ACTUAL_TORQUE_avg",
+      "best_lag": 0,
+      "max_ccf": -0.4838,
+      "abs_ccf": 0.4838,
+      "direction": "simultaneous",
+      "significant": true,
+      "threshold": 0.1775,
+      "status": "ok"
+    },
+    {
+      "pair": "폐가스 압력 → Stand 8 토크",
+      "hypothesis": "A",
+      "x_tag": "MAIN_WASTE_GAS_PRESSURE_avg",
+      "y_tag": "STAND_8_ACTUAL_TORQUE_avg",
+      "best_lag": 0,
+      "max_ccf": -0.485,
+      "abs_ccf": 0.485,
+      "direction": "simultaneous",
+      "significant": true,
+      "threshold": 0.1775,
+      "status": "ok"
+    },
+    {
+      "pair": "Stand 6 → Stand 8 토크",
+      "hypothesis": "A",
+      "x_tag": "STAND_6_ACTUAL_TORQUE_avg",
+      "y_tag": "STAND_8_ACTUAL_TORQUE_avg",
+      "best_lag": 0,
+      "max_ccf": 0.989,
+      "abs_ccf": 0.989,
+      "direction": "simultaneous",
+      "significant": true,
+      "threshold": 0.1775,
+      "status": "ok"
+    },
+    {
+      "pair": "Stand 8 → Stand 10 토크",
+      "hypothesis": "A",
+      "x_tag": "STAND_8_ACTUAL_TORQUE_avg",
+      "y_tag": "STAND_10_ACTUAL_TORQUE_avg",
+      "best_lag": 0,
+      "max_ccf": 0.9898,
+      "abs_ccf": 0.9898,
+      "direction": "simultaneous",
+      "significant": true,
+      "threshold": 0.1775,
+      "status": "ok"
+    },
+    {
+      "pair": "Stand 10 → Stand 14 토크",
+      "hypothesis": "A",
+      "x_tag": "STAND_10_ACTUAL_TORQUE_avg",
+      "y_tag": "STAND_14_ACTUAL_TORQUE_avg",
+      "best_lag": 0,
+      "max_ccf": 0.9957,
+      "abs_ccf": 0.9957,
+      "direction": "simultaneous",
+      "significant": true,
+      "threshold": 0.1775,
+      "status": "ok"
+    },
+    {
+      "pair": "Stand 14 → PR3 토크",
+      "hypothesis": "A",
+      "x_tag": "STAND_14_ACTUAL_TORQUE_avg",
+      "y_tag": "PINCHROLL_3_REFERENCE_TORQUE_avg",
+      "best_lag": 0,
+      "max_ccf": -0.5787,
+      "abs_ccf": 0.5787,
+      "direction": "simultaneous",
+      "significant": true,
+      "threshold": 0.1775,
+      "status": "ok"
+    },
+    {
+      "pair": "폐가스 압력 → PR3 토크 (전구간)",
+      "hypothesis": "A",
+      "x_tag": "MAIN_WASTE_GAS_PRESSURE_avg",
+      "y_tag": "PINCHROLL_3_REFERENCE_TORQUE_avg",
+      "best_lag": 0,
+      "max_ccf": 0.3229,
+      "abs_ccf": 0.3229,
+      "direction": "simultaneous",
+      "significant": true,
+      "threshold": 0.1775,
+      "status": "ok"
+    },
+    {
+      "pair": "Stand 8 → 폐가스 압력 (역방향)",
+      "hypothesis": "B",
+      "x_tag": "STAND_8_ACTUAL_TORQUE_avg",
+      "y_tag": "MAIN_WASTE_GAS_PRESSURE_avg",
+      "best_lag": 0,
+      "max_ccf": -0.485,
+      "abs_ccf": 0.485,
+      "direction": "simultaneous",
+      "significant": true,
+      "threshold": 0.1775,
+      "status": "ok"
+    },
+    {
+      "pair": "Stand 1 → 폐가스 압력 (역방향)",
+      "hypothesis": "B",
+      "x_tag": "STAND_1_ACTUAL_TORQUE_avg",
+      "y_tag": "MAIN_WASTE_GAS_PRESSURE_avg",
+      "best_lag": 0,
+      "max_ccf": -0.4838,
+      "abs_ccf": 0.4838,
+      "direction": "simultaneous",
+      "significant": true,
+      "threshold": 0.1775,
+      "status": "ok"
+    }
+  ],
+  "granger_results": [
+    {
+      "feature": "COMBUSTION_AIR_BLOWER_BEARING_TEMPERATURE_NDE_avg",
+      "best_lag": 3,
+      "min_p_value": 0.0121180989695613,
+      "significant": false,
+      "significant_uncorrected": true,
+      "target_stationary": true,
+      "feature_stationary": false
+    },
+    {
+      "feature": "MAIN_WASTE_GAS_PRESSURE_avg",
+      "best_lag": 1,
+      "min_p_value": 0.0139267813197445,
+      "significant": false,
+      "significant_uncorrected": true,
+      "target_stationary": true,
+      "feature_stationary": false
+    },
+    {
+      "feature": "PR9L1_ACT_TORQUE_avg",
+      "best_lag": 9,
+      "min_p_value": 0.0282244472115262,
+      "significant": false,
+      "significant_uncorrected": true,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "FURNACE_EXIT_DISCHARGE_BILLET_TEMPERATURE_avg",
+      "best_lag": 10,
+      "min_p_value": 0.0456802161368079,
+      "significant": false,
+      "significant_uncorrected": true,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "PINCHROLL_2_REFERENCE_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.0556459061573343,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "PINCHROLL_4_REFERENCE_SPEED_avg",
+      "best_lag": 7,
+      "min_p_value": 0.0856063428560181,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_avg",
+      "best_lag": 7,
+      "min_p_value": 0.087093978894135,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_avg",
+      "best_lag": 7,
+      "min_p_value": 0.087212937715229,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "PR8L1_ACT_TORQUE_avg",
+      "best_lag": 9,
+      "min_p_value": 0.1150025223166296,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "PINCHROLL_3_REFERENCE_TORQUE_avg",
+      "best_lag": 7,
+      "min_p_value": 0.1164321383533323,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_4_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1208038759288075,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_12_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1250314125570822,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_7_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1255786724427753,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "PINCHROLL_3_REFERENCE_SPEED_avg",
+      "best_lag": 7,
+      "min_p_value": 0.1267443058127091,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_1_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1302817348614362,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_11_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1344366701767577,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_5_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1352154536102374,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_2_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1359595188399715,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_3_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.136412843985396,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_14_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1381305331232066,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_13_ACTUAL_SPEED_avg",
+      "best_lag": 1,
+      "min_p_value": 0.1400413947954415,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": false
+    },
+    {
+      "feature": "STAND_6_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1405509953160992,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "PINCHROLL_2_REFERENCE_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1406355309326314,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_13_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1416813862116948,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_10_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1417877240904231,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_8_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1430948881838644,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_14_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1448751340059738,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_1_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1461888106226104,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_12_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1464194860792435,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_5_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1524964913166573,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_11_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1530962451132497,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_9_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1555307674457728,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_6_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1570510378629219,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_7_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1581451934108226,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_3_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1589470050559759,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_4_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1590263617493177,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_10_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1594558234796157,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_9_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.160806243143118,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_2_ACTUAL_SPEED_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1618856510169382,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "PINCHROLL_4_REFERENCE_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1739603143370745,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "STAND_8_ACTUAL_TORQUE_avg",
+      "best_lag": 2,
+      "min_p_value": 0.1743969016258949,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "MAIN_COMBUSTION_AIR_PRESSURE_avg",
+      "best_lag": 8,
+      "min_p_value": 0.176212238823009,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": false
+    },
+    {
+      "feature": "PR6L2_ACT_TORQUE_avg",
+      "best_lag": 6,
+      "min_p_value": 0.1837504625525323,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "PR6L1_ACT_TORQUE_avg",
+      "best_lag": 7,
+      "min_p_value": 0.1937144091512757,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "MAIN_GAS_FLOW_avg",
+      "best_lag": 2,
+      "min_p_value": 0.2326448315894631,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    },
+    {
+      "feature": "COMBUSTION_AIR_BLOWER_BEARING_TEMPERATURE_DE_avg",
+      "best_lag": 10,
+      "min_p_value": 0.4107334800763295,
+      "significant": false,
+      "significant_uncorrected": false,
+      "target_stationary": true,
+      "feature_stationary": true
+    }
+  ],
+  "physical_lag_estimates": {
+    "furnace_to_stand1": "~30sec",
+    "stand1_to_stand6": "15~30sec",
+    "stand6_to_stand8": "~2sec",
+    "stand8_to_stand10": "~1sec",
+    "stand10_to_stand14": "~1sec",
+    "stand14_to_pr3": "~3sec",
+    "furnace_to_pr3_total": "~1-2min",
+    "note": "Daily aggregation masks sub-minute physical lags"
+  }
+}

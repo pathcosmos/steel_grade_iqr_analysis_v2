@@ -1,0 +1,91 @@
+{
+  "stand14": {
+    "spearman_torque_avg": {
+      "rho": 0.0865
+    },
+    "spearman_torque_std": {
+      "rho": 0.3505
+    },
+    "ccf": [
+      {
+        "feature": "STAND_14_ACTUAL_TORQUE_avg",
+        "optimal_lag": 7,
+        "optimal_correlation": 0.2813309885080541,
+        "abs_optimal_corr": 0.2813309885080541,
+        "lag_0_corr": 0.093905305434709
+      },
+      {
+        "feature": "STAND_14_ACTUAL_SPEED_avg",
+        "optimal_lag": 7,
+        "optimal_correlation": 0.2339391926887963,
+        "abs_optimal_corr": 0.2339391926887963,
+        "lag_0_corr": 0.2066926621624023
+      }
+    ],
+    "granger": [
+      {
+        "feature": "STAND_14_ACTUAL_TORQUE_avg",
+        "best_lag": 2,
+        "min_p_value": 0.1381305331232066,
+        "significant": false,
+        "significant_uncorrected": false,
+        "target_stationary": true,
+        "feature_stationary": true
+      },
+      {
+        "feature": "STAND_14_ACTUAL_SPEED_avg",
+        "best_lag": 2,
+        "min_p_value": 0.1448751340059738,
+        "significant": false,
+        "significant_uncorrected": false,
+        "target_stationary": true,
+        "feature_stationary": true
+      }
+    ]
+  },
+  "finishing_block": {
+    "spearman_master_avg": {
+      "rho": 0.3224
+    },
+    "spearman_slave_std": {
+      "rho": 0.491
+    },
+    "ccf": [
+      {
+        "feature": "FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_avg",
+        "optimal_lag": 7,
+        "optimal_correlation": 0.3073850063327856,
+        "abs_optimal_corr": 0.3073850063327856,
+        "lag_0_corr": 0.1848002989488273
+      },
+      {
+        "feature": "FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_avg",
+        "optimal_lag": 7,
+        "optimal_correlation": 0.3073316815632101,
+        "abs_optimal_corr": 0.3073316815632101,
+        "lag_0_corr": 0.1847636628498928
+      }
+    ],
+    "granger": [
+      {
+        "feature": "FINISHING_BLOCK_MASTER_ACTUAL_TORQUE_avg",
+        "best_lag": 7,
+        "min_p_value": 0.087093978894135,
+        "significant": false,
+        "significant_uncorrected": false,
+        "target_stationary": true,
+        "feature_stationary": true
+      },
+      {
+        "feature": "FINISHING_BLOCK_SLAVE_ACTUAL_TORQUE_avg",
+        "best_lag": 7,
+        "min_p_value": 0.087212937715229,
+        "significant": false,
+        "significant_uncorrected": false,
+        "target_stationary": true,
+        "feature_stationary": true
+      }
+    ]
+  },
+  "conclusion": "Stand 14와 블록밀 모두 일별 집계 수준에서 약한~중간 신호. RUN 필터 적용 코일 단위 재검증 필요."
+}

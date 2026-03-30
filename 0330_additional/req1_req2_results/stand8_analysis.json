@@ -1,0 +1,23 @@
+{
+  "stand8_vs_defect": {
+    "rho": 0.1705,
+    "p": 0.055241
+  },
+  "furnace_vs_defect": {
+    "rho": -0.2626,
+    "p": 0.002853
+  },
+  "stand8_vs_furnace": {
+    "rho": -0.7221,
+    "p": 0.0
+  },
+  "granger": {
+    "feature": "STAND_8_ACTUAL_SPEED_avg",
+    "best_lag": 2,
+    "min_p_value": 0.1430948881838644,
+    "significant": false,
+    "significant_uncorrected": false,
+    "target_stationary": true,
+    "feature_stationary": true
+  }
+}
